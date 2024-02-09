@@ -1,0 +1,42 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(https://cdn.discordapp.com/attachments/820976935077281843/1205474225952002048/image.png?ex=65d8805c&is=65c60b5c&hm=4cd4d35b6b4287b17ae012caffd0ad88f32b2112bbf43a81b088553d96627a0f&);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.logonav{
+    width: 5vw;
+}
+  
+nav {
+    display: flex;
+    align-items: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 23px;
+    padding: 18px;
+}
+
+nav li:hover {
+    background-color:#1D5F15;
+    border-radius: 12px;
+    height: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.botoes button{
+
+}
