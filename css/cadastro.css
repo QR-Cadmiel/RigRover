@@ -1,0 +1,18 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(https://media.discordapp.net/attachments/1097493454545764472/1209111748314144848/fudocadastro.png?ex=65e5bc11&is=65d34711&hm=985c1056cda272e3c00a8ebc316be8153ec690942d770cfbd1a807816d63cc28&=&format=webp&quality=lossless&width=918&height=517);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+.tudo {
+    background-size: auto;
+    width: 38vw;
+    margin: 0 auto;
+    display: block; 
+    height: 24vw;
+    background-color: rgb(255, 255, 255);
+}

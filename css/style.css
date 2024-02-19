@@ -20,15 +20,14 @@ nav {
 nav a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 23px;
+    font-size: 28px;
     padding: 18px;
 }
 
 nav li:hover {
     background-color:#1D5F15;
     border-radius: 12px;
-    height: 2rem;
-    text-align: center;
+    height: 100%;
 }
 
 nav ul {
@@ -37,6 +36,36 @@ nav ul {
     padding: 0;
 }
 
-.botoes button{
+.logodois {
+    width: 34rem;
 
+}
+
+.centro {
+    margin: 46px;
+text-align: center;
+}
+
+.slogan {
+    color: white;
+    font-size: 2em;
+    margin: 0;
+}
+
+.botoes {
+    border: solid 1px #1D5F15;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #1D5F15;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s;
+    width: 13vw;
+    height: 3vw;
+    font-size: 20px;
+    margin: 19px;
+}
+
+.botoes:hover{
+    background-color:#1D5F15;
+    color: white;
+    transform: scale(1.2)
 }
