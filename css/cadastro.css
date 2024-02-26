@@ -1,0 +1,82 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(https://media.discordapp.net/attachments/1097493454545764472/1209111748314144848/fudocadastro.png?ex=65e5bc11&is=65d34711&hm=985c1056cda272e3c00a8ebc316be8153ec690942d770cfbd1a807816d63cc28&=&format=webp&quality=lossless&width=918&height=517);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+.voltar {
+    display: flex;
+    border: none;
+    cursor: pointer;
+}
+
+.titulo {
+    font-size: 1rem;
+}
+
+.tudo {
+    background-size: auto;
+    width: 38vw;
+    margin: 0 auto;
+    display: block; 
+    height: 44  vw;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.preencher {
+    text-align: center;
+}
+
+input {
+    background-color: #60a55f;
+    width: 22vw;
+    height: 3vw;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    margin: 18px;
+   
+}
+
+::placeholder {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.nome-icon{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3334/3334385.png');
+    background-repeat: no-repeat;
+    background-position: calc(10px) center;
+    background-size: 30px;
+    padding-left: 50px;
+}
+
+.email-icon{
+    background-image: url('https://static.thenounproject.com/png/4032703-200.png');
+    background-repeat: no-repeat;
+    background-position: calc(10px) center;
+    background-size: 30px;
+    padding-left: 50px;
+}
+
+.senha-icon{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/102/102643.png');
+    background-repeat: no-repeat;
+    background-position: calc(10px) center;
+    background-size: 30px;
+    padding-left: 50px;
+}
+
+
+#data {
+    width: 10px;
+}
+
+.img-lado {
+    display: flex;
+}

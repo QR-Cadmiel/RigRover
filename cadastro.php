@@ -51,23 +51,31 @@ $mysqli->close();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1097493454545764472/1207911558559170601/Nova_Logo_RigRover_1.png?ex=65e15e4d&is=65cee94d&hm=1f91b588742806550adf33275c874fa2149d9f66260d040373d4f8d2c32371e8&=&format=webp&quality=lossless&width=450&height=600">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Cadastro - RigRover</title>
 </head>
 
 <body>
-    <h2>Cadastro de Usuários</h2>
+<div class="tudo">
+    <div class="preencher">
+    <a href="index.php"><button  class="voltar">Voltar</button></a>
+    <div class="titulo"><h2>Cadastro de Usuários</h2></div>
     <form action="" method="POST">
 
-        <input type="text" name="name" placeholder="Insira o nome de usuário" required><br>
-        <input type="email" name="email" placeholder="Insira o seu e-mail" required><br>
-        <input type="password" name="password" placeholder="Digite uma senha (Mínimo 8 caracteres)" required><br>
-        <input type="password" name="confirm_password" placeholder="Digite sua senha novamente" required><br>
-
+        <input type="text" name="name" placeholder="Insira o nome de usuário" class="nome-icon" required>
+        <input type="email" name="email" placeholder="Insira o seu e-mail" class="email-icon" required>
+        <input type="password" name="password" placeholder="Digite uma senha (Mínimo 8 caracteres)" class="senha-icon" required>
+        <input type="password" name="confirm_password" placeholder="Digite sua senha novamente" class="senha-icon" required> <br>
+    <div id="data">
         <select name="day" required>
             <?php
             for ($i = 1; $i <= 31; $i++) {
@@ -92,8 +100,8 @@ $mysqli->close();
                 echo "<option value=\"$i\">$i</option>";
             }
             ?>
-        </select><br>
-
+        </select>
+        </div>
 <select name="nationality" required>
     <option value="" disabled selected>Selecione a nacionalidade</option>
     <option value="Afeganistão" data-country-code="af">Afeganistão</option>
@@ -147,10 +155,12 @@ $mysqli->close();
     <option value="Taiwan" data-country-code="tw">Taiwan</option>
     <option value="Vietnã" data-country-code="vn">Vietnã</option>
 </select>
-<br>
         <button type="submit">Cadastrar</button>
     </form>
     <a href="login.php">Já tem uma conta? Logue aqui.</a>
+    </div>
+
+</div>
 </body>
 
 </html>
