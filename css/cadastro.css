@@ -16,67 +16,89 @@ body {
 
 .titulo {
     font-size: 1rem;
+    color: white;
+    text-decoration: none;
 }
 
-.tudo {
-    background-size: auto;
-    width: 38vw;
-    margin: 0 auto;
-    display: block; 
-    height: 44vw;
-    background-color: rgb(255, 255, 255);
-    
+.container {
+    float: right; /* posiciona a div à direita */
+    justify-content: right;
+    align-items: right;
+    display: flex;
 }
+
+.cadastro {
+    width: 75%;
+    height: 100vh; /* altura da viewport */
+    background-color: #141414;
+    color: white;
+}
+
 
 .preencher {
     text-align: center;
+    padding: 20px;
 }
 
 input {
-    background-color: #60a55f;
-    width: 22vw;
+    background-color: #1e5d1d;
+    width: 90%;
     height: 3vw;
     color: white;
     border: none;
     border-radius: 18px;
     margin: 18px;
-   
 }
 
 ::placeholder {
     text-align: justify;
     font-size: 0.9rem;
+    color: white;
 }
 
-.nome-icon{
+.nome-icon, .email-icon, .senha-icon {
+    background-repeat: no-repeat;
+    background-position: calc(10px) center;
+    background-size: 30px;
+    padding-left: 50px;
+}
+
+.nome-icon {
     background-image: url('https://cdn-icons-png.flaticon.com/512/3334/3334385.png');
-    background-repeat: no-repeat;
-    background-position: calc(10px) center;
-    background-size: 30px;
-    padding-left: 50px;
 }
 
-.email-icon{
+.email-icon {
     background-image: url('https://static.thenounproject.com/png/4032703-200.png');
-    background-repeat: no-repeat;
-    background-position: calc(10px) center;
-    background-size: 30px;
-    padding-left: 50px;
 }
 
-.senha-icon{
+.senha-icon {
     background-image: url('https://cdn-icons-png.flaticon.com/512/102/102643.png');
-    background-repeat: no-repeat;
-    background-position: calc(10px) center;
-    background-size: 30px;
-    padding-left: 50px;
-}
-
-
-#data {
-    width: 10px;
 }
 
 .img-lado {
-    display: flex;
+    position: absolute; /* Para posicionar a imagem absolutamente */
+    left: 0; /* Coloca a imagem à esquerda da tela */
+    top: 0; /* Alinha a imagem ao topo da tela */
+    width: 50%; /* Define a largura da imagem para ocupar metade da tela */
+    height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+    object-fit: cover; /* Para cobrir toda a área */
+    
+}
+
+.img-lado img {
+    width: 100%; /* Define a largura da imagem para ocupar toda a largura da div */
+    height: 100%; /* Define a altura da imagem para ocupar toda a altura da div */
+    object-fit: cover; /* Para cobrir toda a área */
+    border-radius: 2522px;
+}
+
+.btn-cad {
+    color: white;
+    background-color: #1e5d1d;
+    border: none;
+    width: 22vw;
+    height: 3vw;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 18px; /* Adiciona margem superior */
 }
