@@ -5,6 +5,7 @@ body{
     background-size: 100%;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 .logonav{
@@ -68,4 +69,142 @@ text-align: center;
     background-color:#1D5F15;
     color: white;
     transform: scale(1.2)
+}
+
+#rigrover-2 {
+    margin-top: 220px;
+    flex-direction: row;
+    display: flex;
+    background-color: #141414;
+}
+
+.i1t2 {
+    justify-content: left;
+    padding: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.i2t1 {
+    justify-content: right;
+    padding: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+#rigrover-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #1C1C1C;
+    padding: 20px;
+}
+
+.title-nav {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.title-nav img {
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.pictures-container {
+    display: flex;
+    justify-content: space-between; /* Para colocar as pictures-1 e pictures-2 nas extremidades */
+}
+
+.pictures-1, .pictures-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar-text {
+    margin-left: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.cadmiel img, .pedro img, .joao img, .thiago img {
+    width: 200px; /* Mesmo tamanho para todas as imagens */
+    height: 200px; /* Mesmo tamanho para todas as imagens */
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+}
+
+
+.pictures-2 {
+    margin-right: 200px; /* Espaço entre a imagem e o texto */
+}
+
+.pictures-1 {
+    margin-left: 175px;
+}
+
+.pictures-container h3 {
+    color: #A2D96E;
+    text-decoration: none;
+}
+
+.pictures-container img {
+    margin: 50px;
+}
+
+#rigrover-4 {
+    background-color: black;
+}
+
+.btn-question {
+    border: none;
+    background-color: #141414;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px;
+    width: 700px;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.top-pg {
+    color: white;
+    text-align: center;
+}
+
+#rigrover-4 button {
+    display: flex;
+    flex-direction: row;
+}
+
+#rigrover-4 img {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin-left: auto;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
