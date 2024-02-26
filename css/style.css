@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Josefin Sans', sans-serif;
     background-image: url(https://media.discordapp.net/attachments/820976935077281843/1205474225952002048/image.png?ex=65eaf55c&is=65d8805c&hm=ac7f07bb4d827fe7206410f25d42d876734e37a923a897ee11061ccee8255558&=&format=webp&quality=lossless&width=1170&height=580);
     background-repeat: no-repeat;
@@ -8,10 +8,10 @@ body{
     min-height: 100vh;
 }
 
-.logonav{
+.logonav {
     width: 5vw;
 }
-  
+
 nav {
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ nav a {
 }
 
 nav li:hover {
-    background-color:#1D5F15;
+    background-color: #1D5F15;
     border-radius: 12px;
     height: 100%;
 }
@@ -44,7 +44,7 @@ nav ul {
 
 .centro {
     margin: 46px;
-text-align: center;
+    text-align: center;
 }
 
 .slogan {
@@ -65,8 +65,8 @@ text-align: center;
     margin: 19px;
 }
 
-.botoes:hover{
-    background-color:#1D5F15;
+.botoes:hover {
+    background-color: #1D5F15;
     color: white;
     transform: scale(1.2)
 }
@@ -99,7 +99,6 @@ text-align: center;
     display: flex;
     flex-direction: column;
     background-color: #1C1C1C;
-    padding: 20px;
 }
 
 .title-nav {
@@ -110,15 +109,18 @@ text-align: center;
 }
 
 .title-nav img {
-    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    margin-right: 20px;
+    /* Espaço entre a imagem e o texto */
 }
 
 .pictures-container {
     display: flex;
-    justify-content: space-between; /* Para colocar as pictures-1 e pictures-2 nas extremidades */
+    justify-content: space-between;
+    /* Para colocar as pictures-1 e pictures-2 nas extremidades */
 }
 
-.pictures-1, .pictures-2 {
+.pictures-1,
+.pictures-2 {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -132,18 +134,21 @@ text-align: center;
 }
 
 .avatar-text {
-    margin-left: 20px; /* Espaço entre a imagem e o texto */
+    margin-left: 20px;
 }
 
-.cadmiel img, .pedro img, .joao img, .thiago img {
-    width: 200px; /* Mesmo tamanho para todas as imagens */
-    height: 200px; /* Mesmo tamanho para todas as imagens */
-    border-radius: 50%; /* Transforma a imagem em um círculo */
+.cadmiel img,
+.pedro img,
+.joao img,
+.thiago img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 
 .pictures-2 {
-    margin-right: 200px; /* Espaço entre a imagem e o texto */
+    margin-right: 200px;
 }
 
 .pictures-1 {
@@ -175,7 +180,7 @@ text-align: center;
     width: 700px;
     font-size: 1.5rem;
     margin-top: 30px;
-    text-align: left; /* Alinhar o texto à esquerda */
+    text-align: left;
 }
 
 .top-pg {
@@ -202,9 +207,31 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    height: 50px;
+    margin: 0;
 }
 
 .footer-content {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.a-ft {
+    color: white;
+}
+
+.footer-content a {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.invisible-input {
+    border: none;
+    background: transparent;
+    color: transparent;
+    height: 100px;
 }

@@ -126,7 +126,7 @@
             <div class="pictures-2">
                 <div class="avatar">
                     <div class="joao">
-                        <img src="img/joao.jpg" alt="" width="200px">
+                        <img src="img/joao.webp" alt="" width="200px">
                     </div>
 
                     <div>
@@ -164,11 +164,13 @@
                     src="https://www.pngmart.com/files/15/Vector-Arrow-Down-PNG-Image.png" alt="" widht="30px"
                     height="30px"></button>
 
+            <input type="text" id="invisible-input" class="invisible-input" />
+
         </div>
 
         <footer>
             <div class="footer-content">
-                <p>Footer</p>
+                <a href="fale_conosco.php" class="a-ft">Alguma sugestão ou duvida? fale conosco aqui.</a>
             </div>
 
         </footer>
