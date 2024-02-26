@@ -44,11 +44,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="css/faleconosco.css">
+    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1097493454545764472/1207911558559170601/Nova_Logo_RigRover_1.png?ex=65e15e4d&is=65cee94d&hm=1f91b588742806550adf33275c874fa2149d9f66260d040373d4f8d2c32371e8&=&format=webp&quality=lossless&width=450&height=600">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Fale Conosco - RigRover</title>
 </head>
 <body>
+<nav class="navbar">
+    
+    <div>
+        <img src="img\Nova_Logo_RigRover.png" alt="" class="logonav">
+    </div>
+
+        <ul>
+            <li>
+                <a href="index.php  ">Página Inicial</a>
+            </li>
+            <li>
+                <a href="#">Quem Somos?</a>
+            </li>
+            <li>
+                <a href="#">Noticias</a>
+            </li>
+            <li>
+                <a href="#">Comprar Hardware</a>
+            </li>
+        </ul>
+    </nav>
+
     <h2>Entre em contato</h2>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
+    <div class="tudo">
+     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <!-- O atributo action do formulário foi atualizado para enviar os dados para a mesma página -->
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome" required><br>
@@ -56,7 +85,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="email" id="email" name="email" required><br>
         <label for="mensagem">Mensagem:</label><br>
         <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
-        <input type="submit" value="Enviar">
-    </form>
+        <input type="submit" value="Enviar" class="btn-primary ">
+     </form>
+    </div>
 </body>
 </html>
