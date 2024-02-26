@@ -61,6 +61,10 @@ textarea {
     text-align: center;
 }
 
+h1 {
+    text-align: center;
+}
+
 .btn-primary {
     border: solid 1px #1D5F15;
     border-radius: 11px;
@@ -70,4 +74,5 @@ textarea {
     height: 4vw;
     font-size: 20px;
     margin: 19px;
+    cursor: pointer;
 }

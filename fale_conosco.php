@@ -74,9 +74,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </ul>
     </nav>
 
-    <h2>Entre em contato</h2>
+  
 
     <div class="tudo">
+    <h1>Entre em contato</h1>
      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <!-- O atributo action do formulário foi atualizado para enviar os dados para a mesma página -->
         <label for="nome">Nome:</label><br>
