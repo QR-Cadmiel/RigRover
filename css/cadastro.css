@@ -1,104 +1,127 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url(https://media.discordapp.net/attachments/1097493454545764472/1209111748314144848/fudocadastro.png?ex=65e5bc11&is=65d34711&hm=985c1056cda272e3c00a8ebc316be8153ec690942d770cfbd1a807816d63cc28&=&format=webp&quality=lossless&width=918&height=517);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin: 0;
-    padding: 0;
-    color: rgb(0, 0, 0);
-}
-
-.voltar {
-    display: flex;
-    border: none;
-    cursor: pointer;
-}
-
-.titulo {
-    font-size: 1rem;
+    background-color: #161616;
     color: white;
-    text-decoration: none;
+    margin: 0;
 }
 
-.container {
-    float: right; /* posiciona a div à direita */
-    justify-content: right;
-    align-items: right;
-    display: flex;
+.img-lado {
+    float: left;
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: absolute;
 }
 
 .cadastro {
-    width: 75%;
-    height: 100vh; /* altura da viewport */
-    background-color: #141414;
-    color: white;
-}
-
-
-.preencher {
-    text-align: center;
+    width: 50%;
+    margin: 0 auto;
     padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
 }
 
-input {
-    background-color: #1e5d1d;
-    width: 90%;
-    height: 3vw;
-    color: white;
+.cadastro input[type="text"],
+.cadastro input[type="email"],
+.cadastro input[type="password"] {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
     border: none;
-    border-radius: 18px;
-    margin: 18px;
-}
-
-::placeholder {
-    text-align: justify;
-    font-size: 0.9rem;
+    border-radius: 5px;
+    background-color: #117C0F;
     color: white;
+    box-sizing: border-box;
 }
 
-.nome-icon, .email-icon, .senha-icon {
-    background-repeat: no-repeat;
-    background-position: calc(10px) center;
-    background-size: 30px;
-    padding-left: 50px;
+.cadastro input[type="text"]::placeholder,
+.cadastro input[type="email"]::placeholder,
+.cadastro input[type="password"]::placeholder,
+.cadastro select::placeholder {
+    color: white;
+    padding: 30px;
+}
+
+.cadastro select {
+    width: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background-color: #717171;
+    color: white;
+    box-sizing: border-box;
+}
+
+.cadastro a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
+}
+
+.btn-cad {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #035C1C;
+    color: white;
+    box-sizing: border-box;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.smonth, .sday, .syear {
+    text-align: center;
+}
+
+.cadastro div.nacionalidade select {
+    width: 200px;
+    margin: 10px auto;
+}
+
+.cadastro .data select {
+    border: 1px solid #272727;
+    padding: 8px;
 }
 
 .nome-icon {
     background-image: url('https://cdn-icons-png.flaticon.com/512/3334/3334385.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px center;
+    padding-left: 40px;
 }
 
 .email-icon {
     background-image: url('https://static.thenounproject.com/png/4032703-200.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px center;
+    padding-left: 40px;
 }
 
 .senha-icon {
     background-image: url('https://cdn-icons-png.flaticon.com/512/102/102643.png');
-}
-
-.img-lado {
-    position: absolute; /* Para posicionar a imagem absolutamente */
-    left: 0; /* Coloca a imagem à esquerda da tela */
-    top: 0; /* Alinha a imagem ao topo da tela */
-    width: 50%; /* Define a largura da imagem para ocupar metade da tela */
-    height: 100vh; /* Define a altura para ocupar toda a altura da tela */
-    object-fit: cover; /* Para cobrir toda a área */
-    
-}
-
-.img-lado img {
-    width: 100%; /* Define a largura da imagem para ocupar toda a largura da div */
-    height: 100%; /* Define a altura da imagem para ocupar toda a altura da div */
-    object-fit: cover; /* Para cobrir toda a área */
-    border-radius: 2522px;
-}
-
-.btn-cad {
-    color: white;
-    background-color: #1e5d1d;
-    border: none;
-    width: 22vw;
-    height: 3vw;
-    text-align: center;
-    border-radius: 18px;
-    margin-top: 18px; /* Adiciona margem superior */
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px center;
+    padding-left: 40px;
 }
