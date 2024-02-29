@@ -32,11 +32,13 @@ body {
 .cadastro input[type="email"],
 .cadastro input[type="password"] {
     width: 500px;
+    height: 47px;
     margin: 10px;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #117C0F;
+    font-size: 16px;
     color: white;
     box-sizing: border-box;
 }
@@ -64,6 +66,7 @@ body {
     text-decoration: none;
     display: block;
     margin-top: 20px;
+    font-size: 17px;
 }
 
 .cadastro a:hover {
@@ -71,14 +74,16 @@ body {
 }
 
 .btn-cad {
-    width: 500px;
+    width: 400px;
     margin: 10px;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #035C1C;
     color: white;
     box-sizing: border-box;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .data {
@@ -93,8 +98,9 @@ body {
 }
 
 .cadastro div.nacionalidade select {
-    width: 200px;
+    width: 202px;
     margin: 10px auto;
+    border-radius: 4px;
 }
 
 .cadastro .data select {

@@ -86,7 +86,7 @@ $mysqli->close();
                 </select>
                 <select name="month" class="smonth" required>
                     <?php
-                    $months = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                    $months = array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
                     foreach ($months as $key => $month) {
                         $monthNum = $key + 1;
                         echo "<option value=\"$monthNum\">$month</option>";
@@ -106,11 +106,7 @@ $mysqli->close();
 
             <div class="nacionalidade">
                 <select name="nationality" class="natioa-div" required>
-                    <option value="" disabled selected>Selecione a nacionalidade</option>
-                    <option value="" disabled selected>Selecione a nacionalidade</option>
-                    <option value="" disabled selected>Selecione a nacionalidade</option>
-                    <option value="" disabled selected>Selecione a nacionalidade</option>
-                    <option value="" disabled selected>Selecione a nacionalidade</option>
+                    <option value="" disabled selected>Selecione o país onde vive</option>
                     <option value="Afeganistão" data-country-code="af">Afeganistão</option>
                     <option value="Alemanha" data-country-code="de">Alemanha</option>
                     <option value="Argentina" data-country-code="ar">Argentina</option>
