@@ -54,7 +54,7 @@ $mysqli->close();
     <img src="img/imglado-2.png" alt="Imagem Lado" class="img-lado">
     <div class="login">
         <div class="titulo">
-            <h1>Cadastro de Usuários</h1>
+            <h1>Login de Usuários</h1>
         </div>
         <?php if (isset($error_message)) : ?>
             <p style="color: red;"><?php echo $error_message; ?></p>

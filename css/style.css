@@ -9,13 +9,14 @@ body {
 }
 
 .logonav {
-    width: 5vw;
+    width: 6vw;
+    padding: 0 38px 0 0;
 }
 
 nav {
     display: flex;
     align-items: center;
-
+    justify-content: center;
 }
 
 nav a {
@@ -50,7 +51,7 @@ nav ul {
 .slogan {
     color: white;
     font-size: 2em;
-    margin: 0;
+    margin: 6px;
 }
 
 .botoes {

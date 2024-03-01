@@ -66,6 +66,8 @@ $mysqli->close();
 
 <body>
     <img src="img/imglado.png" alt="Imagem Lado" class="img-lado">
+aas mas 
+
     <div class="cadastro">
         <div class="titulo">
             <h1>Cadastro de Usuários</h1>
