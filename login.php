@@ -47,27 +47,31 @@ $mysqli->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-    <h1>Login</h1>
+    <img src="img/imglado-2.png" alt="Imagem Lado" class="img-lado">
+    <div class="login">
+        <div class="titulo">
+            <h1>Cadastro de Usuários</h1>
+        </div>
+        <?php if (isset($error_message)) : ?>
+            <p style="color: red;"><?php echo $error_message; ?></p>
+        <?php endif; ?>
 
-    <?php if (isset($error_message)) : ?>
-        <p style="color: red;"><?php echo $error_message; ?></p>
-    <?php endif; ?>
+        <form action="" method="POST">
+            <input type="email" name="email" placeholder="Insira o seu e-mail" class="email-icon" required>
+            <input type="password" name="password" placeholder="Insira a sua senha" class="senha-icon" required>
 
-    <form action="" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" name="email" required>
+            <button type="submit" class="btn-cad">Login</button>
+        </form>
 
-        <label for="password">Senha:</label>
-        <input type="password" name="password" required>
+        <a href="cadastro.php">Não tem uma conta? Cadastre-se aqui.</a><br>
+        <a href="esqueceu_senha.php">Esqueceu a sua senha?</a>
+    </div>
 
-        <button type="submit">Login</button>
-    </form>
-
-<a href="cadastro.php">Não tem uma conta? Cadastre-se aqui.</a><br>
-<a href="esqueceu_senha.php">Esqueceu a sua senha?</a>
+<!-- .. -->
 
 </body>
 
