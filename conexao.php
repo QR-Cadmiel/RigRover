@@ -15,4 +15,3 @@ if ($mysqli->connect_error) {
 
 $mysqli->close();
 
-?>

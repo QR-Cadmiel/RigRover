@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<script>alert('Senha alterada com Sucesso.'); window.location.href = 'index.php';</script>";
         exit();
     } else {
-        echo "Erro ao atualizar a senha: " . $conn->error;
+        echo "Erro ao atualizar a senha: " . $mysqli->error;
     }
 
     $conn->close();
@@ -47,58 +47,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senha - Chikito Pizzaria</title>
-    <link rel="shortcut icon" type="imagex/png" href="assets/img/LogoChickito.png">
- 
-<link rel="stylesheet" href="assets/css/senha.css">
-    <link rel="stylesheet" href="assets/css/responsivo_senha.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <title>Redefinir Senha - RigRover</title>
+    <link rel="stylesheet" href="css/senha.css">
 </head>
 
 <body>
-    <div id="content">
-        <div id="content-items">
-            <div class="Background-Square"></div>
-            <img class="logo" src="assets/img/LogoChickito.png" alt="Avatar">
-
-            <!-- LOGIN -->
-            <form action="" method="POST">
-                <div id="LOGINitr">
-                    <h2 class="login">Redefinir Senha</h2><br>
-                </div>
-
-                <div id="E-mailitr">
-                    <h3 class="E-mail">E-mail</h3>
-                    <input type="email" class="Hr2" id="email" name="email" required>
-                </div>
-
-                <!-- NOVA SENHA -->
-                <div id="NovaSenhaitr">
-                    <h3 class="Password">Nova senha</h3>
-                    <input type="password" class="Hr3" id="novaSenha" name="novaSenha" required>
-                </div>
-
-                <!-- CONFIRMAR NOVA SENHA -->
-                <div id="ConfirmaSenhaitr">
-                    <h3 class="Password">Confirme a nova senha</h3>
-                    <input type="password" class="Hr3" id="confirmaSenha" name="confirmaSenha" required>
-                </div>
-
-                <!-- ALTS -->
-                <div id="alts">
-                    <a href="index.php" class="retornar">Retornar ao Login</a>
-                    <a href="cadastro.php" class="cadastro">Novo por aqui? Cadastre-se.</a>
-                </div>
-
-                <!-- BUTTON -->
-                <div id="Buttonitr">
-                    <input class="Button-Login" type="submit" value="Redefinir Senha">
-                </div>
-
-            </form>
+    <div class="password_esq">
+        <div class="titulo">
+            <h1>Redefinir senha</h1>
         </div>
+
+        <form action="" method="POST">
+            <input type="email" id="email" name="email" placeholder="Insira o seu e-mail" class="email-icon" required>
+            <input type="password" id="novaSenha" name="password" placeholder="Insira a sua nova senha" class="senha-icon" required>
+            <input type="password" id="confirmaSenha" name="password" placeholder="Insira a sua nova senha novamente" class="senha-icon" required>
+
+            <button type="submit" class="btn-cad">Alterar Senha</button>
+        </form>
+
+        <a href="cadastro.php">Não tem uma conta? Cadastre-se aqui.</a><br>
+        <a href="login.php">Já tem uma conta? Logue aqui.</a>
     </div>
 </body>
 
