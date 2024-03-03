@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png"
-        href="https://media.discordapp.net/attachments/1097493454545764472/1207911558559170601/Nova_Logo_RigRover_1.png?ex=65e15e4d&is=65cee94d&hm=1f91b588742806550adf33275c874fa2149d9f66260d040373d4f8d2c32371e8&=&format=webp&quality=lossless&width=450&height=600">
+    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1097493454545764472/1213970848935837796/8B3hC5OThbCdsAAAAASUVORK5CYII.png?ex=65f76974&is=65e4f474&hm=2555e21492b76ac6a813fba8ed26c84c0c3a2ba2cbc8013cc8827f67e2ccb06f&=&format=webp&quality=lossless">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -18,7 +17,6 @@
         <nav class="navbar">
 
             <div>
-                <img src="img\Nova_Logo_RigRover.png" alt="" class="logonav">
             </div>
 
             <ul>
@@ -50,52 +48,35 @@
         </div>
     </div>
 
-    <div id=rigrover-2>
-        <div class=i1t2>
+    <div id="rigrover-2">
+        <div class="i1t2">
             <img src="img/camaleao.jpg" alt="" width="600px">
-            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae nulla enim. Nulla scelerisque arcu
-                sapien. Quisque ac convallis ante. In ac tincidunt nisi. Integer a consectetur ante. Quisque non iaculis
-                orci. In hac habitasse platea dictumst. Cras aliquet pretium tortor ut sodales. Nullam iaculis non lacus
-                et volutpat. Duis sit amet lacus vel justo tincidunt venenatis. Sed ultricies ante sagittis, mattis ante
-                vitae, lobortis purus. Mauris vehicula, ligula eu cursus ullamcorper, metus metus luctus eros, a commodo
-                dolor sem non diam. Integer porttitor varius sem eget molestie. Fusce vel eleifend neque. Curabitur sit
-                amet rutrum lectus.</h5>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae nulla enim. Nulla scelerisque arcu
-                sapien. Quisque ac convallis ante. In ac tincidunt nisi. Integer a consectetur ante. Quisque non iaculis
-                orci. In hac habitasse platea dictumst. Cras aliquet pretium tortor ut sodales. Nullam iaculis non lacus
-                et volutpat. Duis sit amet lacus vel justo tincidunt venenatis. Sed ultricies ante sagittis, mattis ante
-                vitae, lobortis purus. Mauris vehicula, ligula eu cursus ullamcorper, metus metus luctus eros, a commodo
-                dolor sem non diam. Integer porttitor varius sem eget molestie. Fusce vel eleifend neque. Curabitur sit
-                amet rutrum lectus.</h5>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae nulla enim. Nulla scelerisque arcu
-                sapien. Quisque ac convallis ante. In ac tincidunt nisi. Integer a consectetur ante. Quisque non iaculis
-                orci. In hac habitasse platea dictumst. Cras aliquet pretium tortor ut sodales. Nullam iaculis non lacus
-                et volutpat. Duis sit amet lacus vel justo tincidunt venenatis. Sed ultricies ante sagittis, mattis ante
-                vitae, lobortis purus. Mauris vehicula, ligula eu cursus ullamcorper, metus metus luctus eros, a commodo
-                dolor sem non diam. Integer porttitor varius sem eget molestie. Fusce vel eleifend neque. Curabitur sit
-                amet rutrum lectus.</h5>
+            <p>Estamos sempre abertos a feedback e novas ideias, pois é com a sua ajuda que podemos continuar evoluindo
+                 e tornando RigRover ainda melhor. Se você é um entusiasta dos jogos, um jogador competitivo ou alguém 
+                 que simplesmente ama a cultura gaming, você encontrará em RigRover um lar.</p>
+
+            <p>Explore, descubra e aprimore sua experiência de jogo com RigRover. Porque, no fim das contas, é tudo sobre
+                 tornar cada sessão de jogo tão gratificante quanto possível. Junte-se a nós nessa aventura e seja parte 
+                 de uma comunidade que está redefinindo o mundo dos games, uma ferramenta de cada vez. Bem-vindo ao futuro 
+                 do gaming. Bem-vindo ao RigRover.</p>
         </div>
 
-        <div class=i2t1>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae nulla enim. Nulla scelerisque arcu
-                sapien. Quisque ac convallis ante. In ac tincidunt nisi. Integer a consectetur ante. Quisque non iaculis
-                orci. In hac habitasse platea dictumst. Cras aliquet pretium tortor ut sodales. Nullam iaculis non lacus
-                et volutpat. Duis sit amet lacus vel justo tincidunt venenatis. Sed ultricies ante sagittis, mattis ante
-                vitae, lobortis purus. Mauris vehicula, ligula eu cursus ullamcorper, metus metus luctus eros, a commodo
-                dolor sem non diam. Integer porttitor varius sem eget molestie. Fusce vel eleifend neque. Curabitur sit
-                amet rutrum lectus.</h5>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae nulla enim. Nulla scelerisque arcu
-                sapien. Quisque ac convallis ante. In ac tincidunt nisi. Integer a consectetur ante. Quisque non iaculis
-                orci. In hac habitasse platea dictumst. Cras aliquet pretium tortor ut sodales. Nullam iaculis non lacus
-                et volutpat. Duis sit amet lacus vel justo tincidunt venenatis. Sed ultricies ante sagittis, mattis ante
-                vitae, lobortis purus. Mauris vehicula, ligula eu cursus ullamcorper, metus metus luctus eros, a commodo
-                dolor sem non diam. Integer porttitor varius sem eget molestie. Fusce vel eleifend neque. Curabitur sit
-                amet rutrum lectus.</h5>
+        <div class="i2t1">
+        <p>Bem-vindo ao RigRover, seu destino final no universo gaming! Nascido da paixão e da inovação, RigRover 
+                é um site revolucionário criado pela empresa de tecnologia de ponta, Infinite Nexus. Lançado em março de
+                 2023, nossa missão é simples, porém ambiciosa: unir diversas ferramentas essenciais para gamers em uma
+                  única plataforma, tornando a experiência de jogar mais acessível, prazerosa e eficiente.</p>
+
+        <p>Entendemos que o mundo dos games é vasto e repleto de desafios, desde encontrar os melhores equipamentos até
+             otimizar configurações para um desempenho perfeito. É por isso que RigRover veio para ser o seu aliado nessa 
+             jornada, oferecendo desde reviews detalhadas de hardwares até guias de otimização de jogos, passando por um 
+             agregador de preços para você encontrar as melhores ofertas.</p>
+
             <img src="img/lagarto.jpg" alt="" width="600px" height="400px">
         </div>
     </div>
 
-    <div id=rigrover-3>
+    <div id="rigrover-3">
         <div class=title-nav>
             <h1>Equipe Desenvolvedora</h1>
             <img src="img/empresa.png" alt="" width="200px" height>
@@ -164,14 +145,46 @@
                     src="https://www.pngmart.com/files/15/Vector-Arrow-Down-PNG-Image.png" alt="" widht="30px"
                     height="30px"></button>
 
-            <input type="text" id="invisible-input" class="invisible-input" />
 
         </div>
 
         <footer>
-            <div class="footer-content">
-                <a href="fale_conosco.php" class="a-ft">Alguma sugestão ou duvida? fale conosco aqui.</a>
+        <div id="tudo-footer">
+            <div class="conteudo-footer">
+            <img src="img\mascoterigrover.png" alt="" class="img-footer">
+            <ul>
+                <li>
+                    <a href="#">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos?</a>
+                </li>
+                <li>
+                    <a href="#">Noticias</a>
+                </li>
+                <li>
+                    <a href="#">Comprar Hardware</a>
+                </li>
+            </ul>
+        </div>
+            <div class="conteudo-footer">
+                <li>
+                     <a href="fale_conosco.php">Fale Conosco</a>
+                </li>
+                <li>
+                    <a href="#">Politicas de Privacidade</a>
+                </li>
+                <li>
+                    <a href="#">duvidas</a>
+                </li>
             </div>
+        </div>
+        
+        
+      
+            <!-- <div class="footer-content">
+                <a href="fale_conosco.php" class="a-ft">Alguma sugestão ou duvida? fale conosco aqui.</a>
+            </div> -->
 
         </footer>
 
