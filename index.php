@@ -79,7 +79,7 @@
     <div id="rigrover-3">
         <div class=title-nav>
             <h1>Equipe Desenvolvedora</h1>
-            <img src="img/empresa.png" alt="" width="200px" height>
+            <img src="img\logoinfinitenexus.png" alt="" width="200px" height>
         </div>
 
         <div class="pictures-container">
@@ -167,16 +167,26 @@
                 </li>
             </ul>
         </div>
-            <div class="conteudo-footer">
-                <li>
-                     <a href="fale_conosco.php">Fale Conosco</a>
-                </li>
-                <li>
-                    <a href="#">Politicas de Privacidade</a>
-                </li>
-                <li>
-                    <a href="#">duvidas</a>
-                </li>
+        <div class="conteudo2-footer">
+        <div>
+            <div class="redes-footer">
+                
+            <a href=""><img src="img\iconinstagram.png" alt="" ></a>
+            <a href=""><img src="img\iconx.png" alt=""></a>
+            <a href=""><img src="img\icongmail.png" alt=""></a>
+            <a href="#"><img src="img\iconyoutube.png" alt=""></a>
+            </div>
+             
+                 <li>
+                      <a href="fale_conosco.php">Fale Conosco</a>
+                    </li>
+                 <li>
+                     <a href="#">Politicas de Privacidade</a>
+                 </li>
+                 <li>
+                     <a href="#">duvidas</a>
+                 </li>
+                 </div>
             </div>
         </div>
         
