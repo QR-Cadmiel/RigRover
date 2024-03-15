@@ -174,7 +174,7 @@
                      <a href="politicas_de_privacidade.html">Politicas de Privacidade</a>
                  </li>
                  <li>
-                     <a href="#">Duvidas</a>
+                     <a href="termo_e_condicoes.html">Termos e Condições</a>
                  </li>
                  </div>
             </div>
