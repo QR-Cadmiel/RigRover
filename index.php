@@ -15,22 +15,15 @@
 <body>
     <div class="rigrover-1">
         <nav class="navbar">
-
-            <div>
-            </div>
-
             <ul>
                 <li>
-                    <a href="#">Página Inicial</a>
+                    <a href="index.php">Página Inicial</a>
                 </li>
                 <li>
                     <a href="#">Quem Somos?</a>
                 </li>
                 <li>
                     <a href="#">Noticias</a>
-                </li>
-                <li>
-                    <a href="#">Comprar Hardware</a>
                 </li>
             </ul>
         </nav>
@@ -162,40 +155,30 @@
                 <li>
                     <a href="#">Noticias</a>
                 </li>
-                <li>
-                    <a href="#">Comprar Hardware</a>
-                </li>
             </ul>
         </div>
         <div class="conteudo2-footer">
         <div>
             <div class="redes-footer">
                 
-            <a href=""><img src="img\iconinstagram.png" alt="" ></a>
-            <a href=""><img src="img\iconx.png" alt=""></a>
-            <a href=""><img src="img\icongmail.png" alt=""></a>
-            <a href="#"><img src="img\iconyoutube.png" alt=""></a>
+            <a href="https://www.instagram.com/rigrovergames/"><img src="img\iconinstagram.png" alt="" ></a>
+            <a href="https://twitter.com/RigRoverGames"><img src="img\iconx.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="img\iconfacebook.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="img\iconyoutube.png" alt=""></a>
             </div>
              
                  <li>
                       <a href="fale_conosco.php">Fale Conosco</a>
                     </li>
                  <li>
-                     <a href="#">Politicas de Privacidade</a>
+                     <a href="politicas_de_privacidade.html">Politicas de Privacidade</a>
                  </li>
                  <li>
-                     <a href="#">duvidas</a>
+                     <a href="#">Duvidas</a>
                  </li>
                  </div>
             </div>
         </div>
-        
-        
-      
-            <!-- <div class="footer-content">
-                <a href="fale_conosco.php" class="a-ft">Alguma sugestão ou duvida? fale conosco aqui.</a>
-            </div> -->
-
         </footer>
 
 </body>

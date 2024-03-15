@@ -1,7 +1,6 @@
 <?php
 
 include 'conexao.php';
-include 'validacao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
@@ -53,26 +52,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <nav class="navbar">
-    
-    <div>
-        <img src="img\Nova_Logo_RigRover.png" alt="" class="logonav">
-    </div>
-
-        <ul>
-            <li>
-                <a href="index.php  ">Página Inicial</a>
-            </li>
-            <li>
-                <a href="#">Quem Somos?</a>
-            </li>
-            <li>
-                <a href="#">Noticias</a>
-            </li>
-            <li>
-                <a href="#">Comprar Hardware</a>
-            </li>
-        </ul>
-    </nav>
+            <ul>
+                <li>
+                    <a href="index.php">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos?</a>
+                </li>
+                <li>
+                    <a href="#">Noticias</a>
+                </li>
+            </ul>
+        </nav>
 
   
 
@@ -89,5 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" value="Enviar" class="btn-primary ">
      </form>
     </div>
+
+    
 </body>
 </html>
