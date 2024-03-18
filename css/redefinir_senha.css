@@ -33,11 +33,12 @@ body {
 .password_esq input[type="email"],
 .password_esq input[type="password"] {
     width: 500px;
+    height: 47px;
     margin: 10px;
-    padding: 10px;
     border: none;
     border-radius: 5px;
     background-color: #117C0F;
+    font-size: 16px;
     color: white;
     box-sizing: border-box;
 }
