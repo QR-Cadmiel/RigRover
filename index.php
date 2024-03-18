@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Página Inicial - RigRover</title>
+
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -43,7 +45,7 @@
 
     <div id="rigrover-2">
         <div class="i1t2">
-            <img src="img/camaleao.jpg" alt="" width="600px">
+            <img src="img/img-index1.jpg" alt="" width="600px">
             <p>Estamos sempre abertos a feedback e novas ideias, pois é com a sua ajuda que podemos continuar evoluindo
                  e tornando RigRover ainda melhor. Se você é um entusiasta dos jogos, um jogador competitivo ou alguém 
                  que simplesmente ama a cultura gaming, você encontrará em RigRover um lar.</p>
@@ -65,7 +67,7 @@
              jornada, oferecendo desde reviews detalhadas de hardwares até guias de otimização de jogos, passando por um 
              agregador de preços para você encontrar as melhores ofertas.</p>
 
-            <img src="img/lagarto.jpg" alt="" width="600px" height="400px">
+            <img src="img/img-index2.jpg" alt="" width="600px" height="400px">
         </div>
     </div>
 
@@ -121,22 +123,38 @@
         </div>
 
         <div id="rigrover-4">
-            <div class=top-pg>
-                <h1>Perguntas frequentes</h1>
-            </div>
+        <div class="faq-container">
+    <h1>Perguntas Frequentes</h1>
+    <div class="faq-item" onclick="toggleFAQ(0)">
+        <div class="faq-question">As notícias são confiaveis? </div>
+        <div class="faq-answer">Sim, nossas notícias são provenientes de fontes 
+            confiáveis e passam por um rigoroso processo de verificação para 
+            garantir a precisão e a confiabilidade das informações que compartilhamos.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFAQ(1)">
+        <div class="faq-question">A ferramenta de anilisar hardware, funciona?</div>
+        <div class="faq-answer">Sim, a nossa ferramenta de análise de hardware
+             funciona eficientemente em diversos sistemas e configurações, 
+             proporcionando diagnósticos precisos sobre o estado do seu hardware.</div>
+    </div>
 
-            <button class="btn-question">As noticias são confiáveis?<img
-                    src="https://www.pngmart.com/files/15/Vector-Arrow-Down-PNG-Image.png" alt="" widht="30px"
-                    height="30px"></button>
-            <button class="btn-question">A ferramenta de analisar hardware, funciona?<img
-                    src="https://www.pngmart.com/files/15/Vector-Arrow-Down-PNG-Image.png" alt="" widht="30px"
-                    height="30px"></button>
-            <button class="btn-question">A ferramenta de analisar hardware, funciona?<img
-                    src="https://www.pngmart.com/files/15/Vector-Arrow-Down-PNG-Image.png" alt="" widht="30px"
-                    height="30px"></button>
-            <button class="btn-question">A ferramenta de analisar hardware, funciona?<img
-                    src="https://www.pngmart.com/files/15/Vector-Arrow-Down-PNG-Image.png" alt="" widht="30px"
-                    height="30px"></button>
+    <div class="faq-item" onclick="toggleFAQ(1)">
+        <div class="faq-question">A criação de uma conta é gratuita?</div>
+        <div class="faq-answer">Sim a criação de uma conta é 100% gratuita, 
+            não será cobrado nada ao criar uma.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFAQ(1)">
+        <div class="faq-question">Como posso entrar em contato com o suporte caso tenha problemas ou dúvidas?</div>
+        <div class="faq-answer">
+            Para solicitar suporte ou tirar dúvidas, desça até o final da página até encontrar 
+            a seção de rodapé. Clique em "Fale Conosco" e preencha o formulário de contato com 
+            os detalhes da sua solicitação. Nossa equipe se esforçará para responder o mais breve 
+            possível.</div>
+    </div>
+
+
+</div>
 
 
         </div>
