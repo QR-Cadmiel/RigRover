@@ -1,6 +1,6 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url('https://cdn.discordapp.com/attachments/1097493454545764472/1213593025142464522/fundosite_1.png?ex=65f60994&is=65e39494&hm=6c2a55edadbd317b3cf389dd7106bc917b575bc50511bab5ba59d909b59e282f');
+    background-image: url('https://cdn.discordapp.com/attachments/1097493454545764472/1219239931101188147/fundosite_1.png?ex=660a94ab&is=65f81fab&hm=7956625120ccaeacec16502b9ad7a3ab570c436556963c58204e70a8e43a7667&');
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0;
@@ -268,5 +268,60 @@ body {
   .redes-footer img {
     width: 4vw;
     padding: 0 10px 0 0;
+  }
+
+  .faq-container h1 {
+    text-align: center;
+    color: white;
+    padding: 0px 0 16px;
 }
 
+.faq-item { 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  color: #ffffff;
+  background-color: #1b1c1e;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+.faq-answer {
+  color: #ffffff;
+  line-height: 1.5;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+.faq-answer.collapsing {
+  transition: height 0.3s ease;
+  height: 0;
+  opacity: 0;
+}
+
+
+.faq-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  padding: 5px;
+  background-color: #2a2d30;
+}
