@@ -2,16 +2,11 @@
 include 'conexao.php';
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
-// Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtém os dados do formulário
     $email = $_POST['email'];
     $novaSenha = $_POST['novaSenha'];
     $confirmaSenha = $_POST['confirmaSenha'];
 
-    // Validações adicionais, se necessário...
-
-    // Verifica se o email existe no banco de dados
     $verificaEmail = "SELECT * FROM clientes WHERE email = '$email'";
     $resultado = $mysqli->query($verificaEmail);
 
@@ -20,18 +15,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    // Verifica se a senha digitada é a mesma da senha confirmada
     if ($novaSenha !== $confirmaSenha) {
         echo "<script>alert('As senhas não coincidem.');window.location.href = 'senha.php';</script>";
         exit();
     }
 
-    // Atualiza a senha no banco de dados
     $novaSenhaHash = password_hash($novaSenha, PASSWORD_DEFAULT);
     $sql = "UPDATE clientes SET password = '$novaSenhaHash' WHERE email = '$email'";
 
     if ($mysqli->query($sql) === TRUE) {
-        // Exibe um aviso
         echo "<script>alert('Senha alterada com Sucesso.'); window.location.href = 'index.php';</script>";
         exit();
     } else {
