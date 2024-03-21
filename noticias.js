@@ -2,7 +2,6 @@ function abrirNoticia(elemento) {
     var titulo = document.querySelector("#noticia-titulo");
     var texto = document.querySelector("#noticia-texto");
     var imagem = document.querySelector("#noticia-imagem");
-
     var h4 = elemento.querySelector("h4");
     var p = elemento.querySelector("p");
     var img = elemento.querySelector("img");
