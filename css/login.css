@@ -6,12 +6,12 @@ body {
 }
 
 .img-lado {
-    float: right; /* Alterado */
+    float: right;
     width: 50%;
     height: 100vh;
     object-fit: cover;
-    border-top-left-radius: 40px; /* Alterado */
-    border-bottom-left-radius: 40px; /* Alterado */
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 
 .login {
@@ -21,7 +21,7 @@ body {
     border-radius: 10px;
     text-align: center;
     position: absolute;
-    left: 0; /* Alterado */
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.4rem;
@@ -94,5 +94,3 @@ body {
     background-position: 10px center;
     padding-left: 40px;
 }
-
-/* .. */

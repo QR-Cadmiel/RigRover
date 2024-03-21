@@ -217,18 +217,11 @@ h5 {
     background-image: url('../img/fundoferramenta.png');
     background-repeat: no-repeat;
     background-size: cover;
-    /* Para cobrir todo o espaço */
     background-position: center;
-    /* Posiciona a imagem no centro */
     padding: 20px;
-    /* Adiciona um espaçamento interno */
     text-align: center;
-    /* Centraliza o texto horizontalmente */
     height: 200px;
     padding-bottom: 20px;
-    /* Adiciona espaçamento na parte inferior */
     padding-top: 20px;
-    /* Adiciona espaçamento na parte superior */
     margin-bottom: 20px;
-    /* Adiciona espaçamento abaixo do ferramenta-info */
 }
