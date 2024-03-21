@@ -67,7 +67,10 @@ include 'validacao.php';
         <img src="img/gameshome.png" alt="Games">
     </div>
 
-    <p>Junte-se a nós no mundo dos games com o Rig Rover. Informação, diversão e a comunidade gamer reunidos em um só lugar.</p>
+    <div class="divrig">
+        <p>Junte-se a nós no mundo dos games com o Rig Rover. Informação, diversão e a comunidade gamer reunidos em um só lugar.</p>
+    </div>
+    
     <footer>
         <div id="tudo-footer">
             <div class="conteudo-footer">
