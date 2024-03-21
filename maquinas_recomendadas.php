@@ -13,6 +13,9 @@
     <nav class="navbar">
         <ul>
             <li>
+                <a href="hardware.php">Hardware - Home</a>
+            </li>
+            <li>
                 <a href="maquinas_recomendadas.php">Máquinas recomendadas</a>
             </li>
             <li>
