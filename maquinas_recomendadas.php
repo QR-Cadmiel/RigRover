@@ -35,7 +35,7 @@
 
     <div class="ferramenta-info">
         <h1>O QUE É ESSA FERRAMENTA?</h1>
-        <h5>Essa máquina é capaz de recomendar um PC para você se baseando no que você precisa.</h5>
+        <h5>Essa ferramenta é capaz de recomendar um PC para você se baseando no que você precisa.</h5>
     </div>
 
     <div class="ferramenta-analise">
