@@ -1,5 +1,6 @@
 <?php
 include 'conexao.php';
+$mysqli = new mysqli($hostname, $username, $password, $database);
 
 // Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -11,8 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validações adicionais, se necessário...
 
     // Verifica se o email existe no banco de dados
-    $verificaEmail = "SELECT * FROM funcionario WHERE email_adm = '$email'";
-    $resultado = $conn->query($verificaEmail);
+    $verificaEmail = "SELECT * FROM clientes WHERE email = '$email'";
+    $resultado = $mysqli->query($verificaEmail);
 
     if ($resultado->num_rows == 0) {
         echo "<script>alert('Email não encontrado.');window.location.href = 'senha.php';</script>";
@@ -27,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Atualiza a senha no banco de dados
     $novaSenhaHash = password_hash($novaSenha, PASSWORD_DEFAULT);
-    $sql = "UPDATE funcionario SET senha_adm = '$novaSenhaHash' WHERE email_adm = '$email'";
+    $sql = "UPDATE clientes SET password = '$novaSenhaHash' WHERE email = '$email'";
 
-    if ($conn->query($sql) === TRUE) {
+    if ($mysqli->query($sql) === TRUE) {
         // Exibe um aviso
         echo "<script>alert('Senha alterada com Sucesso.'); window.location.href = 'index.php';</script>";
         exit();
@@ -37,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erro ao atualizar a senha: " . $mysqli->error;
     }
 
-    $conn->close();
+    $mysqli->close();
 }
 ?>
 
@@ -59,11 +60,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <form action="" method="POST">
             <input type="email" id="email" name="email" placeholder="Insira o seu e-mail" class="email-icon" required>
-            <input type="password" id="novaSenha" name="password" placeholder="Insira a sua nova senha" class="senha-icon" required>
-            <input type="password" id="confirmaSenha" name="password" placeholder="Insira a sua nova senha novamente" class="senha-icon" required>
+            <input type="password" id="novaSenha" name="novaSenha" placeholder="Insira a sua nova senha" class="senha-icon" required>
+            <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Insira a sua nova senha novamente" class="senha-icon" required>
 
             <button type="submit" class="btn-cad">Alterar Senha</button>
         </form>
+
 
         <a href="cadastro.php">Não tem uma conta? Cadastre-se aqui.</a><br>
         <a href="login.php">Já tem uma conta? Logue aqui.</a>

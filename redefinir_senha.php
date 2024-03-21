@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isHTML(true);
         $mail->Subject = 'Redefinir Senha - Chikito Pizzaria';
         $mail->Body = 'Clique no link a seguir para redefinir sua senha: ' .
-            '<a href="http://localhost/Chickito-Pizzaria-Cacapava/Chickito-Pizzaria-Cacapava/senha.php?token=' . $token . '">Redefinir Senha</a>';
+            '<a href="http://localhost//rigrover/RigRover/senha.php?token=' . $token . '">Redefinir Senha</a>';
         $mail->send();
 
         echo "<script>alert('Um email com as instruções para redefinir a senha foi enviado para o seu email.'); window.location.href = 'index.php';</script>";
@@ -59,7 +59,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <form action="redefinir_senha.php" method="POST">
             <input type="email" name="email" placeholder="Insira o seu e-mail" class="email-icon" required>
-            <input type="password" name="password" placeholder="Insira a sua senha" class="senha-icon" required>
 
             <button type="submit" class="btn-cad">Enviar E-mail</button>
         </form>
