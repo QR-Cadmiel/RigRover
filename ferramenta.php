@@ -60,7 +60,7 @@
         <div id="resultado"></div>
 
         <script>
-            document.getElementById("hardwareForm").addEventListener("submit", function (event) {
+            document.getElementById("hardwareForm").addEventListener("submit", function(event) {
                 event.preventDefault();
 
                 var placaMae = document.getElementById("placaMae").value;
@@ -104,10 +104,8 @@
 
                         <a href="https://www.instagram.com/rigrovergames/"><img src="img\iconinstagram.png" alt=""></a>
                         <a href="https://twitter.com/RigRoverGames"><img src="img\iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="img\iconfacebook.png"
-                                alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
-                                src="img\iconyoutube.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="img\iconfacebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="img\iconyoutube.png" alt=""></a>
                     </div>
 
                     <li>

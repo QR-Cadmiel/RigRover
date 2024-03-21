@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var faqItems = document.querySelectorAll('.faq-item');
 
-    faqItems.forEach(function(item, index) {
-        item.addEventListener('click', function() {
+    faqItems.forEach(function (item, index) {
+        item.addEventListener('click', function () {
             var answer = this.querySelector('.faq-answer');
 
             if (answer.classList.contains('collapsing')) return;
@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 answer.style.display = "block";
                 answer.style.height = "0px";
                 answer.classList.add('collapsing');
-                let height = answer.scrollHeight; // height of the content
+                let height = answer.scrollHeight;
                 answer.style.height = height + "px";
                 window.setTimeout(() => {
                     answer.classList.remove('collapsing');
                     answer.style.height = "auto";
                 }, 300);
             } else {
-                answer.style.height = answer.scrollHeight + "px"; // reset to current height before transition
+                answer.style.height = answer.scrollHeight + "px";
                 window.setTimeout(() => {
                     answer.classList.add('collapsing');
                     answer.style.height = "0px";
@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function closeAllAnswers() {
-        faqItems.forEach(function(item) {
+        faqItems.forEach(function (item) {
             var answer = item.querySelector('.faq-answer');
             if (answer.style.display === "block") {
-                answer.style.height = answer.scrollHeight + "px"; // reset to current height before transition
+                answer.style.height = answer.scrollHeight + "px";
                 window.setTimeout(() => {
                     answer.classList.add('collapsing');
                     answer.style.height = "0px";

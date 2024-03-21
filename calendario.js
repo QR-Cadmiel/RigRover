@@ -1,7 +1,7 @@
 import { Calendar } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const calendarEl = document.getElementById('calendar');
     const calendar = new Calendar(calendarEl, {
         plugins: [dayGridPlugin],
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
         },
-        dateClick: function(info) {
+        dateClick: function (info) {
             const date = info.dateStr;
             const descricao = prompt("Digite a descrição do lembrete:");
             if (descricao !== null) {
@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     calendar.render();
 
-    document.getElementById('formLembrete').addEventListener('submit', function(event) {
+    document.getElementById('formLembrete').addEventListener('submit', function (event) {
         event.preventDefault();
-        
+
         const data = document.getElementById('data').value;
         const descricao = document.getElementById('descricao').value;
 
@@ -41,13 +41,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 'descricao': descricao
             })
         })
-        .then(response => response.text())
-        .then(data => {
-            console.log(data);
-            calendar.refetchEvents();
-        })
-        .catch(error => {
-            console.error('Erro ao adicionar lembrete:', error);
-        });
+            .then(response => response.text())
+            .then(data => {
+                console.log(data);
+                calendar.refetchEvents();
+            })
+            .catch(error => {
+                console.error('Erro ao adicionar lembrete:', error);
+            });
     }
 });

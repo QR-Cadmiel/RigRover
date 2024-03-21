@@ -70,9 +70,6 @@ $mysqli->close();
         <a href="cadastro.php">Não tem uma conta? Cadastre-se aqui.</a><br>
         <a href="redefinir_senha.php">Esqueceu a sua senha?</a>
     </div>
-
-<!-- .. -->
-
 </body>
 
 </html>
