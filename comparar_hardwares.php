@@ -64,7 +64,7 @@
     <div id="resultados"></div>
   </main>
 
-  <script src="comparar_hardwares.js"></script>
+  <script src="assents/comparar_hardwares.js"></script>
 </body>
 
 </html>

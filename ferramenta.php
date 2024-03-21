@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Análise de Hardware para Jogos</title>
-    <link rel="stylesheet" href="css/ferramenta.css">
+    <link rel="stylesheet" href="assents/css/ferramenta.css">
 </head>
 
 <body>

@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redefinir Senha - RigRover</title>
-    <link rel="stylesheet" href="css/redefinir_senha.css">
+    <link rel="stylesheet" href="assents/css/redefinir_senha.css">
 </head>
 
 <body>
