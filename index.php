@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assents/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1097493454545764472/1213970848935837796/8B3hC5OThbCdsAAAAASUVORK5CYII.png?ex=65f76974&is=65e4f474&hm=2555e21492b76ac6a813fba8ed26c84c0c3a2ba2cbc8013cc8827f67e2ccb06f&=&format=webp&quality=lossless">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

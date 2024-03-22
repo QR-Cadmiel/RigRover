@@ -62,7 +62,7 @@ echo json_encode($events);
 <html>
 
 <head>
-  <script src="assents/calendario.js"></script>
+  <script src="assets/calendario.js"></script>
   <script type='importmap'>
     {
         "imports": {
