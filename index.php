@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Página Inicial - RigRover</title>
 
-    <script src="main.js"></script>
+    <script src="assets/main.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                     <a href="#quem-somos">Quem Somos?</a>
                 </li>
                 <li>
-                    <a href="#">Noticias</a>
+                    <a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a>
                 </li>
             </ul>
         </nav>
@@ -46,9 +46,9 @@
     <div id="rigrover-2">
         <div class="i1t2"  id="quem-somos">
             <img src="img/img-index1.jpg" alt="" width="600px">
-            <p>Estamos sempre abertos a feedback e novas ideias, pois é com a sua ajuda que podemos continuar evoluindo
-                e tornando RigRover ainda melhor. Se você é um entusiasta dos jogos, um jogador competitivo ou alguém
-                que simplesmente ama a cultura gaming, você encontrará em RigRover um lar.</p>
+                <p>Estamos sempre abertos a feedback e novas ideias, pois é com a sua ajuda que podemos continuar evoluindo
+                    e tornando RigRover ainda melhor. Se você é um entusiasta dos jogos, um jogador competitivo ou alguém
+                    que simplesmente ama a cultura gaming, você encontrará em RigRover um lar.</p>
 
             <p>Explore, descubra e aprimore sua experiência de jogo com RigRover. Porque, no fim das contas, é tudo sobre
                 tornar cada sessão de jogo tão gratificante quanto possível. Junte-se a nós nessa aventura e seja parte
@@ -73,7 +73,7 @@
 
     <div id="rigrover-3">
         <div class=title-nav>
-            <h1>Equipe Desenvolvedora</h1>
+            <h1 id="equipe-desenvolvedora">Equipe Desenvolvedora</h1>
             <img src="img\logoinfinitenexus.png" alt="" width="200px" height>
         </div>
 
@@ -171,7 +171,7 @@
                             <a href="#quem-somos">Quem Somos?</a>
                         </li>
                         <li>
-                            <a href="#">Noticias</a>
+                            <a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a>
                         </li>
                     </ul>
                 </div>

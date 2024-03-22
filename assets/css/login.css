@@ -94,3 +94,16 @@ body {
     background-position: 10px center;
     padding-left: 40px;
 }
+
+.btn-voltar button {
+    background-color: #117C0F;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    height: 3vw;
+    width: 6vw;
+    color: white;
+    text-decoration: none;
+   font-size: 1rem;
+   cursor: pointer;
+}
