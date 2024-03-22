@@ -1,6 +1,6 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url('https://cdn.discordapp.com/attachments/1097493454545764472/1219239931101188147/fundosite_1.png?ex=660a94ab&is=65f81fab&hm=7956625120ccaeacec16502b9ad7a3ab570c436556963c58204e70a8e43a7667&');
+    background-image: url('https://cdn.discordapp.com/attachments/1201580849368416446/1220755514573586482/fundoiniciologado.png?ex=6610182b&is=65fda32b&hm=ce8dfbe9423439f46571e9cf9c721ea937b557defbb5d521fafdabc4067322c4&');
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0;
@@ -13,12 +13,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
-nav a {
+#btn-nav {
     text-decoration: none;
     color: #ffffff;
-    font-size: 28px;
+    font-size: 26px;
     padding: 18px;
 }
 
@@ -26,6 +27,11 @@ nav li:hover {
     background-color: #1D5F15;
     border-radius: 12px;
     height: 100%;
+    transition: .35s;
+}
+
+nav li {
+    transition: .35s;
 }
 
 nav ul {
@@ -34,9 +40,15 @@ nav ul {
     padding: 0;
 }
 
+.img-logout {
+
+    width: 46px;
+}
+
 .logodois {
     width: 40rem;
     margin: 0 66px 0 0;
+    background-color: none;
 }
 
 .centro {
@@ -279,4 +291,75 @@ footer a {
     color: white;
     text-align: center;
     padding: 15px;
+}
+
+#coluna-categoria {
+    display: table-column;
+}
+
+h2 {
+    text-align: center;
+    text-align: justify;
+    margin: 0 0 15px 6vw;
+}
+
+.titulo_categoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria_foto {
+    width: 37vw;
+    margin: 14px;
+    height: 20vw;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria_texto {
+    margin: 0 21vw 0 6vw;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.categoria_div1 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252330;
+    color: white;
+}
+
+.categoria_div2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171521;
+    color: white;
+}
+
+.categoria_div3 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252330;
+    color: white;
+}
+
+#hardware {
+    flex-direction: row-reverse;
+}
+
+#btn-categorias {
+    margin: 6vw;
 }
