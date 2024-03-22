@@ -56,7 +56,7 @@ $mysqli->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assents/css/cadastro.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
     <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1097493454545764472/1207911558559170601/Nova_Logo_RigRover_1.png?ex=65e15e4d&is=65cee94d&hm=1f91b588742806550adf33275c874fa2149d9f66260d040373d4f8d2c32371e8&=&format=webp&quality=lossless&width=450&height=600">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,9 +66,16 @@ $mysqli->close();
 
 <body>
     <img src="img/imglado.png" alt="Imagem Lado" class="img-lado">
-    aas mas
+
+    <div class="btn-voltar">
+    <a href="index.php">
+        <button>
+            Voltar
+        </button></a>
+    </div>
 
     <div class="cadastro">
+
         <div class="titulo">
             <h1>Cadastro de Usuários</h1>
         </div>

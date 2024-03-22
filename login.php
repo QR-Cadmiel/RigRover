@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 $mysqli->close();
-
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,6 +52,14 @@ $mysqli->close();
 
 <body>
     <img src="img/imglado-2.png" alt="Imagem Lado" class="img-lado">
+    
+    <div class="btn-voltar">
+    <a href="index.php">
+        <button>
+            Voltar
+        </button></a>
+    </div>
+
     <div class="login">
         <div class="titulo">
             <h1>Login de Usuários</h1>
