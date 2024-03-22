@@ -1,0 +1,95 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #272727;
+  color: white;
+  margin: 0;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/fundofaleconosco.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 28px;
+  padding: 18px;
+}
+
+nav li:hover {
+  background-color: #1D5F15;
+  border-radius: 12px;
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+
+label {
+  font-size: 1.6vw;
+}
+
+input {
+  width: 21vw;
+  height: 2vw;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+textarea {
+  width: 21vw;
+  height: 10vw;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.tudo {
+  background-size: auto;
+  width: 38vw;
+  margin: 0 auto;
+  display: block;
+  height: 34vw;
+  background-color: rgb(51, 51, 51, 1);
+  border-radius: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-primary {
+  border: solid 1px #1D5F15;
+  border-radius: 11px;
+  color: #ffffff;
+  background-color: #1D5F15;
+  width: 15vw;
+  height: 4vw;
+  font-size: 20px;
+  margin: 19px;
+  cursor: pointer;
+}

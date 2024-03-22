@@ -1,0 +1,120 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.logonav {
+    width: 5vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 28px;
+    padding: 18px;
+}
+
+nav li:hover {
+    background-color: #1D5F15;
+    border-radius: 12px;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 50px;
+    margin: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.a-ft {
+    color: white;
+}
+
+
+.img1,
+.img2 {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img1 img {
+    width: 700px;
+    height: 500px;
+}
+
+.img2 img {
+    width: 700px;
+    height: 500px;
+}
+
+.img1 h1,
+.img2 h1,
+.img1 h5,
+.img2 h5,
+.img1 button,
+.img2 button {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.img1 button,
+.img2 button {
+    cursor: pointer;
+}
+
+.img1 h1,
+.img2 h1 {
+    bottom: 20%;
+    left: 10px;
+}
+
+.img1 h5,
+.img2 h5 {
+    top: 79%;
+    left: 10px;
+    transform: translateY(50%);
+}
+
+.img1 button,
+.img2 button {
+    bottom: 10px;
+    left: 10px;
+}
+
+.images-evt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

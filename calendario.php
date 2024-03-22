@@ -62,75 +62,73 @@ echo json_encode($events);
 <html>
 
 <head>
-    <script src="calendario.js"></script>
-    <script type='importmap'>
-        {
+  <script src="assets/calendario.js"></script>
+  <script type='importmap'>
+    {
         "imports": {
           "@fullcalendar/core": "https://cdn.skypack.dev/@fullcalendar/core@6.1.11",
           "@fullcalendar/daygrid": "https://cdn.skypack.dev/@fullcalendar/daygrid@6.1.11"
         }
       }
     </script>
-    <script type='module'>
-        import {
-            Calendar
-        } from '@fullcalendar/core';
-        import dayGridPlugin from '@fullcalendar/daygrid';
+  <script type='module'>
+    import {
+      Calendar
+    } from '@fullcalendar/core';
+    import dayGridPlugin from '@fullcalendar/daygrid';
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const calendarEl = document.getElementById('calendar');
-            const calendar = new Calendar(calendarEl, {
-                plugins: [dayGridPlugin],
-                headerToolbar: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+    document.addEventListener('DOMContentLoaded', function() {
+      const calendarEl = document.getElementById('calendar');
+      const calendar = new Calendar(calendarEl, {
+        plugins: [dayGridPlugin],
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+        },
+        dateClick: function(info) {
+          const date = info.dateStr;
+          const descricao = prompt("Digite a descrição do lembrete:");
+          if (descricao !== null) {
+            fetch('calendario.php', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                dateClick: function(info) {
-                    const date = info.dateStr;
-                    const descricao = prompt("Digite a descrição do lembrete:");
-                    if (descricao !== null) {
-                        // Envia os dados para o script PHP
-                        fetch('calendario.php', {
-                                method: 'POST',
-                                headers: {
-                                    'Content-Type': 'application/x-www-form-urlencoded',
-                                },
-                                body: new URLSearchParams({
-                                    'data': date,
-                                    'descricao': descricao
-                                })
-                            })
-                            .then(response => response.text())
-                            .then(data => {
-                                console.log(data);
-                                // Atualiza o calendário após adicionar o lembrete
-                                calendar.refetchEvents();
-                            })
-                            .catch(error => {
-                                console.error('Erro ao adicionar lembrete:', error);
-                            });
-                    }
-                },
-                events: 'carregar_lembretes.php' // Script PHP para carregar os lembretes
-            });
-            calendar.render();
-        });
-    </script>
+                body: new URLSearchParams({
+                  'data': date,
+                  'descricao': descricao
+                })
+              })
+              .then(response => response.text())
+              .then(data => {
+                console.log(data);
+                calendar.refetchEvents();
+              })
+              .catch(error => {
+                console.error('Erro ao adicionar lembrete:', error);
+              });
+          }
+        },
+        events: 'carregar_lembretes.php'
+      });
+      calendar.render();
+    });
+  </script>
 </head>
 
 <body>
-    <div id='calendar'></div>
+  <div id='calendar'></div>
 
-    <form id="formLembrete" action="calendario.php" method="post">
-        <label for="data">Data:</label>
-        <input type="date" id="data" name="data">
-        <br>
-        <label for="descricao">Descrição:</label>
-        <textarea id="descricao" name="descricao"></textarea>
-        <br>
-        <button type="submit">Adicionar Lembrete</button>
-    </form>
+  <form id="formLembrete" action="calendario.php" method="post">
+    <label for="data">Data:</label>
+    <input type="date" id="data" name="data">
+    <br>
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" name="descricao"></textarea>
+    <br>
+    <button type="submit">Adicionar Lembrete</button>
+  </form>
 
 
 </body>

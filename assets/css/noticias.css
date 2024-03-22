@@ -1,0 +1,282 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #0C0B0B;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 28px;
+    padding: 18px;
+}
+
+nav li:hover {
+    background-color: #2EB01D;
+    border-radius: 12px;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+footer {
+    background-color: #121212;
+    color: white;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.a-ft {
+    color: white;
+}
+
+.footer-content a {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-footer {
+    width: 15vw;
+    padding: 10px;
+}
+
+.tudo-footer {
+    float: left;
+    width: 80%;
+    margin: 0 10%;
+    padding: 5em 0;
+}
+
+.conteudo-footer {
+    width: 49%;
+    float: left;
+    display: grid;
+    margin: 14px;
+    place-items: center;
+}
+
+.conteudo-footer li {
+    text-align: left;
+}
+
+.conteudo2-footer {
+    width: 49%;
+    float: left;
+    display: grid;
+    place-items: flex-start;
+    margin: 3vw 0 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    padding: 1vw 0 0 2vw;
+    font-size: 1.3em;
+    list-style: none;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes-footer {
+    place-items: center;
+}
+
+.redes-footer img {
+    width: 4vw;
+    padding: 0 10px 0 0;
+}
+
+input[type="text"] {
+    width: 70%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #6DFB5C;
+    border: none;
+    font-size: 16px;
+    display: block;
+}
+
+input[type="text"]::placeholder {
+    color: #888888;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.categories {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.categories button {
+    cursor: pointer;
+}
+
+.categories button {
+    background-color: #CFAAAA;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.noticias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.noticias>div {
+    width: calc(70.33% - 20px);
+    margin: 10px;
+    background-color: #1B1E25;
+    border: 1px solid #8D8D8D;
+    border-radius: 5px;
+    padding: 30px;
+    position: relative;
+}
+
+.noticias img {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.ntc1,
+.ntc2,
+.ntc3,
+.ntc4,
+.ntc5,
+.ntc6,
+.ntc7,
+.ntc8,
+.ntc9 {
+    cursor: pointer;
+
+}
+
+.noticias h4,
+.noticias p {
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+    color: white;
+}
+
+p {
+    width: 600px;
+}
+
+h4 {
+    width: 500px;
+}
+
+.noticia-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.noticia-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    padding: 20px;
+    background-color: #1B1E25;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.noticia-content img {
+    float: left;
+    margin-right: 20px;
+    max-width: 40%;
+    border-radius: 10px;
+    width: 3500px;
+    height: 400px;
+}
+
+.noticia-content h2 {
+    font-size: 24px;
+    margin-top: 0;
+    color: white;
+}
+
+.noticia-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 1000px;
+    color: white;
+}
+
+.noticia-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1D1D1D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}

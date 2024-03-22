@@ -47,7 +47,7 @@ $mysqli->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
 
 <body>
@@ -70,9 +70,6 @@ $mysqli->close();
         <a href="cadastro.php">Não tem uma conta? Cadastre-se aqui.</a><br>
         <a href="redefinir_senha.php">Esqueceu a sua senha?</a>
     </div>
-
-<!-- .. -->
-
 </body>
 
 </html>

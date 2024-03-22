@@ -10,8 +10,6 @@ $mysqli = new mysqli($hostname, $username, $password, $database);
 if ($mysqli->connect_error) {
     die("Erro na conexão: " . $mysqli->connect_error);
 } else {
-
 }
 
 $mysqli->close();
-
