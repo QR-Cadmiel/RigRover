@@ -3,6 +3,8 @@
 include 'conexao.php';
 include 'validacao.php';
 
+$mysqli = new mysqli($hostname, $username, $password, $database);
+
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +21,7 @@ include 'validacao.php';
     <div class="rigrover-1">
         <nav class="navbar">
             <ul>
-            <li>
+                <li>
                     <a href="home.php" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
@@ -29,7 +31,7 @@ include 'validacao.php';
                     <a href="noticias.php" id="btn-nav">Noticias</a>
                 </li>
                 <li>
-                   <a href="eventos.php"id="btn-nav" >Eventos</a>
+                    <a href="eventos.php" id="btn-nav">Eventos</a>
                 </li>
                 <li>
                     <a href="forum.php" id="btn-nav">Fórum</a>
@@ -40,9 +42,9 @@ include 'validacao.php';
                 <li>
                     <a href="#" id="btn-nav">Wiki Jogos</a>
                 </li>
-                 <a href="logout.php">
-                 <img src="img\logout.png" alt="Botão de sair da conta" class="img-logout">
-                 </a>    
+                <a href="logout.php">
+                    <img src="img\logout.png" alt="Botão de sair da conta" class="img-logout">
+                </a>
             </ul>
         </nav>
         <div class="main-content">
@@ -50,7 +52,6 @@ include 'validacao.php';
             <h3>Categorias</h3>
             <div class="noticias">
                 <?php
-                // Define suas perguntas
                 $perguntas = array(
                     array("id" => "pergunta1", "titulo" => "Como que eu troco o processador?", "descricao" => "Gostaria de saber como posso trocar o processador do meu compu..."),
                     array("id" => "pergunta2", "titulo" => "Como que eu compro um produto?", "descricao" => "Estou interessado em comprar um produto específico, mas nã..."),
@@ -58,14 +59,73 @@ include 'validacao.php';
                     array("id" => "pergunta4", "titulo" => "Como posso formar uma parceria?", "descricao" => "Estou interessado em estabelecer uma parceria com a sua empres...")
                 );
 
-                // Itera sobre as perguntas e exibe-as como links
                 foreach ($perguntas as $pergunta) {
-                    echo '<div>';
-                    echo '<h2><a href="pergunta.php?id=' . $pergunta['id'] . '">' . $pergunta['titulo'] . '</a></h2>';
-                    echo '<p>' . $pergunta['descricao'] . '</p>';
-                    echo '</div>';
+                    $sql = "SELECT COUNT(*) AS total FROM conversa WHERE pergunta_id = '" . $pergunta['id'] . "'";
+                    $result = $mysqli->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            $numero_elementos = $row['total'];
+                        }
+                    } else {
+                        $numero_elementos = 0;
+                    }
+
+                    $sqlUltimaMensagem = "SELECT MAX(data_hora) AS ultima_mensagem FROM conversa WHERE pergunta_id = '" . $pergunta['id'] . "'";
+                    $resultUltimaMensagem = $mysqli->query($sqlUltimaMensagem);
+
+                    $dataUltimaMensagem = "";
+
+                    if ($resultUltimaMensagem->num_rows === 1) {
+                        $rowUltimaMensagem = $resultUltimaMensagem->fetch_assoc();
+                        $dataUltimaMensagem = $rowUltimaMensagem['ultima_mensagem'];
+                    }
+
+                    if (!empty($dataUltimaMensagem)) {
+                        $dataAtual = new DateTime();
+                        $dataUltima = new DateTime($dataUltimaMensagem);
+                        $intervalo = $dataAtual->diff($dataUltima);
+
+                        if ($intervalo->y > 0) {
+                            $textoIntervalo = "há " . $intervalo->y . " ano(s)";
+                        } elseif ($intervalo->m > 0) {
+                            $textoIntervalo = "há " . $intervalo->m . " mês(es)";
+                        } elseif ($intervalo->d > 0) {
+                            $textoIntervalo = "há " . $intervalo->d . " dia(s)";
+                        } elseif ($intervalo->h > 0) {
+                            $textoIntervalo = "há " . $intervalo->h . " hora(s) e " . $intervalo->i . " minuto(s)";
+                        } elseif ($intervalo->i > 0) {
+                            $textoIntervalo = "há " . $intervalo->i . " minuto(s) e " . $intervalo->s . " segundo(s)";
+                        } else {
+                            $textoIntervalo = "há " . $intervalo->s . " segundo(s)";
+                        }
+
+                        echo '<div class="pergunta">';
+                        echo '<h2><a href="pergunta.php?id=' . $pergunta['id'] . '" class="titulo-pergunta">' . $pergunta['titulo'] . '</a></h2>';
+                        echo '<p>' . $pergunta['descricao'] . '</p>';
+                        echo '<div class="elements-csv">';
+                        echo '<img src="https://icones.pro/wp-content/uploads/2021/05/message-ballons-symbole-noir.png" alt="Ícone" />';
+                        echo '<p class="numero-elementos">' . $numero_elementos . '</p>';
+                        echo '<p class="ultima-mensagem">' . $textoIntervalo . '</p>';
+                        echo '</div>';
+                        echo '</div>';
+                    } else {
+                        echo '<div class="pergunta">';
+                        echo '<h2><a href="pergunta.php?id=' . $pergunta['id'] . '" class="titulo-pergunta">' . $pergunta['titulo'] . '</a></h2>';
+                        echo '<p>' . $pergunta['descricao'] . '</p>';
+                        echo '<div class="elements-csv">';
+                        echo '<img src="https://icones.pro/wp-content/uploads/2021/05/message-ballons-symbole-noir.png" alt="Ícone" />';
+                        echo '<p class="numero-elementos">' . $numero_elementos . '</p>';
+                        echo '<p class="ultima-mensagem">Nenhuma mensagem encontrada</p>';
+                        echo '</div>';
+                        echo '</div>';
+                    }
                 }
+
+                $mysqli->close();
                 ?>
+
+
 
             </div>
         </div>

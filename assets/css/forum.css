@@ -10,7 +10,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
 
 #btn-nav {
@@ -192,15 +192,6 @@ h3 {
     position: relative;
 }
 
-.noticias img {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-}
-
 .ntc1,
 .ntc2,
 .ntc3,
@@ -222,9 +213,10 @@ h3 {
     color: white;
 }
 
-p {
+.pergunta .descricao p {
     width: 600px;
 }
+
 
 h4 {
     width: 500px;
@@ -253,15 +245,6 @@ h4 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.noticia-content img {
-    float: left;
-    margin-right: 20px;
-    max-width: 40%;
-    border-radius: 10px;
-    width: 3500px;
-    height: 400px;
-}
-
 .noticia-content h2 {
     font-size: 24px;
     margin-top: 0;
@@ -282,7 +265,6 @@ h4 {
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 .fechar {
@@ -294,4 +276,44 @@ h4 {
 
 h6 {
     color: #6f6f6f;
+}
+
+.titulo-pergunta {
+    color: white;
+    font-weight: bold;
+}
+
+.pergunta img {
+    width: 20px;
+    height: auto;
+}
+
+
+.elements-csv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.numero-elementos {
+    color: #8f8f8f !important;
+}
+
+
+.numero-elementos,
+img {
+    vertical-align: middle;
+    width: 30px;
+}
+
+img {
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.ultima-mensagem {
+    color: #8f8f8f !important;
+
 }
