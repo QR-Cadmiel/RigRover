@@ -32,9 +32,6 @@ include 'validacao.php';
                     <a href="home.php" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="#servicos" id="btn-nav">Serviços</a>
-                </li>
-                <li>
                     <a href="noticias.php" id="btn-nav">Noticias</a>
                 </li>
                 <li>
@@ -75,11 +72,44 @@ include 'validacao.php';
     </div>
     </div>
     <footer>
-        <div class="footer-content">
-            <a href="fale_conosco.php" class="a-ft">Alguma sugestão ou duvida? fale conosco aqui.</a>
-        </div>
+            <div id="tudo-footer">
+                <div class="conteudo-footer">
+                    <img src="img\mascoterigrover.png" alt="" class="img-footer">
+                    <ul>
+                        <li>
+                            <a href="#">Página Inicial</a>
+                        </li>
+                        <li>
+                            <a href="#">Quem Somos?</a>
+                        </li>
+                        <li>
+                            <a href="#">Noticias</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="conteudo2-footer">
+                    <div>
+                        <div class="redes-footer">
 
-    </footer>
+                            <a href="https://www.instagram.com/rigrovergames/"><img src="img\iconinstagram.png" alt=""></a>
+                            <a href="https://twitter.com/RigRoverGames"><img src="img\iconx.png" alt=""></a>
+                            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="img\iconfacebook.png" alt=""></a>
+                            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="img\iconyoutube.png" alt=""></a>
+                        </div>
+
+                        <li>
+                            <a href="fale_conosco.php">Fale Conosco</a>
+                        </li>
+                        <li>
+                            <a href="politicas_de_privacidade.html">Politicas de Privacidade</a>
+                        </li>
+                        <li>
+                            <a href="termo_e_condicoes.html">Termos e Condições</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 </body>
 

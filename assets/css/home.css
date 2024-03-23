@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: black;
+    background-color: #121212;
 }
 
 nav {
@@ -91,11 +91,10 @@ footer {
     padding: 10px;
 }
 
-.tudo-footer {
-    float: left;
-    width: 80%;
-    margin: 0 10%;
-    padding: 5em 0;
+#tudo-footer{
+    background-color: #121212;
+    color: white;
+    position: relative;
 }
 
 .conteudo-footer {

@@ -1,12 +1,10 @@
 <?php
-
 include 'conexao.php';
 include 'validacao.php';
-
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -17,15 +15,12 @@ include 'validacao.php';
 </head>
 
 <body>
-
+  <div class="content">
     <div class="rigrover-1">
         <nav class="navbar">
             <ul>
             <li>
                     <a href="home.php" id="btn-nav">Página Inicial</a>
-                </li>
-                <li>
-                    <a href="#servicos" id="btn-nav">Serviços</a>
                 </li>
                 <li>
                     <a href="noticias.php" id="btn-nav">Noticias</a>
@@ -125,7 +120,7 @@ include 'validacao.php';
                 </div>
             </div>
         </div>
-
+    </div>
         <footer>
             <div id="tudo-footer">
                 <div class="conteudo-footer">
@@ -165,7 +160,5 @@ include 'validacao.php';
                 </div>
             </div>
         </footer>
-
-</body>
-
+     </body>
 </html>
