@@ -360,6 +360,12 @@ h2 {
     flex-direction: row-reverse;
 }
 
-#btn-categorias {
-    margin: 6vw;
+#btn-categorias button {
+    margin: 2vw 0 0 6vw;
+    background-color: #1C552F;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 3vw;
+    font-size: 1.3vw;
 }

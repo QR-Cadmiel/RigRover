@@ -66,19 +66,17 @@ $mysqli->close();
 
 <body>
     <img src="img/imglado.png" alt="Imagem Lado" class="img-lado">
-
     <div class="btn-voltar">
-    <a href="index.php">
+    <a href="index.php">    
         <button>
             Voltar
         </button></a>
     </div>
-
     <div class="cadastro">
-
         <div class="titulo">
-            <h1>Cadastro de Usuários</h1>
+            <h2>Cadastro de Usuários</h2>
         </div>
+
         <form action="" method="POST">
             <input type="text" name="name" placeholder="Insira o nome de usuário" class="nome-icon" required>
             <input type="email" name="email" placeholder="Insira o seu e-mail" class="email-icon" required>

@@ -25,6 +25,11 @@ nav li:hover {
   background-color: #1D5F15;
   border-radius: 12px;
   height: 100%;
+  transition: .35s;
+}
+
+nav li {
+  transition: .35s;
 }
 
 nav ul {

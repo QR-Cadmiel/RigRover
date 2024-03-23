@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+.titulo {
+    font-size: 1vw;
+}
+
 .img-lado {
     float: left;
     width: 50%;

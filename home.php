@@ -33,7 +33,7 @@ include 'validacao.php';
                    <a href="eventos.php"id="btn-nav" >Eventos</a>
                 </li>
                 <li>
-                    <a href="#" id="btn-nav">Fórum</a>
+                    <a href="forum.php" id="btn-nav">Fórum</a>
                 </li>
                 <li>
                     <a href="comparar_hardwares.php" id="btn-nav">Hardware</a>
@@ -44,9 +44,6 @@ include 'validacao.php';
                  <a href="logout.php">
                  <img src="img\logout.png" alt="Botão de sair da conta" class="img-logout">
                  </a>         
-                    
-               
-                
             </ul>
         </nav>  
         <div class="centro">

@@ -1,3 +1,10 @@
+<?php
+
+include 'conexao.php';
+include 'validacao.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -21,18 +28,30 @@
             </div>
 
             <ul>
-                <li>
-                    <a href="#">Página Inicial</a>
+            <li>
+                    <a href="home.php" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="#">Quem Somos?</a>
+                    <a href="#servicos" id="btn-nav">Serviços</a>
                 </li>
                 <li>
-                    <a href="#">Noticias</a>
+                    <a href="noticias.php" id="btn-nav">Noticias</a>
                 </li>
                 <li>
-                    <a href="#">Comprar Hardware</a>
+                   <a href="eventos.php"id="btn-nav" >Eventos</a>
                 </li>
+                <li>
+                    <a href="forum.php" id="btn-nav">Fórum</a>
+                </li>
+                <li>
+                    <a href="comparar_hardwares.php" id="btn-nav">Hardware</a>
+                </li>
+                <li>
+                    <a href="#" id="btn-nav">Wiki Jogos</a>
+                </li>
+                 <a href="logout.php">
+                 <img src="img\logout.png" alt="Botão de sair da conta" class="img-logout">
+                 </a>     
             </ul>
         </nav>
     </div>

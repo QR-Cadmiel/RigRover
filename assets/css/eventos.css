@@ -13,13 +13,14 @@ body {
 nav {
     display: flex;
     align-items: center;
-
+    justify-content: center;
+   
 }
 
-nav a {
+#btn-nav {
     text-decoration: none;
     color: #ffffff;
-    font-size: 28px;
+    font-size: 26px;
     padding: 18px;
 }
 
@@ -27,12 +28,22 @@ nav li:hover {
     background-color: #1D5F15;
     border-radius: 12px;
     height: 100%;
+    transition: .35s;
+}
+
+nav li {
+    transition: .35s;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     padding: 0;
+}
+
+.img-logout {
+
+    width: 46px;
 }
 
 footer {
