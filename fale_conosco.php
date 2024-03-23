@@ -61,21 +61,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </ul>
     </nav>
 
+    <div class="container">
+        <div class="text-dicas">
+            <h1>Fale Conosco</h1>
+            <p>Preencha o formulário para esclarecermos dúvidas, receber seu feedback, discutir parcerias ou oferecer suporte técnico. Após enviar o formulário a nossa equipe entrará em contato o mais breve possível</p>
+        </div>
 
-
-    <div class="tudo">
-        <h1>Entre em contato</h1>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
-            <input type="submit" value="Enviar" class="btn-primary ">
-        </form>
+        <div class="tudo">
+            <h1>Entre em contato</h1>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+                <input type="submit" value="Enviar" class="btn-primary ">
+            </form>
+        </div>
     </div>
-
 
 </body>
 
