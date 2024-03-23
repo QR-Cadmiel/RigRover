@@ -24,9 +24,6 @@ include 'validacao.php';
                     <a href="home.php" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="#servicos" id="btn-nav">Serviços</a>
-                </li>
-                <li>
                     <a href="noticias.php" id="btn-nav">Noticias</a>
                 </li>
                 <li>
