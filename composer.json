@@ -1,0 +1,18 @@
+{
+    "name": "pedro/rig-rover",
+    "description": "d",
+    "autoload": {
+        "psr-4": {
+            "Pedro\\RigRover\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "d"
+        }
+    ],
+    "require": {
+        "kreait/firebase-php": "^5.14",
+        "kreait/firebase-bundle": "^3.1"
+    }
+}

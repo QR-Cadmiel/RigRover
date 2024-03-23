@@ -1,149 +1,116 @@
-<!-- pergunta.php -->
 <?php
-// Verificar se o parâmetro id está presente na URL
-if (!isset($_GET['id'])) {
-    // Redirecionar para a página inicial se não houver ID de pergunta
-    header("Location: index.php");
+
+session_start();
+
+// Redirecionar para login se o usuário não estiver autenticado
+if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id']) || !is_numeric($_SESSION['user_id'])) {
+    header('Location: login.php');
     exit();
 }
 
-// ID da pergunta
-$pergunta_id = $_GET['id'];
+include 'conexao.php';
 
-// Aqui você faria a lógica para recuperar o histórico de conversas da pergunta do banco de dados
-// Por enquanto, vamos simular um histórico de conversas
-$historico_conversas = array(
-    array("usuario" => "Usuário 1", "mensagem" => "Primeira mensagem de exemplo."),
-    array("usuario" => "Usuário 2", "mensagem" => "Segunda mensagem de exemplo."),
-    array("usuario" => "Usuário 3", "mensagem" => "Terceira mensagem de exemplo.")
-);
+// Conexão com o banco de dados
+$mysqli = new mysqli($hostname, $username, $password, $database);
+
+// Verificação de conexão
+if ($mysqli->connect_error) {
+    die("Erro de conexão: " . $mysqli->connect_error);
+}
+
+// Função para carregar as mensagens
+function carregarMensagens($conversaId, $mysqli)
+{
+    $sql = "SELECT * FROM conversa WHERE pergunta_id = '$conversaId' ORDER BY data_hora ASC";
+    $result = $mysqli->query($sql);
+    $mensagens = [];
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $mensagens[] = $row;
+        }
+    }
+    return $mensagens;
+}
+
+// Função para enviar mensagem
+function enviarMensagem($conversaId, $texto, $usuario, $mysqli)
+{
+    $data_hora = date('Y-m-d H:i:s');
+    $sql = "INSERT INTO conversa (pergunta_id, mensagem, usuario, data_hora)
+    VALUES ('$conversaId', '$texto', COALESCE('$usuario', 'Usuário Anônimo'), '$data_hora')";
+    if ($mysqli->query($sql) === TRUE) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// ID da conversa
+$conversaId = isset($_GET['id']) ? $_GET['id'] : '';
+
+// Carregar mensagens
+$mensagens = carregarMensagens($conversaId, $mysqli);
+
+// Processar envio de mensagem
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['mensagem'])) {
+    $texto = $_POST['mensagem'];
+    $usuario = $_SESSION['user_nome'] ?? null;
+    enviarMensagem($conversaId, $texto, $usuario, $mysqli);
+
+    // Redirecionar para evitar reenvio do formulário
+    header('Location: pergunta.php?id=' . $conversaId);
+    exit();
+}
+
+$usuario_id = $_SESSION['user_id'];
+
+$sql = "SELECT name FROM clientes WHERE id = '$usuario_id'";
+$result = $mysqli->query($sql);
+
+if ($result->num_rows === 1) {
+  $usuario_nome = $result->fetch_assoc()['name'];
+} else {
+  // Exibir mensagem de erro ou nome padrão
+  $usuario_nome = "Usuário Desconhecido";
+}
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discussão: <?php echo $pergunta_id; ?></title>
-    <link rel="stylesheet" href="assets/css/forum.css">
+    <title>Chat em Tempo Real</title>
 </head>
 
 <body>
+    <h1>Chat em Tempo Real</h1>
 
-    <div class="rigrover-1">
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="index.php">Página Inicial</a>
-                </li>
-                <li>
-                    <a href="#">Quem Somos?</a>
-                </li>
-                <li>
-                    <a href="#">Noticias</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="main-content">
-            <h2><?php echo $pergunta_id; ?></h2>
+    <div id="mensagens">
+        <?php foreach ($mensagens as $mensagem) : ?>
+            <div>
+                <p>
+                    <?php
+                    if (isset($usuario_nome)) {
+                        echo "<strong>$usuario_nome</strong>";
+                    } else {
+                        echo "<strong>Usuário Anônimo</strong>";
+                    }
 
-            <h3>Histórico de Conversas</h3>
-            <div class="historico-conversas" id="historico-conversas">
-                <?php
-                // Exibir o histórico de conversas
-                foreach ($historico_conversas as $conversa) {
-                    echo '<div class="conversa">';
-                    echo '<strong>' . $conversa["usuario"] . ':</strong> ' . $conversa["mensagem"];
-                    echo '</div>';
-                }
-                ?>
+                    echo " - " . $mensagem['data_hora'] . "</p>";
+                    ?>
+                <p><?php echo $mensagem['mensagem']; ?></p>
             </div>
-
-            <!-- Formulário para adicionar uma nova mensagem -->
-            <form id="formulario-mensagem">
-                <label for="mensagem">Sua mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-
-        <footer>
-            <div id="tudo-footer">
-                <!-- Conteúdo do footer -->
-            </div>
-        </footer>
-
+        <?php endforeach; ?>
     </div>
 
-    <!-- Incluir scripts do Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js"></script>
-
-    <script>
-        // Configurações do Firebase
-        var firebaseConfig = {
-            apiKey: "SUA_API_KEY",
-            authDomain: "SEU_DOMÍNIO.firebaseapp.com",
-            databaseURL: "https://SEU_DOMÍNIO.firebaseio.com",
-            projectId: "SEU_PROJECT_ID",
-            storageBucket: "SEU_STORAGE_BUCKET",
-            messagingSenderId: "SEU_MESSAGING_SENDER_ID",
-            appId: "SEU_APP_ID"
-        };
-
-        // Inicializar o Firebase
-        firebase.initializeApp(firebaseConfig);
-
-        var database = firebase.database();
-
-        // Listener para receber novas mensagens
-        database.ref('mensagens/<?php echo $pergunta_id; ?>').on('child_added', function(snapshot) {
-            var mensagem = snapshot.val();
-            var conversaHTML = '<div class="conversa"><strong>' + mensagem.usuario + ':</strong> ' + mensagem.mensagem + '</div>';
-            document.getElementById('historico-conversas').innerHTML += conversaHTML;
-        });
-
-        // Evento de envio do formulário de mensagem
-        document.getElementById('formulario-mensagem').addEventListener('submit', function(e) {
-            e.preventDefault(); // Evitar o comportamento padrão de envio de formulário
-
-            // Obter o valor da mensagem do formulário
-            var mensagem = document.getElementById('mensagem').value;
-
-            // Adicionar a mensagem ao banco de dados
-            database.ref('mensagens/<?php echo $pergunta_id; ?>').push({
-                usuario: 'Nome do Usuário', // Aqui você substituiria pelo nome do usuário atual
-                mensagem: mensagem
-            });
-
-            // Limpar o campo de mensagem após o envio
-            document.getElementById('mensagem').value = '';
-        });
-    </script>
-
+    <form action="pergunta.php?id=<?php echo $conversaId; ?>" method="post">
+        <input type="text" name="mensagem" placeholder="Digite sua mensagem..." required>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 
 </html>
-
-<!-- // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyA3ebEzmIA0ACFkyVmjKpA3JnlsNuR-KiQ",
-  authDomain: "projeto-rig-rover-pesquisa.firebaseapp.com",
-  projectId: "projeto-rig-rover-pesquisa",
-  storageBucket: "projeto-rig-rover-pesquisa.appspot.com",
-  messagingSenderId: "250895028578",
-  appId: "1:250895028578:web:1cd2f0cdcd88905a30dc3b",
-  measurementId: "G-PNS61PFSY6"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app); -->
