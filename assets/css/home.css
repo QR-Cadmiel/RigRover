@@ -358,6 +358,11 @@ h2 {
     flex-direction: row-reverse;
 }
 
+#a-btn-categorias button {
+    cursor: pointer;
+}
+
+
 #btn-categorias button {
     margin: 2vw 0 0 6vw;
     background-color: #1C552F;
@@ -366,4 +371,8 @@ h2 {
     border: none;
     height: 3vw;
     font-size: 1.3vw;
+}
+
+button {
+    cursor: pointer;
 }
