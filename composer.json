@@ -13,6 +13,7 @@
     ],
     "require": {
         "kreait/firebase-php": "^5.14",
-        "kreait/firebase-bundle": "^3.1"
+        "kreait/firebase-bundle": "^3.1",
+        "cboden/ratchet": "^0.4.4"
     }
 }

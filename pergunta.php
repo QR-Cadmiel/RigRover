@@ -69,10 +69,10 @@ $sql = "SELECT name FROM clientes WHERE id = '$usuario_id'";
 $result = $mysqli->query($sql);
 
 if ($result->num_rows === 1) {
-  $usuario_nome = $result->fetch_assoc()['name'];
+    $usuario_nome = $result->fetch_assoc()['name'];
 } else {
-  // Exibir mensagem de erro ou nome padrão
-  $usuario_nome = "Usuário Desconhecido";
+    // Exibir mensagem de erro ou nome padrão
+    $usuario_nome = "Usuário Desconhecido";
 }
 
 ?>
@@ -90,27 +90,52 @@ if ($result->num_rows === 1) {
     <h1>Chat em Tempo Real</h1>
 
     <div id="mensagens">
-        <?php foreach ($mensagens as $mensagem) : ?>
-            <div>
-                <p>
-                    <?php
-                    if (isset($usuario_nome)) {
-                        echo "<strong>$usuario_nome</strong>";
-                    } else {
-                        echo "<strong>Usuário Anônimo</strong>";
-                    }
-
-                    echo " - " . $mensagem['data_hora'] . "</p>";
-                    ?>
-                <p><?php echo $mensagem['mensagem']; ?></p>
-            </div>
-        <?php endforeach; ?>
+        <!-- Mensagens carregadas do banco de dados serão exibidas aqui -->
     </div>
 
-    <form action="pergunta.php?id=<?php echo $conversaId; ?>" method="post">
-        <input type="text" name="mensagem" placeholder="Digite sua mensagem..." required>
+    <form id="form-mensagem">
+        <input type="text" id="mensagem" placeholder="Digite sua mensagem..." required>
         <button type="submit">Enviar</button>
     </form>
-</body>
 
+    <script>
+        // Estabelecer conexão WebSocket
+        const socket = new WebSocket('ws://localhost:8080');
+
+        // Manipulador de evento para quando a conexão WebSocket é aberta
+        socket.addEventListener('open', function(event) {
+            console.log('Conexão WebSocket estabelecida');
+        });
+
+        // Manipulador de evento para quando uma mensagem é recebida do servidor WebSocket
+        socket.addEventListener('message', function(event) {
+            const mensagem = JSON.parse(event.data);
+            exibirMensagem(mensagem);
+        });
+
+        // Manipulador de evento para enviar mensagem quando o formulário é enviado
+        document.getElementById('form-mensagem').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impedir o envio padrão do formulário
+            const texto = document.getElementById('mensagem').value; // Obter o valor do campo de mensagem
+            enviarMensagem(texto); // Enviar mensagem para o servidor
+            document.getElementById('mensagem').value = ''; // Limpar o campo de mensagem
+        });
+
+        // Função para enviar mensagem para o servidor WebSocket
+        function enviarMensagem(texto) {
+            const mensagem = {
+                tipo: 'mensagem',
+                texto: texto
+            };
+            socket.send(JSON.stringify(mensagem));
+        }
+
+        // Função para exibir mensagem na interface do usuário
+        function exibirMensagem(mensagem) {
+            const divMensagem = document.createElement('div');
+            divMensagem.innerHTML = `<p><strong>${mensagem.usuario}</strong> - ${mensagem.data_hora}</p><p>${mensagem.texto}</p>`;
+            document.getElementById('mensagens').appendChild(divMensagem);
+        }
+    </script>
+</body>
 </html>
