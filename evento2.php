@@ -1,25 +1,15 @@
-<?php
-
-include 'conexao.php';
-include 'validacao.php';
-
-?>
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/eventos.css">
-    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1097493454545764472/1207911558559170601/Nova_Logo_RigRover_1.png?ex=65e15e4d&is=65cee94d&hm=1f91b588742806550adf33275c874fa2149d9f66260d040373d4f8d2c32371e8&=&format=webp&quality=lossless&width=450&height=600">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <title>eventos - RigRover</title>
+    <title>Centralizar na Página</title>
+    <link rel="stylesheet" href="assets/css/eventos-info.css">
 </head>
 
 <body>
+
     <div class="rigrover-1">
         <nav class="navbar">
 
@@ -52,23 +42,51 @@ include 'validacao.php';
             </ul>
         </nav>
     </div>
+    <div class="container">
+        <div class="evt-ct">
 
-    <div class="images-evt">
-        <div class="img1">
-            <img src="img/evento1.jpeg" alt="">
-            <h1>Evento BGS</h1>
-            <h5>A Brasil Game Show é uma feira anual de videogames organizada pelo empresário Marcelo Tavares,
-                atualmente realizada em São Paulo, Brasil.</h5>
-            <button><a href="evento1.php" style="border: none; background: none; padding: 0; font: inherit; color: white; text-decoration: none;">Ler mais</a></button>
+            <div class="images-evt">
+                <div class="img1">
+                    <div class="leftevent1">
+                        <img src="https://aumanack.com.br/wp-content/uploads/2022/07/789e28c3-5cd4-421b-b6dc-d8f7c421957e-scaled-e1657552357853.jpg" class="imgevento" alt="">
+                    </div>
+                    <div class="rightevento1">
+                        <h2>Anime Friends</h2>
+                        <h5>O Anime Friends é um evento anual dedicado à cultura pop japonesa, que inclui anime, mangá, cosplay e muito mais. Realizado no Brasil, é uma celebração da paixão compartilhada por fãs de anime e cultura geek.</h5>
+                        <h5>O Anime Friends está de volta! A partir do dia 8 de abril de 2024, São Paulo será palco deste incrível evento de cultura pop japonesa. Prepare-se para mergulhar em um mundo de entretenimento, cosplay, palestras e muito mais. Não perca!</h5>
+                        <h5>Localização: São Paulo, Brasil</h5>
+                        <h5>Data: 4 de abril de 2024</h5>
+                        <h5>Como entrar: Adquira ingressos online ou no local</h5>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="ticket">
+                <h1>Ingresso para entrada no Anime Friends</h1>
+                <div class="venda1">
+                    <div class="leftvenda1">
+                        <img width="400px" src="https://pbs.twimg.com/media/D3GKddhXkAA8nYX.jpg" alt="">
+                    </div>
+
+                    <div class="rightvenda1">
+                        <h2 style="color: red">̶d̶e̶:̶ R̶$̶̶9̶5̶,̶9̶9̶</h2>
+                        <h2 style="color: #24FF00">por: R$40,00</h2>
+                        <h4>Descrição:</h4>
+                        <h5>Sua porta de entrada para a maior festa da cultura pop japonesa está aqui! Com nosso ingresso exclusivo para o Anime Friends, você terá acesso a um mundo de diversão e entretenimento. Explore o universo dos animes e mangás, participe de concursos de cosplay emocionantes e conheça outros fãs apaixonados. Não perca essa oportunidade única de se juntar à comunidade otaku e criar memórias inesquecíveis. Garanta seu ingresso agora e prepare-se para uma experiência que vai mudar sua forma de ver a cultura japonesa!</h5>
+                    </div>
+                </div>
+                <div class="undervenda1">
+                    <button class="btn-ticket">Comprar</button>
+                </div>
+            </div>
         </div>
 
-        <div class="img2">
-            <img src="img/evento2.jpg" alt="">
-            <h1>Anime Friends</h1>
-            <h5>O Anime Friends é um evento anual dedicado à cultura pop japonesa, que inclui anime, mangá, cosplay e muito mais. Realizado no Brasil, é uma celebração da paixão compartilhada por fãs de anime e cultura geek.</h5>
-            <button><a href="evento2.php" style="border: none; background: none; padding: 0; font: inherit; color: white; text-decoration: none;">Ler mais</a></button>
-        </div>
 
+    </div>
+
+    <div class="btn-voltar-mi">
+        <a href="eventos.php"><button class="btn-voltar">Voltar para Eventos</button></a>
     </div>
 
     <footer>
@@ -110,7 +128,6 @@ include 'validacao.php';
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

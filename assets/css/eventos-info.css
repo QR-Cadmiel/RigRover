@@ -39,10 +39,8 @@ nav ul {
 }
 
 .img-logout {
-
     width: 46px;
 }
-
 
 footer {
     background-color: #020202;
@@ -125,72 +123,111 @@ footer a {
     padding: 0 10px 0 0;
 }
 
-
-.img1,
-.img2 {
-    position: relative;
-    display: inline-block;
-    margin-right: 20px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.img1 img {
-    width: 700px;
-    height: 500px;
-}
-
-.img2 img {
-    width: 700px;
-    height: 500px;
-}
-
-.img1 h1,
-.img2 h1,
-.img1 h5,
-.img2 h5,
-.img1 button,
-.img2 button {
-    position: absolute;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px 10px;
-    margin: 0;
-}
-
-.img1 button,
-.img2 button {
-    cursor: pointer;
-}
-
-.img1 h1,
-.img2 h1 {
-    bottom: 20%;
-    left: 10px;
-}
-
-.img1 h5,
-.img2 h5 {
-    top: 79%;
-    left: 10px;
-    transform: translateY(50%);
-}
-
-.img1 button,
-.img2 button {
-    bottom: 10px;
-    left: 10px;
-}
-
-.images-evt {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-.ler-mais {
-    text-decoration: none; /* Remove o sublinhado */
-    color: white; /* Garante que a cor do texto seja herdada */
+.evt-ct {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+}
+
+.ticket {
+    background-color: #141414;
+    padding: 20px;
+}
+
+.btn-ticket {
+    background-color: #6DFB5C;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: auto;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.venda1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightvenda1 {
+    padding-left: 15px;
+}
+
+.undervenda1 {
+    padding-top: 50px;
+}
+
+.leftvenda1 {
+    padding-right: 15px;
+}
+
+.rightvenda1,
+.leftvenda1 {
+    padding-top: 50px;
+}
+
+.rightvenda1 h5,
+h2,
+h4 {
+    width: 400px;
+    text-align: start;
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightevento1 {
+    padding-left: 15px;
+}
+
+.leftevento1 {
+    padding-right: 15px;
+}
+
+.rightevento1 h5,
+h2 {
+    width: 400px;
+    text-align: start;
+}
+
+.imgevento {
+    width: 800px;
+}
+
+.ticket {
+    margin-top: 40px;
+}
+
+.btn-voltar {
+    background-color: #313131;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 45px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 900px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-voltar-mi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
