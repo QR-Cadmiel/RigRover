@@ -13,7 +13,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
 
 #btn-nav {
@@ -91,7 +91,7 @@ footer {
     padding: 10px;
 }
 
-#tudo-footer{
+#tudo-footer {
     background-color: #121212;
     color: white;
     position: relative;
@@ -286,7 +286,8 @@ footer a {
     padding-top: 10px;
 }
 
-.descbr, .divrig {
+.descbr,
+.divrig {
     color: white;
     text-align: center;
     padding: 15px;
@@ -315,7 +316,7 @@ h2 {
     height: 20vw;
 }
 
-.categorias{
+.categorias {
     display: flex;
     flex-direction: column;
     justify-content: center;

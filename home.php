@@ -36,15 +36,15 @@ include 'validacao.php';
                     <a href="comparar_hardwares.php" id="btn-nav">Hardware</a>
                 </li>
                 <li>
-                    <a href="#" id="btn-nav">Wiki Jogos</a>
+                    <a href="games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
                 <a href="logout.php">
-                    <img src="img\logout.png" alt="Botão de sair da conta" class="img-logout">
+                    <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
             </ul>
         </nav>
         <div class="centro">
-            <img src="img\logo2.png" alt="" class="logodois">
+            <img src="assets/img/logo2.png" alt="" class="logodois">
             <p class="slogan">Bem-vindo ao Rig Rover!</p>
             <p class="slogan">Sua jornada no mundo dos games começa aqui.</p>
         </div>
@@ -52,7 +52,7 @@ include 'validacao.php';
     <div class="categoria_div1" id="hardware">
 
         <div class="categorias" id="servicos">
-            <img class="categoria_foto" src="img\eventoshome.png">
+            <img class="categoria_foto" src="assets/img/eventoshome.png">
         </div>
         <div id="coluna-categoria">
             <h2>Eventos</h2>
@@ -71,7 +71,7 @@ include 'validacao.php';
     <div class="categoria_div2">
 
         <div class="categorias">
-            <img class="categoria_foto" src="img\hardwarehome.png">
+            <img class="categoria_foto" src="assets/img/hardwarehome.png">
 
         </div>
         <div id="coluna-categoria">
@@ -92,7 +92,7 @@ include 'validacao.php';
     <div class="categoria_div3" id="hardware">
 
         <div class="categorias">
-            <img class="categoria_foto" src="img\gameshome.png">
+            <img class="categoria_foto" src="assets/img/gameshome.png">
         </div>
         <div id="coluna-categoria">
             <h2>Jogos</h2>
@@ -111,7 +111,7 @@ include 'validacao.php';
     <footer>
         <div id="tudo-footer">
             <div class="conteudo-footer">
-                <img src="img\mascoterigrover.png" alt="" class="img-footer">
+                <img src="assets/img/mascoterigrover.png" alt="" class="img-footer">
                 <ul>
                     <li>
                         <a href="index.php">Página Inicial</a>
@@ -128,20 +128,20 @@ include 'validacao.php';
                 <div>
                     <div class="redes-footer">
 
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="img\iconinstagram.png" alt=""></a>
-                        <a href="https://twitter.com/RigRoverGames"><img src="img\iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="img\iconfacebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="img\iconyoutube.png" alt=""></a>
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
                     </div>
 
                     <li>
                         <a href="fale_conosco.php">Fale Conosco</a>
                     </li>
                     <li>
-                        <a href="politicas_de_privacidade.html">Politicas de Privacidade</a>
+                        <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
                     </li>
                     <li>
-                        <a href="termo_e_condicoes.html">Termos e Condições</a>
+                        <a href="termo_e_condicoes.php">Termos e Condições</a>
                     </li>
                 </div>
             </div>

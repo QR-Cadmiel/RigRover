@@ -6,7 +6,7 @@ body {
     background-color: #121212
 }
 
-.content{
+.content {
     background-color: #0C0B0B;
 }
 
@@ -14,7 +14,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
 
 #btn-nav {
@@ -98,7 +98,7 @@ nav ul {
     margin: 3vw 0 0;
 }
 
-#tudo-footer{
+#tudo-footer {
     background-color: #121212;
     color: white;
     position: relative;

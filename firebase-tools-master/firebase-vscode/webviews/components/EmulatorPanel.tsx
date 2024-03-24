@@ -10,14 +10,14 @@ import React, { useState } from "react";
 import { Spacer } from "./ui/Spacer";
 import { broker } from "../globals/html-broker";
 import { PanelSection } from "./ui/PanelSection";
-import { FirebaseConfig } from "../../../src/firebaseConfig";
+import { FirebaseConfig } from "../firebaseConfig";
 import {
   RunningEmulatorInfo,
   EmulatorUiSelections,
-} from "../../common/messaging/types";
+} from "../messaging/types";
 import { VSCodeDropdown } from "@vscode/webview-ui-toolkit/react";
 import { VSCodeOption } from "@vscode/webview-ui-toolkit/react";
-import { EmulatorInfo } from "../../../src/emulator/types";
+import { EmulatorInfo } from "../emulator/types";
 import { webLogger } from "../globals/web-logger";
 
 const DEFAULT_EMULATOR_UI_SELECTIONS: EmulatorUiSelections = {

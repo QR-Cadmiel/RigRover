@@ -1,5 +1,7 @@
 <?php
+
 include 'conexao.php';
+
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -32,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $mysqli->close();
 }
+
 ?>
 
 <!DOCTYPE html>

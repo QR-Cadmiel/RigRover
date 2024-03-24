@@ -1,7 +1,9 @@
 <?php
+
 session_start();
 
 include 'conexao.php';
+include 'validacao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
 

@@ -1,3 +1,9 @@
+<?php
+
+include 'conexao.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -11,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <title>Página Inicial - RigRover</title>
 
-    <script src="assets/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </head>
 
 <body>
@@ -31,7 +37,7 @@
         </nav>
 
         <div class="centro">
-            <img src="img\logo2.png" alt="" class="logodois">
+            <img src="assets/img/logo2.png" alt="" class="logodois">
             <p class="slogan">Equipando Sua Jornada,</p>
             <p class="slogan">Elevando Seu Jogo.</p>
             <div>
@@ -44,11 +50,11 @@
     </div>
 
     <div id="rigrover-2">
-        <div class="i1t2"  id="quem-somos">
-            <img src="img/img-index1.jpg" alt="" width="600px">
-                <p>Estamos sempre abertos a feedback e novas ideias, pois é com a sua ajuda que podemos continuar evoluindo
-                    e tornando RigRover ainda melhor. Se você é um entusiasta dos jogos, um jogador competitivo ou alguém
-                    que simplesmente ama a cultura gaming, você encontrará em RigRover um lar.</p>
+        <div class="i1t2" id="quem-somos">
+            <img src="assets/img/img-index1.jpg" alt="" width="600px">
+            <p>Estamos sempre abertos a feedback e novas ideias, pois é com a sua ajuda que podemos continuar evoluindo
+                e tornando RigRover ainda melhor. Se você é um entusiasta dos jogos, um jogador competitivo ou alguém
+                que simplesmente ama a cultura gaming, você encontrará em RigRover um lar.</p>
 
             <p>Explore, descubra e aprimore sua experiência de jogo com RigRover. Porque, no fim das contas, é tudo sobre
                 tornar cada sessão de jogo tão gratificante quanto possível. Junte-se a nós nessa aventura e seja parte
@@ -67,21 +73,21 @@
                 jornada, oferecendo desde reviews detalhadas de hardwares até guias de otimização de jogos, passando por um
                 agregador de preços para você encontrar as melhores ofertas.</p>
 
-            <img src="img/img-index2.jpg" alt="" width="600px" height="400px">
+            <img src="assets/img/img-index2.jpg" alt="" width="600px" height="400px">
         </div>
     </div>
 
     <div id="rigrover-3">
         <div class=title-nav>
             <h1 id="equipe-desenvolvedora">Equipe Desenvolvedora</h1>
-            <img src="img\logoinfinitenexus.png" alt="" width="200px" height>
+            <img src="assets/img/logoinfinitenexus.png" alt="" width="200px" height>
         </div>
 
         <div class="pictures-container">
             <div class="pictures-1">
                 <div class="avatar">
                     <div class="cadmiel">
-                        <img src="img/cadmiel.png" alt="" width="200px">
+                        <img src="assets/img/cadmiel.png" alt="" width="200px">
                     </div>
                     <div>
                         <h2>Cadmiel Torres</h2>
@@ -90,7 +96,7 @@
                 </div>
                 <div class="avatar">
                     <div class="pedro">
-                        <img src="img/pedro.png" alt="" width="200px">
+                        <img src="assets/img/pedro.png" alt="" width="200px">
                     </div>
                     <div>
                         <h2>Pedro Gabriel</h2>
@@ -102,7 +108,7 @@
             <div class="pictures-2">
                 <div class="avatar">
                     <div class="joao">
-                        <img src="img/joao.webp" alt="" width="200px">
+                        <img src="assets/img/joao.webp" alt="" width="200px">
                     </div>
 
                     <div>
@@ -112,7 +118,7 @@
                 </div>
                 <div class="avatar">
                     <div class="thiago">
-                        <img src="img/thiago.webp" alt="" width="200px">
+                        <img src="assets/img/thiago.webp" alt="" width="200px">
                     </div>
                     <div>
                         <h2>Thiago Felipe</h2>
@@ -162,7 +168,7 @@
         <footer>
             <div id="tudo-footer">
                 <div class="conteudo-footer">
-                    <img src="img\mascoterigrover.png" alt="" class="img-footer">
+                    <img src="assets/img/mascoterigrover.png" alt="" class="img-footer">
                     <ul>
                         <li>
                             <a href="index.php">Página Inicial</a>
@@ -179,20 +185,20 @@
                     <div>
                         <div class="redes-footer">
 
-                            <a href="https://www.instagram.com/rigrovergames/"><img src="img\iconinstagram.png" alt=""></a>
-                            <a href="https://twitter.com/RigRoverGames"><img src="img\iconx.png" alt=""></a>
-                            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="img\iconfacebook.png" alt=""></a>
-                            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="img\iconyoutube.png" alt=""></a>
+                            <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                            <a href="https://twitter.com/RigRoverGames"><img src="assets/img/conx.png" alt=""></a>
+                            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
+                            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
                         </div>
 
                         <li>
                             <a href="fale_conosco.php">Fale Conosco</a>
                         </li>
                         <li>
-                            <a href="politicas_de_privacidade.html">Politicas de Privacidade</a>
+                            <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
                         </li>
                         <li>
-                            <a href="termo_e_condicoes.html">Termos e Condições</a>
+                            <a href="termo_e_condicoes.php">Termos e Condições</a>
                         </li>
                     </div>
                 </div>

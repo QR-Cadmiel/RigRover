@@ -1,3 +1,10 @@
+<?php
+
+include 'conexao.php';
+include 'validacao.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -157,9 +164,6 @@
                 <a href="comparar_hardwares.php">Comparar Hardwares</a>
             </li>
             <li>
-                <a href="loja_hardwares.php">Loja de Hardware</a>
-            </li>
-            <li>
                 <a href="forum_hardwares.php">Fórum</a>
             </li>
             <li>
@@ -197,7 +201,7 @@
     <footer>
         <div id="tudo-footer">
             <div class="conteudo-footer">
-                <img src="img\mascoterigrover.png" alt="" class="img-footer">
+                <img src="assets/img/mascoterigrover.png" alt="" class="img-footer">
                 <ul>
                     <li>
                         <a href="#">Página Inicial</a>
@@ -215,26 +219,26 @@
                     <div class="redes-footer">
 
                         <a href="https://www.instagram.com/rigrovergames/">
-                            <img src="img\iconinstagram.png" alt="">
+                            <img src="assets/img/iconinstagram.png" alt="">
                         </a>
                         <a href="https://twitter.com/RigRoverGames">
-                            <img src="img\iconx.png" alt="">
+                            <img src="assets/img/iconx.png" alt="">
                         </a>
                         <a href="https://www.facebook.com/profile.php?id=61556959637519">
-                            <img src="img\iconfacebook.png" alt="">
+                            <img src="assets/img/iconfacebook.png" alt="">
                         </a>
                         <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg">
-                            <img src="img\iconyoutube.png" alt="">
+                            <img src="assets/img/iconyoutube.png" alt="">
                         </a>
                     </div>
                     <li>
                         <a href="fale_conosco.php">Fale Conosco</a>
                     </li>
                     <li>
-                        <a href="politicas_de_privacidade.html">Politicas de Privacidade</a>
+                        <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
                     </li>
                     <li>
-                        <a href="termo_e_condicoes.html">Termos e Condições</a>
+                        <a href="termo_e_condicoes.php">Termos e Condições</a>
                     </li>
                 </div>
             </div>

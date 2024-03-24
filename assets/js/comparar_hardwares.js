@@ -10,38 +10,31 @@ const resultados = document.getElementById("resultados");
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    // Obter tipo de peça
     const tipo = tipoPeca.value;
 
-    // Obter modelos das peças
     const modelo1 = peca1.value;
     const modelo2 = peca2.value;
 
-    // Validar modelos
     if (!modelo1 || !modelo2) {
         alert("Preencha os campos com os modelos das peças.");
         return;
     }
 
-    // Buscar informações das peças no Google Custom Search
     const [info1, info2] = await Promise.all([
         buscaGoogle(tipo, modelo1),
         buscaGoogle(tipo, modelo2),
     ]);
 
-    // Se não encontrar informações, mostrar erro
     if (!info1 || !info2) {
         resultados.innerHTML = `Não foi possível encontrar informações sobre todas as peças.`;
         return;
     }
 
-    // Comparar as peças e mostrar resultados
     const comparacao = comparePecas(tipo, info1, info2);
     mostraResultados(comparacao);
 });
 
 function extraiPreco(descricao) {
-    // Verifica se as informações de preço existem antes de processar
     if (!descricao) return "Preço não encontrado";
 
     const regexPrice = /preço\s*:\s*R\$(\d+(\.\d+)?)/i;
@@ -52,7 +45,6 @@ function extraiPreco(descricao) {
 async function buscaGoogle(tipo, modelo) {
     let query = '';
 
-    // Adiciona palavras-chave específicas para cada tipo de peça
     switch (tipo) {
         case 'processador':
             query = `${modelo} CPU`;
@@ -63,7 +55,6 @@ async function buscaGoogle(tipo, modelo) {
         case 'memória RAM':
             query = `${modelo} RAM`;
             break;
-        // Adicione outros tipos de peças aqui, se necessário
         default:
             query = `${modelo} ${tipo}`;
             break;
@@ -75,7 +66,7 @@ async function buscaGoogle(tipo, modelo) {
     const items = data.items || [];
 
     if (items.length === 0) {
-        return null; // Retorna null se nenhum resultado for encontrado
+        return null;
     }
 
     const info = {
@@ -88,16 +79,12 @@ async function buscaGoogle(tipo, modelo) {
     return info;
 }
 
-
-
-
 function comparePecas(tipo, info1, info2) {
     const comparacao = {
         peca1: info1,
         peca2: info2,
     };
 
-    // Extrair dados específicos da peça (substituir por lógica específica)
     switch (tipo) {
         case "processador":
             comparacao.processador1 = extraiDadosProcessador(info1.descricao);
@@ -111,31 +98,26 @@ function comparePecas(tipo, info1, info2) {
             comparacao.memoria1 = extraiDadosRAM(info1.descricao);
             comparacao.memoria2 = extraiDadosRAM(info2.descricao);
             break;
-        // Implementar comparações para outros tipos de peça (placa de vídeo, HD, SSD, etc.)
         default:
             comparacao.mensagem = "Comparação detalhada não implementada para este tipo de peça.";
     }
 
-    // Atribuir funções de comparação específicas (substituir por lógica específica)
-    // ... continuação do código
-
     if (comparacao.processador1 && comparacao.processador2) {
         comparacao.diferencaClock = formataDiferenca(comparacao.processador1.clock, comparacao.processador2.clock, "GHz");
     } else {
-        comparacao.diferencaClock = "N/A"; // Ou outra mensagem indicando que os dados do processador não estão disponíveis
+        comparacao.diferencaClock = "N/A";
     }
     if (comparacao.processador1 && comparacao.processador2) {
         comparacao.diferencaNucleos = formataDiferenca(comparacao.processador1.nucleos, comparacao.processador2.nucleos);
     } else {
-        comparacao.diferencaNucleos = "N/A"; // Ou outra mensagem indicando que os dados do processador não estão disponíveis
+        comparacao.diferencaNucleos = "N/A";
     }
     if (comparacao.processador1 && comparacao.processador2) {
         comparacao.diferencaTDP = formataDiferenca(comparacao.processador1.tdp, comparacao.processador2.tdp, "W");
     } else {
-        comparacao.diferencaTDP = "N/A"; // Ou outra mensagem indicando que os dados do processador não estão disponíveis
+        comparacao.diferencaTDP = "N/A";
     }
 
-    // Função genérica para encontrar o "melhor" valor (maior ou menor)
     function getMelhor(valor1, valor2) {
         if (valor1 > valor2) {
             return comparacao.peca1;
@@ -146,7 +128,6 @@ function comparePecas(tipo, info1, info2) {
         }
     }
 
-    // Lógica específica para cada tipo de peça (exemplos)
     if (tipo === "placa-mãe") {
         comparacao.melhorChipset = getMelhor(comparacao.placaMae1.chipset, comparacao.placaMae2.chipset);
         comparacao.melhorSocket = comparacao.placaMae1.socket === comparacao.placaMae2.socket ? "Compatíveis" : "Diferentes";
@@ -164,13 +145,11 @@ function comparePecas(tipo, info1, info2) {
         comparacao.diferencaFrequencia = formataDiferenca(comparacao.memoria1.frequencia, comparacao.memoria2.frequencia, "MHz");
     }
 
-    // Determinar o vencedor (opcional)
     comparacao.vencedor = determinaVencedor(comparacao);
 
     return comparacao;
 }
 
-// Função para determinar o vencedor (substituir por lógica específica)
 function determinaVencedor(comparacao) {
     if (comparacao.melhorClock && comparacao.melhorClock.titulo === comparacao.peca1.titulo) {
         return `${comparacao.peca1.titulo} (melhor clock)`;
@@ -186,24 +165,18 @@ function determinaVencedor(comparacao) {
         return `${comparacao.peca1.titulo} (maior frequência)`;
     } else if (comparacao.melhorChipset && comparacao.melhorChipset.titulo === comparacao.peca1.titulo) {
         return `${comparacao.peca1.titulo} (melhor chipset)`;
-        // ... continuação do código
-
     } else {
         return `${comparacao.peca2.titulo} (melhor em alguns critérios)`;
     }
 }
 
-// Função para formatar a diferença entre valores
 function formataDiferenca(valor1, valor2, unidade) {
     const diferenca = Math.abs(valor1 - valor2);
     const sinal = (valor1 > valor2) ? "" : "-";
     return `<span class="math-inline">\{sinal\}</span>{diferenca.toFixed(2)}${unidade}`;
 }
 
-// Funções para extrair dados específicos de cada peça (exemplos)
 function extraiDadosProcessador(descricao) {
-    // Implementar lógica para extrair dados do processador a partir da descrição (clock, núcleos, TDP)
-    // Pode usar regex ou bibliotecas de parsing de texto
     const regexClock = /GHz/i;
     const regexNucleos = /núcleos?|core/i;
     const regexTDP = /TDP/i;
@@ -220,8 +193,6 @@ function extraiDadosProcessador(descricao) {
 }
 
 function extraiDadosPlacaMae(descricao) {
-    // Implementar lógica para extrair dados da placa-mãe a partir da descrição (chipset, socket, slots RAM, slots PCIe)
-    // Pode usar regex ou bibliotecas de parsing de texto
     const regexChipset = /chipset/i;
     const regexSocket = /socket/i;
     const regexSlotsRAM = /RAM|dimm/i;
@@ -241,8 +212,6 @@ function extraiDadosPlacaMae(descricao) {
 }
 
 function extraiDadosRAM(descricao) {
-    // Implementar lógica para extrair dados da memória RAM a partir da descrição (capacidade, frequência, tipo)
-    // Pode usar regex ou bibliotecas de parsing de texto
     const regexCapacidade = /GB/i;
     const regexFrequencia = /MHz/i;
     const regexTipo = /DDR[0-9]/i;
@@ -258,10 +227,6 @@ function extraiDadosRAM(descricao) {
     };
 }
 
-
-
-// Função para mostrar os resultados na página (substituir por lógica de exibição)
-// Função para mostrar os resultados na página (substituir por lógica de exibição)
 function mostraResultados(comparacao) {
     let resultadosHTML = "";
 

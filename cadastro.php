@@ -65,12 +65,12 @@ $mysqli->close();
 </head>
 
 <body>
-    <img src="img/imglado.png" alt="Imagem Lado" class="img-lado">
+    <img src="assets/img/imglado.png" alt="Imagem Lado" class="img-lado">
     <div class="btn-voltar">
-    <a href="index.php">    
-        <button>
-            Voltar
-        </button></a>
+        <a href="index.php">
+            <button>
+                Voltar
+            </button></a>
     </div>
     <div class="cadastro">
         <div class="titulo">

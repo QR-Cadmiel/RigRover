@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Spacer } from "./components/ui/Spacer";
 import { broker } from "./globals/html-broker";
-import { User } from "../../src/types/auth";
+import { User } from "./types/auth";
 import { AccountSection } from "./components/AccountSection";
 import { ProjectSection } from "./components/ProjectSection";
-import { FirebaseConfig } from "../../src/firebaseConfig";
-import { ServiceAccountUser } from "../common/types";
+import { FirebaseConfig } from "./firebaseConfig";
+import { ServiceAccountUser } from "./types";
 import { DeployPanel } from "./components/DeployPanel";
 import { HostingInitState, DeployState } from "./webview-types";
 import { ChannelWithId } from "./messaging/types";

@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 include 'conexao.php';
@@ -38,8 +39,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 $mysqli->close();
- 
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,13 +53,13 @@ $mysqli->close();
 </head>
 
 <body>
-    <img src="img/imglado-2.png" alt="Imagem Lado" class="img-lado">
-    
+    <img src="assets/img/imglado-2.png" alt="Imagem Lado" class="img-lado">
+
     <div class="btn-voltar">
-    <a href="index.php">
-        <button>
-            Voltar
-        </button></a>
+        <a href="index.php">
+            <button>
+                Voltar
+            </button></a>
     </div>
 
     <div class="login">

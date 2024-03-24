@@ -10,8 +10,8 @@ import { IconButton } from "./ui/IconButton";
 import { PopupMenu, MenuItem } from "./ui/popup-menu/PopupMenu";
 import { Label } from "./ui/Text";
 import styles from "./AccountSection.scss";
-import { ServiceAccountUser } from "../../common/types";
-import { User } from "../../../src/types/auth";
+import { ServiceAccountUser } from "../types";
+import { User } from "../types/auth";
 import { TEXT } from "../globals/ux-text";
 
 interface UserWithType extends User {

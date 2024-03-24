@@ -2,7 +2,7 @@ import { FirebaseError } from "../error";
 import { hostingApiOrigin } from "../api";
 import { Client } from "../apiv2";
 import * as operationPoller from "../operation-poller";
-import { DEFAULT_DURATION } from "../hosting/expireUtils";
+import { DEFAULT_DURATION } from "./expireUtils";
 import { getAuthDomains, updateAuthDomains } from "../gcp/auth";
 import * as proto from "../gcp/proto";
 import { getHostnameFromUrl } from "../utils";

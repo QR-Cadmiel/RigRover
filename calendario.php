@@ -2,6 +2,7 @@
 session_start();
 
 include 'conexao.php';
+include 'validacao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
@@ -56,13 +57,14 @@ if ($result) {
 $mysqli->close();
 
 echo json_encode($events);
+
 ?>
 
 <!DOCTYPE html>
 <html>
 
 <head>
-  <script src="assets/calendario.js"></script>
+  <script src="assets/js/calendario.js"></script>
   <script type='importmap'>
     {
         "imports": {

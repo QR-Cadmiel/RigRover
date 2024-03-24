@@ -1,5 +1,8 @@
 <?php
+
 include_once("conexao.php");
+include 'validacao.php';
+
 ?>
 
 <div id="map"></div>

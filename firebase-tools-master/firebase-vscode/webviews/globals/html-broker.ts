@@ -1,8 +1,8 @@
-import { Broker, createBroker } from "../../common/messaging/broker";
+import { Broker, createBroker } from "../messaging/broker";
 import {
   ExtensionToWebviewParamsMap,
   WebviewToExtensionParamsMap,
-} from "../../common/messaging/protocol";
+} from "../messaging/protocol";
 
 export class HtmlBroker extends Broker<
   WebviewToExtensionParamsMap, ExtensionToWebviewParamsMap, {}> {

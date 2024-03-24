@@ -2,6 +2,7 @@
 session_start();
 
 include 'conexao.php';
+include 'validacao.php';
 
 $sql = "SELECT id, data, descricao FROM lembretes";
 $result = $mysqli->query($sql);

@@ -1,3 +1,10 @@
+<?php
+
+include 'conexao.php';
+include 'validacao.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +21,7 @@
         <nav class="navbar">
 
             <div>
-                <img src="img\Nova_Logo_RigRover.png" alt="" class="logonav">
+                <img src="assets/img/Nova_Logo_RigRover.png" alt="" class="logonav">
             </div>
 
             <ul>
@@ -37,7 +44,7 @@
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
                 <a href="logout.php">
-                    <img src="img\logout.png" alt="Botão de sair da conta" class="img-logout">
+                    <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
             </ul>
         </nav>
@@ -92,7 +99,7 @@
     <footer>
         <div id="tudo-footer">
             <div class="conteudo-footer">
-                <img src="img\mascoterigrover.png" alt="" class="img-footer">
+                <img src="assets/img/mascoterigrover.png" alt="" class="img-footer">
                 <ul>
                     <li>
                         <a href="#">Página Inicial</a>
@@ -109,10 +116,10 @@
                 <div>
                     <div class="redes-footer">
 
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="img\iconinstagram.png" alt=""></a>
-                        <a href="https://twitter.com/RigRoverGames"><img src="img\iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="img\iconfacebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="img\iconyoutube.png" alt=""></a>
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
                     </div>
 
                     <li>

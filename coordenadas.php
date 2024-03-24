@@ -1,6 +1,7 @@
 <?php
 
-include_once("conexao.php");
+include_once"conexao.php";
+include 'validacao.php';
 mysqli_set_charset($conn, 'utf8');
 header('Content-type: application/json');
 

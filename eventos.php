@@ -24,7 +24,7 @@ include 'validacao.php';
         <nav class="navbar">
 
             <div>
-                <img src="img\Nova_Logo_RigRover.png" alt="" class="logonav">
+                <img src="assets/img/Nova_Logo_RigRover.png" alt="" class="logonav">
             </div>
 
             <ul>
@@ -55,7 +55,7 @@ include 'validacao.php';
 
     <div class="images-evt">
         <div class="img1">
-            <img src="img/evento1.jpeg" alt="">
+            <img src="assets/img/evento1.jpeg" alt="">
             <h1>Evento BGS</h1>
             <h5>A Brasil Game Show é uma feira anual de videogames organizada pelo empresário Marcelo Tavares,
                 atualmente realizada em São Paulo, Brasil.</h5>
@@ -63,7 +63,7 @@ include 'validacao.php';
         </div>
 
         <div class="img2">
-            <img src="img/evento2.jpg" alt="">
+            <img src="assets/img/evento2.jpg" alt="">
             <h1>Anime Friends</h1>
             <h5>O Anime Friends é um evento anual dedicado à cultura pop japonesa, que inclui anime, mangá, cosplay e muito mais. Realizado no Brasil, é uma celebração da paixão compartilhada por fãs de anime e cultura geek.</h5>
             <button><a href="evento2.php" style="border: none; background: none; padding: 0; font: inherit; color: white; text-decoration: none;">Ler mais</a></button>
@@ -74,7 +74,7 @@ include 'validacao.php';
     <footer>
         <div id="tudo-footer">
             <div class="conteudo-footer">
-                <img src="img\mascoterigrover.png" alt="" class="img-footer">
+                <img src="assets/img/mascoterigrover.png" alt="" class="img-footer">
                 <ul>
                     <li>
                         <a href="#">Página Inicial</a>
@@ -91,20 +91,20 @@ include 'validacao.php';
                 <div>
                     <div class="redes-footer">
 
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="img\iconinstagram.png" alt=""></a>
-                        <a href="https://twitter.com/RigRoverGames"><img src="img\iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="img\iconfacebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="img\iconyoutube.png" alt=""></a>
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
                     </div>
 
                     <li>
                         <a href="fale_conosco.php">Fale Conosco</a>
                     </li>
                     <li>
-                        <a href="politicas_de_privacidade.html">Politicas de Privacidade</a>
+                        <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
                     </li>
                     <li>
-                        <a href="termo_e_condicoes.html">Termos e Condições</a>
+                        <a href="termo_e_condicoes.php">Termos e Condições</a>
                     </li>
                 </div>
             </div>

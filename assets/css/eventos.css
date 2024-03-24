@@ -191,6 +191,6 @@ footer a {
 }
 
 .ler-mais {
-    text-decoration: none; /* Remove o sublinhado */
-    color: white; /* Garante que a cor do texto seja herdada */
+    text-decoration: none;
+    color: white;
 }

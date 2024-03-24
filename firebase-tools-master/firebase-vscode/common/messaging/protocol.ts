@@ -3,10 +3,10 @@
  * between two environments (VScode and Webview)
  */
 
-import { FirebaseConfig } from "../../../src/firebaseConfig";
-import { User } from "../../../src/types/auth";
+import { FirebaseConfig } from "../firebaseConfig";
+import { User } from "../types/auth";
 import { ServiceAccountUser } from "../types";
-import { RCData } from "../../../src/rc";
+import { RCData } from "../rc";
 import { EmulatorUiSelections, RunningEmulatorInfo } from "./types";
 
 export interface WebviewToExtensionParamsMap {
