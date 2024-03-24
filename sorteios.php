@@ -1,25 +1,15 @@
-<?php
-
-include 'conexao.php';
-include 'validacao.php';
-
-?>
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/eventos.css">
-    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1097493454545764472/1207911558559170601/Nova_Logo_RigRover_1.png?ex=65e15e4d&is=65cee94d&hm=1f91b588742806550adf33275c874fa2149d9f66260d040373d4f8d2c32371e8&=&format=webp&quality=lossless&width=450&height=600">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <title>Eventos - RigRover</title>
+    <title>Sorteios - Eventos</title>
+    <link rel="stylesheet" href="assets/css/sorteios.css">
 </head>
 
 <body>
+
     <div class="rigrover-1">
         <nav class="navbar">
 
@@ -52,22 +42,31 @@ include 'validacao.php';
             </ul>
         </nav>
     </div>
+    <div class="container">
+        <div class="evt-ct">
 
-    <div class="images-evt">
-        <div class="img1">
-            <img src="img/evento1.jpeg" alt="">
-            <h1>Evento BGS</h1>
-            <h5>A Brasil Game Show é uma feira anual de videogames organizada pelo empresário Marcelo Tavares,
-                atualmente realizada em São Paulo, Brasil.</h5>
-            <button><a href="evento1.php" style="border: none; background: none; padding: 0; font: inherit; color: white; text-decoration: none;">Ler mais</a></button>
+            <div class="ticket">
+                <h1>Sorteio de ingresso da BGS</h1>
+                <div class="venda1">
+                    <div class="leftvenda1">
+                        <img width="600px" src="https://i0.wp.com/mundodrix.com.br/site/wp-content/uploads/2018/09/Aplicativo-Oficial-da-Brasil-Game-Show.png?fit=1090%2C457&ssl=1" alt="">
+                    </div>
+
+                    <div class="rightvenda1">
+                        <h5>É hora de participar do sorteio mais emocionante do momento! Estamos oferecendo a chance única de ganhar um ticket de entrada para a Brasil Game Show, o maior evento de games da América Latina. </h5>
+                        <h5>Para concorrer, siga estas simples etapas:</h5>
+                        <h5>1. Basta clicar em participar no sorteio!</h5>
+                        <h5>O resultado do sorteio será divulgado no e-mail do ganhador e nessa página.</h5>
+                        <h5>Não perca esta oportunidade de viver a emoção da BGS. Boa sorte!</h5>
+                        <h5 style="color: grey">Encerra em: 21/04/2025</h5>
+                    </div>
+                </div>
+                <div class="undervenda1">
+                    <button class="btn-ticket">Participar do sorteio</button>
+                </div>
+            </div>
         </div>
 
-        <div class="img2">
-            <img src="img/evento2.jpg" alt="">
-            <h1>Anime Friends</h1>
-            <h5>O Anime Friends é um evento anual dedicado à cultura pop japonesa, que inclui anime, mangá, cosplay e muito mais. Realizado no Brasil, é uma celebração da paixão compartilhada por fãs de anime e cultura geek.</h5>
-            <button><a href="evento2.php" style="border: none; background: none; padding: 0; font: inherit; color: white; text-decoration: none;">Ler mais</a></button>
-        </div>
 
     </div>
 
@@ -110,7 +109,6 @@ include 'validacao.php';
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
