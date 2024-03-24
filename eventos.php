@@ -44,7 +44,7 @@ include 'validacao.php';
                     <a href="comparar_hardwares.php" id="btn-nav">Hardware</a>
                 </li>
                 <li>
-                    <a href="#" id="btn-nav">Wiki Jogos</a>
+                    <a href="games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
                 <a href="logout.php">
                     <img src="img\logout.png" alt="Botão de sair da conta" class="img-logout">

@@ -1,0 +1,173 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #0C0B0B
+}
+
+.content{
+    background-color: #0C0B0B;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#btn-nav {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 26px;
+    padding: 18px;
+}
+
+nav li:hover {
+    background-color: #1D5F15;
+    border-radius: 12px;
+    height: 100%;
+    transition: .35s;
+}
+
+nav li {
+    transition: .35s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.img-logout {
+
+    width: 46px;
+}
+
+
+
+.footer-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.a-ft {
+    color: white;
+}
+
+.footer-content a {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-footer {
+    width: 15vw;
+    padding: 10px;
+}
+
+.tudo-footer {
+    float: left;
+    width: 80%;
+    margin: 0 10%;
+    padding: 5em 0;
+}
+
+.conteudo-footer {
+    width: 49%;
+    float: left;
+    display: grid;
+    margin: 14px;
+    place-items: center;
+}
+
+.conteudo-footer li {
+    text-align: left;
+}
+
+.conteudo2-footer {
+    width: 49%;
+    float: left;
+    display: grid;
+    place-items: flex-start;
+    margin: 3vw 0 0;
+}
+
+#tudo-footer{
+    background-color: #121212;
+    color: white;
+    position: relative;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    padding: 1vw 0 0 2vw;
+    font-size: 1.3em;
+    list-style: none;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes-footer {
+    place-items: center;
+}
+
+.redes-footer img {
+    width: 4vw;
+    padding: 0 10px 0 0;
+}
+
+.square-gm {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+.square-gm img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hollow-knight .square-gm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.jogos-dstq,
+.jogos-gst {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+h2,
+h5 {
+    color: white;
+}
+
+#content {
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    padding-top: 10px;
+}
