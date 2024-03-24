@@ -9,79 +9,191 @@
 </head>
 
 <body>
+    <script>
+        function mostrarRequisitos() {
+            var jogoSelecionado = document.getElementById("jogo").value;
+            var requisitos = "";
+
+            switch (jogoSelecionado) {
+                case "tetris":
+                    requisitos = "<h2>Tetris</h2>";
+                    requisitos += "<h3>Requisitos Mínimos</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Processador Intel Core i3-2100 or AMD Athlon II X4 640</li>";
+                    requisitos += "<li>2 GB de RAM</li>";
+                    requisitos += "<li>Placa de vídeo integrada Intel HD 3000 or AMD Radeon HD 6310</li>";
+                    requisitos += "<li>500 MB de espaço em disco</li>";
+                    requisitos += "</ul>";
+                    requisitos += "<h3>Requisitos Recomendados</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Processador Intel Core i5-2300 or AMD Phenom II X4 955</li>";
+                    requisitos += "<li>4 GB de RAM</li>";
+                    requisitos += "<li>Placa de vídeo dedicada Nvidia GeForce GTX 460 or AMD Radeon HD 6850</li>";
+                    requisitos += "<li>1 GB de espaço em disco</li>";
+                    requisitos += "</ul>";
+                    break;
+
+                case "supermario64":
+                    requisitos = "<h2>Super Mario 64</h2>";
+                    requisitos += "<h3>Requisitos Mínimos</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Console Nintendo 64</li>";
+                    requisitos += "<li>Controle Nintendo 64</li>";
+                    requisitos += "<li>Cartucho do jogo Super Mario 64</li>";
+                    requisitos += "</ul>";
+                    requisitos += "<h3>Requisitos Recomendados</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Console Nintendo 64 com Expansion Pak</li>";
+                    requisitos += "<li>Controle Nintendo 64 com Rumble Pak</li>";
+                    requisitos += "<li>Cartucho do jogo Super Mario 64 (versão Shindou Edition)</li>";
+                    requisitos += "</ul>";
+                    break;
+
+                case "zeldaocarina":
+                    requisitos = "<h2>The Legend of Zelda: Ocarina of Time</h2>";
+                    requisitos += "<h3>Requisitos Mínimos</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Console Nintendo 64</li>";
+                    requisitos += "<li>Controle Nintendo 64</li>";
+                    requisitos += "<li>Cartucho do jogo The Legend of Zelda: Ocarina of Time</li>";
+                    requisitos += "</ul>";
+                    requisitos += "<h3>Requisitos Recomendados</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Console Nintendo 64 com Expansion Pak</li>";
+                    requisitos += "<li>Controle Nintendo 64 com Rumble Pak</li>";
+                    requisitos += "<li>Cartucho do jogo The Legend of Zelda: Ocarina of Time (versão Master Quest)</li>";
+                    requisitos += "</ul>";
+                    break;
+
+                case "doom":
+                    requisitos = "<h2>Doom</h2>";
+                    requisitos += "<h3>Requisitos Mínimos</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Processador Intel 486SX-25 or AMD 386SX-40</li>";
+                    requisitos += "<li>4 MB de RAM</li>";
+                    requisitos += "<li>Placa de vídeo VGA</li>";
+                    requisitos += "<li>40 MB de espaço em disco</li>";
+                    requisitos += "</ul>";
+                    requisitos += "<h3>Requisitos Recomendados</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Processador Intel Pentium or AMD 486 DX2</li>";
+                    requisitos += "<li>8 MB de RAM</li>";
+                    requisitos += "<li>Placa de vídeo Sound Blaster 16</li>";
+                    requisitos += "<li>Sound Blaster 16 compatible sound card</li>";
+                    requisitos += "</ul>";
+                    break;
+
+                case "minecraft":
+                    requisitos = "<h2>Minecraft</h2>";
+                    requisitos += "<h3>Requisitos Mínimos</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Processador Intel Core i3-3210 3.2 GHz or AMD A8-7600 APU 3.1 GHz</li>";
+                    requisitos += "<li>4 GB de RAM</li>";
+                    requisitos += "<li>Placa de vídeo Intel HD Graphics 4000 (Ivy Bridge) or AMD Radeon R5 series with OpenGL 4.4</li>";
+                    requisitos += "<li>4 GB de espaço em disco</li>";
+                    requisitos += "</ul>";
+                    requisitos += "<h3>Requisitos Recomendados</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Processador Intel Core i5-4590 or AMD FX 8350</li>";
+                    requisitos += "<li>8 GB de RAM</li>";
+                    requisitos += "<li>Placa de vídeo Nvidia GeForce GTX 750 Ti or AMD Radeon R7 260X</li>";
+                    requisitos += "<li>SSD (Solid State Drive)</li>";
+                    requisitos += "</ul>";
+                    break;
+
+                case "hollowknight":
+                    requisitos = "<h2>Hollow Knight</h2>";
+                    requisitos += "<h3>Requisitos Mínimos</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Processador Intel Core 2 Duo E5200</li>";
+                    requisitos += "<li>4 GB de RAM</li>";
+                    requisitos += "<li>Placa de vídeo GeForce 9800GTX+ (1GB)</li>";
+                    requisitos += "<li>DirectX: Versão 10</li>";
+                    requisitos += "<li>9 GB de espaço em disco</li>";
+                    requisitos += "</ul>";
+                    requisitos += "<h3>Requisitos Recomendados</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Processador Intel Core i5</li>";
+                    requisitos += "<li>8 GB de RAM</li>";
+                    requisitos += "<li>Placa de vídeo GeForce GTX 560</li>";
+                    requisitos += "<li>DirectX: Versão 11</li>";
+                    requisitos += "<li>9 GB de espaço em disco</li>";
+                    requisitos += "</ul>";
+                    break;
+
+                case "stardewvalley":
+                    requisitos = "<h2>Stardew Valley</h2>";
+                    requisitos += "<h3>Requisitos Mínimos</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Processador Windows XP SP3 2.8 GHz or OS X 10.7 or higher, 1.2 GHz processor</li>";
+                    requisitos += "<li>256 MB de RAM (512 MB recommended)</li>";
+                    requisitos += "<li>256 MB de espaço em disco</li>";
+                    requisitos += "</ul>";
+                    requisitos += "<h3>Requisitos Recomendados</h3>";
+                    requisitos += "<ul>";
+                    requisitos += "<li>Processador Windows XP SP3 2.8 GHz or OS X 10.7 or higher, 2 GHz processor</li>";
+                    requisitos += "<li>512 MB de RAM</li>";
+                    requisitos += "<li>256 MB de espaço em disco</li>";
+                    requisitos += "<ul>";
+                    break;
+                default:
+                    requisitos = "Selecione um jogo para ver os requisitos.";
+                    break;
+            }
+
+            document.getElementById("resultado").innerHTML = requisitos;
+        }
+    </script>
 
     <nav class="navbar">
         <ul>
             <li>
-                <a href="index.php">Página Inicial</a>
+                <a href="hardware.php">Hardware - Home</a>
             </li>
             <li>
-                <a href="#">Quem Somos?</a>
+                <a href="maquinas_recomendadas.php">Máquinas recomendadas</a>
             </li>
             <li>
-                <a href="#">Noticias</a>
+                <a href="comparar_hardwares.php">Comparar Hardwares</a>
+            </li>
+            <li>
+                <a href="loja_hardwares.php">Loja de Hardware</a>
+            </li>
+            <li>
+                <a href="forum_hardwares.php">Fórum</a>
+            </li>
+            <li>
+                <a href="home.php">Home</a>
             </li>
         </ul>
     </nav>
 
     <div class="ferramenta-info">
-        <h1> O QUE É ESSA FERRAMENTA?</h1>
-        <h5>Essa ferramenta é capaz de analisar e dizer se sua máquina é capaz de rodar o jogo selecionado</h5>
+        <h1>O QUE É ESSA FERRAMENTA?</h1>
+        <h5>Essa ferramenta é capaz de falar os requisitos mínimos e recomendados para jogar um jogo de sua escolha.</h5>
     </div>
 
     <div class="ferramenta-analise">
-        <form id="hardwareForm">
+        <form id="hardwareForm" onsubmit="mostrarRequisitos(); return false;">
             <h1>Ferramenta de análise</h1>
-            <label for="placaMae">Placa Mãe:</label>
-            <input type="text" id="placaMae" name="placaMae" required><br><br>
-
-            <label for="processador">Processador:</label>
-            <input type="text" id="processador" name="processador" required><br><br>
-
-            <label for="placaVideo">Placa de Vídeo:</label>
-            <input type="text" id="placaVideo" name="placaVideo" required><br><br>
-
-            <label for="ram">Memória RAM (GB):</label>
-            <input type="number" id="ram" name="ram" required><br><br>
-
-            <label for="armazenamento">Armazenamento (GB):</label>
-            <input type="number" id="armazenamento" name="armazenamento" required><br><br>
 
             <label for="jogo">Selecione um jogo:</label>
-            <select id="jogo" name="jogo">
-                <option value="cyberpunk2077">Cyberpunk 2077</option>
-                <option value="witcher3">The Witcher 3: Wild Hunt</option>
-                <option value="gta5">Grand Theft Auto V</option>
-            </select><br><br>
+            <div class="custom-select">
+                <select id="jogo" name="jogo">
+                    <option value="tetris">Tetris</option>
+                    <option value="supermario64">Super Mario 64</option>
+                    <option value="zeldaocarina">The Legend of Zelda: Ocarina of Time</option>
+                    <option value="doom">Doom(1993)</option>
+                    <option value="minecraft">Minecraft</option>
+                    <option value="hollowknight">Hollow Knight</option>
+                    <option value="stardewvalley">Stardew Valley</option>
 
+                </select><br><br>
+            </div>
             <button type="submit">Verificar</button>
         </form>
-
         <div id="resultado"></div>
-
-        <script>
-            document.getElementById("hardwareForm").addEventListener("submit", function(event) {
-                event.preventDefault();
-
-                var placaMae = document.getElementById("placaMae").value;
-                var processador = document.getElementById("processador").value;
-                var placaVideo = document.getElementById("placaVideo").value;
-                var ram = parseInt(document.getElementById("ram").value);
-                var armazenamento = parseInt(document.getElementById("armazenamento").value);
-                var jogoSelecionado = document.getElementById("jogo").value;
-
-                var pcBomParaJogar = true;
-
-                var resultadoDiv = document.getElementById("resultado");
-                if (pcBomParaJogar) {
-                    resultadoDiv.innerHTML = "<p>Seu PC é bom para jogar " + jogoSelecionado + "!</p>";
-                } else {
-                    resultadoDiv.innerHTML = "<p>Seu PC pode ter dificuldades para rodar " + jogoSelecionado + ".</p>";
-                }
-            });
-        </script>
     </div>
-
     <footer>
         <div id="tudo-footer">
             <div class="conteudo-footer">
@@ -102,12 +214,19 @@
                 <div>
                     <div class="redes-footer">
 
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="img\iconinstagram.png" alt=""></a>
-                        <a href="https://twitter.com/RigRoverGames"><img src="img\iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="img\iconfacebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="img\iconyoutube.png" alt=""></a>
+                        <a href="https://www.instagram.com/rigrovergames/">
+                            <img src="img\iconinstagram.png" alt="">
+                        </a>
+                        <a href="https://twitter.com/RigRoverGames">
+                            <img src="img\iconx.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519">
+                            <img src="img\iconfacebook.png" alt="">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg">
+                            <img src="img\iconyoutube.png" alt="">
+                        </a>
                     </div>
-
                     <li>
                         <a href="fale_conosco.php">Fale Conosco</a>
                     </li>
@@ -120,6 +239,7 @@
                 </div>
             </div>
         </div>
+
     </footer>
 
 
