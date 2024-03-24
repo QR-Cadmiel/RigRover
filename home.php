@@ -60,7 +60,7 @@ include 'validacao.php';
                 participação. Desde conferências de desenvolvedores até competições de eSports, temos tudo para
                 você.</p>
 
-            <a href="#" id="btn-categorias">
+            <a href="games.php" id="btn-categorias">
                 <button type="submit">
                     Explore os jogos
                 </button>
@@ -82,7 +82,7 @@ include 'validacao.php';
             <p class="categoria_texto">Encontre as melhores opções de hardware para aprimorar sua experiência de jogo.
                 Desde placas de vídeo poderosas até periféricos de última geração, nós temos as recomendações certas
                 para você.</p>
-            <a href="#" id="btn-categorias">
+            <a href="hardware.php" id="btn-categorias">
                 <button type="submit">
                     Explore o Hardware
                 </button>

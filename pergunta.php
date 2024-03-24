@@ -1,14 +1,8 @@
 <?php
 
-session_start();
-
 include 'conexao.php';
 include 'validacao.php';
 
-if (!isset($_SESSION['user_id']) || empty($_SESSION['user_id']) || !is_numeric($_SESSION['user_id'])) {
-    header('Location: login.php');
-    exit();
-}
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
