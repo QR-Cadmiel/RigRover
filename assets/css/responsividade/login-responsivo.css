@@ -1,0 +1,210 @@
+@media only screen and (max-width: 320px) {
+    .btn-voltar button {
+        background-color: #117C0F;
+        border: none;
+        border-radius: 5px;
+        margin: 20px;
+        height: 9vw;
+        width: 20vw;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .img-lado {
+        display: none;
+    }
+
+    .login {
+        width: 92%;
+        margin: 0 auto;
+        padding: 7px;
+        border-radius: 10px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.4rem;
+    }
+
+    .login input[type="email"], .login input[type="password"] {
+        width: 89vw;
+        height: 45px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #117C0F;
+        font-size: 16px;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .btn-cad {
+        width: 91vw;
+        margin: 6px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #035C1C;
+        color: white;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .login a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 319px) {
+    .btn-voltar button {
+        background-color: #117C0F;
+        border: none;
+        border-radius: 5px;
+        margin: 20px;
+        height: 8vw;
+        width: 16vw;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .img-lado {
+        display: none;
+    }
+
+    .titulo {
+        font-size: 7vw;
+    }
+
+    .login {
+        width: 100%;
+        padding: 0px;
+        font-size: 1.4rem;
+    }
+
+    .login input[type="email"], .login input[type="password"] {
+        width: 82vw;
+        height: 47px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #117C0F;
+        font-size: 16px;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .btn-cad {
+        width: 82vw;
+        margin: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #035C1C;
+        color: white;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 718px) {
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 719px) {
+    .btn-voltar button {
+        height: 4vw;
+        width: 8vw;
+    }
+    .img-lado {
+        width: 37%;
+    }
+    .login input[type="email"], .login input[type="password"] {
+        width: 44vw;
+    }
+    .btn-cad {
+        width: 44vw;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 767px) {
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 901px) {
+    .img-lado {
+        width: 46%;
+    }
+
+    .titulo {
+        font-size: 3vw;
+    }
+
+    .login input[type="email"], .login input[type="password"] {
+        width: 42vw;
+    }
+    .btn-cad {
+        width: 42vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1023px) {
+
+}
+
+@media only screen and (min-width: 1024px)  {
+    .btn-voltar button {
+        margin: 20px;
+        height: 3vw;
+        width: 6vw;
+        font-size: 1rem;
+    }
+
+    .img-lado {
+        width: 47%;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .login input[type="email"], .login input[type="password"] {
+        width: 37vw;
+        height: 53px;
+        font-size: 16px;
+    }
+
+    .email-icon {
+        background-size: 30px;
+        background-position: 14px center;
+        padding-left: 60px;
+    }
+
+    .senha-icon {
+        background-size: 30px;
+        background-position: 14px center;
+        padding-left: 60px;
+    }
+
+    .btn-cad {
+        width: 35vw;
+        height: 47px;
+        font-size: 16px;
+    }
+
+    .login a {
+        margin-top: 14px;
+        font-size: 1.1rem;
+    }
+}

@@ -50,10 +50,11 @@ $mysqli->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets\css\responsividade\login-responsivo.css">
 </head>
 
 <body>
-    <img src="assets/img/imglado-2.png" alt="Imagem Lado" class="img-lado">
+    <img src="assets\img\imglado-2.jpg" alt="Imagem Lado" class="img-lado">
 
     <div class="btn-voltar">
         <a href="index.php">
@@ -64,7 +65,7 @@ $mysqli->close();
 
     <div class="login">
         <div class="titulo">
-            <h1>Login de Usuários</h1>
+            <p>Login de Usuários</p>
         </div>
         <?php if (isset($error_message)) : ?>
             <p style="color: red;"><?php echo $error_message; ?></p>

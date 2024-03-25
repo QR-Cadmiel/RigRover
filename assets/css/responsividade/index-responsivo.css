@@ -1,0 +1,65 @@
+@media only screen and (max-width: 320px) {
+    nav a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    body {
+        background-size: 294%;
+        margin: 0px;
+    }
+    .centro {
+        margin: 1em;
+        text-align: center;
+    }
+
+    .logodois {
+        width: 17rem;
+        margin: 0 66px 0 0;
+    }
+
+    .slogan {
+        color: white;
+        font-size: 1.2em;
+        margin: 8px;
+    }
+
+    .botoes {
+        border: solid 1px #1D5F15;
+        border-radius: 20px;
+        color: #ffffff;
+        background-color: #1D5F15;
+        transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s;
+        width: 45vw;
+        height: 13vw;
+        font-size: 15px;
+        margin: 10px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 319px) {
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 718px) {
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 719px) {
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 767px) {
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 901px) {
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1023px) {
+
+}

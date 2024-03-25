@@ -6,7 +6,7 @@ body {
 }
 
 .titulo {
-    font-size: 1vw;
+    font-size: 3vw;
 }
 
 .img-lado {
@@ -22,7 +22,6 @@ body {
 .cadastro {
     width: 50%;
     margin: 0 auto;
-    padding: 20px;
     border-radius: 10px;
     text-align: center;
     position: absolute;
