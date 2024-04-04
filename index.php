@@ -52,7 +52,7 @@ include 'conexao.php';
 
     <div id="rigrover-2">
         <div class="i1t2" id="quem-somos">
-            <img src="assets/img/img-index1.jpg" alt="" width="600px">
+            <img src="assets/img/img-index1.jpg" alt="" class="img-index1">
             <p>Estamos sempre abertos a feedback e novas ideias, pois é com a sua ajuda que podemos continuar evoluindo
                 e tornando RigRover ainda melhor. Se você é um entusiasta dos jogos, um jogador competitivo ou alguém
                 que simplesmente ama a cultura gaming, você encontrará em RigRover um lar.</p>
@@ -74,7 +74,7 @@ include 'conexao.php';
                 jornada, oferecendo desde reviews detalhadas de hardwares até guias de otimização de jogos, passando por um
                 agregador de preços para você encontrar as melhores ofertas.</p>
 
-            <img src="assets/img/img-index2.jpg" alt="" width="600px" height="400px">
+            <img src="assets/img/img-index2.jpg" alt=""class="img-index2">
         </div>
     </div>
 
@@ -165,33 +165,25 @@ include 'conexao.php';
 
 
         </div>
-
+ <div id="rigrover-5">
         <footer>
-            <div id="tudo-footer">
-                <div class="conteudo-footer">
-                    <img src="assets/img/mascoterigrover.png" alt="" class="img-footer">
-                    <ul>
-                        <li>
-                            <a href="index.php">Página Inicial</a>
-                        </li>
-                        <li>
-                            <a href="#quem-somos">Quem Somos?</a>
-                        </li>
-                        <li>
-                            <a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a>
-                        </li>
-                    </ul>
+           <div class="cont-1">
+           <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
+           <ul>
+            <li><a href="index.php">Página Inicial</a></li>
+            <li><a href="#quem-somos">Quem Somos?</a></li>
+            <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
+           </ul>
+           </div>
+           <div class="cont-2">
+           <div>
+                <div class="redes-footer">
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
+                         <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
                 </div>
-                <div class="conteudo2-footer">
-                    <div>
-                        <div class="redes-footer">
-
-                            <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
-                            <a href="https://twitter.com/RigRoverGames"><img src="assets/img/conx.png" alt=""></a>
-                            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
-                        </div>
-
+                <ul>
                         <li>
                             <a href="fale_conosco.php">Fale Conosco</a>
                         </li>
@@ -201,11 +193,11 @@ include 'conexao.php';
                         <li>
                             <a href="termo_e_condicoes.php">Termos e Condições</a>
                         </li>
+                </ul>
                     </div>
                 </div>
-            </div>
-        </footer>
-
+           </div>
+           </div>
+        </footer>   
 </body>
-
 </html>

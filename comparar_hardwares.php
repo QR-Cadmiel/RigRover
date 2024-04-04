@@ -77,44 +77,37 @@ include 'validacao.php';
   </main>
 
   <footer>
-    <div id="tudo-footer">
-      <div class="conteudo-footer">
-        <img src="assets/img/mascoterigrover.png" alt="" class="img-footer">
-        <ul>
-          <li>
-            <a href="#">Página Inicial</a>
-          </li>
-          <li>
-            <a href="#">Quem Somos?</a>
-          </li>
-          <li>
-            <a href="#">Noticias</a>
-          </li>
-        </ul>
-      </div>
-      <div class="conteudo2-footer">
-        <div>
-          <div class="redes-footer">
-
-            <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
-            <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
-          </div>
-
-          <li>
-            <a href="fale_conosco.php">Fale Conosco</a>
-          </li>
-          <li>
-            <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
-          </li>
-          <li>
-            <a href="termo_e_condicoes.php">Termos e Condições</a>
-          </li>
-        </div>
-      </div>
-    </div>
-  </footer>
+           <div class="cont-1">
+           <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
+           <ul>
+            <li><a href="index.php">Página Inicial</a></li>
+            <li><a href="#quem-somos">Quem Somos?</a></li>
+            <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
+           </ul>
+           </div>
+           <div class="cont-2">
+           <div>
+                <div class="redes-footer">
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
+                         <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                </div>
+                <ul>
+                        <li>
+                            <a href="fale_conosco.php">Fale Conosco</a>
+                        </li>
+                        <li>
+                            <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
+                        </li>
+                        <li>
+                            <a href="termo_e_condicoes.php">Termos e Condições</a>
+                        </li>
+                </ul>
+                    </div>
+                </div>
+           </div>
+        </footer>   
 
   <script src="assets/js/comparar_hardwares.js"></script>
 

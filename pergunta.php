@@ -66,6 +66,40 @@ $conversaId = isset($_GET['id']) ? $_GET['id'] : '';
             </form>
         </div>
 
+
+        <script>
+            const socket = new WebSocket('ws://localhost:8080');
+
+            socket.addEventListener('open', function(event) {
+                console.log('Conexão WebSocket estabelecida');
+            });
+
+            socket.addEventListener('message', function(event) {
+                const mensagem = JSON.parse(event.data);
+                exibirMensagem(mensagem);
+            });
+
+            document.getElementById('form-mensagem').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const texto = document.getElementById('mensagem').value;
+                enviarMensagem(texto);
+                document.getElementById('mensagem').value = '';
+            });
+
+            function enviarMensagem(texto) {
+                const mensagem = {
+                    tipo: 'mensagem',
+                    texto: texto
+                };
+                socket.send(JSON.stringify(mensagem));
+            }
+
+            function exibirMensagem(mensagem) {
+                const divMensagem = document.createElement('div');
+                divMensagem.innerHTML = `<p><strong>${mensagem.usuario}</strong> - ${mensagem.data_hora}</p><p>${mensagem.texto}</p>`;
+                document.getElementById('mensagens').appendChild(divMensagem);
+            }
+        </script>
         <footer>
             <div id="tudo-footer">
                 <div class="conteudo-footer">
@@ -101,56 +135,11 @@ $conversaId = isset($_GET['id']) ? $_GET['id'] : '';
                         <li>
                             <a href="termo_e_condicoes.php">Termos e Condições</a>
                         </li>
+                </ul>
                     </div>
                 </div>
             </div>
         </footer>
-
-        <script>
-            var conn = new WebSocket('ws://localhost:8080'); // Supondo que o servidor WebSocket esteja na porta 8080
-            var historicoMensagens = [];
-
-            conn.onopen = function(e) {
-                console.log("Conexão estabelecida!");
-            };
-
-            conn.onmessage = function(e) {
-                var mensagem = e.data;
-                historicoMensagens.push(mensagem); // Adiciona a mensagem ao histórico
-                exibirMensagem(mensagem);
-            };
-
-            function exibirMensagem(mensagem) {
-                var divMensagens = document.getElementById('mensagens');
-                var novaMensagem = document.createElement('div');
-                novaMensagem.textContent = mensagem;
-                novaMensagem.classList.add('mensagem'); // Adiciona classe CSS à mensagem
-                divMensagens.appendChild(novaMensagem);
-            }
-
-            function enviarMensagem(event) {
-                event.preventDefault();
-                var mensagemInput = document.getElementById('mensagem');
-                var mensagem = mensagemInput.value;
-                historicoMensagens.push(mensagem); // Adiciona a mensagem ao histórico
-                conn.send(JSON.stringify(mensagem)); // Enviar a mensagem como string JSON
-                mensagemInput.value = '';
-                exibirMensagem(mensagem); // Exibe a mensagem na tela
-            }
-
-            // Carrega o histórico de mensagens ao carregar a página
-            window.onload = function() {
-                historicoMensagens.forEach(function(mensagem) {
-                    exibirMensagem(mensagem);
-                });
-            }
-
-            document.getElementById('mensagem').addEventListener('keypress', function(event) {
-                if (event.key === 'Enter') {
-                    enviarMensagem(event);
-                }
-            });
-        </script>
 
 </body>
 
