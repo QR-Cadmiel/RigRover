@@ -34,14 +34,6 @@ form.addEventListener("submit", async (event) => {
     mostraResultados(comparacao);
 });
 
-function extraiPreco(descricao) {
-    if (!descricao) return "Preço não encontrado";
-
-    const regexPrice = /preço\s*:\s*R\$(\d+(\.\d+)?)/i;
-    const match = descricao.match(regexPrice);
-    return match ? `R$${match[1]}` : "Preço não encontrado";
-}
-
 async function buscaGoogle(tipo, modelo) {
     let query = '';
 
@@ -49,10 +41,25 @@ async function buscaGoogle(tipo, modelo) {
         case 'processador':
             query = `${modelo} CPU`;
             break;
-        case 'placa-mãe':
+        case 'placa-mae':
             query = `${modelo} motherboard`;
             break;
-        case 'memória RAM':
+        case 'memoria-ram':
+            query = `${modelo} RAM`;
+            break;
+        case 'placa-de-video':
+            query = `${modelo} RAM`;
+            break;
+        case 'disco-rigido':
+            query = `${modelo} RAM`;
+            break;
+        case 'ssd':
+            query = `${modelo} RAM`;
+            break;
+        case 'fonte-de-alimentacao':
+            query = `${modelo} RAM`;
+            break;
+        case 'cooler-cpu':
             query = `${modelo} RAM`;
             break;
         default:
@@ -61,287 +68,276 @@ async function buscaGoogle(tipo, modelo) {
     }
 
     const url = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CUSTOM_SEARCH_ID}&q=${query}`;
-    const response = await fetch(url);
-    const data = await response.json();
-    const items = data.items || [];
 
-    if (items.length === 0) {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (data.items && data.items.length > 0) {
+            const descricao = data.items[0].snippet;
+            const link = data.items[0].link;
+
+            return { descricao, link };
+        } else {
+            return null;
+        }
+    } catch (error) {
+        console.error("Erro ao buscar informações:", error);
         return null;
     }
-
-    const info = {
-        titulo: items[0]?.title || "Não encontrado",
-        descricao: items[0]?.snippet || "",
-        imagem: items[0]?.pagemap?.cse_image?.[0]?.src || "",
-        preco: extraiPreco(items[0]?.snippet) || "Não encontrado",
-    };
-
-    return info;
 }
 
 function comparePecas(tipo, info1, info2) {
-    const comparacao = {
-        peca1: info1,
-        peca2: info2,
-    };
+    let comparacao = "";
 
-    switch (tipo) {
-        case "processador":
-            comparacao.processador1 = extraiDadosProcessador(info1.descricao);
-            comparacao.processador2 = extraiDadosProcessador(info2.descricao);
-            break;
-        case "placa-mãe":
-            comparacao.placaMae1 = extraiDadosPlacaMae(info1.descricao);
-            comparacao.placaMae2 = extraiDadosPlacaMae(info2.descricao);
-            break;
-        case "memória RAM":
-            comparacao.memoria1 = extraiDadosRAM(info1.descricao);
-            comparacao.memoria2 = extraiDadosRAM(info2.descricao);
-            break;
-        default:
-            comparacao.mensagem = "Comparação detalhada não implementada para este tipo de peça.";
-    }
+    comparacao += `<h2>Comparação entre ${tipo}s:</h2>`;
+    comparacao += `<div class="comparacao-container">`;
 
-    if (comparacao.processador1 && comparacao.processador2) {
-        comparacao.diferencaClock = formataDiferenca(comparacao.processador1.clock, comparacao.processador2.clock, "GHz");
-    } else {
-        comparacao.diferencaClock = "N/A";
-    }
-    if (comparacao.processador1 && comparacao.processador2) {
-        comparacao.diferencaNucleos = formataDiferenca(comparacao.processador1.nucleos, comparacao.processador2.nucleos);
-    } else {
-        comparacao.diferencaNucleos = "N/A";
-    }
-    if (comparacao.processador1 && comparacao.processador2) {
-        comparacao.diferencaTDP = formataDiferenca(comparacao.processador1.tdp, comparacao.processador2.tdp, "W");
-    } else {
-        comparacao.diferencaTDP = "N/A";
-    }
+    comparacao += `<div class="peca-info">`;
+    comparacao += `<h3>${peca1.value}</h3>`;
+    comparacao += `<p>${info1.descricao}</p>`;
+    comparacao += `<p>Preço: ${extraiPreco(info1.descricao)}</p>`;
+    comparacao += `</div>`;
 
-    function getMelhor(valor1, valor2) {
-        if (valor1 > valor2) {
-            return comparacao.peca1;
-        } else if (valor1 < valor2) {
-            return comparacao.peca2;
-        } else {
-            return "Igual";
-        }
-    }
+    comparacao += `<div class="peca-info">`;
+    comparacao += `<h3>${peca2.value}</h3>`;
+    comparacao += `<p>${info2.descricao}</p>`;
+    comparacao += `<p>Preço: ${extraiPreco(info2.descricao)}</p>`;
+    comparacao += `</div>`;
 
-    if (tipo === "placa-mãe") {
-        comparacao.melhorChipset = getMelhor(comparacao.placaMae1.chipset, comparacao.placaMae2.chipset);
-        comparacao.melhorSocket = comparacao.placaMae1.socket === comparacao.placaMae2.socket ? "Compatíveis" : "Diferentes";
-        comparacao.maisSlotsRAM = getMelhor(comparacao.placaMae1.slotsRAM, comparacao.placaMae2.slotsRAM);
-        comparacao.maisSlotsPCIE = getMelhor(comparacao.placaMae1.slotsPCIE, comparacao.placaMae2.slotsPCIE);
+    comparacao += `</div>`;
 
-        comparacao.diferencaSlotsRAM = formataDiferenca(comparacao.placaMae1.slotsRAM, comparacao.placaMae2.slotsRAM);
-        comparacao.diferencaSlotsPCIE = formataDiferenca(comparacao.placaMae1.slotsPCIE, comparacao.placaMae2.slotsPCIE);
-    } else if (tipo === "memória RAM") {
-        comparacao.maiorCapacidade = getMelhor(comparacao.memoria1.capacidade, comparacao.memoria2.capacidade);
-        comparacao.melhorFrequencia = getMelhor(comparacao.memoria1.frequencia, comparacao.memoria2.frequencia);
-        comparacao.melhorTipo = getMelhor(comparacao.memoria1.tipo, comparacao.memoria2.tipo);
-
-        comparacao.diferencaCapacidade = formataDiferenca(comparacao.memoria1.capacidade, comparacao.memoria2.capacidade, "GB");
-        comparacao.diferencaFrequencia = formataDiferenca(comparacao.memoria1.frequencia, comparacao.memoria2.frequencia, "MHz");
-    }
-
-    comparacao.vencedor = determinaVencedor(comparacao);
+    const melhor = determinaMelhor(info1, info2);
+    comparacao += `<p>Melhor: ${melhor}</p>`;
 
     return comparacao;
 }
 
-function determinaVencedor(comparacao) {
-    if (comparacao.melhorClock && comparacao.melhorClock.titulo === comparacao.peca1.titulo) {
-        return `${comparacao.peca1.titulo} (melhor clock)`;
-    } else if (comparacao.melhorNucleos && comparacao.melhorNucleos.titulo === comparacao.peca1.titulo) {
-        return `${comparacao.peca1.titulo} (mais núcleos)`;
-    } else if (comparacao.melhorTDP && comparacao.melhorTDP.titulo === comparacao.peca1.titulo) {
-        return `${comparacao.peca1.titulo} (menor TDP)`;
-    } else if (comparacao.melhorSocket === "Compatíveis") {
-        return "Ambas as placas-mãe são compatíveis com o mesmo processador.";
-    } else if (comparacao.maiorCapacidade && comparacao.maiorCapacidade.titulo === comparacao.peca1.titulo) {
-        return `${comparacao.peca1.titulo} (maior capacidade)`;
-    } else if (comparacao.melhorFrequencia && comparacao.melhorFrequencia.titulo === comparacao.peca1.titulo) {
-        return `${comparacao.peca1.titulo} (maior frequência)`;
-    } else if (comparacao.melhorChipset && comparacao.melhorChipset.titulo === comparacao.peca1.titulo) {
-        return `${comparacao.peca1.titulo} (melhor chipset)`;
+function determinaMelhor(info1, info2) {
+    const preco1 = extraiPreco(info1.descricao);
+    const preco2 = extraiPreco(info2.descricao);
+
+    if (preco1 === "Preço não encontrado" && preco2 === "Preço não encontrado") {
+        return "Não é possível determinar o melhor com base no preço.";
+    } else if (preco1 === "Preço não encontrado") {
+        return peca2.value;
+    } else if (preco2 === "Preço não encontrado") {
+        return peca1.value;
     } else {
-        return `${comparacao.peca2.titulo} (melhor em alguns critérios)`;
+        const preco1Float = parseFloat(preco1.replace("R$", "").replace(",", "."));
+        const preco2Float = parseFloat(preco2.replace("R$", "").replace(",", "."));
+
+        if (preco1Float < preco2Float) {
+            return peca1.value;
+        } else if (preco2Float < preco1Float) {
+            return peca2.value;
+        } else {
+            return "Ambas são boas escolhas";
+        }
     }
-}
-
-function formataDiferenca(valor1, valor2, unidade) {
-    const diferenca = Math.abs(valor1 - valor2);
-    const sinal = (valor1 > valor2) ? "" : "-";
-    return `<span class="math-inline">\{sinal\}</span>{diferenca.toFixed(2)}${unidade}`;
-}
-
-function extraiDadosProcessador(descricao) {
-    const regexClock = /GHz/i;
-    const regexNucleos = /núcleos?|core/i;
-    const regexTDP = /TDP/i;
-
-    const clock = parseFloat(descricao.match(regexClock)?.[0]?.replace("GHz", ""));
-    const nucleos = parseInt(descricao.match(regexNucleos)?.[0]?.replace(/\D/g, ""));
-    const tdp = parseInt(descricao.match(regexTDP)?.[0]?.replace(/\D/g, ""));
-
-    return {
-        clock,
-        nucleos,
-        tdp,
-    };
-}
-
-function extraiDadosPlacaMae(descricao) {
-    const regexChipset = /chipset/i;
-    const regexSocket = /socket/i;
-    const regexSlotsRAM = /RAM|dimm/i;
-    const regexSlotsPCIE = /PCIe/i;
-
-    const chipset = descricao.match(regexChipset)?.[0]?.replace("chipset", "").trim();
-    const socket = descricao.match(regexSocket)?.[0]?.replace("socket", "").trim();
-    const slotsRAM = parseInt(descricao.match(regexSlotsRAM)?.[0]?.replace(/\D/g, ""));
-    const slotsPCIE = parseInt(descricao.match(regexSlotsPCIE)?.[0]?.replace(/\D/g, ""));
-
-    return {
-        chipset,
-        socket,
-        slotsRAM,
-        slotsPCIE,
-    };
-}
-
-function extraiDadosRAM(descricao) {
-    const regexCapacidade = /GB/i;
-    const regexFrequencia = /MHz/i;
-    const regexTipo = /DDR[0-9]/i;
-
-    const capacidade = parseInt(descricao.match(regexCapacidade)?.[0]?.replace("GB", ""));
-    const frequencia = parseInt(descricao.match(regexFrequencia)?.[0]?.replace("MHz", ""));
-    const tipo = descricao.match(regexTipo)?.[0];
-
-    return {
-        capacidade,
-        frequencia,
-        tipo,
-    };
 }
 
 function mostraResultados(comparacao) {
-    let resultadosHTML = "";
+    resultados.innerHTML = comparacao;
+}
 
-    if (comparacao.mensagem) {
-        resultadosHTML = `<p>${comparacao.mensagem}</p>`;
+async function extraiPreco(descricao) {
+    if (!descricao) return "Preço não encontrado";
+
+    const regexPrice = /preço\s*:\s*R\$(\d+(\.\d+)?)/i;
+    const match = descricao.match(regexPrice);
+    return match ? `R$${match[1]}` : "Preço não encontrado";
+}
+
+function comparePecas(tipo, info1, info2) {
+    let comparacao = "";
+
+    comparacao += `<h2>Comparação entre ${tipo}s:</h2>`;
+    comparacao += `<div class="comparacao-container">`;
+
+    comparacao += `<div class="peca-info">`;
+    comparacao += `<h3>${peca1.value}</h3>`;
+    comparacao += `<p>${info1.descricao}</p>`;
+    comparacao += `<p>Preço: ${extraiPreco(info1.descricao)}</p>`;
+    comparacao += `</div>`;
+
+    comparacao += `<div class="peca-info">`;
+    comparacao += `<h3>${peca2.value}</h3>`;
+    comparacao += `<p>${info2.descricao}</p>`;
+    comparacao += `<p>Preço: ${extraiPreco(info2.descricao)}</p>`;
+    comparacao += `</div>`;
+
+    comparacao += `</div>`;
+
+    let melhor;
+    if (tipo === "processador") {
+        melhor = determinaMelhorProcessador(info1, info2);
+    } else if (tipo === "placa-mae") {
+        melhor = determinaMelhorPlacaMae(info1, info2);
+    } else if (tipo === "memoria-ram") {
+        melhor = determinaMelhorMemoriaRAM(info1, info2);
+    } else if (tipo === "placa-de-video") {
+        melhor = determinaMelhorMemoriaRAM(info1, info2);
+    } else if (tipo === "disco-rigido") {
+        melhor = determinaMelhorMemoriaRAM(info1, info2);
+    } else if (tipo === "ssd") {
+        melhor = determinaMelhorMemoriaRAM(info1, info2);
+    } else if (tipo === "fonte-de-alimentacao") {
+        melhor = determinaMelhorMemoriaRAM(info1, info2);
+    } else if (tipo === "cooler-cpu") {
+        melhor = determinaMelhorMemoriaRAM(info1, info2);
     } else {
-        resultadosHTML = `
-      <h2>${comparacao.peca1 ? comparacao.peca1.titulo : 'Peça 1'} vs ${comparacao.peca2 ? comparacao.peca2.titulo : 'Peça 2'}</h2>
-      <div class="peca-container">
-        <div class="peca">
-          <img src="${comparacao.peca1 ? comparacao.peca1.imagem : ''}" alt="${comparacao.peca1 ? comparacao.peca1.titulo : 'Peça 1'}">
-          <h3>${comparacao.peca1 ? comparacao.peca1.titulo : 'Peça 1'}</h3>
-          <p>${comparacao.peca1 ? comparacao.peca1.preco : ''}</p>
-        </div>
-        <div class="peca">
-          <img src="${comparacao.peca2 ? comparacao.peca2.imagem : ''}" alt="${comparacao.peca2 ? comparacao.peca2.titulo : 'Peça 2'}">
-          <h3>${comparacao.peca2 ? comparacao.peca2.titulo : 'Peça 2'}</h3>
-          <p>${comparacao.peca2 ? comparacao.peca2.preco : ''}</p>
-        </div>
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Característica</th>
-            <th>${comparacao.peca1 ? comparacao.peca1.titulo : 'Peça 1'}</th>
-            <th>${comparacao.peca2 ? comparacao.peca2.titulo : 'Peça 2'}</th>
-            <th>Melhor</th>
-            <th>Diferença</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${comparacao.processador1 ? `
-          <tr>
-            <td>Clock</td>
-            <td>${comparacao.processador1.clock} GHz</td>
-            <td>${comparacao.processador2.clock} GHz</td>
-            <td>${comparacao.melhorClock ? comparacao.melhorClock.titulo : '-'}</td>
-            <td>${comparacao.diferencaClock}</td>
-          </tr>
-          <tr>
-            <td>Núcleos</td>
-            <td>${comparacao.processador1.nucleos}</td>
-            <td>${comparacao.processador2.nucleos}</td>
-            <td>${comparacao.melhorNucleos ? comparacao.melhorNucleos.titulo : '-'}</td>
-            <td>${comparacao.diferencaNucleos}</td>
-          </tr>
-          <tr>
-            <td>TDP</td>
-            <td>${comparacao.processador1.tdp} W</td>
-            <td>${comparacao.processador2.tdp} W</td>
-            <td>${comparacao.melhorTDP ? comparacao.melhorTDP.titulo : '-'}</td>
-            <td>${comparacao.diferencaTDP}</td>
-          </tr>
-          ` : ''}
-          ${comparacao.placaMae1 ? `
-          <tr>
-            <td>Chipset</td>
-            <td>${comparacao.placaMae1.chipset}</td>
-            <td>${comparacao.placaMae2.chipset}</td>
-            <td>${comparacao.melhorChipset ? comparacao.melhorChipset.titulo : '-'}</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>Socket</td>
-            <td>${comparacao.placaMae1.socket}</td>
-            <td>${comparacao.placaMae2.socket}</td>
-            <td>${comparacao.melhorSocket ? comparacao.melhorSocket : '-'}</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>Slots de RAM</td>
-            <td>${comparacao.placaMae1.slotsRAM}</td>
-            <td>${comparacao.placaMae2.slotsRAM}</td>
-            <td>${comparacao.maisSlotsRAM ? comparacao.maisSlotsRAM.titulo : '-'}</td>
-            <td>${comparacao.diferencaSlotsRAM}</td>
-          </tr>
-          <tr>
-            <td>Slots PCIe</td>
-            <td>${comparacao.placaMae1.slotsPCIE}</td>
-            <td>${comparacao.placaMae2.slotsPCIE}</td>
-            <td>${comparacao.maisSlotsPCIE ? comparacao.maisSlotsPCIE.titulo : '-'}</td>
-            <td>${comparacao.diferencaSlotsPCIE}</td>
-          </tr>
-          ` : ''}
-          ${comparacao.memoria1 ? `
-          <tr>
-            <td>Capacidade</td>
-            <td>${comparacao.memoria1.capacidade} GB</td>
-            <td>${comparacao.memoria2.capacidade} GB</td>
-            <td>${comparacao.maiorCapacidade ? comparacao.maiorCapacidade.titulo : '-'}</td>
-            <td>${comparacao.diferencaCapacidade}</td>
-          </tr>
-          <tr>
-            <td>Frequência</td>
-            <td>${comparacao.memoria1.frequencia} MHz</td>
-            <td>${comparacao.memoria2.frequencia} MHz</td>
-            <td>${comparacao.melhorFrequencia ? comparacao.melhorFrequencia.titulo : '-'}</td>
-            <td>${comparacao.diferencaFrequencia}</td>
-          </tr>
-          <tr>
-            <td>Tipo</td>
-            <td>${comparacao.memoria1.tipo}</td>
-            <td>${comparacao.memoria2.tipo}</td>
-            <td>${comparacao.melhorTipo ? comparacao.melhorTipo.titulo : '-'}</td>
-            <td>-</td>
-          </tr>
-          ` : ''}
-        </tbody>
-      </table>
-      `;
+        melhor = determinaMelhor(info1, info2);
+    }
 
-        if (comparacao.vencedor) {
-            resultadosHTML += `<p>Vencedor: ${comparacao.vencedor}</p>`;
+    comparacao += `<p>Melhor: ${melhor}</p>`;
+
+    return comparacao;
+}
+
+function determinaMelhorProcessador(info1, info2) {
+    if (!info1 || !info2) {
+        return "Não é possível determinar o melhor processador.";
+    }
+
+    const nome1 = info1.nome;
+    const nome2 = info2.nome;
+
+    const preco1 = info1.preco;
+    const preco2 = info2.preco;
+
+    const clock1 = extraiClock(info1.descricao);
+    const clock2 = extraiClock(info2.descricao);
+
+    const nucleos1 = extraiNucleos(info1.descricao);
+    const nucleos2 = extraiNucleos(info2.descricao);
+
+    const tdp1 = extraiTDP(info1.descricao);
+    const tdp2 = extraiTDP(info2.descricao);
+
+    console.log(`${nome1}   ${nome2}`);
+    console.log(`Clock:   ${clock1 !== null ? clock1 : 'Não encontrado'}   ${clock2 !== null ? clock2 : 'Não encontrado'}`);
+    console.log(`Núcleos: ${nucleos1 !== null ? nucleos1 : 'Não encontrado'}   ${nucleos2 !== null ? nucleos2 : 'Não encontrado'}`);
+    console.log(`TDP:     ${tdp1 !== null ? tdp1 : 'Não encontrado'}   ${tdp2 !== null ? tdp2 : 'Não encontrado'}`);
+    console.log(`Preço:   ${preco1}   ${preco2}`);
+    console.log('\n');
+
+    let melhor = "";
+
+    if (preco1 !== null && preco2 !== null) {
+        if (preco1 < preco2) {
+            melhor = nome1;
+        } else if (preco2 < preco1) {
+            melhor = nome2;
+        } else {
+            melhor = "Ambos têm o mesmo preço";
         }
     }
 
-    resultados.innerHTML = resultadosHTML;
+    return `Melhor: ${melhor}`;
+}
+
+function extraiClock(descricao) {
+    const regexClock = /(\d+(\.\d+)?)\s*GHz/i;
+    const match = descricao.match(regexClock);
+    return match ? parseFloat(match[1]) : null;
+}
+
+function extraiNucleos(descricao) {
+    const regexNucleos = /(\d+)\s*(?:núcleos?|core)/i;
+    const match = descricao.match(regexNucleos);
+    return match ? parseInt(match[1]) : null;
+}
+
+function extraiTDP(descricao) {
+    const regexTDP = /TDP\s*:\s*(\d+)\s*W/i;
+    const match = descricao.match(regexTDP);
+    return match ? parseInt(match[1]) : null;
+}
+
+
+function determinaMelhorPlacaMae(info1, info2) {
+    if (!info1 || !info2) {
+        return "Não é possível determinar a melhor placa-mãe.";
+    }
+
+    const chipset1 = extraiChipset(info1.descricao);
+    const chipset2 = extraiChipset(info2.descricao);
+
+    const socket1 = extraiSocket(info1.descricao);
+    const socket2 = extraiSocket(info2.descricao);
+
+    let melhor = "";
+    if (chipset1 && chipset2) {
+        if (chipset1 === chipset2) {
+            melhor = "Ambas têm o mesmo chipset";
+        } else {
+            melhor = chipset1.length > chipset2.length ? chipset1 : chipset2;
+        }
+    }
+
+    if (socket1 && socket2) {
+        if (socket1 === socket2) {
+            melhor += " | Ambas têm o mesmo socket";
+        } else {
+            melhor += ` | ${socket1} vs ${socket2}`;
+        }
+    }
+
+    return melhor;
+}
+
+function extraiChipset(descricao) {
+    const regexChipset = /Chipset\s*:\s*(.+)/i;
+    const match = descricao.match(regexChipset);
+    return match ? match[1].trim() : null;
+}
+
+function extraiSocket(descricao) {
+    const regexSocket = /Socket\s*:\s*(.+)/i;
+    const match = descricao.match(regexSocket);
+    return match ? match[1].trim() : null;
+}
+
+function determinaMelhorMemoriaRAM(info1, info2) {
+    if (!info1 || !info2) {
+        return "Não é possível determinar a melhor memória RAM.";
+    }
+
+    const capacidade1 = extraiCapacidadeRAM(info1.descricao);
+    const capacidade2 = extraiCapacidadeRAM(info2.descricao);
+
+    const frequencia1 = extraiFrequenciaRAM(info1.descricao);
+    const frequencia2 = extraiFrequenciaRAM(info2.descricao);
+
+    let melhor = "";
+    if (capacidade1 && capacidade2) {
+        if (capacidade1 === capacidade2) {
+            melhor = "Ambas têm a mesma capacidade";
+        } else {
+            melhor = capacidade1 > capacidade2 ? capacidade1 : capacidade2;
+        }
+    }
+
+    if (frequencia1 && frequencia2) {
+        if (frequencia1 === frequencia2) {
+            melhor += " | Ambas têm a mesma frequência";
+        } else {
+            melhor += ` | ${frequencia1} MHz vs ${frequencia2} MHz`;
+        }
+    }
+
+    return melhor;
+}
+
+function extraiCapacidadeRAM(descricao) {
+    const regexCapacidade = /Capacidade\s*:\s*(\d+)\s*GB/i;
+    const match = descricao.match(regexCapacidade);
+    return match ? match[1] + "GB" : null;
+}
+
+function extraiFrequenciaRAM(descricao) {
+    const regexFrequencia = /Frequência\s*:\s*(\d+)\s*MHz/i;
+    const match = descricao.match(regexFrequencia);
+    return match ? match[1] + " MHz" : null;
 }

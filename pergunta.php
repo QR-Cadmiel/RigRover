@@ -1,8 +1,6 @@
 <?php
-
 include 'conexao.php';
 include 'validacao.php';
-
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
@@ -10,55 +8,7 @@ if ($mysqli->connect_error) {
     die("Erro de conexão: " . $mysqli->connect_error);
 }
 
-function carregarMensagens($conversaId, $mysqli)
-{
-    $sql = "SELECT * FROM conversa WHERE pergunta_id = '$conversaId' ORDER BY data_hora ASC";
-    $result = $mysqli->query($sql);
-    $mensagens = [];
-
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            $mensagens[] = $row;
-        }
-    }
-    return $mensagens;
-}
-
-function enviarMensagem($conversaId, $texto, $usuario, $mysqli)
-{
-    $data_hora = date('Y-m-d H:i:s');
-    $sql = "INSERT INTO conversa (pergunta_id, mensagem, usuario, data_hora)
-    VALUES ('$conversaId', '$texto', COALESCE('$usuario', 'Usuário Anônimo'), '$data_hora')";
-    if ($mysqli->query($sql) === TRUE) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
 $conversaId = isset($_GET['id']) ? $_GET['id'] : '';
-
-$mensagens = carregarMensagens($conversaId, $mysqli);
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['mensagem'])) {
-    $texto = $_POST['mensagem'];
-    $usuario = $_SESSION['user_nome'] ?? null;
-    enviarMensagem($conversaId, $texto, $usuario, $mysqli);
-
-    header('Location: pergunta.php?id=' . $conversaId);
-    exit();
-}
-
-$usuario_id = $_SESSION['user_id'];
-
-$sql = "SELECT name FROM clientes WHERE id = '$usuario_id'";
-$result = $mysqli->query($sql);
-
-if ($result->num_rows === 1) {
-    $usuario_nome = $result->fetch_assoc()['name'];
-} else {
-    $usuario_nome = "Usuário Desconhecido";
-}
 
 ?>
 
@@ -102,26 +52,8 @@ if ($result->num_rows === 1) {
                 </a>
             </ul>
         </nav>
-        <?php
-        $perguntas = array(
-            array("id" => "pergunta1", "titulo" => "Como que eu troco o processador?", "descricao" => "Gostaria de saber como posso trocar o processador do meu compu..."),
-            array("id" => "pergunta2", "titulo" => "Como que eu compro um produto?", "descricao" => "Estou interessado em comprar um produto específico, mas nã..."),
-            array("id" => "pergunta3", "titulo" => "Posso ter múltiplas contas?", "descricao" => "Gostaria de saber se é permitido ter mais de uma conta cadastr..."),
-            array("id" => "pergunta4", "titulo" => "Como posso formar uma parceria?", "descricao" => "Estou interessado em estabelecer uma parceria com a sua empres...")
-        );
-
-        $pergunta_id = $_GET['id'];
-        $pergunta_titulo = '';
-        foreach ($perguntas as $pergunta) {
-            if ($pergunta['id'] === $pergunta_id) {
-                $pergunta_titulo = $pergunta['titulo'];
-                break;
-            }
-        }
-        ?>
-
         <div id="header">
-            <h1><?php echo $pergunta_titulo; ?></h1>
+            <h1 id="pergunta_titulo"><?php echo isset($pergunta_titulo) ? $pergunta_titulo : "Pergunta"; ?></h1>
             <a id="voltar" href="forum.php">Voltar</a>
         </div>
 
@@ -134,40 +66,6 @@ if ($result->num_rows === 1) {
             </form>
         </div>
 
-
-        <script>
-            const socket = new WebSocket('ws://localhost:8080');
-
-            socket.addEventListener('open', function(event) {
-                console.log('Conexão WebSocket estabelecida');
-            });
-
-            socket.addEventListener('message', function(event) {
-                const mensagem = JSON.parse(event.data);
-                exibirMensagem(mensagem);
-            });
-
-            document.getElementById('form-mensagem').addEventListener('submit', function(event) {
-                event.preventDefault();
-                const texto = document.getElementById('mensagem').value;
-                enviarMensagem(texto);
-                document.getElementById('mensagem').value = '';
-            });
-
-            function enviarMensagem(texto) {
-                const mensagem = {
-                    tipo: 'mensagem',
-                    texto: texto
-                };
-                socket.send(JSON.stringify(mensagem));
-            }
-
-            function exibirMensagem(mensagem) {
-                const divMensagem = document.createElement('div');
-                divMensagem.innerHTML = `<p><strong>${mensagem.usuario}</strong> - ${mensagem.data_hora}</p><p>${mensagem.texto}</p>`;
-                document.getElementById('mensagens').appendChild(divMensagem);
-            }
-        </script>
         <footer>
             <div id="tudo-footer">
                 <div class="conteudo-footer">
@@ -207,6 +105,52 @@ if ($result->num_rows === 1) {
                 </div>
             </div>
         </footer>
+
+        <script>
+            var conn = new WebSocket('ws://localhost:8080'); // Supondo que o servidor WebSocket esteja na porta 8080
+            var historicoMensagens = [];
+
+            conn.onopen = function(e) {
+                console.log("Conexão estabelecida!");
+            };
+
+            conn.onmessage = function(e) {
+                var mensagem = e.data;
+                historicoMensagens.push(mensagem); // Adiciona a mensagem ao histórico
+                exibirMensagem(mensagem);
+            };
+
+            function exibirMensagem(mensagem) {
+                var divMensagens = document.getElementById('mensagens');
+                var novaMensagem = document.createElement('div');
+                novaMensagem.textContent = mensagem;
+                novaMensagem.classList.add('mensagem'); // Adiciona classe CSS à mensagem
+                divMensagens.appendChild(novaMensagem);
+            }
+
+            function enviarMensagem(event) {
+                event.preventDefault();
+                var mensagemInput = document.getElementById('mensagem');
+                var mensagem = mensagemInput.value;
+                historicoMensagens.push(mensagem); // Adiciona a mensagem ao histórico
+                conn.send(JSON.stringify(mensagem)); // Enviar a mensagem como string JSON
+                mensagemInput.value = '';
+                exibirMensagem(mensagem); // Exibe a mensagem na tela
+            }
+
+            // Carrega o histórico de mensagens ao carregar a página
+            window.onload = function() {
+                historicoMensagens.forEach(function(mensagem) {
+                    exibirMensagem(mensagem);
+                });
+            }
+
+            document.getElementById('mensagem').addEventListener('keypress', function(event) {
+                if (event.key === 'Enter') {
+                    enviarMensagem(event);
+                }
+            });
+        </script>
 
 </body>
 

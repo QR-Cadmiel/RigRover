@@ -1,48 +1,67 @@
 <?php
-
-include 'conexao.php';
-include 'validacao.php';
+// Declare o namespace antes de qualquer outra declaração
+namespace MyApp;
 
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
+
+// Código PHP para lidar com a lógica do servidor WebSocket usando Ratchet PHP
 use Ratchet\Server\IoServer;
 use Ratchet\Http\HttpServer;
 use Ratchet\WebSocket\WsServer;
 
-require __DIR__ . '/vendor/autoload.php';
+require dirname(__DIR__) . '\Rigrover\vendor\autoload.php';
 
-class WebSocketServer implements MessageComponentInterface
+class Chat implements MessageComponentInterface
 {
     protected $clients;
 
     public function __construct()
     {
-        $this->clients = new \SplObjectStorage;
+        $this->clients = [];
+    }
+
+    public function generateUniqueId()
+    {
+        return uniqid();
     }
 
     public function onOpen(ConnectionInterface $conn)
     {
-        echo "Nova conexão\n";
-        $this->clients->attach($conn);
+        // Generate a unique ID for this connection
+        $resourceId = $this->generateUniqueId();
+
+        // Attach the connection to the array with the generated ID
+        $this->clients[$resourceId] = $conn;
+
+        echo "Nova conexão! ({$resourceId})\n";
     }
 
     public function onMessage(ConnectionInterface $from, $msg)
     {
-        echo "Mensagem recebida de um cliente: $msg\n";
-        foreach ($this->clients as $client) {
-            $client->send($msg);
+        foreach ($this->clients as $resourceId => $client) {
+            if ($client !== $from) {
+                $client->send($msg);
+            }
         }
     }
 
     public function onClose(ConnectionInterface $conn)
     {
+        // Remove the connection from the array when it closes
+        foreach ($this->clients as $resourceId => $client) {
+            if ($client === $conn) {
+                unset($this->clients[$resourceId]);
+                break;
+            }
+        }
+
         echo "Conexão fechada\n";
-        $this->clients->detach($conn);
     }
 
     public function onError(ConnectionInterface $conn, \Exception $e)
     {
-        echo "Erro na conexão: {$e->getMessage()}\n";
+        echo "Ocorreu um erro: {$e->getMessage()}\n";
         $conn->close();
     }
 }
@@ -50,12 +69,10 @@ class WebSocketServer implements MessageComponentInterface
 $server = IoServer::factory(
     new HttpServer(
         new WsServer(
-            new WebSocketServer()
+            new Chat()
         )
     ),
     8080
 );
-
-echo "Servidor WebSocket iniciado\n";
 
 $server->run();
