@@ -1,6 +1,6 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
-  background-image: url('https://cdn.discordapp.com/attachments/1097493454545764472/1219239931101188147/fundosite_1.png?ex=660a94ab&is=65f81fab&hm=7956625120ccaeacec16502b9ad7a3ab570c436556963c58204e70a8e43a7667&');
+  background-image: url("assets/img/fundoindex.png");
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -102,6 +102,16 @@ nav ul {
   font-size: 1.3rem;
 }
 
+.img-index1 {
+  width: 600px;
+}
+
+.img-index2 {
+  width: 600px;
+  height: 400px;
+}
+
+
 #rigrover-3 {
   display: flex;
   flex-direction: column;
@@ -202,83 +212,18 @@ nav ul {
   cursor: pointer;
 }
 
-footer {
-  background-color: #121212;
-  color: white;
+.cont-2 {
+  justify-content: left;
 }
 
-.footer-content {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+.cont-1 {
+  justify-content: right;
 }
+
+
 
 .a-ft {
   color: white;
-}
-
-.footer-content a {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.img-footer {
-  width: 15vw;
-  padding: 10px;
-}
-
-.tudo-footer {
-  float: left;
-  width: 80%;
-  margin: 0 10%;
-  padding: 5em 0;
-}
-
-.conteudo-footer {
-  width: 49%;
-  float: left;
-  display: grid;
-  margin: 14px;
-  place-items: center;
-}
-
-.conteudo-footer li {
-  text-align: left;
-}
-
-.conteudo2-footer {
-  width: 49%;
-  float: left;
-  display: grid;
-  place-items: flex-start;
-  margin: 3vw 0 0;
-}
-
-footer ul {
-  list-style: none;
-}
-
-footer li {
-  padding: 1vw 0 0 2vw;
-  font-size: 1.3em;
-  list-style: none;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.redes-footer {
-  place-items: center;
-}
-
-.redes-footer img {
-  width: 4vw;
-  padding: 0 10px 0 0;
 }
 
 .faq-container h1 {
@@ -335,4 +280,34 @@ footer a {
   display: none;
   padding: 5px;
   background-color: #2a2d30;
+}
+
+footer {
+  background-color: #121212;
+  color: white;
+  flex-direction: row;
+  display: flex;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li, a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+.img-footer-logo {
+  width: 15vw;
+}
+
+.cont-2,
+.cont-1 {
+  padding: 50px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
 }

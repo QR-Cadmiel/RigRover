@@ -42,21 +42,6 @@ nav ul {
 
     width: 46px;
 }
-
-
-footer {
-    background-color: #020202;
-    color: white;
-    margin-top: 100px;
-    height: 350px;
-}
-
-.footer-content {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .a-ft {
     color: white;
 }
@@ -68,63 +53,6 @@ footer {
     align-items: center;
     text-align: center;
 }
-
-.img-footer {
-    width: 15vw;
-    padding: 10px;
-}
-
-.tudo-footer {
-    float: left;
-    width: 80%;
-    margin: 0 10%;
-    padding: 5em 0;
-}
-
-.conteudo-footer {
-    width: 49%;
-    float: left;
-    display: grid;
-    margin: 14px;
-    place-items: center;
-}
-
-.conteudo-footer li {
-    text-align: left;
-}
-
-.conteudo2-footer {
-    width: 49%;
-    float: left;
-    display: grid;
-    place-items: flex-start;
-    margin: 3vw 0 0;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer li {
-    padding: 1vw 0 0 2vw;
-    font-size: 1.3em;
-    list-style: none;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-.redes-footer {
-    place-items: center;
-}
-
-.redes-footer img {
-    width: 4vw;
-    padding: 0 10px 0 0;
-}
-
 
 .img1,
 .img2 {
@@ -194,3 +122,41 @@ footer a {
     text-decoration: none;
     color: white;
 }
+
+footer {
+    background-color: #121212;
+    color: white;
+    flex-direction: row;
+    display: flex;
+  }
+  
+  footer li {
+    list-style: none;
+    padding: 0 0px 11px 0;
+    font-size: 1.7vw;
+  }
+  
+  footer li, a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+  }
+  
+  .img-footer-logo {
+    width: 15vw;
+  }
+
+  .redes-footer img {
+    width: 4vw;
+    padding: 0 11px 0 0;
+}
+  
+  .cont-2,
+  .cont-1 {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  

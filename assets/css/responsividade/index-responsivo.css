@@ -7,7 +7,6 @@
     }
 
     body {
-        background-size: 294%;
         margin: 0px;
     }
     .centro {
@@ -38,9 +37,217 @@
         margin: 10px;
         cursor: pointer;
     }
+
+    #rigrover-2 {
+        flex-direction: column-reverse;
+    }
+
+    .i1t2, .i2t1 {
+        padding: 7vw;
+    }
+
+    .img-index1 {
+        width: 78vw;
+    }
+
+    .img-index2 {
+        width: 78vw;
+        height: 66vw;
+    }
+
+    .pictures-container {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .title-nav {
+        flex-direction: column;
+    }
+
+    #equipe-desenvolvedora {
+        text-align: center;
+    }
+
+    .pictures-1 {
+       margin-left: 0;
+    }
+
+    .pictures-2 {
+        margin-right: 0;
+    }
+    .avatar {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer li {
+        padding: 4vw 0px 2px 0vw;
+        font-size: 21px;
+    }
+
+    .img-footer-logo {
+        width: 41vw;
+    }
+
+    .conteudo-footer {
+        width: 0;
+        float: none;
+        display: none;
+        place-items: center;
+        flex-direction: column;
+        padding: 13px;
+    }
+
+    .redes-footer {
+        place-items: center;
+        display: flex;
+    }
+
+    .redes-footer img {
+        width: 14vw;
+        padding: 0px 5px 0 0;
+    }
+
+    .conteudo2-footer {
+        display: none;
+        width: 0;
+        margin: 0 10px 0 40px;
+        padding: 11px;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    
 }
 
 @media only screen and (max-width: 480px) and (min-width: 319px) {
+
+    nav a {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    .logodois {
+        width: 20rem;
+        margin: 0 63px 0 0;
+    }
+
+    #rigrover-2 {
+        margin-top: 50px;
+    }
+
+    .centro {
+        margin: 1em;
+        text-align: center;
+    }
+
+    .logodois {
+        width: 17rem;
+        margin: 0 66px 0 0;
+    }
+
+    .slogan {
+        color: white;
+        font-size: 1.2em;
+        margin: 8px;
+    }
+
+    .botoes {
+        width: 45vw;
+        height: 13vw;
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    #rigrover-2 {
+        flex-direction: column-reverse;
+    }
+
+    .i1t2, .i2t1 {
+        padding: 7vw;
+    }
+
+    .img-index1 {
+        width: 78vw;
+    }
+
+    .img-index2 {
+        width: 78vw;
+        height: 46vw;
+    }
+
+    .pictures-container {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .title-nav {
+        flex-direction: column;
+    }
+
+    #equipe-desenvolvedora {
+        text-align: center;
+    }
+
+    .pictures-1 {
+       margin-left: 0;
+    }
+
+    .pictures-2 {
+        margin-right: 0;
+    }
+    .avatar {
+        flex-direction: column;
+    }
+
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer li {
+        padding: 4vw 0px 2px 0vw;
+        font-size: 21px;
+    }
+
+    .img-footer-logo {
+        width: 41vw;
+    }
+
+    .conteudo-footer {
+        width: 0;
+        float: none;
+        display: none;
+        place-items: center;
+        flex-direction: column;
+        padding: 13px;
+    }
+
+    .redes-footer {
+        place-items: center;
+        display: flex;
+    }
+
+    .redes-footer img {
+        width: 14vw;
+        padding: 0px 5px 0 0;
+    }
+
+    .conteudo2-footer {
+        display: none;
+        width: 0;
+        margin: 0 10px 0 40px;
+        padding: 11px;
+        flex-direction: column;
+        place-items: center;
+    }
 
 }
 
@@ -53,13 +260,246 @@
 }
 
 @media only screen and (max-width: 900px) and (min-width: 767px) {
+    .logodois {
+        width: 32rem;
+        margin: 0 66px 0 0;
+    }
+
+    .botoes {
+        width: 25vw;
+        height: 5vw;
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    #rigrover-2 {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .i1t2 p, .i2t1 p {
+        font-size: 1.3rem;
+    }
+
+    .i1t2, .i2t1 {
+        padding: 31px 18px 6px 18px;
+    }
+    .img-index1 {
+        width: 450px;
+    }
+
+    .img-index2 {
+        width: 450px;
+        height: 250px;
+    }
+    
+    .pictures-1 {
+        margin-left: 0;
+    }
+    
+    .pictures-2 {
+        margin-right: 44px;
+    }
+
+    .pictures-container img {
+        margin: 15px;
+    }
+
+    .thiago img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pedro img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .joao img {
+     width: 150px;
+     height: 150px;
+    }
+
+    .cadmiel img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .conteudo2-footer {
+        width: 0%;
+        float: left;
+        display: grid;
+        place-items: flex-start;
+        margin: 3vw 0 0;
+    }
+
+    .redes-footer {
+        place-items: center;
+        display: flex;
+    }
+
+    .img-footer {
+        width: 19vw;
+        padding: 3px;
+    }
+
+    .redes-footer img {
+        width: 6vw;
+        padding: 0 11px 0 0;
+    }
+    
+    footer li {
+        padding: 1.6vw 0 0 2vw;
+    } 
 
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 901px) {
+    .slogan {
+        font-size: 1.8em;
+    }
+    .botoes {
+        width: 16vw;
+        height: 6vw;
+        font-size: 17px;
+        margin: 20px;
+    }
 
+    .i1t2 p, .i2t1 p {
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
+    .img-index1 {
+        width: 378px;
+    }
+
+    container img {
+        margin: 37px;
+    }
+
+    .img-index2 {
+        width: 378px;
+        height: 232px;
+    }
+
+    .i1t2, .i2t1 {
+        padding: 26px;
+    }
+
+    .pictures-1 {
+        margin-left: 0;
+    }
+
+    .conteudo2-footer {
+        width: 0;
+    }
+
+    .redes-footer {
+        place-items: center;
+        display: flex;
+    }
+
+    .img-footer {
+        width: 17vw;
+        padding: 10px;
+    }
+
+    .redes-footer img {
+        width: 5vw;
+        padding: 0 10px 0 0;
+    }
+
+    footer li {
+        padding: 1.4vw 0 0 2vw;
+        font-size: 1.4em;
+    }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1023px) {
 
+}
+
+@media only screen and (min-width: 1024px)  {
+    .logodois {
+        width: 46rem;
+        margin: 0 66px 0 0;
+    }
+
+    .botoes {
+        width: 18vw;
+        height: 4vw;
+        font-size: 31px;
+    }
+
+    .i1t2 p, .i2t1 p {
+        font-size: 1.5rem;
+    }
+
+    .img-index1 {
+        width: 80%;
+    }
+    .img-index2 {
+        width: 88%;
+        height: 40%;
+    }    
+
+    .i1t2, .i2t1 {
+        padding: 16px;
+    }
+
+    h1#equipe-desenvolvedora {
+        font-size: 3vw;
+    }
+
+    .pictures-1 {
+        margin-left: 0px;
+    }
+    
+    .pictures-2 {
+        margin-right: 106px;
+    }
+
+    .title-nav img {
+        padding: 2vw;
+        width: 18vw;
+    }
+
+    .avatar {
+        font-size: 20px;
+    }
+
+    .thiago img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .pedro img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .joao img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cadmiel img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .img-footer {
+        width: 13vw;
+    }
+
+    .redes-footer img {
+        width: 4vw;
+        padding: 0 12px 0 0;
+    }
+
+    footer li {
+        padding: 1vw 0 0 2vw;
+        font-size: 1.5em;
+    }    
 }
