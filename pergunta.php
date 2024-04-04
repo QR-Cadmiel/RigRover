@@ -66,66 +66,24 @@ $conversaId = isset($_GET['id']) ? $_GET['id'] : '';
             </form>
         </div>
 
-
-        <script>
-            const socket = new WebSocket('ws://localhost:8080');
-
-            socket.addEventListener('open', function(event) {
-                console.log('Conexão WebSocket estabelecida');
-            });
-
-            socket.addEventListener('message', function(event) {
-                const mensagem = JSON.parse(event.data);
-                exibirMensagem(mensagem);
-            });
-
-            document.getElementById('form-mensagem').addEventListener('submit', function(event) {
-                event.preventDefault();
-                const texto = document.getElementById('mensagem').value;
-                enviarMensagem(texto);
-                document.getElementById('mensagem').value = '';
-            });
-
-            function enviarMensagem(texto) {
-                const mensagem = {
-                    tipo: 'mensagem',
-                    texto: texto
-                };
-                socket.send(JSON.stringify(mensagem));
-            }
-
-            function exibirMensagem(mensagem) {
-                const divMensagem = document.createElement('div');
-                divMensagem.innerHTML = `<p><strong>${mensagem.usuario}</strong> - ${mensagem.data_hora}</p><p>${mensagem.texto}</p>`;
-                document.getElementById('mensagens').appendChild(divMensagem);
-            }
-        </script>
         <footer>
-            <div id="tudo-footer">
-                <div class="conteudo-footer">
-                    <img src="assets/img/mascoterigrover.png" alt="" class="img-footer">
+            <div class="cont-1">
+                <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
+                <ul>
+                    <li><a href="index.php">Página Inicial</a></li>
+                    <li><a href="#quem-somos">Quem Somos?</a></li>
+                    <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
+                </ul>
+            </div>
+            <div class="cont-2">
+                <div>
+                    <div class="redes-footer">
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                    </div>
                     <ul>
-                        <li>
-                            <a href="#">Página Inicial</a>
-                        </li>
-                        <li>
-                            <a href="#">Quem Somos?</a>
-                        </li>
-                        <li>
-                            <a href="#">Noticias</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="conteudo2-footer">
-                    <div>
-                        <div class="redes-footer">
-
-                            <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
-                            <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
-                        </div>
-
                         <li>
                             <a href="fale_conosco.php">Fale Conosco</a>
                         </li>
@@ -135,12 +93,56 @@ $conversaId = isset($_GET['id']) ? $_GET['id'] : '';
                         <li>
                             <a href="termo_e_condicoes.php">Termos e Condições</a>
                         </li>
-                </ul>
-                    </div>
+                    </ul>
                 </div>
             </div>
-        </footer>
+    </div>
+    </footer>
 
+    <script>
+        var conn = new WebSocket('ws://localhost:8080');
+        var historicoMensagens = [];
+
+        conn.onopen = function(e) {
+            console.log("Conexão estabelecida!");
+        };
+
+        conn.onmessage = function(e) {
+            var mensagem = e.data;
+            historicoMensagens.push(mensagem);
+            exibirMensagem(mensagem);
+        };
+
+        function exibirMensagem(mensagem) {
+            var divMensagens = document.getElementById('mensagens');
+            var novaMensagem = document.createElement('div');
+            novaMensagem.textContent = mensagem;
+            novaMensagem.classList.add('mensagem');
+            divMensagens.appendChild(novaMensagem);
+        }
+
+        function enviarMensagem(event) {
+            event.preventDefault();
+            var mensagemInput = document.getElementById('mensagem');
+            var mensagem = mensagemInput.value;
+            historicoMensagens.push(mensagem);
+            conn.send(JSON.stringify(mensagem));
+            mensagemInput.value = '';
+            exibirMensagem(mensagem);
+        }
+
+        window.onload = function() {
+            historicoMensagens.forEach(function(mensagem) {
+                exibirMensagem(mensagem);
+            });
+        }
+
+        document.getElementById('mensagem').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                enviarMensagem(event);
+            }
+        });
+    </script>
 </body>
 
 </html>

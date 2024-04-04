@@ -123,5 +123,15 @@ footer {
 
   .redes-footer img {
     width: 4vw;
-    padding: 0 10px 0 0;
+    padding: 0 11px 0 0;
 }
+  
+  .cont-2,
+  .cont-1 {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
