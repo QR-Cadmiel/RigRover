@@ -1,0 +1,305 @@
+@media only screen and (max-width: 320px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .img-footer-logo {
+        width: 40vw;
+    }
+
+    footer li {
+        font-size: 5.7vw;
+        padding: 0 0 15px 0;
+        
+    }
+    
+    .redes-footer img {
+        width: 13vw;
+    }
+
+    .cont-2, .cont-1 {
+        padding: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 319px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .img-footer-logo {
+        width: 36vw;
+    }
+
+    footer li {
+        font-size: 4.7vw;
+        padding: 0 0 15px 0;
+    }
+    
+    .redes-footer img {
+        width: 11vw;
+    }
+
+    .cont-2, .cont-1 {
+        padding: 16px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 718px) {
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 719px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    .img-footer-logo {
+        width: 17vw;
+    }
+
+    footer li {
+        list-style: none;
+        padding: 0 0px 11px 0;
+        font-size: 2.2vw;
+    }
+
+    .redes-footer img {
+        width: 5vw;
+        padding: 0 11px 0 0;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 767px) {
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 901px) {
+    .img-footer-logo {
+        width: 15vw;
+    }
+
+    footer li {
+        font-size: 1.9vw;
+    }
+    
+    .redes-footer img {
+        width: 4.5vw;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1023px) {
+
+}
+@media only screen and (min-width: 1024px)  {
+}

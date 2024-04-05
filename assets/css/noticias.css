@@ -217,6 +217,7 @@ h4 {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    color: white;
 }
 
 footer {
@@ -256,3 +257,10 @@ footer {
     margin: 0 auto;
   }
   
+  .icon {
+    display: none;
+}
+
+    #myLinks {
+    display: none;
+}

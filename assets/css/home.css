@@ -48,7 +48,6 @@ nav ul {
 .logodois {
     width: 40rem;
     margin: 0 66px 0 0;
-    background-color: none;
 }
 
 .centro {
@@ -337,4 +336,13 @@ footer {
     text-align: center;
     margin: 0 auto;
   }
+
+  .icon {
+    display: none;
+}
+
+    #myLinks {
+    display: none;
+}
+
   

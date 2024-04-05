@@ -37,6 +37,11 @@ nav ul {
     padding: 0;
 }
 
+.img-logout {
+
+    width: 46px;
+}
+
 .logodois {
     width: 40rem;
     margin: 0 66px 0 0;
@@ -245,4 +250,13 @@ footer {
     text-align: center;
     margin: 0 auto;
   }
+
+  .icon {
+    display: none;
+}
+
+    #myLinks {
+    display: none;
+}
+
   

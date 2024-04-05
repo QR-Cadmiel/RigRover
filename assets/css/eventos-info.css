@@ -191,4 +191,12 @@ footer {
     text-align: center;
     margin: 0 auto;
   }
+
+  .icon {
+    display: none;
+}
+
+    #myLinks {
+    display: none;
+}
   

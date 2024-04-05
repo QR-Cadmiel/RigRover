@@ -1,0 +1,425 @@
+@media only screen and (max-width: 320px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    #btn-nav {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 18px;
+    }
+
+    .img1 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .img2 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .img1 h1, .img2 h1 {
+        bottom: 51%;
+        left: 0px;
+    }
+
+    .img1 button, .img2 button {
+        bottom: 65px;
+        left: 0px;
+    }    
+
+    .img1 h5 {
+        font-size: 11px;
+        top: 67%;
+        left: 0px;
+        transform: translateY(50%);
+    }
+
+     .img2 h5 {
+        font-size: 11px;
+        top: 58%;
+        left: 0px;
+        transform: translateY(50%);
+    }
+
+    footer {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .img-footer-logo {
+        width: 32vw;
+    }
+
+    footer li {
+        list-style: none;
+        padding: 0 0px 11px 0;
+        font-size: 4.7vw;
+    }
+
+    .redes-footer img {
+    width: 10vw;
+    }
+
+}
+
+@media only screen and (max-width: 480px) and (min-width: 319px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    #btn-nav {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 18px;
+    }
+
+    .img1 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .img2 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .img1 h1, .img2 h1 {
+        bottom: 51%;
+        left: 0px;
+    }
+
+    .img1 button, .img2 button {
+        bottom: 65px;
+        left: 0px;
+    }    
+
+    .img1 h5 {
+        font-size: 11px;
+        top: 67%;
+        left: 0px;
+        transform: translateY(50%);
+    }
+
+     .img2 h5 {
+        font-size: 11px;
+        top: 58%;
+        left: 0px;
+        transform: translateY(50%);
+    }
+
+    footer {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .img-footer-logo {
+        width: 32vw;
+    }
+
+    footer li {
+        list-style: none;
+        padding: 0 0px 11px 0;
+        font-size: 4.7vw;
+    }
+
+    .redes-footer img {
+    width: 10vw;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 718px) {
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 719px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+        font-size: 19px;
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    footer li {
+        font-size: 2.3vw;
+    }
+
+    .redes-footer img {
+        width: 6vw;
+    }
+
+    .img-footer-logo {
+        width: 19vw;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 767px) {
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 901px) {
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1023px) {
+
+}
+@media only screen and (min-width: 1024px)  {
+    #btn-nav {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 2.1vw;
+        padding: 21px;
+    }
+
+    .img1 h5, .img2 h5 {
+        font-size: 19px;
+    }
+
+    .img1 h1 {
+        bottom: 27%;
+        left: 10px;
+    }
+
+    .img2 h1 {
+        bottom: 33%;
+        left: 10px;
+    }
+
+    .img1 h5 {
+        font-size: 19px;
+         top: 72%;
+    }
+
+    .img2 h5 {
+        top: 65%;
+    }
+    
+    .img1 button, .img2 button {
+        bottom: 10px;
+        left: 10px;
+        width: 8vw;
+        height: 3vw;
+        font-size: 17px;
+    }
+
+    .img-footer-logo {
+        width: 12vw;
+    }
+
+    footer li {
+        font-size: 1.5vw;
+    }
+
+    .redes-footer img {
+        width: 4vw;
+    }
+
+   
+}

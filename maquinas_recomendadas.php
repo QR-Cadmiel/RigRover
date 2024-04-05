@@ -12,7 +12,10 @@ include 'validacao.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Análise de Hardware para Jogos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/maquinas_recomendadas.css">
+    <link rel="stylesheet" href="assets\css\responsividade\maquinas-rec-responsivo.css">
+    <script src="assets/js/hamburguinho.js"></script>
 </head>
 
 <body>
@@ -35,7 +38,33 @@ include 'validacao.php';
                 <a href="home.php">Home</a>
             </li>
         </ul>
+        <a href="logout.php">
+         <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
+     </a>
     </nav>
+
+   <!-- --------Hamburguinho Menu----------  -->
+        <div class="topnav" >
+            <div class="active">
+             <a href="#myLinks"></a>
+        </div>
+  
+        <div id="myLinks">
+            <a href="hardware.php">Hardware - Home</a>
+            <a href="maquinas_recomendadas.php">Máquinas recomendadas</a>
+            <a href="forum_hardwares.php">Fórum</a>
+            <a href="home.php">Home</a>
+            <a href="logout.php">Deslogar da Conta</a>
+        </div>
+  
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    <!-- ----------------------------------------- -->
+
+
+
 
     <div class="ferramenta-info">
         <h1>O QUE É ESSA FERRAMENTA?</h1>

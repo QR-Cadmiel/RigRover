@@ -14,7 +14,11 @@ $mysqli = new mysqli($hostname, $username, $password, $database);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notícias</title>
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/forum.css">
+    <link rel="stylesheet" href="assets\css\responsividade\forum-responsivo.css">
+    <script src="assets/js/hamburguinho.js"></script>
 </head>
 
 <body>
@@ -44,6 +48,28 @@ $mysqli = new mysqli($hostname, $username, $password, $database);
                 </a>
             </ul>
         </nav>
+
+ <!-- --------Hamburguinho Menu----------  -->
+ <div class="topnav" >
+            <div class="active">
+             <a href="#myLinks"></a>
+        </div>
+  
+        <div id="myLinks">
+            <a href="home.php">Página Inicial</a>
+            <a href="noticias.php">Noticias</a>
+            <a href="eventos.php">Eventos</a>
+            <a href="forum.php">Fórum</a>
+            <a href="comparar_hardwares.php">Hardware</a>
+            <a href="games.php">Wiki Jogos</a>
+            <a href="logout.php">Deslogar da Conta</a>
+        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    <!-- ----------------------------------------- -->
+        
         <div class="main-content">
             <input type="text" name="name" placeholder="Pesquise a notícia que deseja" class="noticia-icon" oninput="pesquisarNoticia()" required>
             <h3>Categorias</h3>

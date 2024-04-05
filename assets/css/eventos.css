@@ -160,3 +160,10 @@ footer {
     margin: 0 auto;
   }
   
+  .icon {
+    display: none;
+}
+
+    #myLinks {
+    display: none;
+}
