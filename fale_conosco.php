@@ -39,11 +39,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/faleconosco.css">
     <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1097493454545764472/1207911558559170601/Nova_Logo_RigRover_1.png?ex=65e15e4d&is=65cee94d&hm=1f91b588742806550adf33275c874fa2149d9f66260d040373d4f8d2c32371e8&=&format=webp&quality=lossless&width=450&height=600">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/faleconosco.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\css\responsividade\fale-conosco-responsivo.css">
+    <script src="assets/js/hamburguinho.js"></script>
     <title>Fale Conosco - RigRover</title>
 </head>
 
@@ -61,6 +65,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </li>
         </ul>
     </nav>
+
+<!-- --------Hamburguinho Menu----------  -->
+<div class="topnav" >
+            <div class="active">
+             <a href="#myLinks"></a>
+        </div>
+  
+        <div id="myLinks">
+         <a href="index.php">Página Inicial</a>
+         <a href="#">Quem Somos?</a>
+         <a href="#">Noticias</a>
+        </div>
+  
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    <!-- ----------------------------------------- -->
 
     <div class="container">
         <div class="text-dicas">
@@ -81,6 +103,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
         </div>
     </div>
+
+    <footer>
+           <div class="cont-1">
+           <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
+           <ul>
+            <li><a href="index.php">Página Inicial</a></li>
+            <li><a href="#quem-somos">Quem Somos?</a></li>
+            <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
+           </ul>
+           </div>
+           <div class="cont-2">
+           <div>
+                <div class="redes-footer">
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
+                         <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                </div>
+                <ul>
+                        <li>
+                            <a href="fale_conosco.php">Fale Conosco</a>
+                        </li>
+                        <li>
+                            <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
+                        </li>
+                        <li>
+                            <a href="termo_e_condicoes.php">Termos e Condições</a>
+                        </li>
+                </ul>
+                    </div>
+                </div>
+           </div>
+        </footer>   
 
 </body>
 

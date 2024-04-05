@@ -87,7 +87,7 @@ textarea {
   width: 38vw;
   margin-left: 20px;
   display: block;
-  height: 34vw;
+  height: 36vw;
   background-color: rgb(51, 51, 51, 1);
   border-radius: 20px;
   text-align: center;
@@ -107,4 +107,57 @@ h1 {
   height: 4vw;
   font-size: 20px;
   cursor: pointer;
+}
+
+footer {
+  background-color: #121212;
+  color: white;
+  flex-direction: row;
+  display: flex;
+}
+
+footer li {
+  list-style: none;
+  padding: 0 0px 11px 0;
+  font-size: 1.7vw;
+}
+
+footer li, a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+.img-footer-logo {
+  width: 15vw;
+}
+
+.redes-footer img {
+  width: 4vw;
+  padding: 0 11px 0 0;
+}
+
+.cont-2,
+.cont-1 {
+  padding: 50px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.icon {
+  display: none;
+}
+
+  #myLinks {
+  display: none;
+}
+
+.icon {
+  display: none;
+}
+
+  #myLinks {
+  display: none;
 }

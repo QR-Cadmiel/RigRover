@@ -1,0 +1,560 @@
+@media only screen and (max-width: 320px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 9px;
+    }
+
+    nav::before {
+        display: none;
+    }
+
+    .tudo {
+        background-size: auto;
+        width: 90vw;
+        height: 148vw;
+        margin-left: 0;
+    }
+    
+    p {
+        text-align: justify;
+        font-size: 19px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        font-size: 6.1vw;
+    }
+
+    input {
+        width: 71vw;
+        height: 10vw;
+        margin: 6px;
+    }
+
+    textarea {
+        width: 71vw;
+        height: 35vw;
+        margin: 6px;
+    }
+
+    .btn-primary {
+        width: 35vw;
+        height: 17vw;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .img-footer-logo {
+        width: 40vw;
+    }
+
+    footer li {
+        font-size: 5.7vw;
+        padding: 0 0 15px 0;
+        
+    }
+    
+    .redes-footer img {
+        width: 13vw;
+    }
+
+    .cont-2, .cont-1 {
+        padding: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 319px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 9px;
+    }
+
+    nav::before {
+        display: none;
+    }
+
+    .tudo {
+        background-size: auto;
+        width: 90vw;
+        height: 148vw;
+        margin-left: 0;
+    }
+    
+    p {
+        text-align: justify;
+        font-size: 19px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        font-size: 6.1vw;
+    }
+
+    input {
+        width: 71vw;
+        height: 10vw;
+        margin: 6px;
+    }
+
+    textarea {
+        width: 71vw;
+        height: 35vw;
+        margin: 6px;
+    }
+
+    .btn-primary {
+        width: 35vw;
+        height: 17vw;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .img-footer-logo {
+        width: 32vw;
+    }
+    
+    footer li {
+        font-size: 4.7vw;
+        padding: 0 0 15px 0;
+    }
+    
+    .redes-footer img {
+        width: 10vw;
+    }    
+
+    .cont-2, .cont-1 {
+        padding: 16px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 718px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 9px;
+    }
+
+    nav::before {
+        display: none;
+    }
+
+    .tudo {
+        background-size: auto;
+        width: 90vw;
+        height: 148vw;
+        margin-left: 0;
+    }
+    
+    p {
+        text-align: justify;
+        font-size: 19px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        font-size: 6.1vw;
+    }
+
+    input {
+        width: 71vw;
+        height: 10vw;
+        margin: 6px;
+    }
+
+    textarea {
+        width: 71vw;
+        height: 35vw;
+        margin: 6px;
+    }
+
+    .btn-primary {
+        width: 35vw;
+        height: 17vw;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) and (min-width: 719px) {
+ .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 9px;
+    }
+
+    nav::before {
+        display: none;
+    }
+
+    .tudo {
+        background-size: auto;
+        width: 77vw;
+        height: 77vw;
+        margin-left: 0;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 19px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        font-size: 4.1vw;
+    }
+
+    input {
+        width: 53vw;
+        height: 5vw;
+        margin: 6px;
+    }
+
+    textarea {
+        width: 53vw;
+        height: 19vw;
+        margin: 6px;
+    }
+
+    .btn-primary {
+        width: 26vw;
+        height: 7vw;
+    }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 767px) {
+    .tudo {
+        height: 63vw;
+    }
+
+    input {
+        height: 3vw;
+    }
+
+    label {
+        font-size: 2vw;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 31px;
+        text-align: center;
+        padding: 0;
+    }
+    
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 901px) {
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1023px) {
+
+}
+@media only screen and (min-width: 1024px)  {
+}
