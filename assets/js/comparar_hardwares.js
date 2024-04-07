@@ -1,191 +1,151 @@
-const API_KEY = "AIzaSyAmP1zAamWFKAv6TmmqgJqbBm7APxskgYE";
-const CUSTOM_SEARCH_ID = "177337022afc04e73";
+$(document).ready(function () {
+    $('#pecaForm').submit(function (e) {
+        e.preventDefault();
 
-const form = document.getElementById("pecaForm");
-const tipoPeca = document.getElementById("tipoPeca");
-const peca1 = document.getElementById("peca1");
-const peca2 = document.getElementById("peca2");
-const resultados = document.getElementById("resultados");
+        var tipoPeca = $('#tipoPeca').val();
+        var peca1 = $('#peca1').val();
+        var peca2 = $('#peca2').val();
+        var customSearchEngineID = '177337022afc04e73';
+        var customSearchAPIKey = 'AIzaSyAmP1zAamWFKAv6TmmqgJqbBm7APxskgYE';
 
-form.addEventListener("submit", async (event) => {
-    event.preventDefault();
+        var apiUrl = 'https://www.googleapis.com/customsearch/v1?key=' + customSearchAPIKey + '&cx=' + customSearchEngineID + '&q=';
 
-    const tipo = tipoPeca.value;
+        var urlPeca1 = apiUrl + encodeURIComponent(tipoPeca + ' ' + peca1);
+        var urlPeca2 = apiUrl + encodeURIComponent(tipoPeca + ' ' + peca2);
 
-    const modelo1 = peca1.value;
-    const modelo2 = peca2.value;
+        function getPeca1Data() {
+            return new Promise(function (resolve, reject) {
+                $.getJSON(urlPeca1, function (data1) {
+                    var informacoesPeca1 = extrairInformacoes(data1);
+                    resolve(informacoesPeca1);
+                }).fail(function () {
+                    reject("Erro ao obter dados da peça 1.");
+                });
+            });
+        }
 
-    if (!modelo1 || !modelo2) {
-        alert("Preencha os campos com os modelos das peças.");
-        return;
-    }
+        function getPeca2Data() {
+            return new Promise(function (resolve, reject) {
+                $.getJSON(urlPeca2, function (data2) {
+                    var informacoesPeca2 = extrairInformacoes(data2);
+                    resolve(informacoesPeca2);
+                }).fail(function () {
+                    reject("Erro ao obter dados da peça 2.");
+                });
+            });
+        }
 
-    const [info1, info2] = await Promise.all([
-        buscaGoogle(tipo, modelo1),
-        buscaGoogle(tipo, modelo2),
-    ]);
+        Promise.all([getPeca1Data(), getPeca2Data()]).then(function (result) {
+            var informacoesPeca1 = result[0];
+            var informacoesPeca2 = result[1];
 
-    if (!info1 || !info2) {
-        resultados.innerHTML = `Não foi possível encontrar informações sobre todas as peças.`;
-        return;
-    }
+            exibirInformacoesPeca(informacoesPeca1, '#resultados', 'peca1');
+            exibirInformacoesPeca(informacoesPeca2, '#resultados', 'peca2');
 
-    const comparacao = comparePecas(tipo, info1, info2);
-    mostraResultados(comparacao);
+            setTimeout(function () {
+                var resultado = compararInformacoes(informacoesPeca1, informacoesPeca2);
+                exibirResultados(resultado);
+            }, 2000);
+        }).catch(function (error) {
+            console.error(error);
+        });
+    });
 });
 
-async function buscaGoogle(tipo, modelo) {
-    let query = "";
+function extrairInformacoes(data) {
+    console.log("Dados brutos da API:", data);
 
-    switch (tipo) {
-        case "processador":
-            query = `${modelo} CPU`;
-            break;
-        default:
-            query = `${modelo} ${tipo}`;
-            break;
-    }
+    if (data && data.items && data.items.length > 0) {
+        var item = data.items[0];
+        console.log("Item da API:", item);
 
-    const url = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CUSTOM_SEARCH_ID}&q=${query}`;
+        var informacoes = {
+            nome: item.title,
+            imagem: item.pagemap.cse_image ? item.pagemap.cse_image[0].src : "",
+            descricao: item.snippet,
+            nucleos: item.pagemap?.metatags?.nucleos, // Verifique se o caminho está correto
+            velocidade: item.pagemap?.metatags?.velocidade, // Verifique se o caminho está correto
+            preco: item.pagemap?.metatags?.preco // Verifique se o caminho está correto
+        };
 
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
+        console.log("Informações extraídas:", informacoes);
 
-        if (data.items && data.items.length > 0) {
-            const descricao = data.items[0].snippet;
-            const link = data.items[0].link;
-            const titulo = data.items[0].title;
-
-            return { descricao, link, titulo };
-        } else {
-            return null;
-        }
-    } catch (error) {
-        console.error("Erro ao buscar informações:", error);
+        return informacoes;
+    } else {
         return null;
     }
 }
 
-function comparePecas(tipo, info1, info2) {
-    let comparacao = "";
 
-    comparacao += `<h2>Comparação entre ${tipo}s:</h2>`;
-    comparacao += `<div class="comparacao-container">`;
+function exibirInformacoesPeca(informacoes, divId, peca) {
+    if (informacoes) {
+        var html = '<div class="informacoes-peca">';
+        html += '<h3>' + informacoes.nome + '</h3>';
+        html += '<img src="' + informacoes.imagem + '" alt="' + informacoes.nome + '">';
+        html += '<p><strong>Descrição:</strong> ' + informacoes.descricao + '</p>';
+        html += '<h4>Informações:</h4>';
+        html += '<p><strong>Número de núcleos:</strong> ' + informacoes.nucleos + '</p>';
+        html += '<p><strong>Velocidade:</strong> ' + informacoes.velocidade + '</p>';
+        html += '<p><strong>Preço:</strong> ' + informacoes.preco + '</p>';
+        html += '</div>';
 
-    comparacao += `<div class="peca-info">`;
-    comparacao += `<h3>${info1.titulo}</h3>`;
-    comparacao += `<p>${info1.descricao}</p>`;
-    comparacao += `<p>Preço: ${extraiPreco(info1.descricao)}</p>`; // Adicionando await
-    comparacao += `<p>Clock: ${extraiClock(info1.descricao)}</p>`;
-    comparacao += `<p>Núcleos: ${extraiNucleos(info1.descricao)}</p>`;
-    comparacao += `<p>TDP: ${extraiTDP(info1.descricao)}</p>`;
-    comparacao += `</div>`;
-
-    comparacao += `<div class="peca-info">`;
-    comparacao += `<h3>${info2.titulo}</h3>`;
-    comparacao += `<p>${info2.descricao}</p>`;
-    comparacao += `<p>Preço: ${extraiPreco(info2.descricao)}</p>`; // Adicionando await
-    comparacao += `<p>Clock: ${extraiClock(info2.descricao)}</p>`;
-    comparacao += `<p>Núcleos: ${extraiNucleos(info2.descricao)}</p>`;
-    comparacao += `<p>TDP: ${extraiTDP(info2.descricao)}</p>`;
-    comparacao += `</div>`;
-
-    comparacao += `</div>`;
-
-    let melhor;
-    if (tipo === "processador") {
-        melhor = determinaMelhorProcessador(info1, info2);
+        $(divId).append(html);
     } else {
-        melhor = determinaMelhor(info1, info2);
+        $(divId).append('<p>Não foi possível encontrar informações para a ' + peca + '.</p>');
     }
-
-    comparacao += `<p>Melhor: ${melhor}</p>`;
-
-    return comparacao;
 }
 
-async function extraiPreco(descricao) {
-    if (!descricao) return "Preço não encontrado";
 
-    const regexPrice = /preço\s*:\s*R\$(\d+(\.\d+)?)/i;
-    const match = descricao.match(regexPrice);
-    return match ? `R$${match[1]}` : "Preço não encontrado";
-}
+function compararInformacoes(informacoesPeca1, informacoesPeca2) {
+    if (informacoesPeca1 && informacoesPeca2) {
+        var aspectosVencedores = 0;
+        var melhorPeca = '';
 
-function extraiClock(descricao) {
-    const regexClock = /(\d+(\.\d+)?)\s*GHz/i;
-    const match = descricao.match(regexClock);
-    return match ? parseFloat(match[1]) : null;
-}
+        var comparacao = '';
 
-function extraiNucleos(descricao) {
-    const regexNucleos = /(\d+)\s*(?:núcleos?|core)/i;
-    const match = descricao.match(regexNucleos);
-    return match ? parseInt(match[1]) : null;
-}
-
-function extraiTDP(descricao) {
-    const regexTDP = /TDP\s*:\s*(\d+)\s*W/i;
-    const match = descricao.match(regexTDP);
-    return match ? parseInt(match[1]) : null;
-}
-
-function determinaMelhorProcessador(info1, info2) {
-    if (!info1 || !info2) {
-        return "Não é possível determinar o melhor processador.";
-    }
-
-    const nome1 = info1.titulo;
-    const nome2 = info2.titulo;
-
-    const preco1 = extraiPreco(info1.descricao);
-    const preco2 = extraiPreco(info2.descricao);
-
-    const clock1 = extraiClock(info1.descricao);
-    const clock2 = extraiClock(info2.descricao);
-
-    const nucleos1 = extraiNucleos(info1.descricao);
-    const nucleos2 = extraiNucleos(info2.descricao);
-
-    const tdp1 = extraiTDP(info1.descricao);
-    const tdp2 = extraiTDP(info2.descricao);
-
-    console.log (extraiPreco);
-    
-    console.log(`${nome1} vs ${nome2}`);
-    console.log(`Preço: ${preco1} vs ${preco2}`);
-    console.log(`Clock: ${clock1} vs ${clock2}`);
-    console.log(`Núcleos: ${nucleos1} vs ${nucleos2}`);
-    console.log(`TDP: ${tdp1} vs ${tdp2}`);
-    console.log('\n');
-
-    let melhor = "";
-
-    if (preco1 !== null && preco2 !== null) {
-        if (preco1 < preco2) {
-            melhor = nome1;
-        } else if (preco2 < preco1) {
-            melhor = nome2;
-        } else {
-            // Prioritize higher clock speed with same core count
-            if (clock1 > clock2 && nucleos1 === nucleos2) {
-                melhor = nome1;
-            } else if (clock2 > clock1 && nucleos2 === nucleos1) {
-                melhor = nome2;
-            } else if (nucleos1 > nucleos2) {
-                melhor = nome1;
-            } else if (nucleos2 > nucleos1) {
-                melhor = nome2;
-            } else {
-                melhor = "Ambos têm o mesmo preço e especificações";
-            }
+        if (informacoesPeca1.nucleos > informacoesPeca2.nucleos) {
+            aspectosVencedores++;
+            comparacao += 'Número de núcleos de ' + informacoesPeca1.nome + ' é maior que ' + informacoesPeca2.nome + '. ';
+        } else if (informacoesPeca1.nucleos < informacoesPeca2.nucleos) {
+            aspectosVencedores++;
+            comparacao += 'Número de núcleos de ' + informacoesPeca2.nome + ' é maior que ' + informacoesPeca1.nome + '. ';
         }
-    }
 
-    return `Melhor: ${melhor}`;
+        if (informacoesPeca1.velocidade > informacoesPeca2.velocidade) {
+            aspectosVencedores++;
+            comparacao += 'Velocidade de ' + informacoesPeca1.nome + ' é maior que ' + informacoesPeca2.nome + '. ';
+        } else if (informacoesPeca1.velocidade < informacoesPeca2.velocidade) {
+            aspectosVencedores++;
+            comparacao += 'Velocidade de ' + informacoesPeca2.nome + ' é maior que ' + informacoesPeca1.nome + '. ';
+        }
+
+        if (informacoesPeca1.preco < informacoesPeca2.preco) {
+            aspectosVencedores++;
+            comparacao += 'Preço de ' + informacoesPeca1.nome + ' é menor que ' + informacoesPeca2.nome + '. ';
+        } else if (informacoesPeca1.preco > informacoesPeca2.preco) {
+            aspectosVencedores++;
+            comparacao += 'Preço de ' + informacoesPeca2.nome + ' é menor que ' + informacoesPeca1.nome + '. ';
+        }
+
+        if (aspectosVencedores > 0) {
+            return comparacao + informacoesPeca1.nome + ' é melhor por ganhar em mais aspectos.';
+        } else {
+            return 'As duas peças têm o mesmo desempenho.';
+        }
+    } else {
+        return 'Não foi possível comparar as informações dos hardwares.';
+    }
 }
 
-function mostraResultados(comparacao) {
-    resultados.innerHTML = comparacao;
+
+function exibirResultados(resultado) {
+    if (resultado) {
+        var html = '<div class="resultado">';
+        html += '<p>' + resultado + '</p>';
+        html += '</div>';
+
+        $('#resultados').append(html);
+    } else {
+        $('#resultados').append('<p>Não foi possível determinar qual é o melhor hardware para comprar.</p>');
+    }
 }

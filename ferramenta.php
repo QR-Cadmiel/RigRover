@@ -164,7 +164,10 @@ include 'validacao.php';
                 <a href="comparar_hardwares.php">Comparar Hardwares</a>
             </li>
             <li>
-                <a href="forum_hardwares.php">Fórum</a>
+                <a href="ferramenta.php">Requisitos para jogos</a>
+            </li>
+            <li>
+                <a href="forum.php">Fórum</a>
             </li>
             <li>
                 <a href="home.php">Home</a>
