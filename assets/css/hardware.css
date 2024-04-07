@@ -1,0 +1,348 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url('https://cdn.discordapp.com/attachments/1201580849368416446/1220755514573586482/fundoiniciologado.png?ex=6610182b&is=65fda32b&hm=ce8dfbe9423439f46571e9cf9c721ea937b557defbb5d521fafdabc4067322c4&');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #121212;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#btn-nav {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 26px;
+    padding: 18px;
+}
+
+nav li:hover {
+    background-color: #1D5F15;
+    border-radius: 12px;
+    height: 100%;
+    transition: .35s;
+}
+
+nav li {
+    transition: .35s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.img-logout {
+
+    width: 46px;
+}
+
+.logodois {
+    width: 40rem;
+    margin: 0 66px 0 0;
+}
+
+.centro {
+    margin: 8em;
+    text-align: center;
+}
+
+.slogan {
+    color: white;
+    font-size: 2.2em;
+    margin: 8px;
+}
+
+
+.faq-container h1 {
+    text-align: center;
+    color: white;
+    padding: 0px 0 16px;
+}
+
+.faq-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    color: #ffffff;
+    background-color: #1b1c1e;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    user-select: none;
+}
+
+.faq-answer {
+    color: #ffffff;
+    line-height: 1.5;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.faq-answer.collapsing {
+    transition: height 0.3s ease;
+    height: 0;
+    opacity: 0;
+}
+
+
+.faq-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding: 5px;
+    background-color: #2a2d30;
+}
+
+.hardware {
+    background-color: #292330;
+    padding: 20px;
+}
+
+.eventos {
+    background-color: #171521;
+    padding: 20px;
+}
+
+.games {
+    background-color: #0A090E;
+    padding: 20px;
+}
+
+.hardware,
+.eventos,
+.games {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hardware h3,
+.eventos h3,
+.games h3 {
+    color: #fff;
+}
+
+.hardware p,
+.eventos p,
+.games p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hardware a,
+.eventos a,
+.games a {
+    color: #fff;
+    background-color: #2980b9;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 180px;
+    padding: 10px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.hardware a:hover,
+.eventos a:hover,
+.games a:hover {
+    background-color: #2c3e50;
+}
+
+.hardware img,
+.games img,
+.eventos img {
+    width: 800px;
+    height: 400px;
+    padding-top: 10px;
+}
+
+
+.hardware {
+    background-color: #252330;
+    padding: 20px;
+}
+
+.eventos {
+    background-color: #171521;
+    padding: 20px;
+}
+
+.games {
+    background-color: #0A090E;
+    padding: 20px;
+}
+
+.hardware img,
+.games img,
+.eventos img {
+    width: 800px;
+    height: 400px;
+    padding-top: 10px;
+}
+
+.descbr,
+.divrig {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#coluna-categoria {
+    display: table-column;
+}
+
+h2 {
+    text-align: center;
+    text-align: justify;
+    margin: 0 0 15px 6vw;
+}
+
+.titulo_categoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria_foto {
+    width: 37vw;
+    margin: 14px;
+    height: 20vw;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria_texto {
+    margin: 0 21vw 0 6vw;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.categoria_div1 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2443;
+    color: white;
+}
+
+.categoria_div2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1c3b;
+    color: white;
+}
+
+.categoria_div3 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e2c44;
+    color: white;
+}
+
+#hardware {
+    flex-direction: row-reverse;
+}
+
+#a-btn-categorias button {
+    cursor: pointer;
+}
+
+
+#btn-categorias button {
+    margin: 2vw 0 0 6vw;
+    background-color: #1C552F;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 3vw;
+    font-size: 1.3vw;
+}
+
+button {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #121212;
+    color: white;
+    flex-direction: row;
+    display: flex;
+  }
+  
+  footer li {
+    list-style: none;
+    padding: 0 0px 11px 0;
+    font-size: 1.7vw;
+  }
+  
+  footer li, a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+  }
+  
+  .img-footer-logo {
+    width: 15vw;
+  }
+
+  .redes-footer img {
+    width: 4vw;
+    padding: 0 11px 0 0;
+}
+  
+  .cont-2,
+  .cont-1 {
+    padding: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .icon {
+    display: none;
+}
+
+    #myLinks {
+    display: none;
+}
+
+  
