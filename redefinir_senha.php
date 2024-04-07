@@ -19,8 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'chickitopizzaria@gmail.com';
-        $mail->Password = 'vvzq vjfc vtog dscn';
+        $mail->Username = 'rigrovercontato@gmail.com';
+        $mail->Password = 'n l m d e w f f b p v o r m x e';
         $mail->SMTPSecure = 'PHPMailer::ENCRYPTION_SMTPS';
         $mail->Port = 587;
 
@@ -29,9 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->addAddress($email);
 
         $mail->isHTML(true);
-        $mail->Subject = 'Redefinir Senha - Chikito Pizzaria';
+        $mail->Subject = 'Redefinir Senha - Rig Rover';
         $mail->Body = 'Clique no link a seguir para redefinir sua senha: ' .
-            '<a href="http://localhost//rigrover/RigRover/senha.php?token=' . $token . '">Redefinir Senha</a>';
+            '<a href="http://localhost/RigRover/senha.php?token=' . $token . '">Redefinir Senha</a>';
         $mail->send();
 
         echo "<script>alert('Um email com as instruções para redefinir a senha foi enviado para o seu email.'); window.location.href = 'index.php';</script>";
