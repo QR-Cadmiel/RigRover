@@ -63,6 +63,7 @@ echo json_encode($events);
 <html>
 
 <head>
+  <title>Calendário: Eventos - RigRover</title>
   <script src="assets/js/calendario.js"></script>
   <script type='importmap'>
     {

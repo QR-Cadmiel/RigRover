@@ -11,7 +11,7 @@ include 'validacao.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análise de Hardware para Jogos</title>
+    <title>Configurações recomendadas para jogos - RigRover</title>
     <link rel="stylesheet" href="assets/css/ferramenta.css">
 </head>
 

@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat em Tempo Real</title>
+    <title>Fórum: <?php echo isset($_GET['titulo']) ? htmlspecialchars($_GET['titulo']) : "Pergunta"; ?></title>
     <link rel="stylesheet" href="assets/css/pergunta.css">
     <script type="text/javascript">
         var ultimaMensagemID = 0;

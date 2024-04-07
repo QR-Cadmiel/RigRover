@@ -28,7 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $stmt->bind_param('sssss', $email, $name, $hashed_password, $dob, $nationality);
 
                 if ($stmt->execute()) {
-                    echo '<script>alert("Usuário cadastrado com sucesso!");window.location.href("home.php");</script>';
+                    echo '<script>alert("Usuário cadastrado com sucesso!");';
+                    echo 'window.location.href = "login.php";</script>';
+                    exit;
                 } else {
                     echo 'Erro ao cadastrar usuário.';
                 }
