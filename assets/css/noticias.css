@@ -128,19 +128,6 @@ h3 {
     border-radius: 10px;
 }
 
-.ntc1,
-.ntc2,
-.ntc3,
-.ntc4,
-.ntc5,
-.ntc6,
-.ntc7,
-.ntc8,
-.ntc9 {
-    cursor: pointer;
-
-}
-
 .noticias h4,
 .noticias p {
     text-align: left;
@@ -225,42 +212,105 @@ footer {
     color: white;
     flex-direction: row;
     display: flex;
-  }
-  
-  footer li {
+}
+
+footer li {
     list-style: none;
     padding: 0 0px 11px 0;
     font-size: 1.7vw;
-  }
-  
-  footer li, a {
+}
+
+footer li,
+a {
     text-decoration: none;
     color: white;
     text-align: left;
-  }
-  
-  .img-footer-logo {
-    width: 15vw;
-  }
+}
 
-  .redes-footer img {
+.img-footer-logo {
+    width: 15vw;
+}
+
+.redes-footer img {
     width: 4vw;
     padding: 0 11px 0 0;
 }
-  
-  .cont-2,
-  .cont-1 {
+
+.cont-2,
+.cont-1 {
     padding: 50px;
     color: white;
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
-  }
-  
-  .icon {
+}
+
+.icon {
     display: none;
 }
 
-    #myLinks {
+#myLinks {
     display: none;
+}
+
+.criar-noticia {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+.criar-noticia textarea {
+    background-color: #1B1E25;
+    width: 300px;
+    height: 100px;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-criar {
+    width: 70%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #6DFB5C;
+    border: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.tipo-criar select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: #1B1E25;
+    color: white;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/60/60995.png');
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.tipo-criar select option:checked {
+    background-color: #3F4451;
+}
+
+.tipo-criar select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noticias label {
+    color: white;
 }
