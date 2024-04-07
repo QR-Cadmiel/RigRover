@@ -85,9 +85,9 @@ include 'validacao.php';
                 participação. Desde conferências de desenvolvedores até competições de eSports, temos tudo para
                 você.</p>
 
-            <a href="games.php" id="btn-categorias">
+            <a href="eventos.php" id="btn-categorias">
                 <button type="submit">
-                    Explore os jogos
+                    Explore os Eventos
                 </button>
             </a>
         </div>
@@ -124,7 +124,7 @@ include 'validacao.php';
             <p class="categoria_texto">Descubra os últimos lançamentos, análises de jogos e notícias sobre o universo dos games.
                 Esteja sempre atualizado sobre o que há de melhor para jogar, seja em consoles, PC ou dispositivos móveis.</p>
 
-            <a href="eventos.php" id="btn-categorias">
+            <a href="games.php" id="btn-categorias">
                 <button type="submit">
                     Explore os jogos
                 </button>

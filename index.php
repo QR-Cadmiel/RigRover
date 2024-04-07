@@ -10,8 +10,10 @@ include 'conexao.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets\css\responsividade\index-responsivo.css">
+
     <link rel="icon" type="image/png" href="https://github.com/QR-Cadmiel/RigRover/blob/02314bc9c37d2761af50a3c5e0d49ea38bebddcf/img/logourl.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +21,7 @@ include 'conexao.php';
     <title>Página Inicial - RigRover</title>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/hamburguinho.js"></script>
 </head>
 
 <body>
@@ -36,6 +39,24 @@ include 'conexao.php';
                 </li>
             </ul>
         </nav>
+
+        <!-- --------Hamburguinho Menu----------  -->
+ <div class="topnav" >
+            <div class="active">
+             <a href="#myLinks"></a>
+        </div>
+  
+        <div id="myLinks">
+            <a href="index.php">Página Inicial</a>
+            <a href="#quem-somos">Quem Somos?</a>
+            <a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a>
+        </div>
+  
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    <!-- ----------------------------------------- -->
 
         <div class="centro">
             <img src="assets/img/logo2.png" alt="" class="logodois">
