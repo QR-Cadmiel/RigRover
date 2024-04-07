@@ -70,32 +70,82 @@
         display: none;
     }
 
-    h2, h5 {
-        color: white;
+    .img1 {
+        flex-direction: column;
+    }
+
+    .img1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .evt-ct {
+        width: 89vw;
+    }
+
+    .imgevento {
+        width: 77vw;
+        margin: 14px;
+    }
+
+    .rightevento1 h2 {
+        font-size: 6.5vw;
         text-align: center;
+    }
+
+    .rightevento1 h5 {
+        text-align: justify;
+        font-size: 5vw;
+    }
+
+    .btn-voltar {
+        margin: 28px;
+        font-size: 18px;
+        width: 70vw;
+        height: 25vw;
     }
 
     footer {
         flex-direction: column;
     }
 
-    .img-footer-logo {
-        width: 40vw;
-    }
-
     footer li {
-        font-size: 5.7vw;
-        padding: 0 0 15px 0;
-        
-    }
-    
-    .redes-footer img {
-        width: 13vw;
+        padding: 4vw 0px 2px 0vw;
+        font-size: 21px;
     }
 
-    .cont-2, .cont-1 {
-        padding: 16px;
+    .img-footer-logo {
+        width: 41vw;
     }
+
+    .conteudo-footer {
+        width: 0;
+        float: none;
+        display: none;
+        place-items: center;
+        flex-direction: column;
+        padding: 13px;
+    }
+
+    .redes-footer {
+        place-items: center;
+        display: flex;
+    }
+
+    .redes-footer img {
+        width: 14vw;
+        padding: 0px 5px 0 0;
+    }
+
+    .conteudo2-footer {
+        display: none;
+        width: 0;
+        margin: 0 10px 0 40px;
+        padding: 11px;
+        flex-direction: column;
+        place-items: center;
+    }
+
 }
 
 @media only screen and (max-width: 480px) and (min-width: 319px) {
@@ -170,38 +220,85 @@
         display: none;
     }
 
-    h2, h5 {
-        color: white;
+    .img1 {
+        flex-direction: column;
+    }
+
+    .img1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .evt-ct {
+        width: 89vw;
+    }
+
+    .imgevento {
+        width: 77vw;
+        margin: 14px;
+    }
+
+    .rightevento1 h2 {
+        font-size: 6.5vw;
         text-align: center;
+    }
+
+    .rightevento1 h5 {
+        text-align: justify;
+        font-size: 5vw;
+    }
+
+    .btn-voltar {
+        margin: 28px;
+        font-size: 18px;
+        width: 70vw;
+        height: 25vw;
     }
 
     footer {
         flex-direction: column;
     }
 
-    .img-footer-logo {
-        width: 36vw;
-    }
-
     footer li {
-        font-size: 4.7vw;
-        padding: 0 0 15px 0;
-    }
-    
-    .redes-footer img {
-        width: 11vw;
+        padding: 4vw 0px 2px 0vw;
+        font-size: 21px;
     }
 
-    .cont-2, .cont-1 {
-        padding: 16px;
+    .img-footer-logo {
+        width: 41vw;
     }
+
+    .conteudo-footer {
+        width: 0;
+        float: none;
+        display: none;
+        place-items: center;
+        flex-direction: column;
+        padding: 13px;
+    }
+
+    .redes-footer {
+        place-items: center;
+        display: flex;
+    }
+
+    .redes-footer img {
+        width: 14vw;
+        padding: 0px 5px 0 0;
+    }
+
+    .conteudo2-footer {
+        display: none;
+        width: 0;
+        margin: 0 10px 0 40px;
+        padding: 11px;
+        flex-direction: column;
+        place-items: center;
+    }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 718px) {
-
-}
-
-@media only screen and (max-width: 768px) and (min-width: 719px) {
     .icon {
         display: block;
     }
@@ -273,19 +370,27 @@
         display: none;
     }
 
-    h2, h5 {
-        color: white;
-        text-align: center;
+    .img1 {
+        flex-direction: column;
     }
 
-    .img-footer-logo {
-        width: 17vw;
+    .rightevento1 h2 {
+        font-size: 3.5vw;
+    }
+
+    .rightevento1 h5 {
+        font-size: 2vw;
+    }
+
+    .btn-voltar {
+        font-size: 20px;
+        height: 7vw;
     }
 
     footer li {
         list-style: none;
         padding: 0 0px 11px 0;
-        font-size: 2.2vw;
+        font-size: 2.5vw;
     }
 
     .redes-footer img {
@@ -294,23 +399,16 @@
     }
 }
 
+@media only screen and (max-width: 768px) and (min-width: 719px) {
+
+}
+
 @media only screen and (max-width: 900px) and (min-width: 767px) {
 
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 901px) {
-    .img-footer-logo {
-        width: 15vw;
-    }
 
-    footer li {
-        font-size: 1.9vw;
-    }
-    
-    .redes-footer img {
-        width: 4.5vw;
-    }
-    
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1023px) {

@@ -19,32 +19,31 @@ include 'validacao.php';
 </head>
 
 <body>
+<nav class="navbar">
+    <ul>
+      <li>
+        <a href="hardware.php">Hardware - Home</a>
+      </li>
+      <li>
+        <a href="maquinas_recomendadas.php">Máquinas recomendadas</a>
+      </li>
+      <li>
+        <a href="comparar_hardwares.php">Comparar Hardwares</a>
+      </li>
+      <li>
+        <a href="forum.php">Fórum</a>
+      </li>
+      <li>
+        <a href="home.php">Home</a>
+      </li>
+    </ul>
+    <a href="logout.php">
+      <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
+    </a>
+  </nav>
 
-    <nav class="navbar">
-        <ul>
-            <li>
-                <a href="hardware.php">Hardware - Home</a>
-            </li>
-            <li>
-                <a href="maquinas_recomendadas.php">Máquinas recomendadas</a>
-            </li>
-            <li>
-                <a href="comparar_hardwares.php">Comparar Hardwares</a>
-            </li>
-            <li>
-                <a href="forum_hardwares.php">Fórum</a>
-            </li>
-            <li>
-                <a href="home.php">Home</a>
-            </li>
-        </ul>
-        <a href="logout.php">
-         <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
-     </a>
-    </nav>
-
-   <!-- --------Hamburguinho Menu----------  -->
-        <div class="topnav" >
+     <!-- --------Hamburguinho Menu----------  -->
+     <div class="topnav" >
             <div class="active">
              <a href="#myLinks"></a>
         </div>
@@ -52,14 +51,9 @@ include 'validacao.php';
         <div id="myLinks">
             <a href="hardware.php">Hardware - Home</a>
             <a href="maquinas_recomendadas.php">Máquinas recomendadas</a>
-            <a href="forum_hardwares.php">Fórum</a>
+            <a href="forum.php">Fórum</a>
             <a href="home.php">Home</a>
             <a href="logout.php">Deslogar da Conta</a>
-        </div>
-  
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
         </div>
     <!-- ----------------------------------------- -->
 

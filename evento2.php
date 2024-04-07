@@ -14,7 +14,7 @@ include 'validacao.php';
     <title>Eventos - Anime Friends</title>
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/eventos-info.css">
-     <link rel="stylesheet" href="assets\css\responsividade\eventos-info-responsivo.css">
+    <link rel="stylesheet" href="assets\css\responsividade\eventos-info-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
 </head>
 
@@ -98,7 +98,7 @@ include 'validacao.php';
                 <h1>Ingresso para entrada no Anime Friends</h1>
                 <div class="venda1">
                     <div class="leftvenda1">
-                        <img width="400px" src="https://pbs.twimg.com/media/D3GKddhXkAA8nYX.jpg" alt="">
+                        <img class="img-venda" src="https://pbs.twimg.com/media/D3GKddhXkAA8nYX.jpg" alt="">
                     </div>
 
                     <div class="rightvenda1">

@@ -70,32 +70,746 @@
         display: none;
     }
 
-    .imgevento {
-       display: none;
+    .img1 {
+        flex-direction: column;
     }
+
+    .imgevento {
+        margin: 20px;
+        width: 89vw;
+    }
+
+    .rightevento1 h5, h2 {
+        width: 79vw;
+        text-align: justify;
+    }
+
+    .rightevento1 h5 {
+        font-size: 5vw;
+    }
+
+    .rightevento1 h2 {
+        font-size: 6vw;
+        width: 35vw;
+        text-align: center;
+    }
+
+    .venda1 {
+        flex-direction: column;
+    }
+
+    .img-venda {
+        width: 90vw;
+    }
+
+    .rightvenda1 h5, h2, h4 {
+        width: 82vw;
+        padding: 5px;
+        text-align: justify;
+    }
+
+    .rightvenda1 h5 {
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .btn-ticket {
+        width: 65vw;
+        height: 14vw;
+    }
+
+    .btn-voltar {
+        width: 68vw;
+        height: 14vw;
+        margin: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .img-footer-logo {
+        width: 40vw;
+    }
+
+    footer li {
+        font-size: 5.7vw;
+        padding: 0 0 15px 0;
+        
+    }
+    
+    .redes-footer img {
+        width: 13vw;
+    }
+
+    .cont-2, .cont-1 {
+        padding: 16px;
+    }
+
 }
 
 @media only screen and (max-width: 480px) and (min-width: 319px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    .img1 {
+        flex-direction: column;
+    }
+
+    .imgevento {
+        margin: 20px;
+        width: 89vw;
+    }
+
+    .rightevento1 h5, h2 {
+        width: 79vw;
+        text-align: justify;
+    }
+
+    .rightevento1 h5 {
+        font-size: 5vw;
+    }
+
+    .venda1 {
+        flex-direction: column;
+    }
+
+    .img-venda {
+        width: 90vw;
+    }
+
+    .rightvenda1 h5, h2, h4 {
+        width: 82vw;
+        padding: 5px;
+        text-align: justify;
+    }
+
+    .rightvenda1 h5 {
+        font-size: 15px;
+    }
+
+    .rightevento1 h2 {
+        font-size: 6vw;
+        width: 35vw;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .btn-ticket {
+        width: 65vw;
+        height: 14vw;
+    }
+
+    .btn-voltar {
+        width: 68vw;
+        height: 14vw;
+        margin: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .img-footer-logo {
+        width: 40vw;
+    }
+
+    footer li {
+        font-size: 5.7vw;
+        padding: 0 0 15px 0;
+        
+    }
+    
+    .redes-footer img {
+        width: 13vw;
+    }
+
+    .cont-2, .cont-1 {
+        padding: 16px;
+    }
 
 }
 
 @media only screen and (min-width: 481px) and (max-width: 718px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    .img1 {
+        flex-direction: column;
+    }
+
+    .imgevento {
+        margin: 20px;
+        width: 89vw;
+    }
+
+    .rightevento1 h5, h2 {
+        width: 79vw;
+        text-align: justify;
+    }
+
+    .rightevento1 h5 {
+        font-size: 5vw;
+    }
+
+    .rightevento1 h2 {
+        font-size: 6vw;
+        width: 35vw;
+        text-align: center;
+    }
+
+    .venda1 {
+        flex-direction: column;
+    }
+
+    .img-venda {
+        width: 90vw;
+    }
+
+    .rightvenda1 h5, h2, h4 {
+        width: 82vw;
+        padding: 5px;
+        text-align: justify;
+    }
+
+    .rightvenda1 h5 {
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .btn-ticket {
+        width: 65vw;
+        height: 14vw;
+    }
+
+    .btn-voltar {
+        width: 68vw;
+        height: 14vw;
+        margin: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .img-footer-logo {
+        width: 30vw;
+    }
+
+    footer li {
+        font-size: 4.7vw;
+        padding: 0 0 15px 0;
+        
+    }
+    
+    .redes-footer img {
+        width: 11vw;
+    }
+
+    .cont-2, .cont-1 {
+        padding: 16px;
+    }
 
 }
 
 @media only screen and (max-width: 768px) and (min-width: 719px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    .img1 {
+        flex-direction: column;
+    }
+
+    .imgevento {
+        margin: 20px;
+        width: 89vw;
+    }
+
+    .rightevento1 h5, h2 {
+        width: 79vw;
+        text-align: justify;
+    }
+
+    .rightevento1 h5 {
+        font-size: 2.4vw;
+    }
+
+    .venda1 {
+        flex-direction: column;
+    }
+
+    .img-venda {
+        width: 90vw;
+    }
+
+    .rightvenda1 h5, h2, h4 {
+        width: 82vw;
+        padding: 5px;
+        text-align: justify;
+    }
+
+    .rightvenda1 h5 {
+        font-size: 19px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .undervenda1 {
+        padding-top: 10px;
+    }
+
+    .btn-voltar {
+        width: 41vw;
+        height: 8vw;
+        margin: 24px;
+    }
+
+    .btn-voltar {
+        width: 68vw;
+        height: 14vw;
+        margin: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+   .img-footer-logo {
+    width: 22vw;
+    }
+
+    footer li {
+        font-size: 2.8vw;
+        padding: 0 0 15px 0;
+        
+    }
+    
+    .redes-footer img {
+        width: 7vw;
+    }
+
+    .cont-2, .cont-1 {
+        padding: 16px;
+    }
 
 }
 
 @media only screen and (max-width: 900px) and (min-width: 767px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    .img1 {
+        flex-direction: column;
+    }
+
+    .imgevento {
+        margin: 20px;
+        width: 89vw;
+    }
+
+    .rightevento1 h5, h2 {
+        width: 79vw;
+        text-align: justify;
+    }
+
+    .rightevento1 h5 {
+        font-size: 2.4vw;
+    }
+
+    .venda1 {
+        flex-direction: column;
+    }
+
+    .img-venda {
+        width: 90vw;
+    }
+
+    .rightvenda1 h5, h2, h4 {
+        width: 82vw;
+        padding: 5px;
+        text-align: justify;
+    }
+
+    .rightvenda1 h5 {
+        font-size: 19px;
+    }
+
+    .rightevento1 h2 {
+        font-size: 4vw;
+        width: 35vw;
+        text-align: start;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .undervenda1 {
+        padding-top: 10px;
+    }
+
+    .btn-voltar {
+        width: 41vw;
+        height: 8vw;
+        margin: 24px;
+    }
+
+    .btn-voltar {
+        width: 68vw;
+        height: 14vw;
+        margin: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+   .img-footer-logo {
+    width: 22vw;
+    }
+
+    footer li {
+        font-size: 2.8vw;
+        padding: 0 0 15px 0;
+        
+    }
+    
+    .redes-footer img {
+        width: 7vw;
+    }
+
+    .cont-2, .cont-1 {
+        padding: 16px;
+    }
 
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 901px) {
+    .imgevento {
+        width: 54vw;
+    }
 
+    .img-venda {
+        width: 40vw;
+    }
+
+    .btn-voltar {
+        width: 32vw;
+    }
+
+    .btn-ticket {
+        width: 34vw;
+    }
+
+    h5 {
+        font-size: 1.4vw;
+    }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1023px) {
+
+    .imgevento {
+        width: 54vw;
+    }
+
+    .img-venda {
+        width: 40vw;
+    }
+
+    .btn-voltar {
+        width: 32vw;
+    }
+
+    .btn-ticket {
+        width: 34vw;
+    }
+
+    h5 {
+        font-size: 1.4vw;
+    }
 
 }
 @media only screen and (min-width: 1024px)  {

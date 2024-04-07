@@ -1,0 +1,281 @@
+@media only screen and (max-width: 320px) {
+    body {
+        background-size: 81rem;
+    }
+
+    .password_esq {
+        height: 138vw;
+        width: 84vw;
+    }
+
+    .password_esq input[type="email"], .password_esq input[type="password"] {
+        width: 77vw;
+        height: 47px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #117C0F;
+        font-size: 16px;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .btn-cad {
+        font-size: 18px;
+        height: 15vw;
+        width: 77vw;
+    }
+
+    .password_esq a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 12px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 319px) {
+    body {
+        background-size: 81rem;
+    }
+
+    .password_esq {
+        height: 102vw;
+        width: 84vw;
+    }
+
+    .password_esq input[type="email"], .password_esq input[type="password"] {
+        width: 77vw;
+        height: 47px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #117C0F;
+        font-size: 16px;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .btn-cad {
+        font-size: 18px;
+        height: 15vw;
+        width: 77vw;
+    }
+
+    .password_esq a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 12px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 718px) {
+    body {
+        background-size: 81rem;
+    }
+
+    .password_esq {
+        height: 102vw;
+        width: 84vw;
+    }
+
+    .password_esq input[type="email"], .password_esq input[type="password"] {
+        width: 77vw;
+        height: 47px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #117C0F;
+        font-size: 16px;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .btn-cad {
+        font-size: 18px;
+        height: 15vw;
+        width: 77vw;
+    }
+
+    .password_esq a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 12px;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 719px) {
+    body {
+        background-size: 81rem;
+    }
+
+    .password_esq {
+        height: 50vw;
+        width: 62vw;
+    }
+
+    .password_esq input[type="email"], .password_esq input[type="password"] {
+        width: 49vw;
+        height: 47px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #117C0F;
+        font-size: 16px;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .btn-cad {
+        font-size: 16px;
+        height: 6vw;
+        width: 49vw;
+    }
+
+    .password_esq a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 12px;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 767px) {
+    body {
+        background-size: 81rem;
+    }
+
+    .password_esq {
+        height: 50vw;
+        width: 62vw;
+    }
+
+    .password_esq input[type="email"], .password_esq input[type="password"] {
+        width: 49vw;
+        height: 47px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #117C0F;
+        font-size: 16px;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .btn-cad {
+        font-size: 16px;
+        height: 6vw;
+        width: 49vw;
+    }
+
+    .password_esq a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 12px;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 901px) {
+    body {
+        background-size: 81rem;
+    }
+
+    .password_esq {
+        height: 40vw;
+        width: 49vw;
+    }
+
+    .password_esq input[type="email"], .password_esq input[type="password"] {
+        width: 31vw;
+        height: 47px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #117C0F;
+        font-size: 16px;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .btn-cad {
+        font-size: 16px;
+        height: 4vw;
+        width: 31vw;
+    }
+
+    .password_esq a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 12px;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1023px) {
+    body {
+        background-size: 81rem;
+    }
+
+    .password_esq {
+        height: 40vw;
+        width: 49vw;
+    }
+
+    .password_esq input[type="email"], .password_esq input[type="password"] {
+        width: 31vw;
+        height: 47px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #117C0F;
+        font-size: 16px;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    .btn-cad {
+        font-size: 16px;
+        height: 4vw;
+        width: 31vw;
+    }
+
+    .password_esq a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-top: 12px;
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 1024px)  {
+    .password_esq {
+        width: 41vw;
+        height: 31vw;
+    }
+
+    .password_esq input[type="email"], .password_esq input[type="password"] {
+        width: 24vw;
+    }
+    
+    .btn-cad {
+        width: 24vw;
+        font-size: 16px;
+    }
+
+    .password_esq a {
+        margin-top: 14px;
+    }
+}

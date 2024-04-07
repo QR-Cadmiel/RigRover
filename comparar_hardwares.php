@@ -32,7 +32,7 @@ include 'validacao.php';
         <a href="comparar_hardwares.php">Comparar Hardwares</a>
       </li>
       <li>
-        <a href="forum_hardwares.php">Fórum</a>
+        <a href="forum.php">Fórum</a>
       </li>
       <li>
         <a href="home.php">Home</a>
@@ -52,7 +52,7 @@ include 'validacao.php';
         <div id="myLinks">
             <a href="hardware.php">Hardware - Home</a>
             <a href="maquinas_recomendadas.php">Máquinas recomendadas</a>
-            <a href="forum_hardwares.php">Fórum</a>
+            <a href="forum.php">Fórum</a>
             <a href="home.php">Home</a>
             <a href="logout.php">Deslogar da Conta</a>
         </div>
