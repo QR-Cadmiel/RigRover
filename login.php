@@ -2,6 +2,7 @@
 
 session_start();
 
+
 include 'conexao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
@@ -13,18 +14,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($email) || empty($password)) {
         $error_message = 'Por favor, preencha todos os campos do formulário.';
     } else {
-        $sql = "SELECT id, email, password FROM clientes WHERE email = ?";
+        $sql = "SELECT id, email, password, name FROM clientes WHERE email = ?";
         $stmt = $mysqli->prepare($sql);
 
         if ($stmt) {
             $stmt->bind_param('s', $email);
             $stmt->execute();
-            $stmt->bind_result($id, $dbEmail, $dbPassword);
+            $stmt->bind_result($id, $dbEmail, $dbPassword, $dbName);
 
             if ($stmt->fetch() && password_verify($password, $dbPassword)) {
                 $_SESSION['logged_in'] = true;
                 $_SESSION['user_id'] = $id;
                 $_SESSION['email'] = $dbEmail;
+                $_SESSION['name'] = $dbName;
                 header('Location: home.php');
                 exit();
             } else {
@@ -41,6 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $mysqli->close();
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

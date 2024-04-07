@@ -46,50 +46,9 @@ nav ul {
     color: white;
 }
 
-input[type="text"] {
-    width: 70%;
-    margin: 20px auto 0;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #6DFB5C;
-    border: none;
-    font-size: 16px;
-    display: block;
-}
-
-input[type="text"]::placeholder {
-    color: #888888;
-}
-
 h3 {
     text-align: center;
     margin-bottom: 10px;
-}
-
-.categories {
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: #D9D9D9;
-    border-radius: 5px;
-    padding: 10px;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-}
-
-.categories button {
-    cursor: pointer;
-}
-
-.categories button {
-    background-color: #CFAAAA;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
 }
 
 h3 {
@@ -116,18 +75,6 @@ h3 {
     position: relative;
 }
 
-.ntc1,
-.ntc2,
-.ntc3,
-.ntc4,
-.ntc5,
-.ntc6,
-.ntc7,
-.ntc8,
-.ntc9 {
-    cursor: pointer;
-
-}
 
 .noticias h4,
 .noticias p {
@@ -144,58 +91,6 @@ h3 {
 
 h4 {
     width: 500px;
-}
-
-.noticia-popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-}
-
-.noticia-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 80%;
-    padding: 20px;
-    background-color: #1B1E25;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.noticia-content h2 {
-    font-size: 24px;
-    margin-top: 0;
-    color: white;
-}
-
-.noticia-content p {
-    font-size: 16px;
-    line-height: 1.5;
-    width: 1000px;
-    color: white;
-}
-
-.noticia-content button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #1D1D1D;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
-.fechar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
 }
 
 h6 {
@@ -285,4 +180,37 @@ footer {
 
     #myLinks {
     display: none;
+}
+
+.criar-pergunta{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.criar-pergunta textarea {
+    background-color: #1B1E25;
+    width: 600px;
+    height: 100px;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-criar {
+    width: 70%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #6DFB5C;
+    border: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.titulo-criar {
+    margin-right: 20px
 }

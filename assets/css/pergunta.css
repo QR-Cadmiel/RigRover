@@ -4,6 +4,7 @@ body {
     padding: 0;
     min-height: 100vh;
     background-color: #1B1E25;
+    margin-bottom: 130px;
 }
 
 
@@ -69,12 +70,16 @@ nav ul {
 #form-mensagem {
     width: 100%;
     padding: 20px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 35%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #1B1E25;
 }
-
 
 #mensagem {
     width: calc(100% - 100px);
@@ -104,35 +109,35 @@ footer {
     color: white;
     flex-direction: row;
     display: flex;
-  }
-  
-  footer li {
+}
+
+footer li {
     list-style: none;
     padding: 0 0px 11px 0;
     font-size: 1.7vw;
-  }
-  
-  footer li, a {
+}
+
+footer li,
+a {
     text-decoration: none;
     color: white;
     text-align: left;
-  }
-  
-  .img-footer-logo {
-    width: 15vw;
-  }
+}
 
-  .redes-footer img {
+.img-footer-logo {
+    width: 15vw;
+}
+
+.redes-footer img {
     width: 4vw;
     padding: 0 11px 0 0;
 }
-  
-  .cont-2,
-  .cont-1 {
+
+.cont-2,
+.cont-1 {
     padding: 20px;
     color: white;
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
-  }
-  
+}
