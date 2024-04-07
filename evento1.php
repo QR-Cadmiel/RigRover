@@ -12,7 +12,10 @@ include 'validacao.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos - BGS</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/eventos-info.css">
+    <link rel="stylesheet" href="assets\css\responsividade\eventos-info-responsivo.css">
+    <script src="assets/js/hamburguinho.js"></script>
 </head>
 
 <body>
@@ -49,6 +52,28 @@ include 'validacao.php';
             </ul>
         </nav>
     </div>
+
+ <!-- --------Hamburguinho Menu----------  -->
+ <div class="topnav" >
+            <div class="active">
+             <a href="#myLinks"></a>
+        </div>
+  
+        <div id="myLinks">
+            <a href="home.php">Página Inicial</a>
+            <a href="noticias.php">Noticias</a>
+            <a href="eventos.php">Eventos</a>
+            <a href="forum.php">Fórum</a>
+            <a href="comparar_hardwares.php">Hardware</a>
+            <a href="games.php">Wiki Jogos</a>
+            <a href="logout.php">Deslogar da Conta</a>
+        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    <!-- ----------------------------------------- -->
+
     <div class="container">
         <div class="evt-ct">
 
@@ -72,7 +97,7 @@ include 'validacao.php';
                 <h1>Ingresso para entrada na BGS</h1>
                 <div class="venda1">
                     <div class="leftvenda1">
-                        <img width="600px" src="https://i0.wp.com/mundodrix.com.br/site/wp-content/uploads/2018/09/Aplicativo-Oficial-da-Brasil-Game-Show.png?fit=1090%2C457&ssl=1" alt="">
+                        <img class="img-venda" src="https://i0.wp.com/mundodrix.com.br/site/wp-content/uploads/2018/09/Aplicativo-Oficial-da-Brasil-Game-Show.png?fit=1090%2C457&ssl=1" alt="">
                     </div>
 
                     <div class="rightvenda1">
