@@ -12,7 +12,7 @@ include 'validacao.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos - Anime Friends</title>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/eventos-info.css">
     <link rel="stylesheet" href="assets\css\responsividade\eventos-info-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
@@ -54,11 +54,11 @@ include 'validacao.php';
     </div>
 
     <!-- --------Hamburguinho Menu----------  -->
-        <div class="topnav" >
-            <div class="active">
-             <a href="#myLinks"></a>
+    <div class="topnav">
+        <div class="active">
+            <a href="#myLinks"></a>
         </div>
-  
+
         <div id="myLinks">
             <a href="home.php">Página Inicial</a>
             <a href="noticias.php">Noticias</a>
@@ -68,10 +68,10 @@ include 'validacao.php';
             <a href="games.php">Wiki Jogos</a>
             <a href="logout.php">Deslogar da Conta</a>
         </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <!-- ----------------------------------------- -->
 
     <div class="container">
@@ -109,8 +109,15 @@ include 'validacao.php';
                     </div>
                 </div>
                 <div class="undervenda1">
-                    <button class="btn-ticket">Comprar</button>
+                    <button class="btn-ticket" onclick="exibirAlerta()">Comprar</button>
                 </div>
+
+                <script>
+                    function exibirAlerta() {
+                        alert("A compra não está disponível");
+                    }
+                </script>
+
             </div>
         </div>
 
@@ -122,37 +129,37 @@ include 'validacao.php';
     </div>
 
     <footer>
-           <div class="cont-1">
-           <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
-           <ul>
-            <li><a href="index.php">Página Inicial</a></li>
-            <li><a href="#quem-somos">Quem Somos?</a></li>
-            <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
-           </ul>
-           </div>
-           <div class="cont-2">
-           <div>
+        <div class="cont-1">
+            <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
+            <ul>
+                <li><a href="index.php">Página Inicial</a></li>
+                <li><a href="#quem-somos">Quem Somos?</a></li>
+                <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
+            </ul>
+        </div>
+        <div class="cont-2">
+            <div>
                 <div class="redes-footer">
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
-                        <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                         <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                    <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                    <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
                 </div>
                 <ul>
-                        <li>
-                            <a href="fale_conosco.php">Fale Conosco</a>
-                        </li>
-                        <li>
-                            <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
-                        </li>
-                        <li>
-                            <a href="termo_e_condicoes.php">Termos e Condições</a>
-                        </li>
+                    <li>
+                        <a href="fale_conosco.php">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
+                    </li>
+                    <li>
+                        <a href="termo_e_condicoes.php">Termos e Condições</a>
+                    </li>
                 </ul>
-                    </div>
-                </div>
-           </div>
-        </footer>   
+            </div>
+        </div>
+        </div>
+    </footer>
 </body>
 
 </html>
