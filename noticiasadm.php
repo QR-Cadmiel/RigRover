@@ -7,6 +7,12 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSI
     exit;
 }
 
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSION['email'] !== 'admin@gmail.com') {
+    $mostrarBotao = false;
+} else {
+    $mostrarBotao = true;
+}
+
 include 'conexao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
@@ -145,8 +151,14 @@ while ($noticias = $resultado->fetch_assoc()) {
                                 <img src="<?php echo $noticias['imagem']; ?>" alt="Imagem da Notícia">
                             </div>
                             <div class="tipo-noticia" style="display: none;"><?php echo strtolower($noticias['tipo']); ?></div>
+
+                            <?php if ($mostrarBotao) { ?>
+                                <button onclick="editarNoticia(<?php echo $noticias['id']; ?>)">Editar</button>
+                                <button onclick="excluirNoticia(<?php echo $noticias['id']; ?>)">Excluir</button>
+                            <?php } ?>
                         </div>
                     <?php endforeach; ?>
+
 
                 </div>
 
@@ -207,6 +219,16 @@ while ($noticias = $resultado->fetch_assoc()) {
                                 noticia.style.display = 'none';
                             }
                         });
+                    }
+
+                    function editarNoticia(id) {
+                        window.location.href = "editar_noticia.php?id=" + id;
+                    }
+
+                    function excluirNoticia(id) {
+                        if (confirm("Tem certeza de que deseja excluir esta notícia?")) {
+                            window.location.href = "excluir_noticia.php?id=" + id;
+                        }
                     }
                 </script>
 
