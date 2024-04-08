@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Redefinir Senha - RigRover</title>
     <link rel="stylesheet" href="assets/css/redefinir_senha.css">
     <link rel="stylesheet" href="assets\css\responsividade\redefinir-senha-responsivo.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
 </head>
 
 <body>

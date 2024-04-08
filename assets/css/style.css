@@ -291,7 +291,8 @@ footer li {
   list-style: none;
 }
 
-footer li, a {
+footer li,
+a {
   text-decoration: none;
   color: white;
   text-align: left;
@@ -314,6 +315,6 @@ footer li, a {
   display: none;
 }
 
-  #myLinks {
+#myLinks {
   display: none;
 }

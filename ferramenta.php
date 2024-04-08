@@ -13,6 +13,7 @@ include 'validacao.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações recomendadas para jogos - RigRover</title>
     <link rel="stylesheet" href="assets/css/ferramenta.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
 </head>
 
 <body>

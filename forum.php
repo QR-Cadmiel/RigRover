@@ -50,6 +50,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
     <link rel="stylesheet" href="assets/css/forum.css">
     <link rel="stylesheet" href="assets\css\responsividade\forum-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
 </head>
 
 <body>

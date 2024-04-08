@@ -15,6 +15,7 @@ include 'validacao.php';
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/comparar_hardwares.css">
   <link rel="stylesheet" href="assets\css\responsividade\comparar-hardwares-responsivo.css">
+  <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
   <script src="assets/js/hamburguinho.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>

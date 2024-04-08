@@ -13,9 +13,10 @@ include '../validacao.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games - Genshin Impact</title>
     <link rel="stylesheet" href="../assets/css/games-info.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets\css\responsividade\games-info-responsivo.css">
     <script src="../assets/js/hamburguinho.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
 </head>
 
 <body>
@@ -47,26 +48,26 @@ include '../validacao.php';
             </ul>
         </nav>
 
-<!-- --------Hamburguinho Menu----------  -->
-<div class="topnav" >
+        <!-- --------Hamburguinho Menu----------  -->
+        <div class="topnav">
             <div class="active">
-             <a href="#myLinks"></a>
-        </div>
-  
-        <div id="myLinks">
-            <a href="../home.php">Página Inicial</a>
-            <a href="../noticias.php">Noticias</a>
-            <a href="../eventos.php">Eventos</a>
-            <a href="../forum.php">Fórum</a>
-            <a href="../comparar_hardwares.php">Hardware</a>
-            <a href="../games.php">Wiki Jogos</a>
-            <a href="../logout.php">Deslogar da Conta</a>
-        </div>
+                <a href="#myLinks"></a>
+            </div>
+
+            <div id="myLinks">
+                <a href="../home.php">Página Inicial</a>
+                <a href="../noticias.php">Noticias</a>
+                <a href="../eventos.php">Eventos</a>
+                <a href="../forum.php">Fórum</a>
+                <a href="../comparar_hardwares.php">Hardware</a>
+                <a href="../games.php">Wiki Jogos</a>
+                <a href="../logout.php">Deslogar da Conta</a>
+            </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-<!-- ----------------------------------------- -->
+        <!-- ----------------------------------------- -->
 
     </div>
     <div class="container">
@@ -74,8 +75,7 @@ include '../validacao.php';
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
-                        <img src="https://cdn2.unrealengine.com/genshin-impact-version-2-8-3840x2160-357d3d64d056.png"
-                            class="imgevento" alt="">
+                        <img src="https://cdn2.unrealengine.com/genshin-impact-version-2-8-3840x2160-357d3d64d056.png" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
 
@@ -113,14 +113,11 @@ include '../validacao.php';
         </div>
         <div class="cont-2">
             <div>
-            <div class="redes-footer">
-                    <a href="https://www.instagram.com/rigrovergames/"><img src="../assets/img/iconinstagram.png"
-                            alt=""></a>
+                <div class="redes-footer">
+                    <a href="https://www.instagram.com/rigrovergames/"><img src="../assets/img/iconinstagram.png" alt=""></a>
                     <a href="https://twitter.com/RigRoverGames"><img src="../assets/img/iconx.png" alt=""></a>
-                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
-                        src="../assets/img/iconfacebook.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
-                            src="../assets/img/iconyoutube.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="../assets/img/iconfacebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="../assets/img/iconyoutube.png" alt=""></a>
                 </div>
                 <ul>
                     <li>

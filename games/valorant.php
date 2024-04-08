@@ -13,9 +13,10 @@ include '../validacao.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games - Valorant</title>
     <link rel="stylesheet" href="../assets/css/games-info.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets\css\responsividade\games-info-responsivo.css">
     <script src="../assets/js/hamburguinho.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
 </head>
 
 <body>
@@ -48,12 +49,12 @@ include '../validacao.php';
         </nav>
     </div>
 
-<!-- --------Hamburguinho Menu----------  -->
-<div class="topnav" >
-            <div class="active">
-             <a href="#myLinks"></a>
+    <!-- --------Hamburguinho Menu----------  -->
+    <div class="topnav">
+        <div class="active">
+            <a href="#myLinks"></a>
         </div>
-  
+
         <div id="myLinks">
             <a href="../home.php">Página Inicial</a>
             <a href="../noticias.php">Noticias</a>
@@ -63,11 +64,11 @@ include '../validacao.php';
             <a href="../games.php">Wiki Jogos</a>
             <a href="../logout.php">Deslogar da Conta</a>
         </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-<!-- ----------------------------------------- -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- ----------------------------------------- -->
 
     <div class="container">
         <div class="evt-ct">
@@ -75,8 +76,7 @@ include '../validacao.php';
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
-                        <img src="https://s2-techtudo.glbimg.com/M0ll8r3w3WsiRLLroy5xJaK4A5c=/0x0:1656x915/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/N/j/3cZcm6Qf6TxFIAW0nMNg/como-baixar-valorant-de-graca-the-squad.jpg"
-                            class="imgevento" alt="">
+                        <img src="https://s2-techtudo.glbimg.com/M0ll8r3w3WsiRLLroy5xJaK4A5c=/0x0:1656x915/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/N/j/3cZcm6Qf6TxFIAW0nMNg/como-baixar-valorant-de-graca-the-squad.jpg" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
                         <h2>Valorant</h2>
@@ -115,14 +115,11 @@ include '../validacao.php';
         </div>
         <div class="cont-2">
             <div>
-            <div class="redes-footer">
-                    <a href="https://www.instagram.com/rigrovergames/"><img src="../assets/img/iconinstagram.png"
-                            alt=""></a>
+                <div class="redes-footer">
+                    <a href="https://www.instagram.com/rigrovergames/"><img src="../assets/img/iconinstagram.png" alt=""></a>
                     <a href="https://twitter.com/RigRoverGames"><img src="../assets/img/iconx.png" alt=""></a>
-                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
-                        src="../assets/img/iconfacebook.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
-                            src="../assets/img/iconyoutube.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="../assets/img/iconfacebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="../assets/img/iconyoutube.png" alt=""></a>
                 </div>
                 <ul>
                     <li>

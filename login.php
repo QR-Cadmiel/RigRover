@@ -54,6 +54,7 @@ $mysqli->close();
     <title>Login - RigRover</title>
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets\css\responsividade\login-responsivo.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
 </head>
 
 <body>

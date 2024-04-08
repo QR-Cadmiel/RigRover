@@ -12,6 +12,7 @@ include 'conexao.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/politipriv.css">
     <title>Políticas de Privacidade - RigRover</title>
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
 </head>
 
 <body>

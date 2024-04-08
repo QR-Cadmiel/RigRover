@@ -40,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórum: <?php echo isset($_GET['titulo']) ? htmlspecialchars($_GET['titulo']) : "Pergunta"; ?></title>
     <link rel="stylesheet" href="assets/css/pergunta.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <script type="text/javascript">
         var ultimaMensagemID = 0;
 

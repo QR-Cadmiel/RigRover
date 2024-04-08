@@ -16,6 +16,7 @@ include 'validacao.php';
     <link rel="stylesheet" href="assets/css/eventos-info.css">
     <link rel="stylesheet" href="assets\css\responsividade\eventos-info-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
 </head>
 
 <body>

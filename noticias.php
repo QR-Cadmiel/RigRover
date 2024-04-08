@@ -45,6 +45,7 @@ while ($noticias = $resultado->fetch_assoc()) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/noticias.css">
     <link rel="stylesheet" href="assets\css\responsividade\noticias-responsivo.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <script src="assets/js/hamburguinho.js"></script>
 </head>
 

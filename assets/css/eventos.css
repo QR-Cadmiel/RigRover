@@ -42,6 +42,7 @@ nav ul {
 
     width: 46px;
 }
+
 .a-ft {
     color: white;
 }
@@ -128,42 +129,43 @@ footer {
     color: white;
     flex-direction: row;
     display: flex;
-  }
-  
-  footer li {
+}
+
+footer li {
     list-style: none;
     padding: 0 0px 11px 0;
     font-size: 1.7vw;
-  }
-  
-  footer li, a {
+}
+
+footer li,
+a {
     text-decoration: none;
     color: white;
     text-align: left;
-  }
-  
-  .img-footer-logo {
-    width: 15vw;
-  }
+}
 
-  .redes-footer img {
+.img-footer-logo {
+    width: 15vw;
+}
+
+.redes-footer img {
     width: 4vw;
     padding: 0 11px 0 0;
 }
-  
-  .cont-2,
-  .cont-1 {
+
+.cont-2,
+.cont-1 {
     padding: 20px;
     color: white;
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
-  }
-  
-  .icon {
+}
+
+.icon {
     display: none;
 }
 
-    #myLinks {
+#myLinks {
     display: none;
 }
