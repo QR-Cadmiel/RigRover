@@ -65,6 +65,23 @@
         cursor: default; 
     }
 
+    .criar-pergunta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .criar-pergunta textarea {
+        background-color: #1B1E25;
+        width: 79vw;
+        height: 35vw;
+        color: white;
+        border-radius: 10px;
+    }
+
+    label {
+        font-size: 24px;
+    }
+
     /* Esconder a navbar tradicional */
     nav.navbar {
         display: none;
@@ -161,6 +178,23 @@
         cursor: default; 
     }
 
+    .criar-pergunta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .criar-pergunta textarea {
+        background-color: #1B1E25;
+        width: 79vw;
+        height: 35vw;
+        color: white;
+        border-radius: 10px;
+    }
+
+    label {
+        font-size: 24px;
+    }
+
     /* Esconder a navbar tradicional */
     nav.navbar {
         display: none;
@@ -171,29 +205,25 @@
     }
 
     .img-footer-logo {
-        width: 34vw;
+        width: 40vw;
     }
 
     footer li {
-        font-size: 4.7vw;
+        font-size: 5.7vw;
         padding: 0 0 15px 0;
+        
     }
     
     .redes-footer img {
-        width: 11vw;
+        width: 13vw;
     }
 
     .cont-2, .cont-1 {
         padding: 16px;
     }
-
 }
 
-@media only screen and (min-width: 481px) and (max-width: 718px) {
-
-}
-
-@media only screen and (max-width: 768px) and (min-width: 719px) {
+@media only screen and (max-width: 900px) and (min-width: 767px) {
     .icon {
         display: block;
     }
@@ -260,30 +290,57 @@
         cursor: default; 
     }
 
+    .criar-pergunta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .criar-pergunta textarea {
+        background-color: #1B1E25;
+        width: 87vw;
+        height: 35vw;
+        color: white;
+        border-radius: 10px;
+    }
+
+    label {
+        font-size: 29px;
+    }     
+
     /* Esconder a navbar tradicional */
     nav.navbar {
         display: none;
     }
 
-    footer li {
-        font-size: 2.5vw;
+    .img-footer-logo {
+        width: 23vw;
     }
 
+    footer li {
+        font-size: 3vw;
+    }
+    
     .redes-footer img {
         width: 6vw;
     }
 
-    .img-footer-logo {
-        width: 18vw;
+    .cont-2, .cont-1 {
+        padding: 16px;
     }
 }
 
-@media only screen and (max-width: 900px) and (min-width: 767px) {
-
-}
-
 @media only screen and (max-width: 1024px) and (min-width: 901px) {
+    .criar-pergunta textarea {
+        background-color: #1B1E25;
+        width: 41vw;
+        height: 117px;
+        color: white;
+        border-radius: 10px;
+    }
 
+        label {
+            font-size: 23px;
+        }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1023px) {
