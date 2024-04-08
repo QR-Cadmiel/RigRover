@@ -15,6 +15,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $year = $_POST["year"];
         $nationality = $_POST["nationality"];
 
+        if (strlen($password) < 8) {
+            echo "<script>alert('A senha deve ter no mínimo 8 caracteres.'); window.location.href = 'cadastro.php';</script>";
+            exit;
+        }
+
         $dob = "$year-$month-$day";
 
         $sql = "INSERT INTO clientes (email, name, password, date_of_birth, nationality) VALUES (?, ?, ?, ?, ?)";
