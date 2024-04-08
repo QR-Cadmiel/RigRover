@@ -183,7 +183,6 @@
         flex-direction: column;
         place-items: center;
     }
-
     
 }
 
@@ -951,8 +950,9 @@
         height: 40%;
     }    
 
+   
     .i1t2, .i2t1 {
-        padding: 16px;
+        padding: 50px;
     }
 
     h1#equipe-desenvolvedora {

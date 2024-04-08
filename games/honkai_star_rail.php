@@ -22,27 +22,27 @@ include '../validacao.php';
 <body>
 
     <div class="rigrover-1">
-        <nav class="navbar">
+    <nav class="navbar">
             <ul>
                 <li>
-                    <a href="home.php" id="btn-nav">Página Inicial</a>
+                    <a href="../home.php" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="noticias.php" id="btn-nav">Noticias</a>
+                    <a href="../noticias.php" id="btn-nav">Noticias</a>
                 </li>
                 <li>
-                    <a href="eventos.php" id="btn-nav">Eventos</a>
+                    <a href="../eventos.php" id="btn-nav">Eventos</a>
                 </li>
                 <li>
-                    <a href="forum.php" id="btn-nav">Fórum</a>
+                    <a href="../forum.php" id="btn-nav">Fórum</a>
                 </li>
                 <li>
-                    <a href="comparar_hardwares.php" id="btn-nav">Hardware</a>
+                    <a href="../hardware.php" id="btn-nav">Hardware</a>
                 </li>
                 <li>
-                    <a href="games.php" id="btn-nav">Wiki Jogos</a>
+                    <a href="../games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
-                <a href="logout.php">
+                <a href="../logout.php">
                     <img src="../assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
             </ul>
@@ -60,7 +60,7 @@ include '../validacao.php';
             <a href="../noticias.php">Noticias</a>
             <a href="../eventos.php">Eventos</a>
             <a href="../forum.php">Fórum</a>
-            <a href="../comparar_hardwares.php">Hardware</a>
+            <a href="../hardware.php">Hardware</a>
             <a href="../games.php">Wiki Jogos</a>
             <a href="../logout.php">Deslogar da Conta</a>
         </div>

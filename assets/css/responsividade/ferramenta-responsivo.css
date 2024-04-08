@@ -1,0 +1,460 @@
+@media only screen and (max-width: 320px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer li {
+        padding: 4vw 0px 2px 0vw;
+        font-size: 21px;
+    }
+
+    .img-footer-logo {
+        width: 41vw;
+    }
+
+    .conteudo-footer {
+        width: 0;
+        float: none;
+        display: none;
+        place-items: center;
+        flex-direction: column;
+        padding: 13px;
+    }
+
+    .redes-footer {
+        place-items: center;
+        display: flex;
+    }
+
+    .redes-footer img {
+        width: 14vw;
+        padding: 0px 5px 0 0;
+    }
+
+    .conteudo2-footer {
+        display: none;
+        width: 0;
+        margin: 0 10px 0 40px;
+        padding: 11px;
+        flex-direction: column;
+        place-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 480px) and (min-width: 319px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer li {
+        padding: 4vw 0px 2px 0vw;
+        font-size: 21px;
+    }
+
+    .img-footer-logo {
+        width: 41vw;
+    }
+
+    .conteudo-footer {
+        width: 0;
+        float: none;
+        display: none;
+        place-items: center;
+        flex-direction: column;
+        padding: 13px;
+    }
+
+    .redes-footer {
+        place-items: center;
+        display: flex;
+    }
+
+    .redes-footer img {
+        width: 14vw;
+        padding: 0px 5px 0 0;
+    }
+
+    .conteudo2-footer {
+        display: none;
+        width: 0;
+        margin: 0 10px 0 40px;
+        padding: 11px;
+        flex-direction: column;
+        place-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 718px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer li {
+        padding: 4vw 0px 2px 0vw;
+        font-size: 21px;
+    }
+
+    .img-footer-logo {
+        width: 37vw;
+    }
+
+    .conteudo-footer {
+        width: 0;
+        float: none;
+        display: none;
+        place-items: center;
+        flex-direction: column;
+        padding: 13px;
+    }
+
+    .redes-footer {
+        place-items: center;
+        display: flex;
+    }
+
+    .redes-footer img {
+        width: 12vw;
+        padding: 0px 5px 0 0;
+    }
+
+    .conteudo2-footer {
+        display: none;
+        width: 0;
+        margin: 0 10px 0 40px;
+        padding: 11px;
+        flex-direction: column;
+        place-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 719px) {
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+
+    body {
+        background-size: 100vw 92vw;
+    }
+
+    .icon {
+        display: block;
+    }
+    
+        #myLinks {
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+  
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 25px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        top: 0;
+    }
+  
+
+    .topnav a:hover {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        background-color: #121413;
+        color: white;
+    }
+
+    .active {
+        pointer-events: none; 
+        cursor: default; 
+    }
+
+    /* Esconder a navbar tradicional */
+    nav.navbar {
+        display: none;
+    }
+
+    .img-footer-logo {
+        width: 20vw;
+    }
+
+    .redes-footer img {
+        width: 5vw;
+        padding: 0 11px 0 0;
+    }
+
+    footer li {
+        list-style: none;
+        padding: 0 0px 11px 0;
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 767px) {
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 901px) {
+    nav a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.8vw;
+        padding: 9px;
+    }
+
+    .img-footer-logo {
+        width: 16vw;
+    }
+
+    .redes-footer img {
+        width: 4.5vw;
+        padding: 0 11px 0 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1023px) {
+
+}
+@media only screen and (min-width: 1024px)  {
+}

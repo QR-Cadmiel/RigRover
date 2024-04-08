@@ -20,8 +20,8 @@ nav {
 nav a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 28px;
-    padding: 18px;
+    font-size: 25px;
+    padding: 14px;
 }
 
 nav li:hover {
@@ -34,6 +34,10 @@ nav ul {
     list-style: none;
     display: flex;
     padding: 0;
+}
+
+.img-logout {
+    width: 46px;
 }
 
 .logodois {
@@ -265,7 +269,7 @@ h5 {
 }
 
 .ferramenta-info {
-    background-image: url('../img/fundoferramenta.png');
+    background-image: url('../img/fundoferramenta3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -275,4 +279,50 @@ h5 {
     padding-bottom: 20px;
     padding-top: 20px;
     margin-bottom: 20px;
+}
+
+footer {
+    background-color: #121212;
+    color: white;
+    flex-direction: row;
+    display: flex;
+}
+
+footer li {
+    list-style: none;
+    padding: 0 0px 11px 0;
+    font-size: 1.7vw;
+}
+
+footer li,
+a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+
+.img-footer-logo {
+    width: 15vw;
+}
+
+.redes-footer img {
+    width: 4vw;
+    padding: 0 11px 0 0;
+}
+
+.cont-2,
+.cont-1 {
+    padding: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.icon {
+    display: none;
+}
+
+#myLinks {
+    display: none;
 }

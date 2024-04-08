@@ -37,7 +37,7 @@ include 'validacao.php';
                     <a href="forum.php" id="btn-nav">Fórum</a>
                 </li>
                 <li>
-                    <a href="comparar_hardwares.php" id="btn-nav">Hardware</a>
+                    <a href="hardware.php" id="btn-nav">Hardware</a>
                 </li>
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
@@ -59,7 +59,7 @@ include 'validacao.php';
                 <a href="noticias.php">Noticias</a>
                 <a href="eventos.php">Eventos</a>
                 <a href="forum.php">Fórum</a>
-                <a href="comparar_hardwares.php">Hardware</a>
+                <a href="hardware.php">Hardware</a>
                 <a href="games.php">Wiki Jogos</a>
                 <a href="logout.php">Deslogar da Conta</a>
             </div>
