@@ -20,5 +20,5 @@ $id = $_GET['id'];
 $sql = "DELETE FROM noticia WHERE id = $id";
 $resultado = $mysqli->query($sql);
 
-header("Location: noticias.php");
+header("Location: noticiasadm.php");
 exit();
