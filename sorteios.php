@@ -66,14 +66,22 @@ include 'validacao.php';
                         <h5>1. Basta clicar em participar no sorteio!</h5>
                         <h5>O resultado do sorteio será divulgado no e-mail do ganhador e nessa página.</h5>
                         <h5>Não perca esta oportunidade de viver a emoção da BGS. Boa sorte!</h5>
-                        <h5 style="color: grey">Encerra em: 21/04/2025</h5>
+                        <h5 style="color: lime; text-decoration: underline;">Começa em: 10/04/2024</h5>
+                        <h5 style="color: grey">Encerra em: 21/04/2024</h5>
                     </div>
                 </div>
                 <div class="undervenda1">
-                    <button class="btn-ticket">Participar do sorteio</button>
+
+                    <button class="btn-ticket" onclick="sorteioClick()">Participar do sorteio</button>
                 </div>
             </div>
         </div>
+
+        <script>
+            function sorteioClick() {
+                alert('O sorteio ainda não começou.');
+            }
+        </script>
 
 
     </div>
