@@ -86,7 +86,7 @@ include 'validacao.php';
 
             <a href="maquinas_recomendadas.php" id="btn-categorias">
                 <button type="submit">
-                    Confira os requisitos dos jogos
+                    Confira as máquinas recomendadas
                 </button>
             </a>
         </div>

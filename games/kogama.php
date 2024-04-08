@@ -22,7 +22,7 @@ include '../validacao.php';
 <body>
 
     <div class="rigrover-1">
-        <nav class="navbar">
+    <nav class="navbar">
             <ul>
                 <li>
                     <a href="../home.php" id="btn-nav">Página Inicial</a>
@@ -37,7 +37,7 @@ include '../validacao.php';
                     <a href="../forum.php" id="btn-nav">Fórum</a>
                 </li>
                 <li>
-                    <a href="../comparar_hardwares.php" id="btn-nav">Hardware</a>
+                    <a href="../hardware.php" id="btn-nav">Hardware</a>
                 </li>
                 <li>
                     <a href="../games.php" id="btn-nav">Wiki Jogos</a>
@@ -47,6 +47,28 @@ include '../validacao.php';
                 </a>
             </ul>
         </nav>
+    </div>
+
+    <!-- --------Hamburguinho Menu----------  -->
+    <div class="topnav">
+        <div class="active">
+            <a href="#myLinks"></a>
+        </div>
+
+        <div id="myLinks">
+            <a href="../home.php">Página Inicial</a>
+            <a href="../noticias.php">Noticias</a>
+            <a href="../eventos.php">Eventos</a>
+            <a href="../forum.php">Fórum</a>
+            <a href="../hardware.php">Hardware</a>
+            <a href="../games.php">Wiki Jogos</a>
+            <a href="../logout.php">Deslogar da Conta</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- ----------------------------------------- -->
     </div>
     <div class="container">
         <div class="evt-ct">

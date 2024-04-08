@@ -1,32 +1,21 @@
 <?php
-session_start();
+date_default_timezone_set('America/Sao_Paulo');
 
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header("Location: login.php");
-    exit;
-}
 
 include 'conexao.php';
+include 'validacao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['editar_pergunta'])) {
-        $id = $_POST['editar_pergunta'];
-        header("Location: editar_pergunta.php?id=$id");
-        exit();
-    }
+    $titulo = $_POST['titulo'];
+    $descricao = $_POST['descricao'];
 
-    if (isset($_POST['excluir_pergunta'])) {
-        $id = $_POST['excluir_pergunta'];
-        if ($_SESSION['email'] === 'admin@gmail.com') {
-            echo '<script>';
-            echo 'if (confirm("Tem certeza de que deseja excluir esta pergunta?")) {';
-            echo 'window.location.href = "excluir_pergunta.php?id=' . $id . '";';
-            echo '}';
-            echo '</script>';
-        }
-    }
+    $sql = "INSERT INTO perguntas (titulo, descricao) VALUES ('$titulo', '$descricao')";
+    $resultado = $mysqli->query($sql);
+
+    header("Location: forum.php");
+    exit();
 }
 
 $sql = "SELECT * FROM perguntas";
@@ -50,12 +39,11 @@ while ($pergunta = $resultado->fetch_assoc()) {
     <link rel="stylesheet" href="assets/css/forum.css">
     <link rel="stylesheet" href="assets\css\responsividade\forum-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
-    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
 </head>
 
 <body>
     <div class="rigrover-1">
-        <nav class="navbar">
+    <nav class="navbar">
             <ul>
                 <li>
                     <a href="home.php" id="btn-nav">Página Inicial</a>
@@ -70,7 +58,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
                     <a href="forum.php" id="btn-nav">Fórum</a>
                 </li>
                 <li>
-                    <a href="comparar_hardwares.php" id="btn-nav">Hardware</a>
+                    <a href="hardware.php" id="btn-nav">Hardware</a>
                 </li>
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
@@ -92,7 +80,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
                 <a href="noticias.php">Noticias</a>
                 <a href="eventos.php">Eventos</a>
                 <a href="forum.php">Fórum</a>
-                <a href="comparar_hardwares.php">Hardware</a>
+                <a href="hardware.php">Hardware</a>
                 <a href="games.php">Wiki Jogos</a>
                 <a href="logout.php">Deslogar da Conta</a>
             </div>
@@ -162,18 +150,6 @@ while ($pergunta = $resultado->fetch_assoc()) {
                         echo '<p class="ultima-mensagem">' . $textoIntervalo . '</p>';
                         echo '</div>';
                         ?>
-                        <?php if ($_SESSION['email'] === 'admin@gmail.com') : ?>
-                            <form method="post" action="">
-                                <input type="hidden" name="editar_pergunta" value="<?php echo $pergunta['id']; ?>">
-                                <button type="submit">Editar</button>
-                            </form>
-                        <?php endif; ?>
-                        <?php if ($_SESSION['email'] === 'admin@gmail.com') : ?>
-                            <form method="post" action="">
-                                <input type="hidden" name="excluir_pergunta" value="<?php echo $pergunta['id']; ?>">
-                                <button type="submit">Excluir</button>
-                            </form>
-                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
 
@@ -209,8 +185,8 @@ while ($pergunta = $resultado->fetch_assoc()) {
                     </ul>
                 </div>
             </div>
-        </footer>
     </div>
+    </footer>
 
 </body>
 

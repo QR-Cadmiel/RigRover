@@ -19,8 +19,8 @@ nav {
 #btn-nav {
     text-decoration: none;
     color: #ffffff;
-    font-size: 26px;
-    padding: 18px;
+    font-size: 25px;
+    padding: 14px;
 }
 
 nav li:hover {
@@ -41,7 +41,6 @@ nav ul {
 }
 
 .img-logout {
-
     width: 46px;
 }
 
