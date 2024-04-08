@@ -18,6 +18,7 @@ include 'validacao.php';
     <link rel="stylesheet" href="assets\css\responsividade\hardware-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+    <script src="assets/js/logout.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@ include 'validacao.php';
                 <li>
                     <a href="home.php" id="btn-nav">Home</a>
                 </li>
-                <a href="logout.php">
+                <a href="#" onclick="confirmLogout()">
                     <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
             </ul>
@@ -78,11 +79,13 @@ include 'validacao.php';
     <div class="categoria_div1" id="hardware">
 
         <div class="categorias" id="servicos">
-            <img class="categoria_foto" src="https://ezectech.com/wp-content/uploads/2023/04/pc-gamer-barato-780x470.png">
+            <img class="categoria_foto"
+                src="https://ezectech.com/wp-content/uploads/2023/04/pc-gamer-barato-780x470.png">
         </div>
         <div id="coluna-categoria">
             <h2>Máquinas recomendadas</h2>
-            <p class="categoria_texto">Descubra quais as configurações mínimas e recomendadas para utilizar seu PC com base no que você precisa!</p>
+            <p class="categoria_texto">Descubra quais as configurações mínimas e recomendadas para utilizar seu PC com
+                base no que você precisa!</p>
 
             <a href="maquinas_recomendadas.php" id="btn-categorias">
                 <button type="submit">
@@ -95,7 +98,8 @@ include 'validacao.php';
     <div class="categoria_div2">
 
         <div class="categorias">
-            <img class="categoria_foto" src="https://www.greatsolution.com.br/wp-content/uploads/2019/01/pc-hardware-detail-1241583-1919x1274-1024x680.jpg">
+            <img class="categoria_foto"
+                src="https://www.greatsolution.com.br/wp-content/uploads/2019/01/pc-hardware-detail-1241583-1919x1274-1024x680.jpg">
 
         </div>
         <div id="coluna-categoria">
@@ -103,7 +107,8 @@ include 'validacao.php';
 
             <h2>Comparar hardwares</h2>
 
-            <p class="categoria_texto">Escolha dois hardwares da mesma categoria e veja qual dos dois é melhor para você!</p>
+            <p class="categoria_texto">Escolha dois hardwares da mesma categoria e veja qual dos dois é melhor para
+                você!</p>
             <a href="comparar_hardwares.php" id="btn-categorias">
                 <button type="submit">
                     Confira a comparação de hardwares
@@ -114,11 +119,13 @@ include 'validacao.php';
     <div class="categoria_div3" id="hardware">
 
         <div class="categorias">
-            <img class="categoria_foto" src="https://www.gamingdebugged.com/wp-content/uploads/2021/09/purple-gaming-set-up-1.jpg">
+            <img class="categoria_foto"
+                src="https://www.gamingdebugged.com/wp-content/uploads/2021/09/purple-gaming-set-up-1.jpg">
         </div>
         <div id="coluna-categoria">
             <h2>Requisitos para jogos</h2>
-            <p class="categoria_texto">Descubra quais as configurações mínimas e recomendadas para jogar os jogos dos seus sonhos!</p>
+            <p class="categoria_texto">Descubra quais as configurações mínimas e recomendadas para jogar os jogos dos
+                seus sonhos!</p>
 
             <a href="ferramenta.php" id="btn-categorias">
                 <button type="submit">
@@ -141,10 +148,13 @@ include 'validacao.php';
         <div class="cont-2">
             <div>
                 <div class="redes-footer">
-                    <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                    <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
+                            alt=""></a>
                     <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                            src="assets/img/iconfacebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                            src="assets/img/iconyoutube.png" alt=""></a>
                 </div>
                 <ul>
                     <li>

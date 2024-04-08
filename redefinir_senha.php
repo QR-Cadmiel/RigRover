@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isHTML(true);
         $mail->Subject = 'Redefinir Senha - Rig Rover';
         $mail->Body = 'Clique no link a seguir para redefinir sua senha: ' .
-            '<a href="http://localhost/RigRover/senha.php?token=' . $token . '">Redefinir Senha</a>';
+            '<a href="http://localhost/RigRover-1/senha.php?token=' . $token . '">Redefinir Senha</a>';
         $mail->send();
 
         echo "<script>alert('Um email com as instruções para redefinir a senha foi enviado para o seu email.'); window.location.href = 'index.php';</script>";

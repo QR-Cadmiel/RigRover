@@ -18,6 +18,7 @@ include 'validacao.php';
     <link rel="stylesheet" href="assets\css\responsividade\home-responsivo.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <script src="assets/js/hamburguinho.js"></script>
+    <script src="assets/js/logout.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@ include 'validacao.php';
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
-                <a href="logout.php">
+                <a href="#" onclick="confirmLogout()">
                     <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
             </ul>
@@ -122,8 +123,10 @@ include 'validacao.php';
         </div>
         <div id="coluna-categoria">
             <h2>Jogos</h2>
-            <p class="categoria_texto">Descubra os últimos lançamentos, análises de jogos e notícias sobre o universo dos games.
-                Esteja sempre atualizado sobre o que há de melhor para jogar, seja em consoles, PC ou dispositivos móveis.</p>
+            <p class="categoria_texto">Descubra os últimos lançamentos, análises de jogos e notícias sobre o universo
+                dos games.
+                Esteja sempre atualizado sobre o que há de melhor para jogar, seja em consoles, PC ou dispositivos
+                móveis.</p>
 
             <a href="games.php" id="btn-categorias">
                 <button type="submit">
@@ -146,10 +149,13 @@ include 'validacao.php';
         <div class="cont-2">
             <div>
                 <div class="redes-footer">
-                    <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                    <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
+                            alt=""></a>
                     <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                            src="assets/img/iconfacebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                            src="assets/img/iconyoutube.png" alt=""></a>
                 </div>
                 <ul>
                     <li>

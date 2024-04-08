@@ -327,3 +327,21 @@ a {
     cursor: pointer;
     color: white;
 }
+
+.btn-crud, .btn-crud2 {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.btn-crud {
+    background-color: lime;
+}
+
+.btn-crud2 {
+    background-color: red;
+    margin-left: 10px;
+}

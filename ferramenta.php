@@ -17,6 +17,7 @@ include 'validacao.php';
     <link rel="stylesheet" href="assets\css\responsividade\ferramenta-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+    <script src="assets/js/logout.js"></script>
 </head>
 
 <body>
@@ -176,36 +177,37 @@ include 'validacao.php';
             <li>
                 <a href="home.php">Home</a>
             </li>
-                <a href="logout.php">
-                    <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
-                </a>
+            <a href="#" onclick="confirmLogout()">
+                <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
+            </a>
         </ul>
     </nav>
 
-     <!-- --------Hamburguinho Menu----------  -->
-     <div class="topnav">
-            <div class="active">
-                <a href="#myLinks"></a>
-            </div>
-
-            <div id="myLinks">
-                <a href="hardware.php">Hardware - Home</a>
-                <a href="maquinas_recomendadas.php">Máquinas recomendadas</a>
-                <a href="comparar_hardwares.php">Comparar hardwares</a>
-                <a href="ferramenta.php">Requisitos para jogos</a>
-                <a href="forum.php">Fórum</a>
-                <a href="home.php">Home</a>
-                <a href="logout.php">Deslogar da Conta</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+    <!-- --------Hamburguinho Menu----------  -->
+    <div class="topnav">
+        <div class="active">
+            <a href="#myLinks"></a>
         </div>
-        <!-- ----------------------------------------- -->
+
+        <div id="myLinks">
+            <a href="hardware.php">Hardware - Home</a>
+            <a href="maquinas_recomendadas.php">Máquinas recomendadas</a>
+            <a href="comparar_hardwares.php">Comparar hardwares</a>
+            <a href="ferramenta.php">Requisitos para jogos</a>
+            <a href="forum.php">Fórum</a>
+            <a href="home.php">Home</a>
+            <a href="logout.php">Deslogar da Conta</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- ----------------------------------------- -->
 
     <div class="ferramenta-info">
         <h1>O QUE É ESSA FERRAMENTA?</h1>
-        <h5>Essa ferramenta é capaz de falar os requisitos mínimos e recomendados para jogar um jogo de sua escolha.</h5>
+        <h5>Essa ferramenta é capaz de falar os requisitos mínimos e recomendados para jogar um jogo de sua escolha.
+        </h5>
     </div>
 
     <div class="ferramenta-analise">
@@ -241,10 +243,13 @@ include 'validacao.php';
         <div class="cont-2">
             <div>
                 <div class="redes-footer">
-                    <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                    <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
+                            alt=""></a>
                     <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                            src="assets/img/iconfacebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                            src="assets/img/iconyoutube.png" alt=""></a>
                 </div>
                 <ul>
                     <li>

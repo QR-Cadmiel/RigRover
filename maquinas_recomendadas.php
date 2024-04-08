@@ -17,6 +17,7 @@ include 'validacao.php';
   <link rel="stylesheet" href="assets\css\responsividade\maquinas-rec-responsivo.css">
   <script src="assets/js/hamburguinho.js"></script>
   <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+  <script src="assets/js/logout.js"></script>
 </head>
 
 <body>
@@ -41,7 +42,7 @@ include 'validacao.php';
         <a href="home.php">Home</a>
       </li>
     </ul>
-    <a href="logout.php">
+    <a href="#" onclick="confirmLogout()">
       <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
     </a>
   </nav>
@@ -103,8 +104,10 @@ include 'validacao.php';
           <div class="redes-footer">
             <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
             <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png"
+                alt=""></a>
+            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png"
+                alt=""></a>
           </div>
           <ul>
             <li>

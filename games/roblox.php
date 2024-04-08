@@ -16,7 +16,8 @@ include '../validacao.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets\css\responsividade\games-info-responsivo.css">
     <script src="../assets/js/hamburguinho.js"></script>
-    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+    <link rel="shortcut icon" type="imagex/png" href="../assets/img/logourl.png">
+    <script src="../assets/js/logout.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@ include '../validacao.php';
                 <li>
                     <a href="../games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
-                <a href="../logout.php">
+                <a href="#" onclick="confirmLogout2()">
                     <img src="../assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
             </ul>

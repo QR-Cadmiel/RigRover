@@ -1,21 +1,44 @@
 <?php
 date_default_timezone_set('America/Sao_Paulo');
+session_start();
 
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header("Location: login.php");
+    exit;
+}
 
 include 'conexao.php';
-include 'validacao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $titulo = $_POST['titulo'];
-    $descricao = $_POST['descricao'];
+    if (isset($_POST['criar_pergunta'])) {
+        $titulo = $_POST['titulo'];
+        $descricao = $_POST['descricao'];
 
-    $sql = "INSERT INTO perguntas (titulo, descricao) VALUES ('$titulo', '$descricao')";
-    $resultado = $mysqli->query($sql);
+        $sql = "INSERT INTO perguntas (titulo, descricao) VALUES ('$titulo', '$descricao')";
+        $resultado = $mysqli->query($sql);
 
-    header("Location: forum.php");
-    exit();
+        header("Location: forum.php");
+        exit();
+    }
+
+    if (isset($_POST['editar_pergunta'])) {
+        $id = $_POST['editar_pergunta'];
+        header("Location: editar_noticia.php?id=$id");
+        exit();
+    }
+
+    if (isset($_POST['excluir_pergunta'])) {
+        $id = $_POST['excluir_pergunta'];
+        if ($_SESSION['email'] === 'admin@gmail.com') {
+            echo '<script>';
+            echo 'if (confirm("Tem certeza de que deseja excluir esta pergunta?")) {';
+            echo 'window.location.href = "excluir_noticia.php?id=' . $id . '";';
+            echo '}';
+            echo '</script>';
+        }
+    }
 }
 
 $sql = "SELECT * FROM perguntas";
@@ -39,11 +62,12 @@ while ($pergunta = $resultado->fetch_assoc()) {
     <link rel="stylesheet" href="assets/css/forum.css">
     <link rel="stylesheet" href="assets\css\responsividade\forum-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
+    <script src="assets/js/logout.js"></script>
 </head>
 
 <body>
     <div class="rigrover-1">
-    <nav class="navbar">
+        <nav class="navbar">
             <ul>
                 <li>
                     <a href="home.php" id="btn-nav">Página Inicial</a>
@@ -63,9 +87,10 @@ while ($pergunta = $resultado->fetch_assoc()) {
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
-                <a href="logout.php">
+                <a href="#" onclick="confirmLogout()">
                     <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
+
             </ul>
         </nav>
 
@@ -80,7 +105,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
                 <a href="noticias.php">Noticias</a>
                 <a href="eventos.php">Eventos</a>
                 <a href="forum.php">Fórum</a>
-                <a href="hardware.php">Hardware</a>
+                <a href="comparar_hardwares.php">Hardware</a>
                 <a href="games.php">Wiki Jogos</a>
                 <a href="logout.php">Deslogar da Conta</a>
             </div>
@@ -106,13 +131,18 @@ while ($pergunta = $resultado->fetch_assoc()) {
                             <textarea id="descricao" name="descricao" rows="4" required></textarea>
                         </div>
                     </div>
-                    <input class="btn-criar" type="submit" value="Criar Pergunta">
+                    <input class="btn-criar" type="submit" name="criar_pergunta" value="Criar Pergunta">
                 </form>
 
-                <?php foreach ($perguntas as $pergunta) : ?>
+                <?php foreach ($perguntas as $pergunta): ?>
                     <div class="pergunta">
-                        <h2><a href="pergunta.php?id=<?php echo $pergunta['id']; ?>&titulo=<?php echo urlencode($pergunta['titulo']); ?>" class="titulo-pergunta"><?php echo $pergunta['titulo']; ?></a></h2>
-                        <p><?php echo $pergunta['descricao']; ?></p>
+                        <h2><a href="pergunta.php?id=<?php echo $pergunta['id']; ?>&titulo=<?php echo urlencode($pergunta['titulo']); ?>"
+                                class="titulo-pergunta">
+                                <?php echo $pergunta['titulo']; ?>
+                            </a></h2>
+                        <p>
+                            <?php echo $pergunta['descricao']; ?>
+                        </p>
                         <?php
                         $sql = "SELECT COUNT(*) AS total FROM chat1 WHERE pergunta_id = '" . $pergunta['id'] . "'";
                         $result = $mysqli->query($sql);
@@ -149,10 +179,20 @@ while ($pergunta = $resultado->fetch_assoc()) {
                         echo '<p class="numero-elementos">' . $numero_elementos . '</p>';
                         echo '<p class="ultima-mensagem">' . $textoIntervalo . '</p>';
                         echo '</div>';
-                        ?>
+                        if ($_SESSION['email'] === 'admin@gmail.com'): ?>
+                            <div class="btn-div-crud">
+                                <form method="post" action="">
+                                    <input onclick="editarPergunta(<?php echo $pergunta['id']; ?>)" type="button"
+                                        name="editar_pergunta" class="btn-crud" value="Editar">
+                                </form>
+                                <form method="post" action="">
+                                    <input onclick="excluirPergunta(<?php echo $pergunta['id']; ?>)" type="button"
+                                        name="excluir_pergunta" class="btn-crud2" value="Excluir">
+                                </form>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
-
             </div>
         </div>
         <footer>
@@ -167,10 +207,13 @@ while ($pergunta = $resultado->fetch_assoc()) {
             <div class="cont-2">
                 <div>
                     <div class="redes-footer">
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
+                                alt=""></a>
                         <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                                src="assets/img/iconfacebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                                src="assets/img/iconyoutube.png" alt=""></a>
                     </div>
                     <ul>
                         <li>
@@ -188,6 +231,17 @@ while ($pergunta = $resultado->fetch_assoc()) {
     </div>
     </footer>
 
+    <script>
+        function editarPergunta(id) {
+            window.location.href = "editar_pergunta.php?id=" + id;
+        }
+
+        function excluirPergunta(id) {
+            if (confirm("Tem certeza de que deseja excluir esta pergunta?")) {
+                window.location.href = "excluir_pergunta.php?id=" + id;
+            }
+        }
+    </script>
 </body>
 
 </html>

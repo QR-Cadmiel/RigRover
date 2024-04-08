@@ -47,63 +47,66 @@ while ($noticias = $resultado->fetch_assoc()) {
     <link rel="stylesheet" href="assets\css\responsividade\noticias-responsivo.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <script src="assets/js/hamburguinho.js"></script>
+    <script src="assets/js/logout.js"></script>
 </head>
 
 <body>
     <div class="content">
         <div class="rigrover-1">
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="home.php" id="btn-nav">Página Inicial</a>
-                </li>
-                <li>
-                    <a href="noticias.php" id="btn-nav">Noticias</a>
-                </li>
-                <li>
-                    <a href="eventos.php" id="btn-nav">Eventos</a>
-                </li>
-                <li>
-                    <a href="forum.php" id="btn-nav">Fórum</a>
-                </li>
-                <li>
-                    <a href="hardware.php" id="btn-nav">Hardware</a>
-                </li>
-                <li>
-                    <a href="games.php" id="btn-nav">Wiki Jogos</a>
-                </li>
-                <a href="logout.php">
-                    <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="home.php" id="btn-nav">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="noticias.php" id="btn-nav">Noticias</a>
+                    </li>
+                    <li>
+                        <a href="eventos.php" id="btn-nav">Eventos</a>
+                    </li>
+                    <li>
+                        <a href="forum.php" id="btn-nav">Fórum</a>
+                    </li>
+                    <li>
+                        <a href="hardware.php" id="btn-nav">Hardware</a>
+                    </li>
+                    <li>
+                        <a href="games.php" id="btn-nav">Wiki Jogos</a>
+                    </li>
+                    <a href="#" onclick="confirmLogout()">
+                        <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
+                    </a>
+                </ul>
+            </nav>
+
+            <!-- --------Hamburguinho Menu----------  -->
+            <div class="topnav">
+                <div class="active">
+                    <a href="#myLinks"></a>
+                </div>
+
+                <div id="myLinks">
+                    <a href="home.php">Página Inicial</a>
+                    <a href="noticias.php">Noticias</a>
+                    <a href="eventos.php">Eventos</a>
+                    <a href="forum.php">Fórum</a>
+                    <a href="hardware.php">Hardware</a>
+                    <a href="games.php">Wiki Jogos</a>
+                    <a href="logout.php">Deslogar da Conta</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
                 </a>
-            </ul>
-        </nav>
-
-        <!-- --------Hamburguinho Menu----------  -->
-        <div class="topnav">
-            <div class="active">
-                <a href="#myLinks"></a>
             </div>
-
-            <div id="myLinks">
-                <a href="home.php">Página Inicial</a>
-                <a href="noticias.php">Noticias</a>
-                <a href="eventos.php">Eventos</a>
-                <a href="forum.php">Fórum</a>
-                <a href="hardware.php">Hardware</a>
-                <a href="games.php">Wiki Jogos</a>
-                <a href="logout.php">Deslogar da Conta</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <!-- ----------------------------------------- -->
+            <!-- ----------------------------------------- -->
 
             <div class="main-content">
                 <?php if ($mostrarBotao) { ?>
-                    <a href="noticiasadm.php"><button value="Administração das Notícias" class="btn-form-adm">Administração das Notícias</button></a>
+                    <a href="noticiasadm.php"><button value="Administração das Notícias" class="btn-form-adm">Administração
+                            das Notícias</button></a>
                 <?php } ?>
-                <input type="text" name="name" placeholder="Pesquise a notícia que deseja" class="noticia-icon" oninput="pesquisarNoticia()" required>
+                <input type="text" name="name" placeholder="Pesquise a notícia que deseja" class="noticia-icon"
+                    oninput="pesquisarNoticia()" required>
 
                 <h3>Categorias</h3>
 
@@ -117,14 +120,21 @@ while ($noticias = $resultado->fetch_assoc()) {
                 <div class="noticias">
                     <h3>Notícias</h3>
 
-                    <?php foreach ($noticia as $noticias) : ?>
-                        <div class="ntc-pergunta <?php echo strtolower($noticias['tipo']); ?>" onclick="abrirNoticia(this)" style="color: white; cursor: pointer;">
-                            <h2 class="titulo-pergunta"><?php echo $noticias['titulo']; ?></h2>
-                            <p><?php echo $noticias['descricao']; ?></p>
+                    <?php foreach ($noticia as $noticias): ?>
+                        <div class="ntc-pergunta <?php echo strtolower($noticias['tipo']); ?>" onclick="abrirNoticia(this)"
+                            style="color: white; cursor: pointer;">
+                            <h2 class="titulo-pergunta">
+                                <?php echo $noticias['titulo']; ?>
+                            </h2>
+                            <p>
+                                <?php echo $noticias['descricao']; ?>
+                            </p>
                             <div class="imagem-noticia">
                                 <img src="<?php echo $noticias['imagem']; ?>" alt="Imagem da Notícia">
                             </div>
-                            <div class="tipo-noticia" style="display: none;"><?php echo strtolower($noticias['tipo']); ?></div>
+                            <div class="tipo-noticia" style="display: none;">
+                                <?php echo strtolower($noticias['tipo']); ?>
+                            </div>
                         </div>
                     <?php endforeach; ?>
 
@@ -164,7 +174,7 @@ while ($noticias = $resultado->fetch_assoc()) {
                     function filtrarNoticias(categoria) {
                         var todasNoticias = document.querySelectorAll('.ntc-pergunta');
 
-                        todasNoticias.forEach(function(noticia) {
+                        todasNoticias.forEach(function (noticia) {
                             var tipoNoticia = noticia.querySelector('.tipo-noticia').textContent;
                             if (categoria === 'todos' || tipoNoticia === categoria) {
                                 noticia.style.display = 'block';
@@ -179,7 +189,7 @@ while ($noticias = $resultado->fetch_assoc()) {
                         var filtro = input.value.toUpperCase();
                         var noticias = document.querySelectorAll('.noticias > .ntc-pergunta');
 
-                        noticias.forEach(function(noticia) {
+                        noticias.forEach(function (noticia) {
                             var titulo = noticia.querySelector('h2.titulo-pergunta');
                             if (titulo.innerText.toUpperCase().indexOf(filtro) > -1) {
                                 noticia.style.display = 'block';
@@ -204,10 +214,13 @@ while ($noticias = $resultado->fetch_assoc()) {
             <div class="cont-2">
                 <div>
                     <div class="redes-footer">
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
+                                alt=""></a>
                         <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                                src="assets/img/iconfacebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                                src="assets/img/iconyoutube.png" alt=""></a>
                     </div>
                     <ul>
                         <li>

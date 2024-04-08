@@ -52,6 +52,7 @@ while ($noticias = $resultado->fetch_assoc()) {
     <link rel="stylesheet" href="assets\css\responsividade\noticias-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+    <script src="assets/js/logout.js"></script>
 </head>
 
 <body>
@@ -77,7 +78,7 @@ while ($noticias = $resultado->fetch_assoc()) {
                     <li>
                         <a href="games.php" id="btn-nav">Wiki Jogos</a>
                     </li>
-                    <a href="logout.php">
+                    <a href="#" onclick="confirmLogout()">
                         <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                     </a>
                 </ul>
@@ -105,7 +106,8 @@ while ($noticias = $resultado->fetch_assoc()) {
             <!-- ----------------------------------------- -->
 
             <div class="main-content">
-                <input type="text" name="name" placeholder="Pesquise a notícia que deseja" class="noticia-icon" oninput="pesquisarNoticia()" required>
+                <input type="text" name="name" placeholder="Pesquise a notícia que deseja" class="noticia-icon"
+                    oninput="pesquisarNoticia()" required>
 
                 <h3>Categorias</h3>
 
@@ -144,19 +146,28 @@ while ($noticias = $resultado->fetch_assoc()) {
                         <input class="btn-criar" type="submit" value="Criar Notícia">
                     </form>
 
-                    <?php foreach ($noticia as $noticias) : ?>
-                        <div class="ntc-pergunta <?php echo strtolower($noticias['tipo']); ?>" onclick="abrirNoticia(this)" style="color: white; cursor: pointer;">
-                            <h2 class="titulo-pergunta"><?php echo $noticias['titulo']; ?></h2>
-                            <p><?php echo $noticias['descricao']; ?></p>
+                    <?php foreach ($noticia as $noticias): ?>
+                        <div class="ntc-pergunta <?php echo strtolower($noticias['tipo']); ?>" onclick="abrirNoticia(this)"
+                            style="color: white; cursor: pointer;">
+                            <h2 class="titulo-pergunta">
+                                <?php echo $noticias['titulo']; ?>
+                            </h2>
+                            <p>
+                                <?php echo $noticias['descricao']; ?>
+                            </p>
                             <div class="imagem-noticia">
                                 <img src="<?php echo $noticias['imagem']; ?>" alt="Imagem da Notícia">
                             </div>
-                            <div class="tipo-noticia" style="display: none;"><?php echo strtolower($noticias['tipo']); ?></div>
+                            <div class="tipo-noticia" style="display: none;">
+                                <?php echo strtolower($noticias['tipo']); ?>
+                            </div>
 
                             <?php if ($mostrarBotao) { ?>
-                                <button onclick="editarNoticia(<?php echo $noticias['id']; ?>)">Editar</button>
-                                <button onclick="excluirNoticia(<?php echo $noticias['id']; ?>)">Excluir</button>
+                                <button class="btn-crud" onclick="editarNoticia(<?php echo $noticias['id']; ?>)">Editar</button>
+                                <button class="btn-crud2"
+                                    onclick="excluirNoticia(<?php echo $noticias['id']; ?>)">Excluir</button>
                             <?php } ?>
+
                         </div>
                     <?php endforeach; ?>
 
@@ -197,7 +208,7 @@ while ($noticias = $resultado->fetch_assoc()) {
                     function filtrarNoticias(categoria) {
                         var todasNoticias = document.querySelectorAll('.ntc-pergunta');
 
-                        todasNoticias.forEach(function(noticia) {
+                        todasNoticias.forEach(function (noticia) {
                             var tipoNoticia = noticia.querySelector('.tipo-noticia').textContent;
                             if (categoria === 'todos' || tipoNoticia === categoria) {
                                 noticia.style.display = 'block';
@@ -212,7 +223,7 @@ while ($noticias = $resultado->fetch_assoc()) {
                         var filtro = input.value.toUpperCase();
                         var noticias = document.querySelectorAll('.noticias > .ntc-pergunta');
 
-                        noticias.forEach(function(noticia) {
+                        noticias.forEach(function (noticia) {
                             var titulo = noticia.querySelector('h2.titulo-pergunta');
                             if (titulo.innerText.toUpperCase().indexOf(filtro) > -1) {
                                 noticia.style.display = 'block';
@@ -247,10 +258,13 @@ while ($noticias = $resultado->fetch_assoc()) {
             <div class="cont-2">
                 <div>
                     <div class="redes-footer">
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
+                                alt=""></a>
                         <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                                src="assets/img/iconfacebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                                src="assets/img/iconyoutube.png" alt=""></a>
                     </div>
                     <ul>
                         <li>

@@ -38,15 +38,18 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórum: <?php echo isset($_GET['titulo']) ? htmlspecialchars($_GET['titulo']) : "Pergunta"; ?></title>
+    <title>Fórum:
+        <?php echo isset($_GET['titulo']) ? htmlspecialchars($_GET['titulo']) : "Pergunta"; ?>
+    </title>
     <link rel="stylesheet" href="assets/css/pergunta.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+    <script src="assets/js/logout.js"></script>
     <script type="text/javascript">
         var ultimaMensagemID = 0;
 
         function ajax() {
             var req = new XMLHttpRequest();
-            req.onreadystatechange = function() {
+            req.onreadystatechange = function () {
                 if (req.readyState == 4 && req.status == 200) {
                     document.getElementById('mensagens').innerHTML = req.responseText;
                 }
@@ -56,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
             req.send();
         }
 
-        setInterval(function() {
+        setInterval(function () {
             ajax();
         }, 1000);
     </script>
@@ -85,14 +88,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
-                <a href="logout.php">
+                <a href="#" onclick="confirmLogout()">
                     <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
             </ul>
         </nav>
 
         <div id="header">
-            <h1 id="pergunta_titulo"><?php echo isset($_GET['titulo']) ? htmlspecialchars($_GET['titulo']) : "Pergunta"; ?></h1>
+            <h1 id="pergunta_titulo">
+                <?php echo isset($_GET['titulo']) ? htmlspecialchars($_GET['titulo']) : "Pergunta"; ?>
+            </h1>
             <a id="voltar" href="forum.php">Voltar</a>
         </div>
 

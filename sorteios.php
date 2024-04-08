@@ -14,6 +14,7 @@ include 'validacao.php';
     <title>Sorteios - RigRover</title>
     <link rel="stylesheet" href="assets/css/sorteios.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+    <script src="assets/js/logout.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@ include 'validacao.php';
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
-                <a href="logout.php">
+                <a href="#" onclick="confirmLogout()">
                     <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
             </ul>
@@ -57,11 +58,15 @@ include 'validacao.php';
                 <h1>Sorteio de ingresso da BGS</h1>
                 <div class="venda1">
                     <div class="leftvenda1">
-                        <img width="600px" src="https://i0.wp.com/mundodrix.com.br/site/wp-content/uploads/2018/09/Aplicativo-Oficial-da-Brasil-Game-Show.png?fit=1090%2C457&ssl=1" alt="">
+                        <img width="600px"
+                            src="https://i0.wp.com/mundodrix.com.br/site/wp-content/uploads/2018/09/Aplicativo-Oficial-da-Brasil-Game-Show.png?fit=1090%2C457&ssl=1"
+                            alt="">
                     </div>
 
                     <div class="rightvenda1">
-                        <h5>É hora de participar do sorteio mais emocionante do momento! Estamos oferecendo a chance única de ganhar um ticket de entrada para a Brasil Game Show, o maior evento de games da América Latina. </h5>
+                        <h5>É hora de participar do sorteio mais emocionante do momento! Estamos oferecendo a chance
+                            única de ganhar um ticket de entrada para a Brasil Game Show, o maior evento de games da
+                            América Latina. </h5>
                         <h5>Para concorrer, siga estas simples etapas:</h5>
                         <h5>1. Basta clicar em participar no sorteio!</h5>
                         <h5>O resultado do sorteio será divulgado no e-mail do ganhador e nessa página.</h5>
@@ -106,10 +111,13 @@ include 'validacao.php';
                 <div>
                     <div class="redes-footer">
 
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
+                                alt=""></a>
                         <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                                src="assets/img/iconfacebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                                src="assets/img/iconyoutube.png" alt=""></a>
                     </div>
 
                     <li>

@@ -70,6 +70,7 @@ body {
     background-color: #035C1C;
     color: white;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .nome-icon {

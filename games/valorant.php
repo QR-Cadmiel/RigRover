@@ -16,13 +16,14 @@ include '../validacao.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets\css\responsividade\games-info-responsivo.css">
     <script src="../assets/js/hamburguinho.js"></script>
-    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+    <link rel="shortcut icon" type="imagex/png" href="../assets/img/logourl.png">
+    <script src="../assets/js/logout.js"></script>
 </head>
 
 <body>
 
     <div class="rigrover-1">
-    <nav class="navbar">
+        <nav class="navbar">
             <ul>
                 <li>
                     <a href="../home.php" id="btn-nav">Página Inicial</a>
@@ -42,7 +43,7 @@ include '../validacao.php';
                 <li>
                     <a href="../games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
-                <a href="../logout.php">
+                <a href="#" onclick="confirmLogout2()">
                     <img src="../assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
             </ul>
@@ -69,14 +70,15 @@ include '../validacao.php';
         </a>
     </div>
     <!-- ----------------------------------------- -->
-    
+
     <div class="container">
         <div class="evt-ct">
 
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
-                        <img src="https://s2-techtudo.glbimg.com/M0ll8r3w3WsiRLLroy5xJaK4A5c=/0x0:1656x915/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/N/j/3cZcm6Qf6TxFIAW0nMNg/como-baixar-valorant-de-graca-the-squad.jpg" class="imgevento" alt="">
+                        <img src="https://s2-techtudo.glbimg.com/M0ll8r3w3WsiRLLroy5xJaK4A5c=/0x0:1656x915/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/N/j/3cZcm6Qf6TxFIAW0nMNg/como-baixar-valorant-de-graca-the-squad.jpg"
+                            class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
                         <h2>Valorant</h2>
@@ -116,10 +118,13 @@ include '../validacao.php';
         <div class="cont-2">
             <div>
                 <div class="redes-footer">
-                    <a href="https://www.instagram.com/rigrovergames/"><img src="../assets/img/iconinstagram.png" alt=""></a>
+                    <a href="https://www.instagram.com/rigrovergames/"><img src="../assets/img/iconinstagram.png"
+                            alt=""></a>
                     <a href="https://twitter.com/RigRoverGames"><img src="../assets/img/iconx.png" alt=""></a>
-                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="../assets/img/iconfacebook.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="../assets/img/iconyoutube.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                            src="../assets/img/iconfacebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                            src="../assets/img/iconyoutube.png" alt=""></a>
                 </div>
                 <ul>
                     <li>

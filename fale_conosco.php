@@ -28,8 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO fale_conosco (nome, email, mensagem) VALUES ('$nome', '$email', '$mensagem')";
 
     if ($mysqli->query($sql) === TRUE) {
-        echo "Mensagem enviada com sucesso!";
-        header("Location: pedido_enviado.php");
+        echo '<script>alert("Mensagem enviada com sucesso!");';
+        echo 'window.location.href = "index.php";</script>';
         exit;
     } else {
         echo "Erro ao enviar mensagem: " . $sql . "<br>" . $mysqli->error;
@@ -46,7 +46,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1097493454545764472/1207911558559170601/Nova_Logo_RigRover_1.png?ex=65e15e4d&is=65cee94d&hm=1f91b588742806550adf33275c874fa2149d9f66260d040373d4f8d2c32371e8&=&format=webp&quality=lossless&width=450&height=600">
+    <link rel="icon" type="image/png"
+        href="https://media.discordapp.net/attachments/1097493454545764472/1207911558559170601/Nova_Logo_RigRover_1.png?ex=65e15e4d&is=65cee94d&hm=1f91b588742806550adf33275c874fa2149d9f66260d040373d4f8d2c32371e8&=&format=webp&quality=lossless&width=450&height=600">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -95,7 +96,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <div class="text-dicas">
             <h1>Fale Conosco</h1>
-            <p>Preencha o formulário para esclarecermos dúvidas, receber seu feedback, discutir parcerias ou oferecer suporte técnico. Após enviar o formulário a nossa equipe entrará em contato o mais breve possível</p>
+            <p>Preencha o formulário para esclarecermos dúvidas, receber seu feedback, discutir parcerias ou oferecer
+                suporte técnico. Após enviar o formulário a nossa equipe entrará em contato o mais breve possível</p>
         </div>
 
         <div class="tudo">
@@ -127,10 +129,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="cont-2">
             <div>
                 <div class="redes-footer">
-                    <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                    <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
+                            alt=""></a>
                     <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                            src="assets/img/iconfacebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                            src="assets/img/iconyoutube.png" alt=""></a>
                 </div>
                 <ul>
                     <li>
