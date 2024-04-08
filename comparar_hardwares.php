@@ -86,19 +86,10 @@ include 'validacao.php';
           <option value="placa-de-video">Placa de Vídeo</option>
           <option value="disco-rigido">Disco Rígido (HDD)</option>
           <option value="ssd">Unidade de Estado Sólido (SSD)</option>
-          <option value="fonte-de-alimentacao">Fonte de Alimentação</option>
           <option value="cooler-cpu">Cooler para CPU</option>
         </select>
 
-        <div class="peca-container">
-          <label for="Peca1">Peça 1:</label>
-          <input type="text" id="peca1" name="peca1" placeholder="Digite o modelo da peça" required>
-        </div>
-
-        <div class="peca-container">
-          <label for="peca2">Peça 2:</label>
-          <input type="text" id="peca2" name="peca2" placeholder="Digite o modelo da peça" required>
-        </div>
+        <div id="extraFields"></div>
 
         <button type="submit">Comparar</button>
       </form>
