@@ -314,3 +314,16 @@ a {
 .noticias label {
     color: white;
 }
+
+.btn-form-adm {
+    width: 48%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3c3846;
+    border: none;
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+    color: white;
+}

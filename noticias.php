@@ -1,9 +1,16 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSION['email'] !== 'admin@gmail.com') {
+    $mostrarBotao = false;
+} else {
+    $mostrarBotao = true;
+}
 
 include 'conexao.php';
-include 'validacao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tipo = $_POST['tipo'];
@@ -92,6 +99,9 @@ while ($noticias = $resultado->fetch_assoc()) {
             <!-- ----------------------------------------- -->
 
             <div class="main-content">
+                <?php if ($mostrarBotao) { ?>
+                    <a href="noticiasadm.php"><button value="Administração das Notícias" class="btn-form-adm">Administração das Notícias</button></a>
+                <?php } ?>
                 <input type="text" name="name" placeholder="Pesquise a notícia que deseja" class="noticia-icon" oninput="pesquisarNoticia()" required>
 
                 <h3>Categorias</h3>

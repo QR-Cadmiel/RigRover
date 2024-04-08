@@ -3,10 +3,9 @@
 session_start();
 
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSION['email'] !== 'admin@gmail.com') {
-    header("Location: home.php"); // Redirecionar para a página inicial
+    header("Location: home.php");
     exit;
 }
-
 
 include 'conexao.php';
 

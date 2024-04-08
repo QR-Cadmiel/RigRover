@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Verificar se o usuário está logado e se é o usuário autorizado
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSION['email'] !== 'admin@gmail.com') {
     $mostrarBotao = false;
 } else {
