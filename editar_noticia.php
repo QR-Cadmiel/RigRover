@@ -43,25 +43,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Notícia - RigRover</title>
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+    <link rel="stylesheet" href="assets/css/editar_noticia.css">
 </head>
 
 <body>
-    <h1>Editar Notícia</h1>
-    <form method="post" action="">
-        <label for="tipo">Tipo:</label><br>
-        <select id="tipo" name="tipo">
-            <option value="hardwares" <?php if ($noticia['tipo'] == 'hardwares') echo 'selected'; ?>>Hardwares</option>
-            <option value="eventos" <?php if ($noticia['tipo'] == 'eventos') echo 'selected'; ?>>Eventos</option>
-            <option value="games" <?php if ($noticia['tipo'] == 'games') echo 'selected'; ?>>Games</option>
-        </select><br>
-        <label for="titulo">Título:</label><br>
-        <input type="text" id="titulo" name="titulo" value="<?php echo $noticia['titulo']; ?>"><br>
-        <label for="descricao">Descrição:</label><br>
-        <textarea id="descricao" name="descricao"><?php echo $noticia['descricao']; ?></textarea><br>
-        <label for="imagem">URL da Imagem:</label><br>
-        <input type="text" id="imagem" name="imagem" value="<?php echo $noticia['imagem']; ?>"><br><br>
-        <input type="submit" value="Salvar">
-    </form>
+    <div id="content">
+        <h1>Editar Notícia</h1>
+        <form method="post" action="">
+            <div class="form-itens">
+                <label for="tipo">Tipo:</label><br>
+                <select id="tipo" name="tipo">
+                    <option value="hardwares" <?php if ($noticia['tipo'] == 'hardwares')
+                        echo 'selected'; ?>>Hardwares
+                    </option>
+                    <option value="eventos" <?php if ($noticia['tipo'] == 'eventos')
+                        echo 'selected'; ?>>Eventos</option>
+                    <option value="games" <?php if ($noticia['tipo'] == 'games')
+                        echo 'selected'; ?>>Games</option>
+                </select><br>
+                <label for="titulo">Título:</label><br>
+                <input type="text" id="titulo" name="titulo" value="<?php echo $noticia['titulo']; ?>"><br>
+                <label for="descricao">Descrição:</label><br>
+                <textarea id="descricao" name="descricao"><?php echo $noticia['descricao']; ?></textarea><br>
+                <label for="imagem">URL da Imagem:</label><br>
+                <input type="text" id="imagem" name="imagem" value="<?php echo $noticia['imagem']; ?>"><br><br>
+                <input type="submit" value="Salvar">
+                <a href="noticiasadm.php" class="cancelar-link">Cancelar Edição</a>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

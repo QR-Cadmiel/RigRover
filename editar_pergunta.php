@@ -41,17 +41,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Pergunta - RigRover</title>
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+    <link rel="stylesheet" href="assets/css/editar_pergunta.css">
 </head>
 
 <body>
-    <h1>Editar Pergunta</h1>
-    <form method="post" action="">
-        <label for="titulo">Título:</label><br>
-        <input type="text" id="titulo" name="titulo" value="<?php echo $pergunta['titulo']; ?>"><br>
-        <label for="descricao">Descrição:</label><br>
-        <textarea id="descricao" name="descricao"><?php echo $pergunta['descricao']; ?></textarea><br><br>
-        <input type="submit" value="Salvar">
-    </form>
+    <div id="content">
+        <h1>Editar Pergunta</h1>
+        <form method="post" action="">
+            <div class="form-itens">
+                <label for="titulo">Título:</label><br>
+                <input type="text" id="titulo" name="titulo" value="<?php echo $pergunta['titulo']; ?>"><br>
+                <label for="descricao">Descrição:</label><br>
+                <textarea class="descricao-textarea" id="descricao"
+                    name="descricao"><?php echo $pergunta['descricao']; ?></textarea><br><br>
+                <input type="submit" value="Salvar">
+                <a href="forum.php" class="cancelar-link">Cancelar Edição</a>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

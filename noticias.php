@@ -121,8 +121,8 @@ while ($noticias = $resultado->fetch_assoc()) {
                     <h3>Notícias</h3>
 
                     <?php foreach ($noticia as $noticias): ?>
-                        <div class="ntc-pergunta <?php echo strtolower($noticias['tipo']); ?>" onclick="abrirNoticia(this)"
-                            style="color: white; cursor: pointer;">
+                        <div class="ntc-pergunta categoria-<?php echo strtolower($noticias['tipo']); ?>"
+                            onclick="abrirNoticia(this)" style="color: white; cursor: pointer;">
                             <h2 class="titulo-pergunta">
                                 <?php echo $noticias['titulo']; ?>
                             </h2>
@@ -132,110 +132,110 @@ while ($noticias = $resultado->fetch_assoc()) {
                             <div class="imagem-noticia">
                                 <img src="<?php echo $noticias['imagem']; ?>" alt="Imagem da Notícia">
                             </div>
-                            <div class="tipo-noticia" style="display: none;">
-                                <?php echo strtolower($noticias['tipo']); ?>
-                            </div>
                         </div>
                     <?php endforeach; ?>
-
                 </div>
 
-                <div class="noticia-popup" id="noticia-popup">
-                    <div class="noticia-content">
-                        <span class="fechar" onclick="fecharNoticia()">X</span>
-                        <img src="" alt="Imagem da Notícia" id="noticia-imagem">
-                        <h2 id="noticia-titulo"></h2>
-                        <p id="noticia-texto"></p>
-                        <button onclick="fecharNoticia()">Voltar</button>
-                    </div>
-                </div>
-
-                <script>
-                    function abrirNoticia(elemento) {
-                        var titulo = document.querySelector("#noticia-popup .noticia-content #noticia-titulo");
-                        var texto = document.querySelector("#noticia-popup .noticia-content #noticia-texto");
-                        var imagem = document.querySelector("#noticia-popup .noticia-content #noticia-imagem");
-                        var h2 = elemento.querySelector(".titulo-pergunta");
-                        var p = elemento.querySelector("p");
-                        var img = elemento.querySelector(".imagem-noticia img");
-
-                        titulo.textContent = h2.textContent;
-                        texto.textContent = p.textContent;
-                        imagem.src = img.src;
-
-                        document.getElementById("noticia-popup").style.display = "block";
-                    }
-
-
-                    function fecharNoticia() {
-                        document.getElementById("noticia-popup").style.display = "none";
-                    }
-
-                    function filtrarNoticias(categoria) {
-                        var todasNoticias = document.querySelectorAll('.ntc-pergunta');
-
-                        todasNoticias.forEach(function (noticia) {
-                            var tipoNoticia = noticia.querySelector('.tipo-noticia').textContent;
-                            if (categoria === 'todos' || tipoNoticia === categoria) {
-                                noticia.style.display = 'block';
-                            } else {
-                                noticia.style.display = 'none';
-                            }
-                        });
-                    }
-
-                    function pesquisarNoticia() {
-                        var input = document.querySelector('.noticia-icon');
-                        var filtro = input.value.toUpperCase();
-                        var noticias = document.querySelectorAll('.noticias > .ntc-pergunta');
-
-                        noticias.forEach(function (noticia) {
-                            var titulo = noticia.querySelector('h2.titulo-pergunta');
-                            if (titulo.innerText.toUpperCase().indexOf(filtro) > -1) {
-                                noticia.style.display = 'block';
-                            } else {
-                                noticia.style.display = 'none';
-                            }
-                        });
-                    }
-                </script>
 
             </div>
+
+            <div class="noticia-popup" id="noticia-popup">
+                <div class="noticia-content">
+                    <span class="fechar" onclick="fecharNoticia()">X</span>
+                    <img src="" alt="Imagem da Notícia" id="noticia-imagem">
+                    <h2 id="noticia-titulo"></h2>
+                    <p id="noticia-texto"></p>
+                    <button onclick="fecharNoticia()">Voltar</button>
+                </div>
+            </div>
+
+            <script>
+                function abrirNoticia(elemento) {
+                    var titulo = document.querySelector("#noticia-popup .noticia-content #noticia-titulo");
+                    var texto = document.querySelector("#noticia-popup .noticia-content #noticia-texto");
+                    var imagem = document.querySelector("#noticia-popup .noticia-content #noticia-imagem");
+                    var h2 = elemento.querySelector(".titulo-pergunta");
+                    var p = elemento.querySelector("p");
+                    var img = elemento.querySelector(".imagem-noticia img");
+
+                    titulo.textContent = h2.textContent;
+                    texto.textContent = p.textContent;
+                    imagem.src = img.src;
+
+                    document.getElementById("noticia-popup").style.display = "block";
+                }
+
+
+                function fecharNoticia() {
+                    document.getElementById("noticia-popup").style.display = "none";
+                }
+                function filtrarNoticias(categoria) {
+                    var todasNoticias = document.querySelectorAll('.ntc-pergunta');
+
+                    todasNoticias.forEach(function (noticia) {
+                        var categoriaNoticia = noticia.classList[1]; // Pegar a segunda classe que representa a categoria
+                        if (categoria === 'todos' || categoriaNoticia === 'categoria-' + categoria) {
+                            noticia.style.display = 'block';
+                        } else {
+                            noticia.style.display = 'none';
+                        }
+                    });
+                }
+
+
+
+                function pesquisarNoticia() {
+                    var input = document.querySelector('.noticia-icon');
+                    var filtro = input.value.toUpperCase();
+                    var noticias = document.querySelectorAll('.noticias > .ntc-pergunta');
+
+                    noticias.forEach(function (noticia) {
+                        var titulo = noticia.querySelector('h2.titulo-pergunta');
+                        if (titulo.innerText.toUpperCase().indexOf(filtro) > -1) {
+                            noticia.style.display = 'block';
+                        } else {
+                            noticia.style.display = 'none';
+                        }
+                    });
+                }
+            </script>
+
         </div>
-        <footer>
-            <div class="cont-1">
-                <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
+    </div>
+    <footer>
+        <div class="cont-1">
+            <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
+            <ul>
+                <li><a href="index.php">Página Inicial</a></li>
+                <li><a href="#quem-somos">Quem Somos?</a></li>
+                <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
+            </ul>
+        </div>
+        <div class="cont-2">
+            <div>
+                <div class="redes-footer">
+                    <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
+                            alt=""></a>
+                    <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                            src="assets/img/iconfacebook.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                            src="assets/img/iconyoutube.png" alt=""></a>
+                </div>
                 <ul>
-                    <li><a href="index.php">Página Inicial</a></li>
-                    <li><a href="#quem-somos">Quem Somos?</a></li>
-                    <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
+                    <li>
+                        <a href="fale_conosco.php">Fale Conosco</a>
+                    </li>
+                    <li>
+                        <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
+                    </li>
+                    <li>
+                        <a href="termo_e_condicoes.php">Termos e Condições</a>
+                    </li>
                 </ul>
             </div>
-            <div class="cont-2">
-                <div>
-                    <div class="redes-footer">
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
-                                alt=""></a>
-                        <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
-                                src="assets/img/iconfacebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
-                                src="assets/img/iconyoutube.png" alt=""></a>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="fale_conosco.php">Fale Conosco</a>
-                        </li>
-                        <li>
-                            <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
-                        </li>
-                        <li>
-                            <a href="termo_e_condicoes.php">Termos e Condições</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    </div>
+        </div>
+        </div>
     </footer>
 </body>
 

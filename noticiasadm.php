@@ -7,12 +7,6 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSI
     exit;
 }
 
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSION['email'] !== 'admin@gmail.com') {
-    $mostrarBotao = false;
-} else {
-    $mostrarBotao = true;
-}
-
 include 'conexao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
@@ -147,8 +141,8 @@ while ($noticias = $resultado->fetch_assoc()) {
                     </form>
 
                     <?php foreach ($noticia as $noticias): ?>
-                        <div class="ntc-pergunta <?php echo strtolower($noticias['tipo']); ?>" onclick="abrirNoticia(this)"
-                            style="color: white; cursor: pointer;">
+                        <div class="ntc-pergunta categoria-<?php echo strtolower($noticias['tipo']); ?>"
+                            onclick="abrirNoticia(this)" style="color: white; cursor: pointer;">
                             <h2 class="titulo-pergunta">
                                 <?php echo $noticias['titulo']; ?>
                             </h2>
@@ -162,7 +156,7 @@ while ($noticias = $resultado->fetch_assoc()) {
                                 <?php echo strtolower($noticias['tipo']); ?>
                             </div>
 
-                            <?php if ($mostrarBotao) { ?>
+                            <?php if ($_SESSION['email'] === 'admin@gmail.com') { ?>
                                 <button class="btn-crud" onclick="editarNoticia(<?php echo $noticias['id']; ?>)">Editar</button>
                                 <button class="btn-crud2"
                                     onclick="excluirNoticia(<?php echo $noticias['id']; ?>)">Excluir</button>
@@ -204,19 +198,19 @@ while ($noticias = $resultado->fetch_assoc()) {
                     function fecharNoticia() {
                         document.getElementById("noticia-popup").style.display = "none";
                     }
-
                     function filtrarNoticias(categoria) {
                         var todasNoticias = document.querySelectorAll('.ntc-pergunta');
 
                         todasNoticias.forEach(function (noticia) {
-                            var tipoNoticia = noticia.querySelector('.tipo-noticia').textContent;
-                            if (categoria === 'todos' || tipoNoticia === categoria) {
+                            var categoriaNoticia = noticia.classList[1];
+                            if (categoria === 'todos' || categoriaNoticia === 'categoria-' + categoria) {
                                 noticia.style.display = 'block';
                             } else {
                                 noticia.style.display = 'none';
                             }
                         });
                     }
+
 
                     function pesquisarNoticia() {
                         var input = document.querySelector('.noticia-icon');
