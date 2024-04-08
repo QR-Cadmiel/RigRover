@@ -35,7 +35,7 @@ include 'conexao.php';
 
         <h2>Última atualização: 14/02/24</h2>
 
-        <p>A RigRover ("nós", "nosso(a)") está comprometida em proteger a privacidade e a segurança dos dados pessoais dos nossos usuários ("você"). Esta Política de Privacidade explica como coletamos, usamos, compartilhamos e protegemos as informações no contexto da sua utilização dos serviços e do site da RigRover.</p>
+        <p>A RigRover está comprometida em proteger a privacidade e a segurança dos dados pessoais dos nossos usuários ("você"). Esta Política de Privacidade explica como coletamos, usamos, compartilhamos e protegemos as informações no contexto da sua utilização dos serviços e do site da RigRover.</p>
 
         <h3>1. Informações que Coletamos</h3>
 
