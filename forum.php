@@ -1,21 +1,32 @@
 <?php
-date_default_timezone_set('America/Sao_Paulo');
+session_start();
 
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header("Location: login.php");
+    exit;
+}
 
 include 'conexao.php';
-include 'validacao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $titulo = $_POST['titulo'];
-    $descricao = $_POST['descricao'];
+    if (isset($_POST['editar_pergunta'])) {
+        $id = $_POST['editar_pergunta'];
+        header("Location: editar_pergunta.php?id=$id");
+        exit();
+    }
 
-    $sql = "INSERT INTO perguntas (titulo, descricao) VALUES ('$titulo', '$descricao')";
-    $resultado = $mysqli->query($sql);
-
-    header("Location: forum.php");
-    exit();
+    if (isset($_POST['excluir_pergunta'])) {
+        $id = $_POST['excluir_pergunta'];
+        if ($_SESSION['email'] === 'admin@gmail.com') {
+            echo '<script>';
+            echo 'if (confirm("Tem certeza de que deseja excluir esta pergunta?")) {';
+            echo 'window.location.href = "excluir_pergunta.php?id=' . $id . '";';
+            echo '}';
+            echo '</script>';
+        }
+    }
 }
 
 $sql = "SELECT * FROM perguntas";
@@ -150,6 +161,18 @@ while ($pergunta = $resultado->fetch_assoc()) {
                         echo '<p class="ultima-mensagem">' . $textoIntervalo . '</p>';
                         echo '</div>';
                         ?>
+                        <?php if ($_SESSION['email'] === 'admin@gmail.com') : ?>
+                            <form method="post" action="">
+                                <input type="hidden" name="editar_pergunta" value="<?php echo $pergunta['id']; ?>">
+                                <button type="submit">Editar</button>
+                            </form>
+                        <?php endif; ?>
+                        <?php if ($_SESSION['email'] === 'admin@gmail.com') : ?>
+                            <form method="post" action="">
+                                <input type="hidden" name="excluir_pergunta" value="<?php echo $pergunta['id']; ?>">
+                                <button type="submit">Excluir</button>
+                            </form>
+                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
 
@@ -185,8 +208,8 @@ while ($pergunta = $resultado->fetch_assoc()) {
                     </ul>
                 </div>
             </div>
+        </footer>
     </div>
-    </footer>
 
 </body>
 
