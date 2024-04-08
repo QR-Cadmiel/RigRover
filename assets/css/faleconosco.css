@@ -109,6 +109,19 @@ h1 {
   cursor: pointer;
 }
 
+.btn-form-adm {
+  border: none;
+  border-radius: 11px;
+  color: black;
+  background-color: #2AC318;
+  width: 15vw;
+  height: 4vw;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
 footer {
   background-color: #121212;
   color: white;

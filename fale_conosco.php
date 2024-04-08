@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+// Verificar se o usuário está logado e se é o usuário autorizado
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSION['email'] !== 'admin@gmail.com') {
+    $mostrarBotao = false;
+} else {
+    $mostrarBotao = true;
+}
 
 include 'conexao.php';
 
@@ -99,6 +107,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="email" id="email" name="email" required><br>
                 <label for="mensagem">Mensagem:</label><br>
                 <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+                <?php if ($mostrarBotao) { ?>
+                    <a href="tabela_fale_conosco.php"><input value="Acessar formulário" class="btn-form-adm"></a>
+                <?php } ?>
                 <input type="submit" value="Enviar" class="btn-primary ">
             </form>
         </div>
