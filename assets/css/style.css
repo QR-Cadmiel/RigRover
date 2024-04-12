@@ -263,11 +263,10 @@ nav ul {
 
 .faq-container {
   width: 80%;
-  max-width: 600px;
+  max-width: 53vw;
   margin: 0 auto;
   font-family: Arial, sans-serif;
 }
-
 .faq-item {
   margin-bottom: 10px;
   cursor: pointer;

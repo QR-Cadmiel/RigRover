@@ -159,15 +159,14 @@ include 'conexao.php';
 
         <div id="rigrover-4">
             <div class="faq-container">
-                <h1>Perguntas Frequentes</h1>
+                <h1>Perguntas Frequentes</h1>   
                 <div class="faq-item" onclick="toggleFAQ(0)">
-                    <div class="faq-question">As notícias são confiaveis? </div>
-                    <div class="faq-answer">Sim, nossas notícias são provenientes de fontes
-                        confiáveis e passam por um rigoroso processo de verificação para
-                        garantir a precisão e a confiabilidade das informações que compartilhamos.</div>
+                    <div class="faq-question">As notícias são confiáveis? </div>
+                    <div class="faq-answer">Sim, a Infinite Nexus passa por um rigoroso
+                        processo para selecionar as noticias.</div>
                 </div>
                 <div class="faq-item" onclick="toggleFAQ(1)">
-                    <div class="faq-question">A ferramenta de anilisar hardware, funciona?</div>
+                    <div class="faq-question">A ferramenta de anilisar hardware funciona?</div>
                     <div class="faq-answer">Sim, a nossa ferramenta de análise de hardware
                         funciona eficientemente em diversos sistemas e configurações,
                         proporcionando diagnósticos precisos sobre o estado do seu hardware.</div>
@@ -175,20 +174,22 @@ include 'conexao.php';
 
                 <div class="faq-item" onclick="toggleFAQ(1)">
                     <div class="faq-question">A criação de uma conta é gratuita?</div>
-                    <div class="faq-answer">Sim a criação de uma conta é 100% gratuita,
+                    <div class="faq-answer">Sim, a criação de uma conta é 100% gratuita,
                         não será cobrado nada ao criar uma.</div>
                 </div>
 
                 <div class="faq-item" onclick="toggleFAQ(1)">
-                    <div class="faq-question">Como posso entrar em contato com o suporte caso tenha problemas ou
-                        dúvidas?</div>
+                    <div class="faq-question">Como posso entrar em contato com o suporte caso tenha problemas ou dúvidas?</div>
                     <div class="faq-answer">
                         Para solicitar suporte ou tirar dúvidas, desça até o final da página até encontrar
                         a seção de rodapé. Clique em "Fale Conosco" e preencha o formulário de contato com
                         os detalhes da sua solicitação. Nossa equipe se esforçará para responder o mais breve
                         possível.</div>
                 </div>
+
+
             </div>
+
 
 
 
