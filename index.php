@@ -209,7 +209,7 @@ include 'conexao.php';
             </div>
 
             <div class="app-right">
-                <img src="https://media.discordapp.net/attachments/1201580849368416446/1228397127978319882/PEGbFAAAAAElFTkSuQmCC.png?ex=662be4f9&is=66196ff9&hm=d90e67abfec89b2b3c4697aa28ba0c008adbcb2d9b176ec71ecf23712e5707f4&=&format=webp&quality=lossless&width=497&height=596"
+                <img src="https://media.discordapp.net/attachments/1204450270919135285/1228418736461975552/11100228733159.png?ex=662bf919&is=66198419&hm=4a6128e5f89666c5c5d589c8c1e7f5044095285d9ed73a0b42da710b851b7e5b&=&format=webp&quality=lossless&width=498&height=600"
                     alt="">
             </div>
         </div>
