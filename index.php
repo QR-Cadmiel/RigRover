@@ -14,7 +14,8 @@ include 'conexao.php';
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets\css\responsividade\index-responsivo.css">
 
-    <link rel="icon" type="image/png" href="https://github.com/QR-Cadmiel/RigRover/blob/02314bc9c37d2761af50a3c5e0d49ea38bebddcf/img/logourl.png">
+    <link rel="icon" type="image/png"
+        href="https://github.com/QR-Cadmiel/RigRover/blob/02314bc9c37d2761af50a3c5e0d49ea38bebddcf/img/logourl.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -79,9 +80,11 @@ include 'conexao.php';
                 e tornando RigRover ainda melhor. Se você é um entusiasta dos jogos, um jogador competitivo ou alguém
                 que simplesmente ama a cultura gaming, você encontrará em RigRover um lar.</p>
 
-            <p>Explore, descubra e aprimore sua experiência de jogo com RigRover. Porque, no fim das contas, é tudo sobre
+            <p>Explore, descubra e aprimore sua experiência de jogo com RigRover. Porque, no fim das contas, é tudo
+                sobre
                 tornar cada sessão de jogo tão gratificante quanto possível. Junte-se a nós nessa aventura e seja parte
-                de uma comunidade que está redefinindo o mundo dos games, uma ferramenta de cada vez. Bem-vindo ao futuro
+                de uma comunidade que está redefinindo o mundo dos games, uma ferramenta de cada vez. Bem-vindo ao
+                futuro
                 do gaming. Bem-vindo ao RigRover.</p>
         </div>
 
@@ -91,9 +94,12 @@ include 'conexao.php';
                 2023, nossa missão é simples, porém ambiciosa: unir diversas ferramentas essenciais para gamers em uma
                 única plataforma, tornando a experiência de jogar mais acessível, prazerosa e eficiente.</p>
 
-            <p>Entendemos que o mundo dos games é vasto e repleto de desafios, desde encontrar os melhores equipamentos até
-                otimizar configurações para um desempenho perfeito. É por isso que RigRover veio para ser o seu aliado nessa
-                jornada, oferecendo desde reviews detalhadas de hardwares até guias de otimização de jogos, passando por um
+            <p>Entendemos que o mundo dos games é vasto e repleto de desafios, desde encontrar os melhores equipamentos
+                até
+                otimizar configurações para um desempenho perfeito. É por isso que RigRover veio para ser o seu aliado
+                nessa
+                jornada, oferecendo desde reviews detalhadas de hardwares até guias de otimização de jogos, passando por
+                um
                 agregador de preços para você encontrar as melhores ofertas.</p>
 
             <img src="assets/img/img-index2.jpg" alt="" class="img-index2">
@@ -174,18 +180,37 @@ include 'conexao.php';
                 </div>
 
                 <div class="faq-item" onclick="toggleFAQ(1)">
-                    <div class="faq-question">Como posso entrar em contato com o suporte caso tenha problemas ou dúvidas?</div>
+                    <div class="faq-question">Como posso entrar em contato com o suporte caso tenha problemas ou
+                        dúvidas?</div>
                     <div class="faq-answer">
                         Para solicitar suporte ou tirar dúvidas, desça até o final da página até encontrar
                         a seção de rodapé. Clique em "Fale Conosco" e preencha o formulário de contato com
                         os detalhes da sua solicitação. Nossa equipe se esforçará para responder o mais breve
                         possível.</div>
                 </div>
-
-
             </div>
 
 
+
+        </div>
+        <div class="rirgrover-app">
+            <div class="app-left">
+                <img class="app-icon"
+                    src="https://media.discordapp.net/attachments/1201580849368416446/1228405669091213437/disponivel-google-play-badge.png?ex=662becee&is=661977ee&hm=4e0eeb4dc206d96c30491296069f5fae128ed58ee5fe9ed28a625fd08014b461&=&format=webp&quality=lossless&width=1440&height=426"
+                    alt="Play Store">
+                <img class="app-icon"
+                    src="https://media.discordapp.net/attachments/1201580849368416446/1228394869026852914/appleStore.png?ex=662be2df&is=66196ddf&hm=6ca28a7ffb8b6df1e5089c47bd244a110ed9a3564bef0514e18993277b92ed63&=&format=webp&quality=lossless&width=705&height=210"
+                    alt="App Store">
+            </div>
+
+            <div class="app-mid">
+                <h1>Baixe nosso aplicativo</h1>
+            </div>
+
+            <div class="app-right">
+                <img src="https://media.discordapp.net/attachments/1201580849368416446/1228397127978319882/PEGbFAAAAAElFTkSuQmCC.png?ex=662be4f9&is=66196ff9&hm=d90e67abfec89b2b3c4697aa28ba0c008adbcb2d9b176ec71ecf23712e5707f4&=&format=webp&quality=lossless&width=497&height=596"
+                    alt="">
+            </div>
         </div>
         <div id="rigrover-5">
             <footer>
@@ -200,10 +225,13 @@ include 'conexao.php';
                 <div class="cont-2">
                     <div>
                         <div class="redes-footer">
-                            <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png" alt=""></a>
+                            <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
+                                    alt=""></a>
                             <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img src="assets/img/iconfacebook.png" alt=""></a>
-                            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img src="assets/img/iconyoutube.png" alt=""></a>
+                            <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
+                                    src="assets/img/iconfacebook.png" alt=""></a>
+                            <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
+                                    src="assets/img/iconyoutube.png" alt=""></a>
                         </div>
                         <ul>
                             <li>
