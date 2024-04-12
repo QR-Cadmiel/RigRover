@@ -1,12 +1,9 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url('https://cdn.discordapp.com/attachments/1201580849368416446/1220755514573586482/fundoiniciologado.png?ex=6610182b&is=65fda32b&hm=ce8dfbe9423439f46571e9cf9c721ea937b557defbb5d521fafdabc4067322c4&');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color: #372c3e;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #121212;
 }
 
 nav {
