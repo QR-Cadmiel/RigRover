@@ -73,7 +73,7 @@ include '../validacao.php';
 
         <div class="container">
             <div class="evt-ct">
-
+            <h2>Happy Wheels</h2>
                 <div class="images-evt">
                     <div class="img1">
                         <div class="leftevent1">
@@ -81,19 +81,15 @@ include '../validacao.php';
                         </div>
                         <div class="rightevento1">
 
-                            <h2>Happy Wheels</h2>
                             <h5>Happy Wheels é um jogo eletrônico de plataforma e corrida desenvolvido e publicado pela
-                                Fancy Force.
-                                Lançado inicialmente em 2010, o jogo ganhou popularidade devido à sua jogabilidade única e
-                                altamente
-                                desafiadora.</h5>
+                                Fancy Force. Lançado inicialmente em 2010, o jogo ganhou popularidade devido à sua jogabilidade 
+                                única e altamente desafiadora.</h5>
                             <h5>Com uma variedade de personagens e veículos peculiares, Happy Wheels oferece uma experiência
                                 de jogo
                                 cheia de diversão e humor. Os jogadores podem criar e compartilhar seus próprios níveis, o
                                 que contribui
-                                para uma comunidade ativa e em constante crescimento.</h5>
-                            <h5>Apesar de seus gráficos simples, Happy Wheels compensa com sua jogabilidade viciante e uma
-                                enorme
+                                para uma comunidade ativa e em constante crescimento. Apesar de seus gráficos simples, Happy 
+                                Wheels compensa com sua jogabilidade viciante e uma enorme
                                 quantidade de conteúdo gerado pelos usuários. Desde corridas até obstáculos perigosos, o
                                 jogo oferece
                                 uma experiência emocionante e muitas vezes hilária para jogadores de todas as idades.</h5>

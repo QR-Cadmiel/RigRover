@@ -77,14 +77,14 @@ include 'validacao.php';
 
         <div class="container">
             <div class="evt-ct">
-
+            <h2>Evento BGS</h2>
                 <div class="images-evt">
                     <div class="img1">
                         <div class="leftevent1">
                             <img src="assets/img/evento1.jpeg" class="imgevento" alt="">
                         </div>
                         <div class="rightevento1">
-                            <h2>Evento BGS</h2>
+                   
                             <h5>A Brasil Game Show é uma feira anual de videogames organizada por Marcelo Tavares,
                                 realizada em São Paulo, Brasil. Desde sua estreia em 2009, tornou-se um dos principais
                                 eventos de jogos eletrônicos da América Latina. Oferece lançamentos de jogos,
@@ -125,12 +125,6 @@ include 'validacao.php';
                     <div class="undervenda1">
                         <button class="btn-ticket" onclick="exibirAlerta()">Comprar</button>
                     </div>
-
-                    <script>
-                        function exibirAlerta() {
-                            alert("A compra não está disponível");
-                        }
-                    </script>
 
                 </div>
             </div>

@@ -73,14 +73,14 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Rayman Legends</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001017/7075b9de20b7c835325dd28d4a9dd9e4e1cf58d3aa9339ced81100933902ee31" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Rayman Legends</h2>
+       
                         <h5>Rayman Legends é um jogo eletrônico de plataforma desenvolvido pela Ubisoft Montpellier e
                             publicado pela Ubisoft em setembro de 2013. Seguindo as aventuras de Rayman, um herói sem
                             braços e pernas, e seus amigos, o jogo se passa em diversos mundos encantados, cada um com
@@ -88,8 +88,8 @@ include '../validacao.php';
                         <h5>Com uma jogabilidade fluída e cativante, Rayman Legends se destaca por seus níveis criativos
                             e diversificados, que vão desde florestas encantadas até castelos medievais. Além da
                             campanha para um jogador, o jogo oferece modos multiplayer onde os jogadores podem se unir
-                            para enfrentar desafios cooperativos e competitivos.</h5>
-                        <h5>Com gráficos vibrantes e uma trilha sonora envolvente, Rayman Legends é aclamado por sua
+                            para enfrentar desafios cooperativos e competitivos.
+                            Com gráficos vibrantes e uma trilha sonora envolvente, Rayman Legends é aclamado por sua
                             arte visual e design de níveis inventivo, continuando a encantar jogadores e críticos como
                             um dos melhores exemplos do gênero de plataforma.</h5>
                     </div>

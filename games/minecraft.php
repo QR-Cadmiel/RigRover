@@ -73,25 +73,25 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Minecraft</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://store-images.s-microsoft.com/image/apps.60323.14581193029730121.3bde2745-c5bc-4659-9b31-32749bd5129f.66d40a75-671b-4612-aa8b-22aa289863e4?q=90&w=480&h=270" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Minecraft</h2>
+
                         <h5>Minecraft é um jogo eletrônico de sandbox e sobrevivência desenvolvido e publicado pela
                             Mojang Studios em novembro de 2011. Ambientado em um mundo aberto composto por blocos, os
                             jogadores têm a liberdade de explorar, construir e sobreviver em diversos ambientes e
                             biomas.</h5>
                         <h5>Com uma jogabilidade única, Minecraft permite aos jogadores criar e destruir blocos,
                             construir estruturas impressionantes, explorar cavernas e enfrentar inimigos variados, como
-                            zumbis, esqueletos e creepers.</h5>
-                        <h5>Além do modo de sobrevivência, onde os jogadores devem coletar recursos e enfrentar ameaças
+                            zumbis, esqueletos e creepers.
+                            Além do modo de sobrevivência, onde os jogadores devem coletar recursos e enfrentar ameaças
                             para sobreviver, Minecraft também oferece o modo criativo, onde a ênfase está na construção
-                            e na imaginação ilimitada dos jogadores.</h5>
-                        <h5>Com uma comunidade ativa de jogadores e uma infinidade de mods e pacotes de textura
+                            e na imaginação ilimitada dos jogadores.
+                            Com uma comunidade ativa de jogadores e uma infinidade de mods e pacotes de textura
                             disponíveis, Minecraft continua sendo um dos jogos mais populares e influentes da
                             atualidade, oferecendo uma experiência única e personalizável para jogadores de todas as
                             idades.</h5>

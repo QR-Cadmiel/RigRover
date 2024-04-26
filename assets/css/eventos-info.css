@@ -105,17 +105,11 @@ nav ul {
     padding-top: 50px;
 }
 
-.rightvenda1 h5,
-h2,
-h4 {
-    width: 400px;
-    text-align: start;
-}
-
 .img1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .rightevento1 {
@@ -128,19 +122,18 @@ h4 {
 
 .rightevento1 h5 {
     font-size: 1.2vw;
-    width: 35vw;
-    text-align: start;
+    width: 50vw;
+    text-align: justify;
 }
 
-.rightevento1 h2 {
-    font-size: 2vw;
-    width: 35vw;
-    text-align: start;
+h2 {
+    font-size: 37px;
+    text-align: center;
 }
 
 .rightvenda1 h5 {
     font-size: 1.4vw;
-    text-align: start;
+    text-align: justify;
 }
 
 .imgevento {

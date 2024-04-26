@@ -73,7 +73,7 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Transformice</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
@@ -82,15 +82,15 @@ include '../validacao.php';
                     </div>
                     <div class="rightevento1">
 
-                        <h2>Transformice</h2>
+                     
                         <h5>Transformice é um jogo eletrônico multiplayer online desenvolvido pela Atelier 801, lançado
                             em maio de 2010. Ambientado em um mundo habitado por ratos, o jogo oferece uma experiência
                             única de plataforma e estratégia.</h5>
                         <h5>Com uma comunidade ativa e uma jogabilidade cativante, Transformice destaca-se por suas
                             divertidas mecânicas de cooperação e competição. Os jogadores assumem o papel de ratos com o
                             objetivo de coletar queijo e trazê-lo de volta à toca, enfrentando desafios e obstáculos ao
-                            longo do caminho.</h5>
-                        <h5>Além das partidas regulares, o jogo oferece eventos especiais, mapas personalizados criados
+                            longo do caminho.
+                            Além das partidas regulares, o jogo oferece eventos especiais, mapas personalizados criados
                             pela comunidade e uma variedade de itens cosméticos para personalizar o visual dos ratos.
                             Transformice é conhecido por sua atmosfera descontraída e pela diversão garantida para
                             jogadores de todas as idades.</h5>

@@ -938,18 +938,15 @@
         font-size: 31px;
     }
 
-    .i1t2 p, .i2t1 p {
-        font-size: 1.5rem;
+    .i2t1 p {
+        font-size: 28px;
     }
 
-    .img-index1 {
-        width: 80%;
-    }
-    .img-index2 {
-        width: 88%;
-        height: 40%;
-    }    
 
+   .img-index2 {
+        width: 40vw;
+        height: 80%;
+    }
    
     .i1t2, .i2t1 {
         padding: 50px;

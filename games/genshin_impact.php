@@ -74,6 +74,7 @@ include '../validacao.php';
     </div>
     <div class="container">
         <div class="evt-ct">
+        <h2>Genshin Impact</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
@@ -81,15 +82,15 @@ include '../validacao.php';
                     </div>
                     <div class="rightevento1">
 
-                        <h2>Genshin Impact</h2>
+                    
                         <h5>Genshin Impact é um jogo eletrônico de ação e aventura desenvolvido e publicado pela miHoYo
                             em setembro de 2020. Ambientado no vasto mundo de Teyvat, o jogo segue a história de um
                             viajante interdimensional que busca seu irmão perdido e desvenda os segredos do mundo.</h5>
+
                         <h5>Com uma narrativa cativante, Genshin Impact se destaca por suas missões emocionantes e pela
                             liberdade dada aos jogadores para explorar o mundo aberto de Teyvat. Além da campanha
                             principal, o jogo oferece eventos sazonais, dungeons cooperativas e batalhas contra chefes
-                            poderosos.</h5>
-                        <h5>Com visuais deslumbrantes e uma ampla gama de personagens e habilidades para descobrir,
+                            poderosos. Com visuais deslumbrantes e uma ampla gama de personagens e habilidades para descobrir,
                             Genshin Impact rapidamente se tornou um dos jogos mais populares e influentes, definindo um
                             novo padrão para o gênero de RPG de ação e aventura.</h5>
                     </div>

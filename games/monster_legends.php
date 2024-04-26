@@ -73,14 +73,14 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Monster Legends</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://m.media-amazon.com/images/I/81YkeEwbDzL.jpg" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Monster Legends</h2>
+
                         <h5>Monster Legends é um jogo eletrônico de estratégia e batalha desenvolvido pela Social Point
                             e lançado em 2013.
                             Os jogadores criam e treinam monstros para lutar em batalhas emocionantes em várias arenas.
@@ -90,8 +90,8 @@ include '../validacao.php';
                             colecionismo. Além
                             das batalhas, os jogadores podem construir habitats, criar novas espécies de monstros por
                             meio de cruzamentos e
-                            participar de eventos especiais para ganhar recompensas exclusivas.</h5>
-                        <h5>Com visuais vibrantes e uma comunidade ativa de jogadores, Monster Legends continua sendo um
+                            participar de eventos especiais para ganhar recompensas exclusivas.
+                        Com visuais vibrantes e uma comunidade ativa de jogadores, Monster Legends continua sendo um
                             dos jogos mais populares
                             no gênero de jogos de coleção e batalha de monstros, definindo um padrão para a experiência
                             de jogo móvel.</h5>

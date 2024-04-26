@@ -74,35 +74,18 @@ include 'conexao.php';
     </div>
 
     <div id="rigrover-2">
-        <div class="i1t2" id="quem-somos">
-            <img src="assets/img/img-index1.jpg" alt="" class="img-index1">
-            <p>Estamos sempre abertos a feedback e novas ideias, pois é com a sua ajuda que podemos continuar evoluindo
-                e tornando RigRover ainda melhor. Se você é um entusiasta dos jogos, um jogador competitivo ou alguém
-                que simplesmente ama a cultura gaming, você encontrará em RigRover um lar.</p>
-
-            <p>Explore, descubra e aprimore sua experiência de jogo com RigRover. Porque, no fim das contas, é tudo
-                sobre
-                tornar cada sessão de jogo tão gratificante quanto possível. Junte-se a nós nessa aventura e seja parte
-                de uma comunidade que está redefinindo o mundo dos games, uma ferramenta de cada vez. Bem-vindo ao
-                futuro
-                do gaming. Bem-vindo ao RigRover.</p>
-        </div>
-
         <div class="i2t1">
-            <p>Bem-vindo ao RigRover, seu destino final no universo gaming! Nascido da paixão e da inovação, RigRover
-                é um site revolucionário criado pela empresa de tecnologia de ponta, Infinite Nexus. Lançado em março de
-                2023, nossa missão é simples, porém ambiciosa: unir diversas ferramentas essenciais para gamers em uma
-                única plataforma, tornando a experiência de jogar mais acessível, prazerosa e eficiente.</p>
+            <p>RigRover, lançado em março de 2023 pela Infinite Nexus, é uma plataforma 
+                revolucionária projetada para aprimorar a experiência de gamers ao consolidar 
+                análises detalhadas de hardware, guias de otimização e um comparativo de preços,
+                tudo em um só lugar. Esta plataforma visa facilitar a busca e otimização de 
+                equipamentos de jogo, tornando a tecnologia acessível e maximizando o prazer 
+                de jogar. Com uma abordagem baseada em feedback constante dos usuários, RigRover
+                 está se estabelecendo como uma comunidade essencial para todos os apaixonados 
+                 por games, oferecendo uma experiência de jogo mais eficiente e gratificante. 
+                 Explore o futuro do gaming com RigRover.</p>
 
-            <p>Entendemos que o mundo dos games é vasto e repleto de desafios, desde encontrar os melhores equipamentos
-                até
-                otimizar configurações para um desempenho perfeito. É por isso que RigRover veio para ser o seu aliado
-                nessa
-                jornada, oferecendo desde reviews detalhadas de hardwares até guias de otimização de jogos, passando por
-                um
-                agregador de preços para você encontrar as melhores ofertas.</p>
-
-            <img src="assets/img/img-index2.jpg" alt="" class="img-index2">
+            <div class= "img-sobre"><img src="assets/img/img-index2.jpg" alt="" class="img-index2"></div>
         </div>
     </div>
 

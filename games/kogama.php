@@ -73,22 +73,22 @@ include '../validacao.php';
     </div>
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Kogama</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://i.ytimg.com/vi/nZgOVlMxVpc/maxresdefault.jpg" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Kogama</h2>
+   
                         <h5>Kogama é uma plataforma de criação e compartilhamento de jogos online, onde os jogadores
                             podem criar, jogar e compartilhar seus próprios mundos virtuais. Lançado em 2011, Kogama
                             oferece uma ampla variedade de experiências de jogo, desde aventuras de plataforma até jogos
                             de tiro e corrida.</h5>
                         <h5>Com uma comunidade ativa de criadores e jogadores, Kogama se destaca por sua vasta
                             biblioteca de jogos criados pela comunidade. Os jogadores podem explorar uma infinidade de
-                            mundos únicos, participar de desafios e interagir com outros jogadores em tempo real.</h5>
-                        <h5>Com gráficos simples e intuitivos, Kogama proporciona uma experiência de jogo acessível para
+                            mundos únicos, participar de desafios e interagir com outros jogadores em tempo real.
+                            Com gráficos simples e intuitivos, Kogama proporciona uma experiência de jogo acessível para
                             jogadores de todas as idades. Além disso, a plataforma continua a evoluir com atualizações
                             regulares, oferecendo novos recursos e conteúdos para os jogadores desfrutarem.</h5>
                     </div>

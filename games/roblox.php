@@ -73,22 +73,22 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Roblox</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://files.tecnoblog.net/wp-content/uploads/2021/08/roblox.jpg" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Roblox</h2>
+                        
                         <h5>Roblox é uma plataforma de jogos online que permite aos usuários criar e jogar jogos criados
                             por outros jogadores. Lançado em 2006, Roblox oferece uma vasta gama de experiências de
                             jogo, desde jogos de simulação e aventura até competições e desafios criativos.</h5>
                         <h5>Com uma comunidade ativa de desenvolvedores e jogadores, Roblox destaca-se pela sua
                             diversidade de jogos e pela capacidade dos usuários de criar e compartilhar suas próprias
                             criações. Além dos jogos, os usuários também podem personalizar seus avatares, participar de
-                            eventos especiais e interagir com amigos em chats e festas.</h5>
-                        <h5>Com gráficos coloridos e uma ampla variedade de opções de jogabilidade, Roblox continua a
+                            eventos especiais e interagir com amigos em chats e festas.
+                        Com gráficos coloridos e uma ampla variedade de opções de jogabilidade, Roblox continua a
                             ser uma das plataformas de jogos mais populares, oferecendo uma experiência única e
                             interativa para jogadores de todas as idades.</h5>
                     </div>

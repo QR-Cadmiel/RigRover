@@ -75,25 +75,24 @@ include '../validacao.php';
         <div class="evt-ct">
 
             <div class="images-evt">
+            <h2>Grand Theft Auto V</h2>
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://assets.xboxservices.com/assets/0b/17/0b179504-412d-4af7-9e00-3e3d92633577.jpg?n=GTA-V_GLP-Page-Hero-1084_1920x1080.jpg" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Grand Theft Auto V</h2>
-                        <h5>Grand Theft Auto V, também conhecido como GTA V, é um jogo eletrônico de ação e aventura
-                            desenvolvido pela Rockstar North e publicado pela Rockstar Games em setembro de 2013.
-                            Ambientado na fictícia cidade de Los Santos, inspirada em Los Angeles, e seu entorno rural
-                            de Blaine County, o jogo segue a história de três protagonistas: Michael, um ex-assaltante
-                            de banco em proteção de testemunhas; Franklin, um jovem buscando ascensão social; e Trevor,
-                            um sociopata imprevisível.</h5>
-                        <h5>Com uma narrativa envolvente, GTA V se destaca por suas missões elaboradas e pela liberdade
-                            dada aos jogadores para explorar o mundo aberto. Além da campanha para um jogador, o jogo
-                            oferece o Grand Theft Auto Online, onde os jogadores podem explorar Los Santos com amigos,
-                            participar de corridas, competições de tiro e assaltos.</h5>
-                        <h5>Com gráficos impressionantes e uma infinidade de atividades para explorar, Grand Theft Auto V
-                            continua sendo um dos jogos mais populares e influentes, estabelecendo um padrão para o
-                            gênero de mundo aberto.</h5>
+                        
+                        <h5>Grand Theft Auto V" (GTA V) é um jogo de ação e aventura lançado em setembro de 2013 pela 
+                            Rockstar Games, situado na fictícia Los Santos, inspirada em Los Angeles, e no rural Blaine 
+                            County. </h5>
+                        <h5> O jogo narra as vidas entrelaçadas de três personagens: Michael, um ex-assaltante de
+                             banco sob proteção de testemunhas; Franklin, um jovem em busca de ascensão social; e Trevor, 
+                             um sociopata imprevisível. Destacando-se por suas missões elaboradas e pela vasta liberdade 
+                             de exploração do mundo aberto, GTA V também inclui o "Grand Theft Auto Online", que permite 
+                             aos jogadores aventurarem-se com amigos, engajarem-se em corridas, tiroteios e assaltos, 
+                             mantendo-se como um dos jogos mais populares e influentes, definindo padrões para jogos de 
+                             mundo aberto com seus gráficos impressionantes e variedade de atividades.</h5>
+                     
                     </div>
                 </div>
             </div>

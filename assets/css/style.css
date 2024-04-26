@@ -78,12 +78,18 @@ nav ul {
   background-color: #141414;
 }
 
-.i1t2,
+.img-sobre {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .i2t1 {
   padding: 50px;
   color: white;
+  display: flex;
   text-decoration: none;
   text-align: center;
+  flex-direction: row-reverse;
 }
 
 .i1t2 {
@@ -94,19 +100,18 @@ nav ul {
   justify-content: right;
 }
 
-.i1t2 p,
 .i2t1 p {
+  width: 41vw;
+  font-size: 1.5rem;
   text-align: justify;
-  font-size: 1.3rem;
 }
 
-.img-index1 {
-  width: 600px;
-}
+
 
 .img-index2 {
-  width: 600px;
-  height: 400px;
+  width: 30vw;
+  height: 83%;
+  padding: 17px;
 }
 
 

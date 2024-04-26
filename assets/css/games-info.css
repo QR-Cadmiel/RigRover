@@ -84,19 +84,27 @@ nav ul {
     padding-top: 50px;
 }
 
-.rightvenda1 h5,
-h2,
-h4 {
-    text-align: start;
+.rightevento1 h5 {
+    text-align: justify;
+    font-size: 1.2rem;
 }
+
+h2 {
+    text-align: center;
+    font-size: 37px;
+}
+
+
 
 .img1 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .rightevento1 {
-    padding-left: 15px;
+    width: 57rem;
+    padding-left: 10vw;
 }
 
 .leftevento1 {
@@ -108,10 +116,6 @@ h4 {
     text-align: start;
 }
 
-.rightevento1 h5 {
-    text-align: start;
-    font-size: 1.2vw;
-}
 
 .imgevento {
     width: 50vw;

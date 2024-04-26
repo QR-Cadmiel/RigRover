@@ -74,24 +74,24 @@ include '../validacao.php';
     
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Counter-Strike 2</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://assets.gamearena.gg/wp-content/uploads/2023/03/30004837/662243.jpg" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Counter-Strike 2</h2>
+                       
                         <h5>Counter-Strike 2, também conhecido como CS2, é um jogo eletrônico de tiro em primeira pessoa
-                            desenvolvido pela Valve Corporation. Lançado em setembro de 2013, o jogo mantém sua essência
+                            desenvolvido pela Valve Corporation.</h5>
+                        <h5>Lançado em setembro de 2013, o jogo mantém sua essência
                             competitiva e tática, colocando dois times, Terroristas e Contra-Terroristas, em confronto
-                            em diversos cenários.</h5>
-                        <h5>Com uma jogabilidade envolvente, CS2 destaca-se por seus mapas intricados e pela necessidade
+                            em diversos cenários. Com uma jogabilidade envolvente, CS2 destaca-se por seus mapas intricados e pela necessidade
                             de trabalho em equipe e estratégia. Além do modo tradicional de jogo, o Counter-Strike 2
-                            oferece modos como Deathmatch, Captura a Bandeira e Bomb Defusal.</h5>
-                        <h5>Com gráficos atualizados e uma comunidade dedicada, Counter-Strike 2 continua sendo um dos
-                            jogos de tiro mais populares e influentes, estabelecendo um padrão para o gênero de FPS
-                            competitivo.</h5>
+                            oferece modos como Deathmatch, Captura a Bandeira e Bomb Defusal. Com gráficos atualizados e 
+                            uma comunidade dedicada, Counter-Strike 2 continua sendo um dos jogos de tiro mais populares
+                            e influentes, estabelecendo um padrão para o gênero de FPS competitivo.</h5>
+                      
                     </div>
                 </div>
             </div>

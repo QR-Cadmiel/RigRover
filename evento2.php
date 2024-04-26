@@ -124,12 +124,6 @@ include 'validacao.php';
                         <button class="btn-ticket" onclick="exibirAlerta()">Comprar</button>
                     </div>
 
-                    <script>
-                        function exibirAlerta() {
-                            alert("A compra não está disponível");
-                        }
-                    </script>
-
                 </div>
             </div>
 

@@ -73,7 +73,7 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Atomic Heart</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
@@ -81,15 +81,17 @@ include '../validacao.php';
                             alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Atomic Heart</h2>
+                    
                         <h5>Atomic Heart é um jogo eletrônico de ação e aventura em desenvolvimento pela Mundfish. A
                             trama se passa em uma realidade alternativa da União Soviética, onde a tecnologia avançada
-                            se mistura com elementos paranormais. O jogador assume o papel de um agente especial enviado
-                            para investigar um complexo de pesquisa secreto onde ocorreram eventos misteriosos.</h5>
-                        <h5>Com uma narrativa intrigante, Atomic Heart promete oferecer missões envolventes e uma
+                            se mistura com elementos paranormais. </h5>
+                            
+                            <h5> O jogador assume o papel de um agente especial enviado
+                            para investigar um complexo de pesquisa secreto onde ocorreram eventos misteriosos.
+                            Com uma narrativa intrigante, Atomic Heart promete oferecer missões envolventes e uma
                             experiência imersiva. Além da história principal, o jogo oferecerá uma variedade de
-                            atividades e desafios para os jogadores explorarem em seu vasto mundo aberto.</h5>
-                        <h5>Com visuais deslumbrantes e uma atmosfera única, Atomic Heart está destinado a se destacar
+                            atividades e desafios para os jogadores explorarem em seu vasto mundo aberto.
+                            Com visuais deslumbrantes e uma atmosfera única, Atomic Heart está destinado a se destacar
                             como um dos jogos mais promissores, oferecendo uma nova abordagem ao gênero de ação e
                             aventura.</h5>
                     </div>

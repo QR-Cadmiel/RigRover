@@ -73,7 +73,7 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Valorant</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
@@ -81,7 +81,7 @@ include '../validacao.php';
                             class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Valorant</h2>
+
                         <h5>Valorant é um jogo eletrônico de tiro tático em primeira pessoa desenvolvido e publicado
                             pela Riot Games em junho de 2020. Ambientado em um futuro próximo, o jogo coloca dois times
                             de cinco jogadores em confronto, sendo um time de atacantes e outro de defensores, com o
@@ -90,8 +90,8 @@ include '../validacao.php';
                             se destaca por sua jogabilidade tática e cooperativa. Além do modo principal de jogo,
                             Valorant oferece um sistema classificado onde os jogadores podem competir em partidas
                             ranqueadas para subir de patente e testar suas habilidades contra jogadores de habilidade
-                            semelhante.</h5>
-                        <h5>Com gráficos nítidos e uma variedade de mapas e agentes para escolher, Valorant rapidamente
+                            semelhante.
+                            Com gráficos nítidos e uma variedade de mapas e agentes para escolher, Valorant rapidamente
                             ganhou popularidade e se tornou um dos jogos de tiro mais populares no cenário de esports,
                             atraindo uma comunidade global de jogadores competitivos e entusiastas do gênero.</h5>
                     </div>

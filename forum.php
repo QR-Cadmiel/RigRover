@@ -118,20 +118,20 @@ while ($pergunta = $resultado->fetch_assoc()) {
         <div class="main-content">
             <h3>Fórum Rig Rover</h3>
             <div class="noticias">
-                <h3>Criar Nova Pergunta</h3>
 
                 <form method="post" action="">
+
                     <div class="criar-pergunta">
-                        <div class="titulo-criar">
-                            <label for="titulo">Título:</label>
-                            <textarea id="titulo" name="titulo" rows="4" required></textarea>
+                    <h3>Criar Nova Pergunta</h3>
+                        <div class="titulo-criar">     
+                            <textarea id="titulo" name="titulo" placeholder="Digite o título do fórum" rows="4" required></textarea>
                         </div>
                         <div class="descricao-criar">
-                            <label for="descricao">Descrição:</label>
-                            <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                            <textarea id="descricao" name="descricao"  placeholder="Escreva a descrição dele" rows="4" required></textarea>
                         </div>
+                        <input class="btn-criar" type="submit" name="criar_pergunta" value="Criar Pergunta">
                     </div>
-                    <input class="btn-criar" type="submit" name="criar_pergunta" value="Criar Pergunta">
+
                 </form>
 
                 <?php foreach ($perguntas as $pergunta): ?>

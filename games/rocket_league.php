@@ -73,22 +73,22 @@ include '../validacao.php';
     <!-- ----------------------------------------- -->
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Rocket League</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://www.rocketleague.com/images/keyart/rl_evergreen_16x9.jpg" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Rocket League</h2>
+                   
                         <h5>Rocket League é um jogo eletrônico de esportes desenvolvido e publicado pela Psyonix.
                             Lançado em julho de 2015, o jogo apresenta uma mistura única de futebol e corrida, onde os
                             jogadores controlam carros impulsionados por foguetes em uma arena fechada.</h5>
                         <h5>Com mecânicas de jogo simples de aprender, mas difíceis de dominar, Rocket League oferece
                             uma experiência competitiva e emocionante para jogadores de todas as idades. Os jogadores
                             podem competir em partidas individuais ou em equipe, utilizando uma variedade de estratégias
-                            e habilidades para marcar gols e superar seus oponentes.</h5>
-                        <h5>Além do modo tradicional de jogo, Rocket League também oferece uma variedade de modos
+                            e habilidades para marcar gols e superar seus oponentes.
+                            Além do modo tradicional de jogo, Rocket League também oferece uma variedade de modos
                             alternativos e personalização de carros, permitindo que os jogadores personalizem sua
                             experiência de acordo com suas preferências. Com uma comunidade ativa e atualizações
                             regulares, Rocket League continua sendo um dos jogos mais populares e emocionantes do gênero

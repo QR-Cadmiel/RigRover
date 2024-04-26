@@ -73,25 +73,24 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+       <h2>Cuphead</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://files.tecnoblog.net/wp-content/uploads/2019/07/cuphead.jpg" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Cuphead</h2>
+                 
                         <h5>Cuphead é um jogo eletrônico de ação e plataforma desenvolvido e publicado pelo Studio MDHR
                             em setembro de 2017. Com uma estética inspirada nos desenhos animados da década de 1930, o
                             jogo segue as aventuras dos irmãos Cuphead e Mugman, que devem derrotar uma série de chefes
-                            para pagar uma dívida com o Diabo.</h5>
-                        <h5>Com seu estilo visual único e desafiador gameplay, Cuphead se destaca por seus chefes
+                            para pagar uma dívida com o Diabo. </h5>
+                            Com seu estilo visual único e desafiador gameplay, Cuphead se destaca por seus chefes
                             elaborados e por sua trilha sonora envolvente. Além da campanha para um jogador, o jogo
                             oferece a opção de jogar em modo cooperativo, onde dois jogadores podem controlar Cuphead e
-                            Mugman simultaneamente.</h5>
-                        <h5>Com animações deslumbrantes e uma dificuldade cativante, Cuphead conquistou fãs ao redor do
-                            mundo, sendo aclamado por sua originalidade e desafio, estabelecendo um novo padrão para
-                            jogos indie.</h5>
+                            Mugman simultaneamente.Com animações deslumbrantes e uma dificuldade cativante, Cuphead 
+                            conquistou fãs ao redor do mundo, sendo aclamado por sua originalidade e desafio, 
+                            estabelecendo um novo padrão para indie.</h5>
                     </div>
                 </div>
             </div>

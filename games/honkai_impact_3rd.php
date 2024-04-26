@@ -73,22 +73,21 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Honkai Impact 3rd</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://cdn1.epicgames.com/offer/d2d162953fec40e381867d7af8371362/EGS_HonkaiImpact3rd_miHoYoLimited_S1_2560x1440-960e15b4bc2cf890628fc3c77e4654c6" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Honkai Impact 3rd</h2>
                         <h5>Honkai Impact 3rd, também conhecido como HI3, é um jogo eletrônico de ação e aventura
                             desenvolvido pela miHoYo e lançado em 2016. Ambientado em um mundo devastado por uma força
                             misteriosa conhecida como Honkai, o jogo segue a história das valquírias, guerreiras com
                             poderes especiais que lutam para proteger a humanidade.</h5>
                         <h5>Com uma narrativa cativante, Honkai Impact 3rd se destaca por sua jogabilidade dinâmica e
                             gráficos impressionantes. Além da campanha principal, o jogo oferece uma variedade de modos
-                            de jogo, incluindo batalhas cooperativas e competitivas.</h5>
-                        <h5>Com uma comunidade ativa de jogadores e eventos regulares, Honkai Impact 3rd continua a ser
+                            de jogo, incluindo batalhas cooperativas e competitivas.
+                            Com uma comunidade ativa de jogadores e eventos regulares, Honkai Impact 3rd continua a ser
                             um dos jogos mais populares em dispositivos móveis, definindo um padrão para jogos de ação
                             em plataformas móveis.</h5>
                     </div>

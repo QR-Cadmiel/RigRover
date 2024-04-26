@@ -73,22 +73,22 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Honkai Star Rail</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://cdn2.unrealengine.com/blog-en-1920x1080-1920x1080-c2f4a5354c76.jpg" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Honkai Star Rail</h2>
+
                         <h5>Honkai Star Rail é um jogo eletrônico de ação e aventura desenvolvido pela miHoYo, lançado
                             em [data de lançamento]. Ambientado em um universo futurista e cheio de elementos de ficção
                             científica, o jogo segue a história de [nome do protagonista], [breve descrição do
                             protagonista].</h5>
                         <h5>Com uma narrativa envolvente, Honkai Star Rail destaca-se por suas missões elaboradas e pela
                             liberdade dada aos jogadores para explorar o vasto universo do jogo. Além da campanha para
-                            um jogador, o jogo oferece [recurso/modeo adicional, se aplicável].</h5>
-                        <h5>Com gráficos impressionantes e uma infinidade de atividades para explorar, Honkai Star Rail
+                            um jogador, o jogo oferece recurso/modeo adicional, se aplicável.
+                        Com gráficos impressionantes e uma infinidade de atividades para explorar, Honkai Star Rail
                             está rapidamente ganhando popularidade e se estabelecendo como uma referência no gênero de
                             jogos de ação e aventura.</h5>
                     </div>

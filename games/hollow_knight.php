@@ -73,14 +73,14 @@ include '../validacao.php';
 
     <div class="container">
         <div class="evt-ct">
-
+        <h2>Hollow Knight</h2>
             <div class="images-evt">
                 <div class="img1">
                     <div class="leftevent1">
                         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisGeKodWjOUp_M44HpvQ14PLkC7qOwjOvA_5uYAu4DlZNM2AFe3R-yKJ9r55z45b7-d_Hggi8yDld2nYMNhK7cAsyKS7tp8frqkhW7IXk1QWC3_E76TECfzdaxwu3Pnu4I3ZM7oHLHBV-3/s1600/HNcapa.jpg" class="imgevento" alt="">
                     </div>
                     <div class="rightevento1">
-                        <h2>Hollow Knight</h2>
+                   
                         <h5>Hollow Knight é um jogo eletrônico de ação e aventura desenvolvido e publicado pela Team
                             Cherry em fevereiro de 2017. Ambientado em um mundo vasto e misterioso, o jogo segue a
                             jornada de um cavaleiro sem nome em sua busca por explorar as profundezas de Hallownest, uma
@@ -88,8 +88,8 @@ include '../validacao.php';
                         <h5>Com uma atmosfera envolvente e uma jogabilidade desafiadora, Hollow Knight destaca-se por
                             sua exploração meticulosa e combate fluido. Além da campanha principal, o jogo oferece uma
                             variedade de segredos para descobrir, chefes para derrotar e NPCs para interagir,
-                            enriquecendo a experiência do jogador.</h5>
-                        <h5>Com visuais deslumbrantes e uma trilha sonora cativante, Hollow Knight continua sendo um dos
+                            enriquecendo a experiência do jogador.
+                            Com visuais deslumbrantes e uma trilha sonora cativante, Hollow Knight continua sendo um dos
                             jogos indie mais aclamados, estabelecendo um padrão para o gênero de metroidvania.</h5>
                     </div>
                 </div>
