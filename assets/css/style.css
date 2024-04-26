@@ -1,5 +1,5 @@
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Lora", serif;
   background-color: #0b0b0a;
   margin: 0;
   padding: 0;
@@ -47,6 +47,7 @@ nav ul {
 }
 
 .slogan {
+  font-family: 'Josefin Sans', sans-serif;
   color: white;
   font-size: 2.2em;
   margin: 8px;
@@ -89,7 +90,7 @@ nav ul {
   display: flex;
   text-decoration: none;
   text-align: center;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
 .i1t2 {

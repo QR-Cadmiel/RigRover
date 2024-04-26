@@ -16,9 +16,9 @@ include 'conexao.php';
 
     <link rel="icon" type="image/png"
         href="https://github.com/QR-Cadmiel/RigRover/blob/02314bc9c37d2761af50a3c5e0d49ea38bebddcf/img/logourl.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <title>Página Inicial - RigRover</title>
 
@@ -75,18 +75,13 @@ include 'conexao.php';
 
     <div id="rigrover-2">
         <div class="i2t1">
-            <p>RigRover, lançado em março de 2023 pela Infinite Nexus, é uma plataforma 
-                revolucionária projetada para aprimorar a experiência de gamers ao consolidar 
-                análises detalhadas de hardware, guias de otimização e um comparativo de preços,
-                tudo em um só lugar. Esta plataforma visa facilitar a busca e otimização de 
-                equipamentos de jogo, tornando a tecnologia acessível e maximizando o prazer 
-                de jogar. Com uma abordagem baseada em feedback constante dos usuários, RigRover
-                 está se estabelecendo como uma comunidade essencial para todos os apaixonados 
-                 por games, oferecendo uma experiência de jogo mais eficiente e gratificante. 
-                 Explore o futuro do gaming com RigRover.</p>
-
-            <div class= "img-sobre"><img src="assets/img/img-index2.jpg" alt="" class="img-index2"></div>
+            <p>RigRover, lançado em março de 2023 pela Infinite Nexus, é uma plataforma revolucionária
+                 projetada para aprimorar a experiência de gamers ao consolidar análises detalhadas de 
+                 hardware, guias de otimização e um comparativo de preços, tudo em um só lugar.</p>
+            <p>Esta plataforma visa facilitar a busca e otimização de seu setup, tornando a tecnologia 
+                 acessível e maximizando o prazer de jogar. Explore o futuro do gaming com RigRover.</p>
         </div>
+        <div class= "img-sobre"><img src="assets/img/img-index2.jpg" alt="" class="img-index2"></div>
     </div>
 
     <div id="rigrover-3">
