@@ -174,12 +174,8 @@ include 'conexao.php';
         </div>
         <div class="rirgrover-app">
             <div class="app-left">
-                <img class="app-icon"
-                    src="https://media.discordapp.net/attachments/1201580849368416446/1228405669091213437/disponivel-google-play-badge.png?ex=662becee&is=661977ee&hm=4e0eeb4dc206d96c30491296069f5fae128ed58ee5fe9ed28a625fd08014b461&=&format=webp&quality=lossless&width=1440&height=426"
-                    alt="Play Store">
-                <img class="app-icon"
-                    src="https://media.discordapp.net/attachments/1201580849368416446/1228394869026852914/appleStore.png?ex=662be2df&is=66196ddf&hm=6ca28a7ffb8b6df1e5089c47bd244a110ed9a3564bef0514e18993277b92ed63&=&format=webp&quality=lossless&width=705&height=210"
-                    alt="App Store">
+                <a href="#"><img class="app-icon" src="assets\img\playstore.png" alt="Play Store"></a>
+                <a href="#"><img class="app-icon2" src="assets\img\applestore.png" alt="App Store"></a>
             </div>
 
             <div class="app-mid">
@@ -187,8 +183,7 @@ include 'conexao.php';
             </div>
 
             <div class="app-right">
-                <img src="https://media.discordapp.net/attachments/1204450270919135285/1228418736461975552/11100228733159.png?ex=662bf919&is=66198419&hm=4a6128e5f89666c5c5d589c8c1e7f5044095285d9ed73a0b42da710b851b7e5b&=&format=webp&quality=lossless&width=498&height=600"
-                    alt="">
+                <img src="assets\img\celularcomapp.png" alt="uma mão segurando um celular com a logo do RigRover">
             </div>
         </div>
         <div id="rigrover-5">

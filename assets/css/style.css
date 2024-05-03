@@ -350,6 +350,11 @@ a {
   height: auto;
 }
 
+.app-icon2 {
+  width: 352px;
+  height: auto;
+}
+
 .app-left {
   padding-left: 100px;
 }
@@ -357,6 +362,10 @@ a {
 .app-right {
   margin-right: 0;
   /* Remova a margem à direita */
+}
+
+.app-right img {
+  width: 17rem;
 }
 
 .app-icon {
