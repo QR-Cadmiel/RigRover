@@ -117,28 +117,29 @@ while ($noticias = $resultado->fetch_assoc()) {
                 </div>
 
                 <div class="noticias">
-                    <h3>Criar Nova Notícia</h3>
+                   
+               
                     <form method="post" action="">
+                    <div class="criar-noticia">
+                    <h3>Criar Nova Notícia</h3>
                         <div class="tipo-criar">
-                            <label for="tipo">Tipo:</label>
                             <select id="tipo" name="tipo">
                                 <option value="games">Games</option>
                                 <option value="eventos">Eventos</option>
                                 <option value="hardwares">Hardwares</option>
                             </select>
                         </div>
-                        <div class="criar-noticia">
+                        
                             <div class="titulo-criar">
-                                <label for="titulo">Título:</label>
-                                <textarea type="text" id="titulo" name="titulo" required></textarea>
+
+                                <textarea type="text"  placeholder="Digite o título da notícia" id="titulo" name="titulo" required></textarea>
                             </div>
                             <div class="descricao-criar">
-                                <label for="descricao">Descrição:</label>
-                                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+                                <textarea id="descricao"  placeholder="Digite a descrição dela" name="descricao" rows="4" required></textarea>
                             </div>
                             <div class="imagem-criar">
-                                <label for="imagem">Link da Imagem:</label>
-                                <textarea type="text" id="imagem" name="imagem" required></textarea>
+                                <textarea type="text" id="imagem" placeholder="Insira a URL da imagem"  name="imagem" required></textarea>
                             </div>
                         </div>
                         <input class="btn-criar" type="submit" value="Criar Notícia">
