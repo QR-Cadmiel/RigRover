@@ -51,7 +51,7 @@ $mysqli->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - RigRover</title>
+    <title>Entrar - RigRover</title>
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets\css\responsividade\login-responsivo.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
@@ -73,7 +73,7 @@ $mysqli->close();
 
     <div class="login">
         <div class="titulo">
-            <p>Login de Usuários</p>
+            <p>Entrada do Usuários</p>
         </div>
         <?php if (isset($error_message)) : ?>
             <p style="color: red;"><?php echo $error_message; ?></p>
@@ -83,7 +83,7 @@ $mysqli->close();
             <input type="email" name="email" placeholder="Insira o seu e-mail" class="email-icon" required>
             <input type="password" name="password" placeholder="Insira a sua senha" class="senha-icon" required>
 
-            <button type="submit" class="btn-cad">Login</button>
+            <button type="submit" class="btn-cad">Entrar</button>
         </form>
 
         <a href="cadastro.php">Não tem uma conta? Cadastre-se aqui.</a><br>
