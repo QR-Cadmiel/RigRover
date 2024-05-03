@@ -10,11 +10,13 @@ body {
 }
 
 nav {
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 

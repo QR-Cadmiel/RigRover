@@ -11,10 +11,11 @@ body {
 }
 
 nav {
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 10px;
 }
 
 #btn-nav {

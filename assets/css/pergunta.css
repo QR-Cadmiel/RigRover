@@ -9,11 +9,12 @@ body {
 
 
 nav {
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #0C0B0B;
-    padding: 20px;
+    padding: 10px;
 }
 
 #btn-nav {

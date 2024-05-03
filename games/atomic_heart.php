@@ -134,7 +134,7 @@ include '../validacao.php';
                         <a href="../fale_conosco.php">Fale Conosco</a>
                     </li>
                     <li>
-                        <a href="../politicas_de_privacidade.php">Politicas de Privacidade</a>
+                        <a href="../politicas_de_privacidade.php">Políticas de Privacidade</a>
                     </li>
                     <li>
                         <a href="../termo_e_condicoes.php">Termos e Condições</a>

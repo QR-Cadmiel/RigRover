@@ -10,10 +10,11 @@ body {
 }
 
 nav {
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 10px;
 }
 
 #btn-nav {
@@ -56,6 +57,7 @@ nav ul {
 }
 
 .slogan {
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
     font-size: 2.2em;
     margin: 8px;

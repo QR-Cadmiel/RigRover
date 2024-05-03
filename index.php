@@ -62,8 +62,8 @@ include 'conexao.php';
 
         <div class="centro">
             <img src="assets/img/logo2.png" alt="" class="logodois">
-            <p class="slogan">Equipando Sua Jornada,</p>
-            <p class="slogan">Elevando Seu Jogo.</p>
+            <p class="slogan">Equipando sua jornada,</p>
+            <p class="slogan">elevando seu jogo.</p>
             <div>
                 <a href="cadastro.php"><button class="botoes">Cadastrar-se</button></a>
 
@@ -212,7 +212,7 @@ include 'conexao.php';
                                 <a href="fale_conosco.php">Fale Conosco</a>
                             </li>
                             <li>
-                                <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
+                                <a href="politicas_de_privacidade.php">Políticas de Privacidade</a>
                             </li>
                             <li>
                                 <a href="termo_e_condicoes.php">Termos e Condições</a>

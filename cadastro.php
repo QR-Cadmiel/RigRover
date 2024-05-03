@@ -154,8 +154,7 @@ $mysqli->close();
                     <option value="Bélgica" data-country-code="be">Bélgica</option>
                     <option value="Colômbia" data-country-code="co">Colômbia</option>
                     <option value="Dinamarca" data-country-code="dk">Dinamarca</option>
-                    <option value="Emirados Árabes Unidos" data-country-code="ae">Emirados Árabes Unidos
-                    </option>
+                    <option value="Emirados Árabes Unidos" data-country-code="ae">Emirados Árabes Unidos</option>
                     <option value="Filipinas" data-country-code="ph">Filipinas</option>
                     <option value="Finlândia" data-country-code="fi">Finlândia</option>
                     <option value="Grécia" data-country-code="gr">Grécia</option>

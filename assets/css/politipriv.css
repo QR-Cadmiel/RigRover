@@ -6,10 +6,12 @@ body {
 }
 
 nav {
+  font-family: 'Josefin Sans', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #262626;
+  
 }
 
 nav a {
