@@ -686,12 +686,12 @@
 
 }
 @media only screen and (min-width: 1024px)  {
-    #btn-nav {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 2.1vw;
-        padding: 21px;
-    }
+        #btn-nav {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 26px;
+            padding: 21px;
+        }
 
     .img1 h5, .img2 h5 {
         font-size: 19px;

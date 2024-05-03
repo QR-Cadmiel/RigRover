@@ -34,6 +34,10 @@ $mysqli->close();
     <link rel="stylesheet" href="assets\css\tabela_fale_conosco.css">
     <link rel="stylesheet" href="assets\css\responsividade\tabela-responsivo.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 
 <script>

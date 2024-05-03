@@ -43,6 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
     </title>
     <link rel="stylesheet" href="assets/css/pergunta.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
     <script src="assets/js/logout.js"></script>
     <script type="text/javascript">
         var ultimaMensagemID = 0;

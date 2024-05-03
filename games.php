@@ -16,6 +16,11 @@ include 'validacao.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/games.css">
     <link rel="stylesheet" href="assets\css\responsividade\games-responsivo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
     <script src="assets/js/hamburguinho.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <script src="assets/js/logout.js"></script>

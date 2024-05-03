@@ -18,6 +18,10 @@ include '../validacao.php';
     <link rel="stylesheet" href="../assets\css\responsividade\games-info-responsivo.css">
     <script src="../assets/js/hamburguinho.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="../assets/img/logourl.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <script src="../assets/js/logout.js"></script>
 </head>
 
