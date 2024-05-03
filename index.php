@@ -75,11 +75,13 @@ include 'conexao.php';
 
     <div id="rigrover-2">
         <div class="i2t1">
-            <p>RigRover, lançado em março de 2023 pela Infinite Nexus, é uma plataforma revolucionária
-                 projetada para aprimorar a experiência de gamers ao consolidar análises detalhadas de 
-                 hardware, guias de otimização e um comparativo de preços, tudo em um só lugar.</p>
-            <p>Esta plataforma visa facilitar a busca e otimização de seu setup, tornando a tecnologia 
-                 acessível e maximizando o prazer de jogar. Explore o futuro do gaming com RigRover.</p>
+        <p><span class="palavrachave">RigRover</span>, lançado em março de 2023 pela <span class="palavrachave">Infinite Nexus</span>, é uma plataforma <span class="palavrachave">revolucionária</span>
+             projetada para <span class="palavrachave">aprimorar</span> a experiência de <span class="palavrachave">gamers</span> ao consolidar análises <span class="palavrachave">detalhadas</span> de 
+             hardware, guias de <span class="palavrachave">otimização</span> e um comparativo de preços, tudo em um só lugar.</p>
+        <p>Esta plataforma visa <span class="palavrachave">facilitar</span> a busca e otimização de seu setup, tornando a tecnologia 
+             <span class="palavrachave">acessível</span> e maximizando o prazer de jogar. Explore o <span class="palavrachave">futuro</span> do gaming com RigRover.</p>
+
+
         </div>
         <div class= "img-sobre"><img src="assets/img/img-index2.jpg" alt="" class="img-index2"></div>
     </div>

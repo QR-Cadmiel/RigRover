@@ -94,6 +94,10 @@ nav ul {
   flex-direction: column;
 }
 
+.palavrachave {
+  color: rgb(74, 163, 101);
+}
+
 .i1t2 {
   justify-content: left;
 }
