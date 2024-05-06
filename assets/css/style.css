@@ -335,7 +335,9 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  background-color: #063C22;
+  background-image: url("https://media.discordapp.net/attachments/820976935077281843/1237114922517921823/background-apps.png?ex=663a788e&is=6639270e&hm=264a1017dcb749ef133987ef34ac4fa2124ab3c64b3358caea09eee903bddd04&=&format=webp&quality=lossless&width=800&height=599");
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
 }
 
 .app-left,
