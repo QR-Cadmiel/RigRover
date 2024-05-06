@@ -1,6 +1,8 @@
 body {
     font-family: "Lora", serif;
-    background-color: #372c3e;
+    background-image: url("https://media.discordapp.net/attachments/820976935077281843/1237102999487123506/background-hardware.png?ex=663a6d73&is=66391bf3&hm=8b838c412ff1a28b680f6bdb805e798b7ee5241ab621f14f32de097169e8717c&=&format=webp&quality=lossless&width=800&height=599");
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -252,7 +254,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2f2443;
+    background-color: #190B31;
     color: white;
 }
 
@@ -261,7 +263,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1d1c3b;
+    background-color: #230D40;
     color: white;
 }
 
@@ -270,7 +272,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3e2c44;
+    background-color: #2B0649;
     color: white;
 }
 

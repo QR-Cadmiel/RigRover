@@ -1,6 +1,8 @@
 body {
   font-family: "Lora", serif;
-  background-color: #0b0b0a;
+    background-image: url("https://media.discordapp.net/attachments/820976935077281843/1237092067721613313/background-home.png?ex=663a6345&is=663911c5&hm=4fedecf5389ab35a62a0458ecb1f187d308c2a5cec71923a9e109eae9f6144a4&=&format=webp&quality=lossless&width=642&height=481");
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
   margin: 0;
   padding: 0;
   min-height: 100vh;
