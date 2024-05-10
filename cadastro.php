@@ -33,12 +33,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $stmt->bind_param('sssss', $email, $name, $hashed_password, $dob, $nationality);
 
                 if ($stmt->execute()) {
-                    echo '<script>alert("Usuário cadastrado com sucesso!");';
-                    echo 'window.location.href = "login.php";</script>';
-                    exit;
+                    header("Location: login.php?status=success");
+                    exit;                
                 } else {
-                    echo 'Erro ao cadastrar usuário.';
-                }
+                    echo "<script>
+                    Swal.fire({
+                    title: 'Erro ao cadastrar usuário',
+                    text: 'Verifique se não preencheu algo de errado!',
+                    icon: 'warning',
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'OK'
+                    });
+                    </script>";
+                }                
 
                 $stmt->close();
             } else {
@@ -72,6 +79,8 @@ $mysqli->close();
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Cadastro - RigRover</title>
 </head>
 

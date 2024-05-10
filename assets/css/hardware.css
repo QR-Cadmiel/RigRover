@@ -1,6 +1,6 @@
 body {
     font-family: "Lora", serif;
-    background-image: url("https://media.discordapp.net/attachments/820976935077281843/1237102999487123506/background-hardware.png?ex=663a6d73&is=66391bf3&hm=8b838c412ff1a28b680f6bdb805e798b7ee5241ab621f14f32de097169e8717c&=&format=webp&quality=lossless&width=800&height=599");
+    background-image: url('../img/background-hardware.png');
     background-repeat: no-repeat, repeat;
     background-size: 100%;
     margin: 0;

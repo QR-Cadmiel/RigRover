@@ -56,6 +56,8 @@ $mysqli->close();
     <link rel="stylesheet" href="assets\css\responsividade\login-responsivo.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -89,6 +91,32 @@ $mysqli->close();
         <a href="cadastro.php">Não tem uma conta? Cadastre-se aqui.</a><br>
         <a href="redefinir_senha.php">Esqueceu a sua senha?</a>
     </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const status = urlParams.get('status');
+    
+    if (status === 'success') {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+        Toast.fire({
+            icon: 'success',
+            title: 'Usuário cadastrado com sucesso!'
+        });
+    }
+});
+</script>
+
 </body>
 
 </html>
