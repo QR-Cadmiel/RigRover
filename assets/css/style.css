@@ -157,6 +157,7 @@ nav ul {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  margin: 50px;
 }
 
 .avatar-text {
@@ -169,7 +170,25 @@ nav ul {
 .thiago img {
   width: 200px;
   height: 200px;
+  margin: 0px 17px;
   border-radius: 50%;
+}
+
+.redes-sociais img, a {
+  margin: 4px;
+  width: 31px;
+  cursor: pointer;
+}
+
+.redes-sociais img {
+  transition: transform 1s;
+  transform: translateX(0) scale(1.1);
+}
+
+.redes-sociais img:hover,
+.redes-sociais img:focus {
+  transform: translateX(10px) scale(1.4);
+  
 }
 
 .pictures-2 {
@@ -185,9 +204,6 @@ nav ul {
   text-decoration: none;
 }
 
-.pictures-container img {
-  margin: 50px;
-}
 
 #rigrover-4 {
   background-color: black;
@@ -296,6 +312,7 @@ footer {
   color: white;
   flex-direction: row;
   display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 footer li {

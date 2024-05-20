@@ -151,7 +151,8 @@ footer {
     color: white;
     flex-direction: row;
     display: flex;
-}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
 
 footer li {
     list-style: none;

@@ -101,6 +101,19 @@ include 'conexao.php';
                     <div>
                         <h2>Cadmiel Torres</h2>
                         <h3>Desenvolvedor</h3>
+                            <div class="redes-sociais">
+                                <a id="botaogit1"><img src="assets\img\logogit.png" alt=""></a>
+                                <a id="botaolinke1"><img src="assets\img\logolinkeding.png" alt=""></a>
+                            </div>
+                            <script>
+                             document.getElementById('botaogit1').addEventListener('click', function() {
+                            window.open('https://github.com/QR-Cadmiel', '_blank');
+                            });
+
+                        document.getElementById('botaolinke1').addEventListener('click', function() {
+                            window.open('', '_blank');
+                            });
+                            </script>
                     </div>
                 </div>
                 <div class="avatar">
@@ -110,6 +123,19 @@ include 'conexao.php';
                     <div>
                         <h2>Pedro Gabriel</h2>
                         <h3>Project Owner</h3>
+                            <div class="redes-sociais">
+                                <a id="botaogit2"><img src="assets\img\logogit.png" alt=""></a>
+                                <a id="botaolinke2"><img src="assets\img\logolinkeding.png" alt=""></a>
+                            </div>
+                            <script>
+                             document.getElementById('botaogit2').addEventListener('click', function() {
+                            window.open('https://github.com/PedroZxK', '_blank');
+                            });
+
+                        document.getElementById('botaolinke2').addEventListener('click', function() {
+                            window.open('https://www.linkedin.com/in/pedro-santos-74480726b/', '_blank');
+                            });
+                            </script>
                     </div>
                 </div>
             </div>
@@ -123,6 +149,19 @@ include 'conexao.php';
                     <div>
                         <h2>João Victor</h2>
                         <h3>Desenvolvedor</h3>
+                            <div class="redes-sociais">
+                                <a id="botaogit3" ><img src="assets\img\logogit.png" alt=""></a>
+                                <a id="botaolinke3" ><img src="assets\img\logolinkeding.png" alt=""></a>
+                            </div>
+                            <script>
+                             document.getElementById('botaogit3').addEventListener('click', function() {
+                            window.open('https://github.com/joaovictOr-SR', '_blank');
+                            });
+
+                        document.getElementById('botaolinke3').addEventListener('click', function() {
+                            window.open('https://www.linkedin.com/in/jo%C3%A3o-victor-santos-ruas-81a80826b/', '_blank');
+                            });
+                            </script>
                     </div>
                 </div>
                 <div class="avatar">
@@ -132,6 +171,19 @@ include 'conexao.php';
                     <div>
                         <h2>Thiago Felipe</h2>
                         <h3>Desenvolvedor</h3>
+                            <div class="redes-sociais">
+                                <a id="botaogit4"><img src="assets\img\logogit.png" alt=""></a>
+                                <a id="botaolinke4" ><img src="assets\img\logolinkeding.png" alt=""></a>
+                            </div>
+                            <script>
+                             document.getElementById('botaogit4').addEventListener('click', function() {
+                            window.open('', '_blank');
+                            });
+
+                        document.getElementById('botaolinke4').addEventListener('click', function() {
+                            window.open('', '_blank');
+                            });
+                            </script>
                     </div>
                 </div>
             </div>

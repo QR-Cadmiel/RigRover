@@ -43,11 +43,12 @@ nav ul {
 }
 
 footer {
-    background-color: #020202;
+    background-color: #121212;
     color: white;
-    margin-top: 100px;
-    height: 350px;
-}
+    flex-direction: row;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
 
 .footer-content {
     max-width: 1200px;
