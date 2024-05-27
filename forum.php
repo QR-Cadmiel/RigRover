@@ -63,6 +63,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
     <link rel="stylesheet" href="assets\css\responsividade\forum-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
     <script src="assets/js/logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -240,11 +241,23 @@ while ($pergunta = $resultado->fetch_assoc()) {
             window.location.href = "editar_pergunta.php?id=" + id;
         }
 
-        function excluirPergunta(id) {
-            if (confirm("Tem certeza de que deseja excluir esta pergunta?")) {
+    function excluirPergunta(id) {
+        Swal.fire({
+            title: 'Tem certeza?',
+            text: "Você está prestes a excluir esta pergunta. Essa ação não pode ser revertida!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sim, exclua!',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
                 window.location.href = "excluir_pergunta.php?id=" + id;
             }
-        }
+        });
+    }
+</script>
     </script>
 </body>
 

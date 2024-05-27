@@ -32,15 +32,25 @@ include 'validacao.php';
                 <li>
                     <a href="hardware.php" id="btn-nav">Hardware - Home</a>
                 </li>
-                <li>
-                    <a href="maquinas_recomendadas.php" id="btn-nav">Máquinas recomendadas</a>
-                </li>
-                <li>
-                    <a href="comparar_hardwares.php" id="btn-nav">Comparar hardwares</a>
-                </li>
-                <li>
-                    <a href="ferramenta.php" id="btn-nav">Requisitos para jogos</a>
-                </li>
+                <div class="dropdown">
+                <a class="dropdown-btn" aria-haspopup="menu">
+                    <span>Ferramentas</span>
+                    <span class="arrow"></span>
+                </a>
+                    <ul class="dropdown-content" role="menu">
+                        <li style="--delay: 1;"><a href="maquinas_recomendadas.php" id="btn-nav-drop">Máquinas recomendadas</a></li>
+                        <li style="--delay: 2;"><a href="comparar_hardwares.php" id="btn-nav-drop">Comparar hardwares</a></li>
+                        <li style="--delay: 3;"><a href="ferramenta.php" id="btn-nav-drop">Requisitos para jogos</a></li>
+                    </ul>
+                </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                        const dropdown = document.querySelector('.dropdown');
+                        dropdown.addEventListener('click', function() {
+                    this.classList.toggle('open');
+                    });
+                    });
+                    </script>
                 <li>
                     <a href="forum.php" id="btn-nav">Fórum</a>
                 </li>

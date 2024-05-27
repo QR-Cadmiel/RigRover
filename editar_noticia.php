@@ -45,25 +45,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <link rel="stylesheet" href="assets/css/editar_noticia.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- Include SweetAlert2 CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
     <div id="content">
         <h1>Editar Notícia</h1>
-        <form method="post" action="">
+        <form id="editForm" method="post" action="">
             <div class="form-itens">
                 <label for="tipo">Tipo:</label><br>
                 <select id="tipo" name="tipo">
-                    <option value="hardwares" <?php if ($noticia['tipo'] == 'hardwares')
-                        echo 'selected'; ?>>Hardwares
-                    </option>
-                    <option value="eventos" <?php if ($noticia['tipo'] == 'eventos')
-                        echo 'selected'; ?>>Eventos</option>
-                    <option value="games" <?php if ($noticia['tipo'] == 'games')
-                        echo 'selected'; ?>>Games</option>
+                    <option value="hardwares" <?php if ($noticia['tipo'] == 'hardwares') echo 'selected'; ?>>Hardwares</option>
+                    <option value="eventos" <?php if ($noticia['tipo'] == 'eventos') echo 'selected'; ?>>Eventos</option>
+                    <option value="games" <?php if ($noticia['tipo'] == 'games') echo 'selected'; ?>>Games</option>
                 </select><br>
                 <label for="titulo">Título:</label><br>
                 <input type="text" id="titulo" name="titulo" value="<?php echo $noticia['titulo']; ?>"><br>
@@ -76,6 +76,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </form>
     </div>
+
+    <script>
+        document.getElementById('editForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+
+            Swal.fire({
+                title: 'Tem certeza?',
+                text: "Você deseja realmente editar esta notícia?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#18851b',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Sim, editar!',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // If confirmed, submit the form
+                    this.submit();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

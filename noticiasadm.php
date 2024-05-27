@@ -42,11 +42,12 @@ while ($noticias = $resultado->fetch_assoc()) {
     <title>Notícias - RigRover</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/noticias.css">
+    <link rel="stylesheet" href="assets/css/noticiasadm.css">
     <link rel="stylesheet" href="assets\css\responsividade\noticias-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <script src="assets/js/logout.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -147,7 +148,7 @@ while ($noticias = $resultado->fetch_assoc()) {
 
                     <?php foreach ($noticia as $noticias): ?>
                         <div class="ntc-pergunta categoria-<?php echo strtolower($noticias['tipo']); ?>"
-                            onclick="abrirNoticia(this)" style="color: white; cursor: pointer;">
+                        style="color: white; ">
                             <h2 class="titulo-pergunta">
                                 <?php echo $noticias['titulo']; ?>
                             </h2>
@@ -237,10 +238,41 @@ while ($noticias = $resultado->fetch_assoc()) {
                     }
 
                     function excluirNoticia(id) {
-                        if (confirm("Tem certeza de que deseja excluir esta notícia?")) {
-                            window.location.href = "excluir_noticia.php?id=" + id;
-                        }
+    swal({
+        title: "Tem certeza?",
+        text: "Você realmente deseja excluir esta notícia?",
+        icon: "warning",
+        buttons: ["Cancelar", "Confirmar"],
+        dangerMode: true,
+    }).then((confirmacao) => {
+        if (confirmacao) {
+            // Exclui a notícia e exibe o Toast após a exclusão
+            window.location.href = "excluir_noticia.php?id=" + id;
+            window.addEventListener('load', function() {
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: "top-end",
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.onmouseenter = Swal.stopTimer;
+                        toast.onmouseleave = Swal.resumeTimer;
                     }
+                });
+                Toast.fire({
+                    icon: "success",
+                    title: "Notícia excluída com sucesso"
+                });
+            });
+        } else {
+            // Ação a ser tomada se o usuário cancelar
+            swal("A notícia não foi excluída.", {
+                icon: "info",
+            });
+        }
+    });
+}
                 </script>
 
             </div>

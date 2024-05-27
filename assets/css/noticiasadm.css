@@ -21,7 +21,7 @@ nav {
 #btn-nav {
     text-decoration: none;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 26px;
     padding: 18px;
 }
 
@@ -130,7 +130,6 @@ h3 {
     height: 100px;
     border-radius: 10px;
 }
-
 .noticias h4,
 .noticias p {
     text-align: left;
@@ -259,8 +258,8 @@ a {
 
 .criar-noticia {
     border-radius: 14px;
-    width: 48vw;
-    height: 35vw;
+    width: 55rem;
+    height: 45vw;
     background-color: #557251;
     text-align: center;
     margin: 38px;
@@ -276,7 +275,7 @@ textarea {
 .criar-noticia textarea {
     margin: 5px;
     background-color: #1B1E25;
-    width: 300px;
+    width: 42vw;
     height: 100px;
     color: white;
     border-radius: 10px;

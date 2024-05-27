@@ -9,21 +9,98 @@ body {
     min-height: 100vh;
 }
 
-nav {
+/* --------------Dropdown-----------------  */
+
+.dropdown {
+    max-width: 13em;
+    position: relative;
+  }
+.dropdown:hover {
+    background-color: #1D5F15;
+    border-radius: 12px;
+    height: 100%;
+    transition: .35s;
+}
+
+  .dropdown-btn {
+    font-size: 25px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+
+  .dropdown-btn span {
+    margin: 2px 10px 0 0;
+  }
+
+  .arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: transform ease-in-out 0.3s;
+  }
+
+  .dropdown-content {
+    list-style: none;
+    position: absolute;
+    top: 3.2em;
+    width: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+  }
+
+  .dropdown.open .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .dropdown.open .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    background: #1d5f15;
+    border-radius: 10px;
+}
+
+.dropdown-content li:hover {
+    background: #0e3207;
+    border-radius: 0;
+}
+
+  .dropdown-content li a {
+    font-size: 17px;
+    width: 11rem;
+    display: block;
+    padding: 0.7em 0.5em;
+    color: #fff;
+    margin: 0.1em 0;
+    text-decoration: none;
+}
+  /* ---------------------------------------------  */
+
+  nav {
     font-family: 'Josefin Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    padding: 10px;
 }
 
 
 nav a {
         text-decoration: none;
         color: #ffffff;
-        font-size: 25px;
+        font-size: 26px;
         padding: 14px;
 }
 
@@ -217,12 +294,13 @@ h5 {
 }
 
 footer {
+    margin: 20px 0 0;
     background-color: #121212;
     color: white;
     flex-direction: row;
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+}
 
 footer li {
     list-style: none;

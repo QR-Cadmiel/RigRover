@@ -200,17 +200,18 @@ textarea {
     padding: 10px;
     border: none;
 }
+
 #titulo {
-    width: 29vw;
-    height: 1.1vw;
+    width: 36vw;
+    height: 1.3vw;
     background-color: #1B1E25;
     color: white;
     border-radius: 10px;
 }
 
 #descricao {
-    width: 25vw;
-    height: 7.5vw;
+    width: 36vw;
+    height: 8.5vw;
     background-color: #1B1E25;
     color: white;
     border-radius: 10px;
@@ -218,8 +219,8 @@ textarea {
 
 .criar-pergunta {
     border-radius: 14px;
-    width: 46vw;
-    height: 21vw;
+    width: 72vw;
+    height: 25vw;
     background-color: #4B5D50;
 }
 
