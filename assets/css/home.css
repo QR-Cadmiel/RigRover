@@ -249,7 +249,7 @@ h2 {
 .categoria_texto {
     margin: 0 21vw 0 6vw;
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .categoria_div1 {
@@ -289,7 +289,7 @@ h2 {
 
 
 #btn-categorias button {
-    margin: 2vw 0 0 6vw;
+    margin: 2vw 0 2vw 6vw;
     background-color: #1C552F;
     color: white;
     border-radius: 5px;

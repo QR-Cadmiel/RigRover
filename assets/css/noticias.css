@@ -72,8 +72,7 @@ h3 {
 
 .categories {
     text-align: center;
-    margin-bottom: 20px;
-    background-color: #D9D9D9;
+    background-color: #202020;
     border-radius: 5px;
     padding: 10px;
     width: 58%;
@@ -83,14 +82,16 @@ h3 {
     margin: 0 auto;
 }
 
+
 .categories button {
     cursor: pointer;
 }
 
 .categories button {
-    background-color: #68BF67;
-    color: black;
+    background-color: #2a7a29;
+    color: white;
     border: none;
+    font-weight: bold;
     padding: 10px 20px;
     margin: 5px;
     border-radius: 5px;
