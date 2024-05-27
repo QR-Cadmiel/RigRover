@@ -12,22 +12,25 @@ include '../validacao.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games - Grand Theft Auto 5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/games-info.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets\css\responsividade\games-info-responsivo.css">
+    <link rel="stylesheet" href="../assets/css/responsividade/games-info-responsivo.css">
     <script src="../assets/js/hamburguinho.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="../assets/img/logourl.png">
     <script src="../assets/js/logout.js"></script>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="rigrover-1">
-    <nav class="navbar">
+        <nav class="navbar">
             <ul>
                 <li>
                     <a href="../home.php" id="btn-nav">Página Inicial</a>
@@ -79,30 +82,56 @@ include '../validacao.php';
         <div class="evt-ct">
 
             <div class="images-evt">
-            <h2>Grand Theft Auto V</h2>
-                <div class="img1">
-                    <div class="leftevent1">
-                        <img src="https://assets.xboxservices.com/assets/0b/17/0b179504-412d-4af7-9e00-3e3d92633577.jpg?n=GTA-V_GLP-Page-Hero-1084_1920x1080.jpg" class="imgevento" alt="">
+                <h2>Grand Theft Auto V</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://assets.xboxservices.com/assets/0b/17/0b179504-412d-4af7-9e00-3e3d92633577.jpg?n=GTA-V_GLP-Page-Hero-1084_1920x1080.jpg" alt="Primeiro Slide" >
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://www.notebookcheck.info/fileadmin/Notebooks/News/_nc3/Grand_Theft_Auto_GTA_5_PlayStation_5_PS5_Grafik_Upgrade.jpg" alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://veja.abril.com.br/wp-content/uploads/2016/05/captura-de-tela-de-gta-v-original.jpeg?quality=90&strip=info&w=620&w=636" alt="Terceiro Slide">
+                        </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                <div class="img1">
+                    <div class="leftevent1"></div>
                     <div class="rightevento1">
-                        
                         <h5>Grand Theft Auto V" (GTA V) é um jogo de ação e aventura lançado em setembro de 2013 pela 
                             Rockstar Games, situado na fictícia Los Santos, inspirada em Los Angeles, e no rural Blaine 
-                            County. </h5>
+                            County.</h5>
                         <h5> O jogo narra as vidas entrelaçadas de três personagens: Michael, um ex-assaltante de
-                             banco sob proteção de testemunhas; Franklin, um jovem em busca de ascensão social; e Trevor, 
-                             um sociopata imprevisível. Destacando-se por suas missões elaboradas e pela vasta liberdade 
-                             de exploração do mundo aberto, GTA V também inclui o "Grand Theft Auto Online", que permite 
-                             aos jogadores aventurarem-se com amigos, engajarem-se em corridas, tiroteios e assaltos, 
-                             mantendo-se como um dos jogos mais populares e influentes, definindo padrões para jogos de 
-                             mundo aberto com seus gráficos impressionantes e variedade de atividades.</h5>
-                     
+                            banco sob proteção de testemunhas; Franklin, um jovem em busca de ascensão social; e Trevor, 
+                            um sociopata imprevisível. Destacando-se por suas missões elaboradas e pela vasta liberdade 
+                            de exploração do mundo aberto, GTA V também inclui o "Grand Theft Auto Online", que permite 
+                            aos jogadores aventurarem-se com amigos, engajarem-se em corridas, tiroteios e assaltos, 
+                            mantendo-se como um dos jogos mais populares e influentes, definindo padrões para jogos de 
+                            mundo aberto com seus gráficos impressionantes e variedade de atividades.
+                        </h5>
                     </div>
+                </div>
+
+                <div>
+                    <h2>Trailer do jogo</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QkkoHAzjnUs?si=p5XrIdO90gh0j2L1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <div class="btn-voltar-mi">
