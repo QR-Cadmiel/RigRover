@@ -85,9 +85,9 @@ nav ul {
 }
 
 
-h2,
-h5 {
+h2, h5 {
     color: white;
+    margin: 10px;
 }
 
 #content {
