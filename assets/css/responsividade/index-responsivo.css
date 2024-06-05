@@ -197,7 +197,7 @@
     
 
     body {
-        background-size: 100vw 92vw;
+        background-size: auto;
     }
 
     .icon {
@@ -221,10 +221,16 @@
 
     .topnav a {
         color: white;
-        padding: 25px 16px;
+        padding: 7% 6%;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 15px;
         display: block;
+        width: 6vw;
+    }
+
+    div#myLinks a {
+        width: 100%;
+        font-size: 18px;
     }
   
 
@@ -268,11 +274,11 @@
     }
 
     #rigrover-2 {
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     .centro {
-        margin: 1em;
+        margin: 0em;
         text-align: center;
     }
 
@@ -311,6 +317,10 @@
         height: 46vw;
     }
 
+    .i2t1 p {
+        width: 74vw;
+    }
+
     .pictures-container {
         justify-content: space-between;
         flex-direction: column;
@@ -335,6 +345,43 @@
         flex-direction: column;
     }
 
+    .redes-sociais img, a {
+        margin: 4px;
+        width: 8vw;
+        cursor: pointer;
+    }
+    
+
+    .app-icon2 {
+        width: 47vw;
+    }
+
+    .app-icon h1 {
+        font-size: 8vw;
+        width: 125vw;
+    }
+
+    .app-right img {
+        display: none;
+    }
+
+    .rirgrover-app {
+        display: flex;
+        flex-direction: column-reverse;
+        background-size: 125%;
+        height: auto;
+    }
+
+    .app-icon {
+        width: 52vw;
+    }
+
+    .app-left {
+       padding-left: 0;
+    }
+    .app-left, .app-right {
+        display: ruby;
+    }
 
     footer {
         flex-direction: column;
@@ -993,6 +1040,15 @@
         height: 200px;
     }
 
+    .app-icon {
+        width: 23vw;
+    }
+
+    .app-icon2 {
+        width: 20vw;
+        padding: 0 0 0 66%;
+    }
+
     .img-footer {
         width: 13vw;
     }
@@ -1006,4 +1062,6 @@
         padding: 1vw 0 0 2vw;
         font-size: 1.5em;
     }    
+
+    
 }

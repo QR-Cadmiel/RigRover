@@ -322,8 +322,8 @@ a {
 .redes-footer img {
     width: 4vw;
     padding: 0 11px 0 0;
+    cursor: pointer;
 }
-
 .cont-2,
 .cont-1 {
     padding: 50px;

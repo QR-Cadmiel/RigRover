@@ -113,16 +113,29 @@ include 'validacao.php';
             </div>
             <div class="conteudo2-footer">
                 <div>
-                    <div class="redes-footer">
+                <div class="redes-footer">
+                            <a id="instarigrover"><img src="assets/img/iconinstagram.png" alt=""></a>
+                            <a id="twiterrigrover"><img src="assets/img/iconx.png" alt=""></a>
+                            <a id="facerigrover"><img src="assets/img/iconfacebook.png" alt=""></a>
+                            <a id="youtuberigrover"><img src="assets/img/iconyoutube.png" alt=""></a>
+                        </div>
+                        <script>
+                            document.getElementById('instarigrover').addEventListener('click', function() {
+                            window.open('https://www.instagram.com/rigrovergames/', '_blank');
+                            });
 
-                        <a href="https://www.instagram.com/rigrovergames/"><img src="assets/img/iconinstagram.png"
-                                alt=""></a>
-                        <a href="https://twitter.com/RigRoverGames"><img src="assets/img/iconx.png" alt=""></a>
-                        <a href="https://www.facebook.com/profile.php?id=61556959637519"><img
-                                src="assets/img/iconfacebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg"><img
-                                src="assets/img/iconyoutube.png" alt=""></a>
-                    </div>
+                            document.getElementById('twiterrigrover').addEventListener('click', function() {
+                            window.open('https://twitter.com/RigRoverGames', '_blank');
+                            });
+
+                            document.getElementById('facerigrover').addEventListener('click', function() {
+                            window.open('https://www.facebook.com/profile.php?id=61556959637519', '_blank');
+                            });
+
+                            document.getElementById('youtuberigrover').addEventListener('click', function() {
+                            window.open('https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg', '_blank');
+                            });
+                            </script>
 
                     <li>
                         <a href="fale_conosco.php">Fale Conosco</a>
