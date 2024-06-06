@@ -27,26 +27,25 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         if ($stmt) {
             if ($password === $confirm_password) {
-
                 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
+        
                 $stmt->bind_param('sssss', $email, $name, $hashed_password, $dob, $nationality);
-
+        
                 if ($stmt->execute()) {
                     header("Location: login.php?status=success");
                     exit;                
                 } else {
                     echo "<script>
                     Swal.fire({
-                    title: 'Erro ao cadastrar usuário',
-                    text: 'Verifique se não preencheu algo de errado!',
-                    icon: 'warning',
-                    confirmButtonColor: '#3085d6',
-                    confirmButtonText: 'OK'
+                        title: 'Erro ao cadastrar usuário',
+                        text: 'Verifique se não preencheu algo de errado!',
+                        icon: 'warning',
+                        confirmButtonColor: '#3085d6',
+                        confirmButtonText: 'OK',
                     });
                     </script>";
                 }                
-
+        
                 $stmt->close();
             } else {
                 echo 'As senhas não coincidem.';
@@ -55,10 +54,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         } else {
             echo 'Erro ao preparar a consulta';
         }
-    } else {
-        echo 'Por favor, preencha todos os campos do formulário.';
-    }
+        } else {
+            echo 'Por favor, preencha todos os campos do formulário.';
+        }
 }
+        
 
 $mysqli->close();
 

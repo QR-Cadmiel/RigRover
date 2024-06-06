@@ -21,6 +21,8 @@ include '../validacao.php';
     <script src="../assets/js/hamburguinho.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="../assets/img/logourl.png">
     <script src="../assets/js/logout.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>

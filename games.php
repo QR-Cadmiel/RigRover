@@ -25,6 +25,7 @@ include 'validacao.php';
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <script src="assets/js/logout.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
