@@ -142,8 +142,9 @@ nav ul {
 
 .pictures-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
 
 .pictures-1,
 .pictures-2 {
@@ -189,14 +190,6 @@ nav ul {
 .redes-sociais img:focus {
   transform: translateX(10px) scale(1.4);
   
-}
-
-.pictures-2 {
-  margin-right: 200px;
-}
-
-.pictures-1 {
-  margin-left: 175px;
 }
 
 .pictures-container h3 {
