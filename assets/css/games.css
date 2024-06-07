@@ -51,30 +51,15 @@ nav ul {
     color: white;
 }
 
-.square-gm {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
+
 
 
 .square-gm img {
-    width: 100%;
-    height: 100%;
+    width: 8vw;
+    height: 8vw;
+    margin: 15px;
     object-fit: contain;
-}
-
-.hollow-knight .square-gm img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+    border-radius: 15px;
 }
 
 .jogos-dstq,
@@ -84,10 +69,10 @@ nav ul {
     flex-wrap: wrap;
 }
 
-
 h2, h5 {
     color: white;
     margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #content {

@@ -88,7 +88,7 @@ include 'validacao.php';
                 <div class="gtav">
                     <div class="square-gm">
                         <a href="games/gtav.php"><img
-                                src="https://i.pinimg.com/originals/90/9a/21/909a21ef77e6ac03e061a1a6fc6255e1.png"
+                                src="assets\img\logoswiki\gtavlogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Grand Theft Auto 5</h5>
@@ -97,7 +97,7 @@ include 'validacao.php';
                 <div class="cs2">
                     <div class="square-gm">
                         <a href="games/cs2.php"><img
-                                src="https://cdn.freebiesupply.com/logos/thumbs/2x/counter-strike-global-offensive-2-logo.png"
+                                src="assets\img\logoswiki\cs2logowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Counter-Strike 2</h5>
@@ -106,7 +106,7 @@ include 'validacao.php';
                 <div class="valorant">
                     <div class="square-gm">
                         <a href="games/valorant.php"><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png"
+                                src="assets\img\logoswiki\valorantlogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Valorant</h5>
@@ -115,7 +115,7 @@ include 'validacao.php';
                 <div class="transformice">
                     <div class="square-gm">
                         <a href="games/transformice.php"><img
-                                src="https://upload.wikimedia.org/wikipedia/en/c/ce/TransformiceLogo.png" alt=""></a>
+                                src="assets\img\logoswiki\transformicelogowiki.png" alt=""></a>
                     </div>
                     <h5>Transformice</h5>
                 </div>
@@ -123,7 +123,7 @@ include 'validacao.php';
                 <div class="roblox">
                     <div class="square-gm">
                         <a href="games/roblox.php"><img
-                                src="https://seeklogo.com/images/R/roblox-logo-3CD7ECE135-seeklogo.com.png" alt=""></a>
+                                src="assets\img\logoswiki\robloxlogowiki.png" alt=""></a>
                     </div>
                     <h5>Roblox</h5>
                 </div>
@@ -135,7 +135,7 @@ include 'validacao.php';
                 <div class="atomic-heart">
                     <div class="square-gm">
                         <a href="games/atomic_heart.php"><img
-                                src="https://static.warthunder.com/upload/image/0_2023/7_July/Atomic/cardicon_atomic_thunder_right_512_caff1023f3740afce35e8f405c12fa6d.png"
+                                src="assets\img\logoswiki\atomiclogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Atomic Heart</h5>
@@ -144,7 +144,7 @@ include 'validacao.php';
                 <div class="rayman-legends">
                     <div class="square-gm">
                         <a href="games/rayman_legends.php"><img
-                                src="https://i.pinimg.com/originals/70/6e/5e/706e5ecf7dde6c89ddfb8f8ace612e20.png"
+                                src="assets\img\logoswiki\raymanlogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Rayman Legends</h5>
@@ -153,7 +153,7 @@ include 'validacao.php';
                 <div class="happy-wheels">
                     <div class="square-gm">
                         <a href="games/happy_wheels.php"><img
-                                src="https://image.apktoy.com/img/e8/com.fancyforce.happywheels/icon.png" alt=""></a>
+                                src="assets\img\logoswiki\happywelogowiki.png" alt=""></a>
                     </div>
                     <h5>Happy Whells</h5>
                 </div>
@@ -161,7 +161,7 @@ include 'validacao.php';
                 <div class="genshin-impact">
                     <div class="square-gm">
                         <a href="games/genshin_impact.php"><img
-                                src="https://i.pinimg.com/564x/2c/26/6d/2c266d7c7da0359f065b41702a92042b.jpg"
+                                src="assets\img\logoswiki\genshinlogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Genshin Impact</h5>
@@ -170,7 +170,7 @@ include 'validacao.php';
                 <div class="honkai:star-rail">
                     <div class="square-gm">
                         <a href="games/honkai_star_rail.php"><img
-                                src="https://cdn2.steamgriddb.com/icon_thumb/e52da5a31de788599378924f0e639557.png"
+                                src="assets\img\logoswiki\HKSTlogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Honkai: Star Rail</h5>
@@ -179,7 +179,7 @@ include 'validacao.php';
                 <div class="honkai-impact-3rd">
                     <div class="square-gm">
                         <a href="games/honkai_impact_3rd.php"><img
-                                src="https://downloadr2.apkmirror.com/wp-content/uploads/2018/09/5b98a17bdb704.png"
+                                src="assets\img\logoswiki\HKImpactlogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Honkai Impact 3rd</h5>
@@ -188,7 +188,7 @@ include 'validacao.php';
                 <div class="rocket-league">
                     <div class="square-gm">
                         <a href="games/rocket_league.php"><img
-                                src="https://cdn2.steamgriddb.com/icon/d538fafd2c832e8cb5d424d68dc7f8af.png" alt=""></a>
+                                src="assets\img\logoswiki\rocketlogowiki.png" alt=""></a>
                     </div>
                     <h5>Rocket League</h5>
                 </div>
@@ -196,7 +196,7 @@ include 'validacao.php';
                 <div class="monster-legends">
                     <div class="square-gm">
                         <a href="games/monster_legends.php"><img
-                                src="https://play-lh.googleusercontent.com/VOK_EhVN0eFQmk7E1V4mJa-oZoBXQx0rEPqdNSQYO2CP1b9MJEujwjaXoq36zelYjPk"
+                                src="assets\img\logoswiki\monsterlogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Monster Legends</h5>
@@ -205,7 +205,7 @@ include 'validacao.php';
                 <div class="dragon-city">
                     <div class="square-gm">
                         <a href="games/dragon_city.php"><img
-                                src="https://play-lh.googleusercontent.com/4nTLfOSYPEZGeJKZc3FcD77y-H5r7KtXCWgKxuYptzRIc1j4A9CQdU8Aq8bBvBKrAw"
+                                src="assets\img\logoswiki\dragcitylogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Dragon City</h5>
@@ -214,7 +214,7 @@ include 'validacao.php';
                 <div class="hollow-knight">
                     <div class="square-gm">
                         <a href="games/hollow_knight.php"><img
-                                src="https://images.squarespace-cdn.com/content/v1/606d159a953867291018f801/1619987722169-VV6ZASHHZNRBJW9X0PLK/Key_Art_02_layeredjpg.jpg?format=1500w"
+                                src="assets\img\logoswiki\HolloyKlogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Hollow Knight</h5>
@@ -223,7 +223,7 @@ include 'validacao.php';
                 <div class="cuphead">
                     <div class="square-gm">
                         <a href="games/cuphead.php"><img
-                                src="https://archive.org/download/Cuphead_OST/cuphead%20ost.jpg" alt=""></a>
+                                src="assets\img\logoswiki\cupheadlogowiki.png" alt=""></a>
                     </div>
                     <h5>Cuphead</h5>
                 </div>
@@ -231,7 +231,7 @@ include 'validacao.php';
                 <div class="kogama">
                     <div class="square-gm">
                         <a href="games/kogama.php"><img
-                                src="https://store-images.s-microsoft.com/image/apps.43026.335bac18-789c-4358-bdd3-39d1b752dd83.4d16d634-71aa-453a-ac4d-b35bcf234d99.da065f39-2bb8-4c41-b82c-51c749163cb6"
+                                src="assets\img\logoswiki\kogamalogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>KoGaMa</h5>
@@ -240,7 +240,7 @@ include 'validacao.php';
                 <div class="free-fire">
                     <div class="square-gm">
                         <a href="games/free_fire.php"><img
-                                src="https://upload.wikimedia.org/wikipedia/pt/2/23/Liga_Brasileira_de_Free_Fire_logo.png"
+                                src="assets\img\logoswiki\freefirelogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Free Fire</h5>
@@ -249,7 +249,7 @@ include 'validacao.php';
                 <div class="minecraft">
                     <div class="square-gm">
                         <a href="games/minecraft.php"><img
-                                src="https://preview.redd.it/minecraft-logo-v0-ak9w918zi5r81.png?auto=webp&s=614e5180aa1f7068676a06351c8edffc86b3b58a"
+                                src="assets\img\logoswiki\minecraftlogowiki.png"
                                 alt=""></a>
                     </div>
                     <h5>Minecraft</h5>
