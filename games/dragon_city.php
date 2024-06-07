@@ -13,6 +13,7 @@ include '../validacao.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games - Cuphead</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/games-info.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets\css\responsividade\games-info-responsivo.css">
@@ -25,6 +26,10 @@ include '../validacao.php';
     <script src="../assets/js/logout.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -81,11 +86,35 @@ include '../validacao.php';
     <div class="container">
         <div class="evt-ct">
         <h2>Dragon City</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://store-images.s-microsoft.com/image/apps.60940.14098991041572765.24a22c10-771e-440c-b9aa-1522a505d4ba.f8aff810-310f-4b23-9d5c-e6b43337bf06?h=576" alt="Primeiro Slide" >
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://s2-techtudo.glbimg.com/-DGCTI09CvtaYqVvT1Q6YpOZGAs=/1080x608/top/smart/https://i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2017/G/s/FGjb38SCaJSteQ5JqyxA/dragon-city-dica-conseguir-dragao-futebol-1.jpg"alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://articles-images.sftcdn.net/wp-content/uploads/sites/7/2014/08/Dragon-City.jpg" alt="Terceiro Slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>  
             <div class="images-evt">
                 <div class="img1">
-                    <div class="leftevent1">
-                        <img src="https://store-images.s-microsoft.com/image/apps.60940.14098991041572765.24a22c10-771e-440c-b9aa-1522a505d4ba.f8aff810-310f-4b23-9d5c-e6b43337bf06?h=576" class="imgevento" alt="">
-                    </div>
+                    <div class="leftevent1"></div>
                     <div class="rightevento1">
                       
                         <h5>Dragon City é um jogo eletrônico de simulação desenvolvido pela Socialpoint, lançado em maio
@@ -99,6 +128,10 @@ include '../validacao.php';
                             para a experiência de cuidar de criaturas místicas.</h5>
                     </div>
                 </div>
+            </div>
+            <div>
+                <h2>Trailer do jogo</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uTlR13xszLo?si=qzkmu9A1Kgu8Kg9O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 

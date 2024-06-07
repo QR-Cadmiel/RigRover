@@ -12,6 +12,7 @@ include '../validacao.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games - Happy Wheels</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/games-info.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets\css\responsividade\games-info-responsivo.css">
@@ -24,6 +25,10 @@ include '../validacao.php';
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -80,11 +85,34 @@ include '../validacao.php';
         <div class="container">
             <div class="evt-ct">
             <h2>Happy Wheels</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3777bebd-6d5d-4699-8e51-32846df1f8d7/dgpgamc-c5770f9f-4d4d-4e1a-a098-e9bffa469e17.jpg/v1/fill/w_600,h_340,q_75,strp/happy_wheels__by_thomaslandry16_dgpgamc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQwIiwicGF0aCI6IlwvZlwvMzc3N2JlYmQtNmQ1ZC00Njk5LThlNTEtMzI4NDZkZjFmOGQ3XC9kZ3BnYW1jLWM1NzcwZjlmLTRkNGQtNGUxYS1hMDk4LWU5YmZmYTQ2OWUxNy5qcGciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.wQwmWFQNF1TOPmV2E3jhXy0RIxNW1XFSeJynYBHs4bk" alt="Primeiro Slide" >
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://pbs.twimg.com/media/CdX6XLkUUAA6f2d.jpg"alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://media.indiedb.com/images/games/1/71/70609/happy-wheels.png" alt="Terceiro Slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
                 <div class="images-evt">
                     <div class="img1">
-                        <div class="leftevent1">
-                            <img src="https://images.crazygames.com/games/happy-wheels/cover-1688034516340.png?auto=format%2Ccompress&q=45&cs=strip&ch=DPR&w=1200&h=630&fit=crop" class="imgevento" alt="">
-                        </div>
                         <div class="rightevento1">
 
                             <h5>Happy Wheels é um jogo eletrônico de plataforma e corrida desenvolvido e publicado pela
@@ -102,6 +130,10 @@ include '../validacao.php';
                         </div>
                     </div>
                 </div>
+                <div>
+           <h2>Trailer do jogo</h2>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/RCyEWnT_Nrc?si=dPj0gWb2CL-okfeC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             </div>
 
 

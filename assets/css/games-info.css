@@ -64,6 +64,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #1a1919;
 }
 
 .evt-ct {
@@ -106,8 +107,9 @@ nav ul {
 h2 {
     text-align: center;
     font-size: 37px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 2vw;
 }
-
 
 
 .img1 {
@@ -117,8 +119,11 @@ h2 {
 }
 
 .rightevento1 {
-    width: 57rem;
+    width: 58rem;
+    text-align: justify;
     padding-left: 10vw;
+    font-size: 1.2rem;
+    margin: 0 0 27px 0;
 }
 
 .leftevento1 {
@@ -198,6 +203,10 @@ a {
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
+}
+
+iframe {
+    margin: 3vw;
 }
 
 .icon {

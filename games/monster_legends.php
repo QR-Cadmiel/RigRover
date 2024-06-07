@@ -12,6 +12,7 @@ include '../validacao.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games - Monster Legends</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
     <link rel="stylesheet" href="../assets/css/games-info.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets\css\responsividade\games-info-responsivo.css">
@@ -24,6 +25,10 @@ include '../validacao.php';
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -80,11 +85,34 @@ include '../validacao.php';
     <div class="container">
         <div class="evt-ct">
         <h2>Monster Legends</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://i.pinimg.com/originals/9d/03/bf/9d03bf32ca073550210ab4903c5d5764.jpg" alt="Primeiro Slide" >
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://s2-techtudo.glbimg.com/uu0r81Wmy5P4jTW94yt1pDQZzOI=/0x0:695x440/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/B/x/xfXXQ8SQygeTF79XfrVQ/2013-12-11-monster-legends-gems-hack.png"alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://play-lh.googleusercontent.com/GLFEGd9Xnd31tkHFIJcm47bsnFZbwUSeIuvu_wbTcpjr5mGS-8c31bFww6cfuqsveLk=w526-h296-rw" alt="Terceiro Slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
             <div class="images-evt">
                 <div class="img1">
-                    <div class="leftevent1">
-                        <img src="https://m.media-amazon.com/images/I/81YkeEwbDzL.jpg" class="imgevento" alt="">
-                    </div>
                     <div class="rightevento1">
 
                         <h5>Monster Legends é um jogo eletrônico de estratégia e batalha desenvolvido pela Social Point
@@ -103,6 +131,10 @@ include '../validacao.php';
                             de jogo móvel.</h5>
                     </div>
                 </div>
+            </div>
+            <div>
+           <h2>Trailer do jogo</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nYFHKkGIhLs?si=WeqCBVP7E6Bkwjen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
