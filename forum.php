@@ -3,7 +3,7 @@ date_default_timezone_set('America/Sao_Paulo');
 session_start();
 
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header("Location: login.php");
+    header("Location: login");
     exit;
 }
 
@@ -19,13 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO perguntas (titulo, descricao) VALUES ('$titulo', '$descricao')";
         $resultado = $mysqli->query($sql);
 
-        header("Location: forum.php");
+        header("Location: forum");
         exit();
     }
 
     if (isset($_POST['editar_pergunta'])) {
         $id = $_POST['editar_pergunta'];
-        header("Location: editar_noticia.php?id=$id");
+        header("Location: editar_noticia?id=$id");
         exit();
     }
 
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($_SESSION['email'] === 'admin@gmail.com') {
             echo '<script>';
             echo 'if (confirm("Tem certeza de que deseja excluir esta pergunta?")) {';
-            echo 'window.location.href = "excluir_noticia.php?id=' . $id . '";';
+            echo 'window.location.href = "excluir_noticia?id=' . $id . '";';
             echo '}';
             echo '</script>';
         }
@@ -76,19 +76,19 @@ while ($pergunta = $resultado->fetch_assoc()) {
         <nav class="navbar">
             <ul>
                 <li>
-                    <a href="home.php" id="btn-nav">Página Inicial</a>
+                    <a href="home" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="noticias.php" id="btn-nav">Noticias</a>
+                    <a href="noticias" id="btn-nav">Noticias</a>
                 </li>
                 <li>
-                    <a href="eventos.php" id="btn-nav">Eventos</a>
+                    <a href="eventos" id="btn-nav">Eventos</a>
                 </li>
                 <li>
-                    <a href="forum.php" id="btn-nav">Fórum</a>
+                    <a href="forum" id="btn-nav">Fórum</a>
                 </li>
                 <li>
-                    <a href="hardware.php" id="btn-nav">Hardware</a>
+                    <a href="hardware" id="btn-nav">Hardware</a>
                 </li>
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
@@ -107,13 +107,13 @@ while ($pergunta = $resultado->fetch_assoc()) {
             </div>
 
             <div id="myLinks">
-                <a href="home.php">Página Inicial</a>
-                <a href="noticias.php">Noticias</a>
-                <a href="eventos.php">Eventos</a>
-                <a href="forum.php">Fórum</a>
-                <a href="comparar_hardwares.php">Hardware</a>
+                <a href="home">Página Inicial</a>
+                <a href="noticias">Noticias</a>
+                <a href="eventos">Eventos</a>
+                <a href="forum">Fórum</a>
+                <a href="comparar_hardwares">Hardware</a>
                 <a href="games.php">Wiki Jogos</a>
-                <a href="logout.php">Deslogar da Conta</a>
+                <a href="logout">Deslogar da Conta</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -142,7 +142,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
 
                 <?php foreach ($perguntas as $pergunta): ?>
                     <div class="pergunta">
-                        <h2><a href="pergunta.php?id=<?php echo $pergunta['id']; ?>&titulo=<?php echo urlencode($pergunta['titulo']); ?>"
+                        <h2><a href="pergunta?id=<?php echo $pergunta['id']; ?>&titulo=<?php echo urlencode($pergunta['titulo']); ?>"
                                 class="titulo-pergunta">
                                 <?php echo $pergunta['titulo']; ?>
                             </a></h2>
@@ -205,7 +205,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
             <div class="cont-1">
                 <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
                 <ul>
-                    <li><a href="index.php">Página Inicial</a></li>
+                    <li><a href="index">Página Inicial</a></li>
                     <li><a href="#quem-somos">Quem Somos?</a></li>
                     <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
                 </ul>
@@ -237,13 +237,13 @@ while ($pergunta = $resultado->fetch_assoc()) {
                             </script>
                     <ul>
                         <li>
-                            <a href="fale_conosco.php">Fale Conosco</a>
+                            <a href="fale_conosco">Fale Conosco</a>
                         </li>
                         <li>
-                            <a href="politicas_de_privacidade.php">Políticas de Privacidade</a>
+                            <a href="politicas_de_privacidade">Políticas de Privacidade</a>
                         </li>
                         <li>
-                            <a href="termo_e_condicoes.php">Termos e Condições</a>
+                            <a href="termo_e_condicoes">Termos e Condições</a>
                         </li>
                     </ul>
                 </div>
@@ -253,7 +253,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
 
     <script>
         function editarPergunta(id) {
-            window.location.href = "editar_pergunta.php?id=" + id;
+            window.location.href = "editar_pergunta?id=" + id;
         }
 
     function excluirPergunta(id) {
@@ -268,7 +268,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
             cancelButtonText: 'Cancelar'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = "excluir_pergunta.php?id=" + id;
+                window.location.href = "excluir_pergunta?id=" + id;
             }
         });
     }

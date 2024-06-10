@@ -64,14 +64,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h1>Redefinir senha</h1>
         </div>
 
-        <form action="redefinir_senha.php" method="POST">
+        <form action="redefinir_senha" method="POST">
             <input type="email" name="email" placeholder="Insira o seu e-mail" class="email-icon" required>
 
             <button type="submit" class="btn-cad">Enviar E-mail</button>
         </form>
 
-        <a href="cadastro.php">Não tem uma conta? Cadastre-se aqui.</a><br>
-        <a href="login.php">Já tem uma conta? Logue aqui.</a>
+        <a href="cadastro">Não tem uma conta? Cadastre-se aqui.</a><br>
+        <a href="login">Já tem uma conta? Logue aqui.</a>
     </div>
 </body>
 

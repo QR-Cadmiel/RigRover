@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $_SESSION['user_id'] = $id;
                 $_SESSION['email'] = $dbEmail;
                 $_SESSION['name'] = $dbName;
-                header('Location: home.php');
+                header('Location: home');
                 exit();
             } else {
                 $error_message = 'Credenciais inválidas.';
@@ -67,7 +67,7 @@ $mysqli->close();
     <img src="assets\img\imglado-2.jpg" alt="Imagem Lado" class="img-lado">
 
     <div class="btn-voltar">
-        <a href="index.php">
+        <a href="index">
             <button>
                 Voltar
             </button></a>
@@ -88,8 +88,8 @@ $mysqli->close();
             <button type="submit" class="btn-cad">Entrar</button>
         </form>
 
-        <a href="cadastro.php">Não tem uma conta? Cadastre-se aqui.</a><br>
-        <a href="redefinir_senha.php">Esqueceu a sua senha?</a>
+        <a href="cadastro">Não tem uma conta? Cadastre-se aqui.</a><br>
+        <a href="redefinir_senha">Esqueceu a sua senha?</a>
     </div>
 
     <script>

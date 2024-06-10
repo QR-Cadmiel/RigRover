@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $nationality = $_POST["nationality"];
 
         if (strlen($password) < 8) {
-            echo "<script>alert('A senha deve ter no mínimo 8 caracteres.'); window.location.href = 'cadastro.php';</script>";
+            echo "<script>alert('A senha deve ter no mínimo 8 caracteres.'); window.location.href = 'cadastro';</script>";
             exit;
         }
 
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $stmt->bind_param('sssss', $email, $name, $hashed_password, $dob, $nationality);
         
                 if ($stmt->execute()) {
-                    header("Location: login.php?status=success");
+                    header("Location: login?status=success");
                     exit;                
                 } else {
                     echo "<script>
@@ -85,9 +85,9 @@ $mysqli->close();
 </head>
 
 <body>
-    <img src="assets/img/imglado.png" alt="Imagem Lado" class="img-lado">
+    <img src="assets\img\imglado.png" alt="Imagem Lado" class="img-lado">
     <div class="btn-voltar">
-        <a href="index.php">
+        <a href="index">
             <button>
                 Voltar
             </button></a>
@@ -189,7 +189,7 @@ $mysqli->close();
 
             <button class="btn-cad" type="submit">Cadastrar</button>
         </form>
-        <a href="login.php">Já tem uma conta? Logue aqui.</a>
+        <a href="login">Já tem uma conta? Logue aqui.</a>
     </div>
 </body>
 

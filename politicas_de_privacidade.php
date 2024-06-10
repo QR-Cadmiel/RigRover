@@ -23,7 +23,7 @@ include 'conexao.php';
     <nav class="navbar">
         <ul>
             <li>
-                <a href="index.php">Página Inicial</a>
+                <a href="index">Página Inicial</a>
             </li>
             <li>
                 <a href="#">Quem Somos?</a>
@@ -79,7 +79,7 @@ include 'conexao.php';
         <p>Podemos atualizar nossa Política de Privacidade de tempos em tempos. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página e atualizaremos a "Última atualização" no topo desta Política de Privacidade.</p>
         <h3>7. Contate-Nos </h3>
 
-        <p>Se você tiver quaisquer perguntas sobre esta Política de Privacidade, por favor, contate-nos em: <a href="fale_conosco.php">Fale Conosco</a>.</p>
+        <p>Se você tiver quaisquer perguntas sobre esta Política de Privacidade, por favor, contate-nos em: <a href="fale_conosco">Fale Conosco</a>.</p>
     </div>
 </body>
 

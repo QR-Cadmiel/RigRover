@@ -78,19 +78,19 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
         <nav class="navbar">
             <ul>
                 <li>
-                    <a href="home.php" id="btn-nav">Página Inicial</a>
+                    <a href="home" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="noticias.php" id="btn-nav">Noticias</a>
+                    <a href="noticias" id="btn-nav">Noticias</a>
                 </li>
                 <li>
-                    <a href="eventos.php" id="btn-nav">Eventos</a>
+                    <a href="eventos" id="btn-nav">Eventos</a>
                 </li>
                 <li>
-                    <a href="forum.php" id="btn-nav">Fórum</a>
+                    <a href="forum" id="btn-nav">Fórum</a>
                 </li>
                 <li>
-                    <a href="comparar_hardwares.php" id="btn-nav">Hardware</a>
+                    <a href="comparar_hardwares" id="btn-nav">Hardware</a>
                 </li>
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
@@ -105,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
             <h1 id="pergunta_titulo">
                 <?php echo isset($_GET['titulo']) ? htmlspecialchars($_GET['titulo']) : "Pergunta"; ?>
             </h1>
-            <a id="voltar" href="forum.php">Voltar</a>
+            <a id="voltar" href="forum">Voltar</a>
         </div>
 
         <div id="mensagens">

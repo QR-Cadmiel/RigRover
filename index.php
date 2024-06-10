@@ -31,7 +31,7 @@ include 'conexao.php';
         <nav class="navbar">
             <ul>
                 <li>
-                    <a href="index.php">Página Inicial</a>
+                    <a href="index">Página Inicial</a>
                 </li>
                 <li>
                     <a href="#quem-somos">Quem Somos?</a>
@@ -49,7 +49,7 @@ include 'conexao.php';
             </div>
 
             <div id="myLinks">
-                <a href="index.php">Página Inicial</a>
+                <a href="index">Página Inicial</a>
                 <a href="#quem-somos">Quem Somos?</a>
                 <a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a>
             </div>
@@ -65,9 +65,9 @@ include 'conexao.php';
             <p class="slogan">Equipando sua jornada,</p>
             <p class="slogan">elevando seu jogo.</p>
             <div>
-                <a href="cadastro.php"><button class="botoes">Cadastrar-se</button></a>
+                <a href="cadastro"><button class="botoes">Cadastrar-se</button></a>
 
-                <a href="login.php"> <button class="botoes">Entrar</button></a>
+                <a href="login"> <button class="botoes">Entrar</button></a>
 
             </div>
         </div>
@@ -245,7 +245,7 @@ include 'conexao.php';
                 <div class="cont-1">
                     <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
                     <ul>
-                        <li><a href="index.php">Página Inicial</a></li>
+                        <li><a href="index">Página Inicial</a></li>
                         <li><a href="#quem-somos">Quem Somos?</a></li>
                         <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
                     </ul>
@@ -277,13 +277,13 @@ include 'conexao.php';
                             </script>
                         <ul>
                             <li>
-                                <a href="fale_conosco.php">Fale Conosco</a>
+                                <a href="fale_conosco">Fale Conosco</a>
                             </li>
                             <li>
-                                <a href="politicas_de_privacidade.php">Políticas de Privacidade</a>
+                                <a href="politicas_de_privacidade">Políticas de Privacidade</a>
                             </li>
                             <li>
-                                <a href="termo_e_condicoes.php">Termos e Condições</a>
+                                <a href="termo_e_condicoes">Termos e Condições</a>
                             </li>
                         </ul>
                     </div>

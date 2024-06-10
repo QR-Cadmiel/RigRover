@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($mysqli->query($sql) === TRUE) {
         echo '<script>alert("Mensagem enviada com sucesso!");';
-        echo 'window.location.href = "index.php";</script>';
+        echo 'window.location.href = "index";</script>';
         exit;
     } else {
         echo "Erro ao enviar mensagem: " . $sql . "<br>" . $mysqli->error;
@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <nav class="navbar">
         <ul>
             <li>
-                <a href="index.php">Página Inicial</a>
+                <a href="index">Página Inicial</a>
             </li>
             <li>
                 <a href="#">Quem Somos?</a>
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <div id="myLinks">
-            <a href="index.php">Página Inicial</a>
+            <a href="index">Página Inicial</a>
             <a href="#">Quem Somos?</a>
             <a href="#">Noticias</a>
         </div>
@@ -114,7 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="mensagem">Mensagem:</label><br>
                 <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
                 <?php if ($mostrarBotao) { ?>
-                    <a href="tabela_fale_conosco.php"><input value="Acessar formulário" class="btn-form-adm"></a>
+                    <a href="tabela_fale_conosco"><input value="Acessar formulário" class="btn-form-adm"></a>
                 <?php } ?>
                 <input type="submit" value="Enviar" class="btn-primary ">
             </form>
@@ -125,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="cont-1">
             <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
             <ul>
-                <li><a href="index.php">Página Inicial</a></li>
+                <li><a href="index">Página Inicial</a></li>
                 <li><a href="#quem-somos">Quem Somos?</a></li>
                 <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
             </ul>
@@ -157,13 +157,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </script>
                 <ul>
                     <li>
-                        <a href="fale_conosco.php">Fale Conosco</a>
+                        <a href="fale_conosco">Fale Conosco</a>
                     </li>
                     <li>
-                        <a href="politicas_de_privacidade.php">Políticas de Privacidade</a>
+                        <a href="politicas_de_privacidade">Políticas de Privacidade</a>
                     </li>
                     <li>
-                        <a href="termo_e_condicoes.php">Termos e Condições</a>
+                        <a href="termo_e_condicoes">Termos e Condições</a>
                     </li>
                 </ul>
             </div>

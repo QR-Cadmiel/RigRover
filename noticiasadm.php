@@ -61,19 +61,19 @@ while ($noticias = $resultado->fetch_assoc()) {
             <nav class="navbar">
                 <ul>
                     <li>
-                        <a href="home.php" id="btn-nav">Página Inicial</a>
+                        <a href="home" id="btn-nav">Página Inicial</a>
                     </li>
                     <li>
-                        <a href="noticias.php" id="btn-nav">Noticias</a>
+                        <a href="noticias" id="btn-nav">Noticias</a>
                     </li>
                     <li>
-                        <a href="eventos.php" id="btn-nav">Eventos</a>
+                        <a href="eventos" id="btn-nav">Eventos</a>
                     </li>
                     <li>
-                        <a href="forum.php" id="btn-nav">Fórum</a>
+                        <a href="forum" id="btn-nav">Fórum</a>
                     </li>
                     <li>
-                        <a href="comparar_hardwares.php" id="btn-nav">Hardware</a>
+                        <a href="comparar_hardwares" id="btn-nav">Hardware</a>
                     </li>
                     <li>
                         <a href="games.php" id="btn-nav">Wiki Jogos</a>
@@ -91,13 +91,13 @@ while ($noticias = $resultado->fetch_assoc()) {
                 </div>
 
                 <div id="myLinks">
-                    <a href="home.php">Página Inicial</a>
-                    <a href="noticias.php">Noticias</a>
-                    <a href="eventos.php">Eventos</a>
-                    <a href="forum.php">Fórum</a>
-                    <a href="comparar_hardwares.php">Hardware</a>
+                    <a href="home">Página Inicial</a>
+                    <a href="noticias">Noticias</a>
+                    <a href="eventos">Eventos</a>
+                    <a href="forum">Fórum</a>
+                    <a href="comparar_hardwares">Hardware</a>
                     <a href="games.php">Wiki Jogos</a>
-                    <a href="logout.php">Deslogar da Conta</a>
+                    <a href="logout">Deslogar da Conta</a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
@@ -235,7 +235,7 @@ while ($noticias = $resultado->fetch_assoc()) {
                     }
 
                     function editarNoticia(id) {
-                        window.location.href = "editar_noticia.php?id=" + id;
+                        window.location.href = "editar_noticia?id=" + id;
                     }
 
                     function excluirNoticia(id) {
@@ -248,7 +248,7 @@ while ($noticias = $resultado->fetch_assoc()) {
     }).then((confirmacao) => {
         if (confirmacao) {
             // Exclui a notícia e exibe o Toast após a exclusão
-            window.location.href = "excluir_noticia.php?id=" + id;
+            window.location.href = "excluir_noticia?id=" + id;
             window.addEventListener('load', function() {
                 const Toast = Swal.mixin({
                     toast: true,
@@ -282,7 +282,7 @@ while ($noticias = $resultado->fetch_assoc()) {
             <div class="cont-1">
                 <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
                 <ul>
-                    <li><a href="index.php">Página Inicial</a></li>
+                    <li><a href="index">Página Inicial</a></li>
                     <li><a href="#quem-somos">Quem Somos?</a></li>
                     <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
                 </ul>
@@ -313,13 +313,13 @@ while ($noticias = $resultado->fetch_assoc()) {
                             </script>
                     <ul>
                         <li>
-                            <a href="fale_conosco.php">Fale Conosco</a>
+                            <a href="fale_conosco">Fale Conosco</a>
                         </li>
                         <li>
-                            <a href="politicas_de_privacidade.php">Políticas de Privacidade</a>
+                            <a href="politicas_de_privacidade">Políticas de Privacidade</a>
                         </li>
                         <li>
-                            <a href="termo_e_condicoes.php">Termos e Condições</a>
+                            <a href="termo_e_condicoes">Termos e Condições</a>
                         </li>
                     </ul>
                 </div>

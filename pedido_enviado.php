@@ -16,7 +16,7 @@ include 'conexao.php';
 <body>
     <h2>Seu pedido foi enviado com sucesso!</h2>
     <p>O seu pedido foi enviado com sucesso. Entraremos em contato em breve.</p>
-    <a href="home.php">Voltar para a página inicial</a>
+    <a href="home">Voltar para a página inicial</a>
 </body>
 
 </html>

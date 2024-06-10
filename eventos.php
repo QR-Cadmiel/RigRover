@@ -34,19 +34,19 @@ include 'validacao.php';
         <nav class="navbar">
             <ul>
                 <li>
-                    <a href="home.php" id="btn-nav">Página Inicial</a>
+                    <a href="home" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="noticias.php" id="btn-nav">Noticias</a>
+                    <a href="noticias" id="btn-nav">Noticias</a>
                 </li>
                 <li>
-                    <a href="eventos.php" id="btn-nav">Eventos</a>
+                    <a href="eventos" id="btn-nav">Eventos</a>
                 </li>
                 <li>
-                    <a href="forum.php" id="btn-nav">Fórum</a>
+                    <a href="forum" id="btn-nav">Fórum</a>
                 </li>
                 <li>
-                    <a href="hardware.php" id="btn-nav">Hardware</a>
+                    <a href="hardware" id="btn-nav">Hardware</a>
                 </li>
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
@@ -64,13 +64,13 @@ include 'validacao.php';
             </div>
 
             <div id="myLinks">
-                <a href="home.php">Página Inicial</a>
-                <a href="noticias.php">Noticias</a>
-                <a href="eventos.php">Eventos</a>
-                <a href="forum.php">Fórum</a>
-                <a href="hardware.php">Hardware</a>
+                <a href="home">Página Inicial</a>
+                <a href="noticias">Noticias</a>
+                <a href="eventos">Eventos</a>
+                <a href="forum">Fórum</a>
+                <a href="hardware">Hardware</a>
                 <a href="games.php">Wiki Jogos</a>
-                <a href="logout.php">Deslogar da Conta</a>
+                <a href="logout">Deslogar da Conta</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -86,7 +86,7 @@ include 'validacao.php';
             <h1>Evento BGS</h1>
             <h5>A Brasil Game Show é uma feira anual de videogames organizada pelo empresário Marcelo Tavares,
                 atualmente realizada em São Paulo, Brasil.</h5>
-            <button><a href="evento1.php"
+            <button><a href="evento1"
                     style="border: none; background: none; padding: 0; font: inherit; color: white; text-decoration: none;">Ler
                     mais</a></button>
         </div>
@@ -97,7 +97,7 @@ include 'validacao.php';
             <h5>O Anime Friends é um evento anual dedicado à cultura pop japonesa, que inclui anime, mangá, cosplay e
                 muito mais. Realizado no Brasil, é uma celebração da paixão compartilhada por fãs de anime e cultura
                 geek.</h5>
-            <button><a href="evento2.php"
+            <button><a href="evento2"
                     style="border: none; background: none; padding: 0; font: inherit; color: white; text-decoration: none;">Ler
                     mais</a></button>
         </div>
@@ -108,7 +108,7 @@ include 'validacao.php';
         <div class="cont-1">
             <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
             <ul>
-                <li><a href="index.php">Página Inicial</a></li>
+                <li><a href="index">Página Inicial</a></li>
                 <li><a href="#quem-somos">Quem Somos?</a></li>
                 <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
             </ul>
@@ -140,13 +140,13 @@ include 'validacao.php';
                             </script>
                 <ul>
                     <li>
-                        <a href="fale_conosco.php">Fale Conosco</a>
+                        <a href="fale_conosco">Fale Conosco</a>
                     </li>
                     <li>
-                        <a href="politicas_de_privacidade.php">Políticas de Privacidade</a>
+                        <a href="politicas_de_privacidade">Políticas de Privacidade</a>
                     </li>
                     <li>
-                        <a href="termo_e_condicoes.php">Termos e Condições</a>
+                        <a href="termo_e_condicoes">Termos e Condições</a>
                     </li>
                 </ul>
             </div>

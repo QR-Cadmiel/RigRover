@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSION['email'] !== 'admin@gmail.com') {
-    header("Location: login.php");
+    header("Location: login");
     exit;
 }
 
@@ -11,7 +11,7 @@ include 'conexao.php';
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
 if (!isset($_GET['id']) || empty($_GET['id'])) {
-    header("Location: forum.php");
+    header("Location: forum");
     exit;
 }
 
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "UPDATE perguntas SET titulo = '$titulo', descricao = '$descricao' WHERE id = $id";
     $resultado = $mysqli->query($sql);
 
-    header("Location: forum.php");
+    header("Location: forum");
     exit();
 }
 ?>
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <textarea class="descricao-textarea" id="descricao"
                     name="descricao"><?php echo $pergunta['descricao']; ?></textarea><br><br>
                 <input type="submit" value="Salvar">
-                <a href="forum.php" class="cancelar-link">Cancelar Edição</a>
+                <a href="forum" class="cancelar-link">Cancelar Edição</a>
             </div>
         </form>
     </div>

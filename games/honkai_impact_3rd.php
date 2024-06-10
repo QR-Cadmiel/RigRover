@@ -37,22 +37,22 @@ include '../validacao.php';
     <nav class="navbar">
             <ul>
                 <li>
-                    <a href="../home.php" id="btn-nav">Página Inicial</a>
+                    <a href="../home" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="../noticias.php" id="btn-nav">Noticias</a>
+                    <a href="../noticias" id="btn-nav">Noticias</a>
                 </li>
                 <li>
-                    <a href="../eventos.php" id="btn-nav">Eventos</a>
+                    <a href="../eventos" id="btn-nav">Eventos</a>
                 </li>
                 <li>
-                    <a href="../forum.php" id="btn-nav">Fórum</a>
+                    <a href="../forum" id="btn-nav">Fórum</a>
                 </li>
                 <li>
-                    <a href="../hardware.php" id="btn-nav">Hardware</a>
+                    <a href="../hardware" id="btn-nav">Hardware</a>
                 </li>
                 <li>
-                    <a href="../games.php" id="btn-nav">Wiki Jogos</a>
+                    <a href="../games" id="btn-nav">Wiki Jogos</a>
                 </li>
                 <a href="#" onclick="confirmLogout2()">
                     <img src="../assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
@@ -68,13 +68,13 @@ include '../validacao.php';
         </div>
 
         <div id="myLinks">
-            <a href="../home.php">Página Inicial</a>
-            <a href="../noticias.php">Noticias</a>
-            <a href="../eventos.php">Eventos</a>
-            <a href="../forum.php">Fórum</a>
-            <a href="../hardware.php">Hardware</a>
-            <a href="../games.php">Wiki Jogos</a>
-            <a href="../logout.php">Deslogar da Conta</a>
+            <a href="../home">Página Inicial</a>
+            <a href="../noticias">Noticias</a>
+            <a href="../eventos">Eventos</a>
+            <a href="../forum">Fórum</a>
+            <a href="../hardware">Hardware</a>
+            <a href="../games">Wiki Jogos</a>
+            <a href="../logout">Deslogar da Conta</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -99,7 +99,7 @@ include '../validacao.php';
                             <img class="d-block w-100" src="https://cdn2.unrealengine.com/1920-1080blog-post-featured-image-1920x1080-51e4961e7eeb.png"alt="Segundo Slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://s2-techtudo.glbimg.com/If11Y2OYRh7lJ8RqmesGi_zB44I=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/l/m/WwvPFaTZSAOvPrgVtlNg/honkai-impact-3rd-mihoyo-genshin-requisitos-minimos.jpg" alt="Terceiro Slide">
+                            <img class="d-block w-100" src="https://s2-techtudo.glbimg.com/If11Y2OYRh7lJ8RqmesGi_zB44I=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/l/m/WwvPFaTZSAOvPrgVtlNg/honkai-impact-3rd-mihoyo-genshin-requisitos-minimos" alt="Terceiro Slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -137,14 +137,14 @@ include '../validacao.php';
     </div>
 
     <div class="btn-voltar-mi">
-        <a href="../games.php"><button class="btn-voltar">Voltar para Games</button></a>
+        <a href="../games"><button class="btn-voltar">Voltar para Games</button></a>
     </div>
 
     <footer>
         <div class="cont-1">
             <img src="..\assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
             <ul>
-                <li><a href="../index.php">Página Inicial</a></li>
+                <li><a href="../index">Página Inicial</a></li>
                 <li><a href="../#quem-somos">Quem Somos?</a></li>
                 <li><a href="../#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
             </ul>
@@ -176,13 +176,13 @@ include '../validacao.php';
                             </script>
                 <ul>
                     <li>
-                        <a href="../fale_conosco.php">Fale Conosco</a>
+                        <a href="../fale_conosco">Fale Conosco</a>
                     </li>
                     <li>
-                        <a href="../politicas_de_privacidade.php">Políticas de Privacidade</a>
+                        <a href="../politicas_de_privacidade">Políticas de Privacidade</a>
                     </li>
                     <li>
-                        <a href="../termo_e_condicoes.php">Termos e Condições</a>
+                        <a href="../termo_e_condicoes">Termos e Condições</a>
                     </li>
                 </ul>
             </div>

@@ -36,22 +36,22 @@ include '../validacao.php';
     <nav class="navbar">
             <ul>
                 <li>
-                    <a href="../home.php" id="btn-nav">Página Inicial</a>
+                    <a href="../home" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="../noticias.php" id="btn-nav">Noticias</a>
+                    <a href="../noticias" id="btn-nav">Noticias</a>
                 </li>
                 <li>
-                    <a href="../eventos.php" id="btn-nav">Eventos</a>
+                    <a href="../eventos" id="btn-nav">Eventos</a>
+                </li>
+                <>
+                    <a href="../forum" id="btn-nav">Fórum</a>
+                <
+                <li>
+                    <a href="../hardware" id="btn-nav">Hardware</a>
                 </li>
                 <li>
-                    <a href="../forum.php" id="btn-nav">Fórum</a>
-                </li>
-                <li>
-                    <a href="../hardware.php" id="btn-nav">Hardware</a>
-                </li>
-                <li>
-                    <a href="../games.php" id="btn-nav">Wiki Jogos</a>
+                    <a href="../games" id="btn-nav">Wiki Jogos</a>
                 </li>
                 <a href="#" onclick="confirmLogout2()">
                     <img src="../assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
@@ -67,13 +67,13 @@ include '../validacao.php';
         </div>
 
         <div id="myLinks">
-            <a href="../home.php">Página Inicial</a>
-            <a href="../noticias.php">Noticias</a>
-            <a href="../eventos.php">Eventos</a>
-            <a href="../forum.php">Fórum</a>
-            <a href="../hardware.php">Hardware</a>
-            <a href="../games.php">Wiki Jogos</a>
-            <a href="../logout.php">Deslogar da Conta</a>
+            <a href="../home">Página Inicial</a>
+            <a href="../noticias">Noticias</a>
+            <a href="../eventos">Eventos</a>
+            <a href="../forum">Fórum</a>
+            <a href="../hardware">Hardware</a>
+            <a href="../games">Wiki Jogos</a>
+            <a href="../logout">Deslogar da Conta</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -93,7 +93,7 @@ include '../validacao.php';
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3777bebd-6d5d-4699-8e51-32846df1f8d7/dgpgamc-c5770f9f-4d4d-4e1a-a098-e9bffa469e17.jpg/v1/fill/w_600,h_340,q_75,strp/happy_wheels__by_thomaslandry16_dgpgamc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQwIiwicGF0aCI6IlwvZlwvMzc3N2JlYmQtNmQ1ZC00Njk5LThlNTEtMzI4NDZkZjFmOGQ3XC9kZ3BnYW1jLWM1NzcwZjlmLTRkNGQtNGUxYS1hMDk4LWU5YmZmYTQ2OWUxNy5qcGciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.wQwmWFQNF1TOPmV2E3jhXy0RIxNW1XFSeJynYBHs4bk" alt="Primeiro Slide" >
+                            <img class="d-block w-100" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3777bebd-6d5d-4699-8e51-32846df1f8d7/dgpgamc-c5770f9f-4d4d-4e1a-a098-e9bffa469e17.jpg/v1/fill/w_600,h_340,q_75,strp/happy_wheels__by_thomaslandry16_dgpgamc-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQwIiwicGF0aCI6IlwvZlwvMzc3N2JlYmQtNmQ1ZC00Njk5LThlNTEtMzI4NDZkZjFmOGQ3XC9kZ3BnYW1jLWM1NzcwZjlmLTRkNGQtNGUxYS1hMDk4LWU5YmZmYTQ2OWUxNy5qcGciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.wQwmWFQNF1TOPmV2E3jhXy0RIxNW1XFSeJynYBH" alt="Primeiro Slide" >
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="https://pbs.twimg.com/media/CdX6XLkUUAA6f2d.jpg"alt="Segundo Slide">
@@ -140,14 +140,14 @@ include '../validacao.php';
         </div>
 
         <div class="btn-voltar-mi">
-            <a href="../games.php"><button class="btn-voltar">Voltar para Games</button></a>
+            <a href="../games"><button class="btn-voltar">Voltar para Games</button></a>
         </div>
 
         <footer>
             <div class="cont-1">
                 <img src="..\assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
                 <ul>
-                    <li><a href="../index.php">Página Inicial</a></li>
+                    <li><a href="../index">Página Inicial</a></li>
                     <li><a href="../#quem-somos">Quem Somos?</a></li>
                     <li><a href="../#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
                 </ul>
@@ -179,13 +179,13 @@ include '../validacao.php';
                             </script>
                     <ul>
                         <li>
-                            <a href="../fale_conosco.php">Fale Conosco</a>
+                            <a href="../fale_conosco">Fale Conosco</a>
                         </li>
                         <li>
-                        <a href="../politicas_de_privacidade.php">Políticas de Privacidade</a>
+                        <a href="../politicas_de_privacidade">Políticas de Privacidade</a>
                         </li>
                         <li>
-                            <a href="../termo_e_condicoes.php">Termos e Condições</a>
+                            <a href="../termo_e_condicoes">Termos e Condições</a>
                         </li>
                     </ul>
                 </div>

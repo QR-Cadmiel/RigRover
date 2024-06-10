@@ -34,19 +34,19 @@ include 'validacao.php';
 
             <ul>
                 <li>
-                    <a href="home.php" id="btn-nav">Página Inicial</a>
+                    <a href="home" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="noticias.php" id="btn-nav">Noticias</a>
+                    <a href="noticias" id="btn-nav">Noticias</a>
                 </li>
                 <li>
-                    <a href="eventos.php" id="btn-nav">Eventos</a>
+                    <a href="eventos" id="btn-nav">Eventos</a>
                 </li>
                 <li>
-                    <a href="forum.php" id="btn-nav">Fórum</a>
+                    <a href="forum" id="btn-nav">Fórum</a>
                 </li>
                 <li>
-                    <a href="comparar_hardwares.php" id="btn-nav">Hardware</a>
+                    <a href="comparar_hardwares" id="btn-nav">Hardware</a>
                 </li>
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
@@ -140,13 +140,13 @@ include 'validacao.php';
                             </script>
 
                     <li>
-                        <a href="fale_conosco.php">Fale Conosco</a>
+                        <a href="fale_conosco">Fale Conosco</a>
                     </li>
                     <li>
-                        <a href="politicas_de_privacidade.php">Politicas de Privacidade</a>
+                        <a href="politicas_de_privacidade">Politicas de Privacidade</a>
                     </li>
                     <li>
-                        <a href="termo_e_condicoes.php">Termos e Condições</a>
+                        <a href="termo_e_condicoes">Termos e Condições</a>
                     </li>
                 </div>
             </div>

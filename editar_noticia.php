@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSION['email'] !== 'admin@gmail.com') {
-    header("Location: login.php");
+    header("Location: login");
     exit;
 }
 
@@ -11,7 +11,7 @@ include 'conexao.php';
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
 if (!isset($_GET['id']) || empty($_GET['id'])) {
-    header("Location: noticias.php");
+    header("Location: noticias");
     exit;
 }
 
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "UPDATE noticia SET tipo = '$tipo', titulo = '$titulo', descricao = '$descricao', imagem = '$imagem' WHERE id = $id";
     $resultado = $mysqli->query($sql);
 
-    header("Location: noticiasadm.php");
+    header("Location: noticiasadm");
     exit();
 }
 ?>
@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="imagem">URL da Imagem:</label><br>
                 <input type="text" id="imagem" name="imagem" value="<?php echo $noticia['imagem']; ?>"><br><br>
                 <input type="submit" value="Salvar">
-                <a href="noticiasadm.php" class="cancelar-link">Cancelar Edição</a>
+                <a href="noticiasadm" class="cancelar-link">Cancelar Edição</a>
             </div>
         </form>
     </div>

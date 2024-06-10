@@ -23,7 +23,7 @@ include 'conexao.php';
     <nav class="navbar">
         <ul>
             <li>
-                <a href="index.php">Página Inicial</a>
+                <a href="index">Página Inicial</a>
             </li>
             <li>
                 <a href="#">Quem Somos?</a>
@@ -105,7 +105,7 @@ include 'conexao.php';
 
         <h3>8. Contato</h3>
 
-        <p>Para perguntas sobre estes Termos e Condições, por favor, contate-nos em: <a href="fale_conosco.php">Fale
+        <p>Para perguntas sobre estes Termos e Condições, por favor, contate-nos em: <a href="fale_conosco">Fale
                 Conosco</a>.</p>
     </div>
 </body>

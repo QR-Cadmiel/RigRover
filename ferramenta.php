@@ -166,7 +166,7 @@ include 'validacao.php';
     <nav class="navbar">
         <ul>
             <li>
-                <a href="hardware.php">Hardware - Home</a>
+                <a href="hardware">Hardware - Home</a>
             </li>
             <div class="dropdown">
                 <a class="dropdown-btn" aria-haspopup="menu">
@@ -174,9 +174,9 @@ include 'validacao.php';
                     <span class="arrow"></span>
                 </a>
                     <ul class="dropdown-content" role="menu">
-                        <li style="--delay: 1;"><a href="maquinas_recomendadas.php" id="btn-nav-drop">Máquinas recomendadas</a></li>
-                        <li style="--delay: 2;"><a href="comparar_hardwares.php" id="btn-nav-drop">Comparar hardwares</a></li>
-                        <li style="--delay: 3;"><a href="ferramenta.php" id="btn-nav-drop">Requisitos para jogos</a></li>
+                        <li style="--delay: 1;"><a href="maquinas_recomendadas" id="btn-nav-drop">Máquinas recomendadas</a></li>
+                        <li style="--delay: 2;"><a href="comparar_hardwares" id="btn-nav-drop">Comparar hardwares</a></li>
+                        <li style="--delay: 3;"><a href="ferramenta" id="btn-nav-drop">Requisitos para jogos</a></li>
                     </ul>
                 </div>
                 <script>
@@ -188,10 +188,10 @@ include 'validacao.php';
                     });
                     </script>
             <li>
-                <a href="forum.php">Fórum</a>
+                <a href="forum">Fórum</a>
             </li>
             <li>
-                <a href="home.php">Home</a>
+                <a href="home">Home</a>
             </li>
             <a href="#" onclick="confirmLogout()">
                 <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
@@ -206,13 +206,13 @@ include 'validacao.php';
         </div>
 
         <div id="myLinks">
-            <a href="hardware.php">Hardware - Home</a>
-            <a href="maquinas_recomendadas.php">Máquinas recomendadas</a>
-            <a href="comparar_hardwares.php">Comparar hardwares</a>
-            <a href="ferramenta.php">Requisitos para jogos</a>
-            <a href="forum.php">Fórum</a>
-            <a href="home.php">Home</a>
-            <a href="logout.php">Deslogar da Conta</a>
+            <a href="hardware">Hardware - Home</a>
+            <a href="maquinas_recomendadas">Máquinas recomendadas</a>
+            <a href="comparar_hardwares">Comparar hardwares</a>
+            <a href="ferramenta">Requisitos para jogos</a>
+            <a href="forum">Fórum</a>
+            <a href="home">Home</a>
+            <a href="logout">Deslogar da Conta</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -251,7 +251,7 @@ include 'validacao.php';
         <div class="cont-1">
             <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
             <ul>
-                <li><a href="index.php">Página Inicial</a></li>
+                <li><a href="index">Página Inicial</a></li>
                 <li><a href="#quem-somos">Quem Somos?</a></li>
                 <li><a href="#equipe-desenvolvedora">Equipe Desenvolvedora</a></li>
             </ul>
@@ -283,13 +283,13 @@ include 'validacao.php';
                             </script>
                 <ul>
                     <li>
-                        <a href="fale_conosco.php">Fale Conosco</a>
+                        <a href="fale_conosco">Fale Conosco</a>
                     </li>
                     <li>
-                        <a href="politicas_de_privacidade.php">Políticas de Privacidade</a>
+                        <a href="politicas_de_privacidade">Políticas de Privacidade</a>
                     </li>
                     <li>
-                        <a href="termo_e_condicoes.php">Termos e Condições</a>
+                        <a href="termo_e_condicoes">Termos e Condições</a>
                     </li>
                 </ul>
             </div>
