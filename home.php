@@ -1,8 +1,6 @@
 <?php
-
 include 'conexao.php';
 include 'validacao.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -15,39 +13,32 @@ include 'validacao.php';
     <link rel="icon" type="image/png" href="https://github.com/QR-Cadmiel/RigRover/blob/master/img/logout.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets\css\responsividade\home-responsivo.css">
-    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
+    <link rel="stylesheet" href="assets/css/responsividade/home-responsivo.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/logourl.png">
     <script src="assets/js/hamburguinho.js"></script>
     <script src="assets/js/logout.js"></script>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rowdies:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="rigrover-1">
         <nav class="navbar">
             <ul>
-                <li>
-                    <a href="home" id="btn-nav">Página Inicial</a>
-                </li>
-                <li>
-                    <a href="noticias" id="btn-nav">Noticias</a>
-                </li>
-                <li>
-                    <a href="eventos" id="btn-nav">Eventos</a>
-                </li>
-                <li>
-                    <a href="forum" id="btn-nav">Fórum</a>
-                </li>
-                <li>
-                    <a href="hardware" id="btn-nav">Hardware</a>
-                </li>
-                <li>
-                    <a href="games.php" id="btn-nav">Wiki Jogos</a>
-                </li>
+                <li><a href="home" id="btn-nav">Página Inicial</a></li>
+                <li><a href="noticias" id="btn-nav">Noticias</a></li>
+                <li><a href="eventos" id="btn-nav">Eventos</a></li>
+                <li><a href="forum" id="btn-nav">Fórum</a></li>
+                <li><a href="hardware" id="btn-nav">Hardware</a></li>
+                <li><a href="games.php" id="btn-nav">Wiki Jogos</a></li>
                 <a href="#" onclick="confirmLogout()">
                     <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
@@ -59,7 +50,6 @@ include 'validacao.php';
             <div class="active">
                 <a href="#myLinks"></a>
             </div>
-
             <div id="myLinks">
                 <a href="home">Página Inicial</a>
                 <a href="noticias">Noticias</a>
@@ -81,70 +71,57 @@ include 'validacao.php';
             <p class="slogan">Sua jornada no mundo dos games começa aqui.</p>
         </div>
     </div>
-    <div class="categoria_div1" id="hardware">
-
-        <div class="categorias" id="servicos">
-            <img class="categoria_foto" src="assets/img/eventoshome.png">
+    <div class="content-categorias">
+        <div class="categoria_div1">
+            <div class="fundo-categoria">
+            <div class="categorias">
+                <img class="categoria_foto" src="assets/img/imghome-eventos.png">
+            </div>
+            <div id="coluna-categoria">
+                <h2>Participe dos eventos mais emocionantes do mundo dos games</h2>
+                <p class="categoria_texto">Descubra os eventos mais emocionantes do mundo dos games e garanta sua participação. De conferências de desenvolvedores, onde grandes inovações são reveladas, a competições de eSports com os melhores jogadores do mundo, temos tudo para você.</p>
+                <p class="categoria_texto">Fique por dentro dos principais eventos, feiras e campeonatos, e aproveite cada oportunidade para se conectar com a comunidade gamer e viver experiências inesquecíveis.</p>
+                <a href="eventos" id="btn-categorias">
+                    <button type="submit">Acessar</button>
+                </a>
+            </div>
+            </div>
         </div>
-        <div id="coluna-categoria">
-            <h2>Eventos</h2>
-            <p class="categoria_texto">Descubra os eventos mais emocionantes do mundo dos games e garanta sua
-                participação. Desde conferências de desenvolvedores até competições de eSports, temos tudo para
-                você.</p>
 
-            <a href="eventos" id="btn-categorias">
-                <button type="submit">
-                    Explore os Eventos
-                </button>
-            </a>
+        <div class="categoria_div2">
+        <div class="fundo-categoria" id="hardware">
+            <div class="categorias">
+                <img class="categoria_foto" src="assets/img/imghome-hardware.png">
+            </div>
+            <div id="coluna-categoria">
+                <h2>Otimize sua jogabilidade com o melhor hardware</h2>
+                <p class="categoria_texto">Descubra as melhores opções de hardware para levar sua experiência de jogo ao próximo nível. Desde placas de vídeo poderosas que garantem gráficos incríveis até periféricos de última geração que oferecem maior precisão e conforto.</p>
+                <p class="categoria_texto">Temos as recomendações ideais para você. Atualize seu setup e aproveite ao máximo cada partida com nossos conselhos especializados.</p>
+                <a href="hardware" id="btn-categorias">
+                    <button type="submit">Acessar</button>
+                </a>
+            </div>
+            </div>
         </div>
-    </div>
 
-    <div class="categoria_div2">
-
-        <div class="categorias">
-            <img class="categoria_foto" src="assets/img/hardwarehome.png">
-
+        <div class="categoria_div3">
+        <div class="fundo-categoria">
+            <div class="categorias">
+                <img class="categoria_foto" src="assets/img/imghome-games.png">
+            </div>
+            <div id="coluna-categoria">
+                <h2>Explore novos jogos e encontre sua próxima paixão</h2>
+                <p class="categoria_texto">Descubra os últimos lançamentos, análises de jogos e notícias sobre o universo dos games. Mantenha-se atualizado com os últimos lançamentos, análises detalhadas e notícias do universo dos games. Descubra o que há de melhor para jogar em consoles, PC e dispositivos móveis, e mergulhe de cabeça no mundo dos jogos.</p>
+                <a href="games.php" id="btn-categorias">
+                    <button type="submit">Acessar</button>
+                </a>
+            </div>
         </div>
-        <div id="coluna-categoria">
-            <div class="titulo_categoria"></div>
-
-            <h2>Hardware</h2>
-
-            <p class="categoria_texto">Encontre as melhores opções de hardware para aprimorar sua experiência de jogo.
-                Desde placas de vídeo poderosas até periféricos de última geração, nós temos as recomendações certas
-                para você.</p>
-            <a href="hardware" id="btn-categorias">
-                <button type="submit">
-                    Explore o Hardware
-                </button>
-            </a>
         </div>
-    </div>
-    <div class="categoria_div3" id="hardware">
-
-        <div class="categorias">
-            <img class="categoria_foto" src="assets/img/gameshome.png">
-        </div>
-        <div id="coluna-categoria">
-            <h2>Jogos</h2>
-            <p class="categoria_texto">Descubra os últimos lançamentos, análises de jogos e notícias sobre o universo
-                dos games.
-                Esteja sempre atualizado sobre o que há de melhor para jogar, seja em consoles, PC ou dispositivos
-                móveis.</p>
-
-            <a href="games.php" id="btn-categorias">
-                <button type="submit">
-                    Explore os jogos
-                </button>
-            </a>
-        </div>
-    </div>
-
     </div>
     <footer>
         <div class="cont-1">
-            <img src="assets\img\mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
+            <img src="assets/img/mascoterigrover.png" alt="Mascote Rigrover" class="img-footer-logo">
             <ul>
                 <li><a href="index">Página Inicial</a></li>
                 <li><a href="#quem-somos">Quem Somos?</a></li>
@@ -152,8 +129,7 @@ include 'validacao.php';
             </ul>
         </div>
         <div class="cont-2">
-            <div>
-            <div class="redes-footer">
+        <div class="redes-footer">
                             <a id="instarigrover"><img src="assets/img/iconinstagram.png" alt=""></a>
                             <a id="twiterrigrover"><img src="assets/img/iconx.png" alt=""></a>
                             <a id="facerigrover"><img src="assets/img/iconfacebook.png" alt=""></a>
@@ -194,4 +170,5 @@ include 'validacao.php';
 
 </body>
 
-</html>
+</html> 
+                

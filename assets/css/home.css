@@ -1,12 +1,10 @@
+
+
 body {
     font-family: "Lora", serif; 
-    background-image: url('../img/background-home.png');
-    background-repeat: no-repeat, repeat;
-    background-size: 100%;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #121212;
 }
 
 nav {
@@ -63,75 +61,25 @@ nav ul {
     margin: 8px;
 }
 
-
-.faq-container h1 {
-    text-align: center;
-    color: white;
-    padding: 0px 0 16px;
-}
-
-.faq-item {
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.faq-item:last-child {
-    border-bottom: none;
-}
-
-.faq-question {
-    color: #ffffff;
-    background-color: #1b1c1e;
-    padding: 20px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    user-select: none;
-}
-
-.faq-answer {
-    color: #ffffff;
-    line-height: 1.5;
-    font-size: 17px;
-    transition: all 0.3s ease;
-}
-
-.faq-answer.collapsing {
-    transition: height 0.3s ease;
-    height: 0;
-    opacity: 0;
-}
-
-
-.faq-container {
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-}
-
-.faq-item {
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.faq-answer {
-    display: none;
-    padding: 5px;
-    background-color: #2a2d30;
+.rigrover-1 {
+    background-image: url('../img/background-home.png');
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    padding: 1px;
 }
 
 .hardware {
-    background-color: #252330;
+
     padding: 20px;
 }
 
 .eventos {
-    background-color: #171521;
+
     padding: 20px;
 }
 
 .games {
-    background-color: #0A090E;
+
     padding: 20px;
 }
 
@@ -186,18 +134,7 @@ nav ul {
 }
 
 
-.hardware {
-    background-color: #252330;
-    padding: 20px;
-}
-
-.eventos {
-    background-color: #171521;
-    padding: 20px;
-}
-
-.games {
-    background-color: #0A090E;
+.hardware, .eventos, .games{
     padding: 20px;
 }
 
@@ -220,12 +157,18 @@ nav ul {
     display: table-column;
 }
 
-h2 {
-    text-align: center;
-    text-align: justify;
-    margin: 0 0 15px 6vw;
+.fundo-categoria {
+    display: flex;
+    margin: 34px;
+    background: #00000047;
+    border-radius: 46px;
 }
 
+h2 {
+    margin: 44px 0 16px 6vw;
+    font-size: 2.3vw;
+    width: 40rem;
+}
 .titulo_categoria {
     display: flex;
     flex-direction: column;
@@ -234,9 +177,14 @@ h2 {
 }
 
 .categoria_foto {
-    width: 37vw;
-    margin: 14px;
+    width: 20em;
+    margin: 4vw;
     height: auto;
+}
+
+.content-categorias {
+    background: rgb(16,18,16);
+    background: linear-gradient(180deg, rgba(16,18,16,1) 0%, rgba(27,38,26,1) 66%, rgba(16,16,16,1) 93%, rgba(16,16,16,1) 100%);
 }
 
 .categorias {
@@ -247,9 +195,13 @@ h2 {
 }
 
 .categoria_texto {
-    margin: 0 21vw 0 6vw;
+    margin: 0 0 15px 6vw;
+    width: 36rem;
     text-align: justify;
     font-size: 1.2rem;
+    font-family: "Bree Serif", serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .categoria_div1 {
@@ -257,7 +209,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #161816;
     color: white;
 }
 
@@ -266,7 +217,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #151D16;
     color: white;
 }
 
@@ -275,9 +225,9 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1B261A;
     color: white;
 }
+
 
 #hardware {
     flex-direction: row-reverse;
@@ -290,12 +240,19 @@ h2 {
 
 #btn-categorias button {
     margin: 2vw 0 2vw 6vw;
-    background-color: #1C552F;
     color: white;
-    border-radius: 5px;
+    border-radius: 40px;
     border: none;
-    height: 3vw;
-    font-size: 1.3vw;
+    width: 13vw;
+    height: 4vw;
+    font-size: 1.7vw;
+
+    background: rgb(14, 71, 17);
+    background: linear-gradient(90deg, rgba(14, 71, 17, 1) 16%, rgba(23, 54, 24, 1) 77%);
+    
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 button {
@@ -303,7 +260,7 @@ button {
 }
 
 footer {
-    background-color: #121212;
+    background-color: #111010;
     color: white;
     flex-direction: row;
     display: flex;
@@ -349,4 +306,3 @@ a {
 #myLinks {
     display: none;
 }
-
