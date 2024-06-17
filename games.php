@@ -41,7 +41,7 @@ include 'validacao.php';
                     <a href="home.php" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="noticias.php" id="btn-nav">Noticias</a>
+                    <a href="noticias.php" id="btn-nav">Notícias</a>
                 </li>
                 <li>
                     <a href="eventos.php" id="btn-nav">Eventos</a>
@@ -69,7 +69,7 @@ include 'validacao.php';
 
             <div id="myLinks">
                 <a href="home.php">Página Inicial</a>
-                <a href="noticias.php">Noticias</a>
+                <a href="noticias.php">Notícias</a>
                 <a href="eventos.php">Eventos</a>
                 <a href="forum.php">Fórum</a>
                 <a href="hardware.php">Hardware</a>

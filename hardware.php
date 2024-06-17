@@ -12,12 +12,13 @@ include 'validacao.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hardwares Home - RigRover</title>
+
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <link rel="icon" type="image/png" href="https://github.com/QR-Cadmiel/RigRover/blob/master/img/logout.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/hardware.css">
     <link rel="stylesheet" href="assets\css\responsividade\hardware-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
-    <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <script src="assets/js/logout.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +58,7 @@ include 'validacao.php';
                     <a href="forum" id="btn-nav">Fórum</a>
                 </li>
                 <li>
-                    <a href="home" id="btn-nav">Home</a>
+                    <a href="home" id="btn-nav">Página Inicial</a>
                 </li>
                 <a href="#" onclick="confirmLogout()">
                     <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
@@ -77,7 +78,7 @@ include 'validacao.php';
                 <a href="comparar_hardwares">Comparar hardwares</a>
                 <a href="ferramenta">Requisitos para jogos</a>
                 <a href="forum">Fórum</a>
-                <a href="home">Home</a>
+                <a href="home">Página Inicial</a>
                 <a href="logout">Deslogar da Conta</a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">

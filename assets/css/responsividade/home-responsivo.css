@@ -97,8 +97,10 @@
         font-size: 5.3vw;
     }
 
-    .categoria_foto {
-        display: none;
+
+    .rigrover-1 {
+        background-size: 150%;
+        padding: 1px;
     }
     
 

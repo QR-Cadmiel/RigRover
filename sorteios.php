@@ -37,7 +37,7 @@ include 'validacao.php';
                     <a href="home" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="noticias" id="btn-nav">Noticias</a>
+                    <a href="noticias" id="btn-nav">Notícias</a>
                 </li>
                 <li>
                     <a href="eventos" id="btn-nav">Eventos</a>

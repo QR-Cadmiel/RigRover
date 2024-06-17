@@ -34,7 +34,7 @@ include 'validacao.php';
         <nav class="navbar">
             <ul>
                 <li><a href="home" id="btn-nav">Página Inicial</a></li>
-                <li><a href="noticias" id="btn-nav">Noticias</a></li>
+                <li><a href="noticias" id="btn-nav">Notícias</a></li>
                 <li><a href="eventos" id="btn-nav">Eventos</a></li>
                 <li><a href="forum" id="btn-nav">Fórum</a></li>
                 <li><a href="hardware" id="btn-nav">Hardware</a></li>
@@ -52,7 +52,7 @@ include 'validacao.php';
             </div>
             <div id="myLinks">
                 <a href="home">Página Inicial</a>
-                <a href="noticias">Noticias</a>
+                <a href="noticias">Notícias</a>
                 <a href="eventos">Eventos</a>
                 <a href="forum">Fórum</a>
                 <a href="hardware">Hardware</a>

@@ -64,6 +64,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
     <script src="assets/js/hamburguinho.js"></script>
     <script src="assets/js/logout.js"></script>
 
+        <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -79,7 +80,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
                     <a href="home" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="noticias" id="btn-nav">Noticias</a>
+                    <a href="noticias" id="btn-nav">Notícias</a>
                 </li>
                 <li>
                     <a href="eventos" id="btn-nav">Eventos</a>
@@ -108,7 +109,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
 
             <div id="myLinks">
                 <a href="home">Página Inicial</a>
-                <a href="noticias">Noticias</a>
+                <a href="noticias">Notícias</a>
                 <a href="eventos">Eventos</a>
                 <a href="forum">Fórum</a>
                 <a href="comparar_hardwares">Hardware</a>

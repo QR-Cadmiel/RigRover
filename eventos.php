@@ -37,7 +37,7 @@ include 'validacao.php';
                     <a href="home" id="btn-nav">Página Inicial</a>
                 </li>
                 <li>
-                    <a href="noticias" id="btn-nav">Noticias</a>
+                    <a href="noticias" id="btn-nav">Notícias</a>
                 </li>
                 <li>
                     <a href="eventos" id="btn-nav">Eventos</a>
@@ -65,7 +65,7 @@ include 'validacao.php';
 
             <div id="myLinks">
                 <a href="home">Página Inicial</a>
-                <a href="noticias">Noticias</a>
+                <a href="noticias">Notícias</a>
                 <a href="eventos">Eventos</a>
                 <a href="forum">Fórum</a>
                 <a href="hardware">Hardware</a>

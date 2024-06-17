@@ -64,7 +64,7 @@ while ($noticias = $resultado->fetch_assoc()) {
                         <a href="home" id="btn-nav">Página Inicial</a>
                     </li>
                     <li>
-                        <a href="noticias" id="btn-nav">Noticias</a>
+                        <a href="noticias" id="btn-nav">Notícias</a>
                     </li>
                     <li>
                         <a href="eventos" id="btn-nav">Eventos</a>
@@ -92,7 +92,7 @@ while ($noticias = $resultado->fetch_assoc()) {
 
                 <div id="myLinks">
                     <a href="home">Página Inicial</a>
-                    <a href="noticias">Noticias</a>
+                    <a href="noticias">Notícias</a>
                     <a href="eventos">Eventos</a>
                     <a href="forum">Fórum</a>
                     <a href="comparar_hardwares">Hardware</a>
