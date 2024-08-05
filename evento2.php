@@ -54,7 +54,7 @@ include 'validacao.php';
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
-                <a href="#" onclick="confirmLogout()">
+                <a href="logout.php" onclick="confirmLogout()">
                     <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
                 </a>
             </ul>

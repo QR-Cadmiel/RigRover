@@ -1,11 +1,5 @@
-<?php
-include 'conexao.php';
-include 'validacao.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +11,7 @@ include 'validacao.php';
     <link rel="shortcut icon" type="image/png" href="assets/img/logourl.png">
     <script src="assets/js/hamburguinho.js"></script>
     <script src="assets/js/logout.js"></script>
+    <script src="assets/js/dropdownuser.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -28,7 +23,6 @@ include 'validacao.php';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rowdies:wght@300&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="rigrover-1">
         <nav class="navbar">
@@ -39,9 +33,14 @@ include 'validacao.php';
                 <li><a href="forum" id="btn-nav">Fórum</a></li>
                 <li><a href="hardware" id="btn-nav">Hardware</a></li>
                 <li><a href="games.php" id="btn-nav">Wiki Jogos</a></li>
-                <a href="#" onclick="confirmLogout()">
-                    <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
-                </a>
+                <li class="dropdown">
+                 <a href="javascript:void(0)" class="dropbtn"><img src="assets\img\imagemuserdrop.png" alt="Botão de sair da conta" class="img-logout"></a>
+                     <div class="dropdown-content"> <!-- lembrar de arrumar o logout seguo, toda vez que sai da conta dá para voltar -->
+                <a href="#" onclick="confirmLogout()"class="logout-link">
+                <span><img class="logout-icon" src="assets\img\logout.png" alt="">Sair</span> 
+             </a>
+            </div>
+                </li>
             </ul>
         </nav>
 
@@ -149,26 +148,14 @@ include 'validacao.php';
                             });
 
                             document.getElementById('youtuberigrover').addEventListener('click', function() {
-                            window.open('https://www.youtube.com/channel/UCi9tZH0GeYkvskNO2d8mzIg', '_blank');
+                            window.open('https://www.youtube.com/channel/UCi9tZH0b-9OXUy4MZPiFVHA', '_blank');
                             });
-                            </script>
-                <ul>
-                    <li>
-                        <a href="fale_conosco">Fale Conosco</a>
-                    </li>
-                    <li>
-                        <a href="politicas_de_privacidade">Políticas de Privacidade</a>
-                    </li>
-                    <li>
-                        <a href="termo_e_condicoes">Termos e Condições</a>
-                    </li>
-                </ul>
-            </div>
+                        </script>
         </div>
+        <div class="cont-3">
+            <p>Desenvolvido por Cadmiel QR</p>
+            <p>© Rig Rover 2024. Todos os direitos reservados.</p>
         </div>
     </footer>
-
 </body>
-
-</html> 
-                
+</html>
