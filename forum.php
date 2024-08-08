@@ -62,6 +62,7 @@ while ($pergunta = $resultado->fetch_assoc()) {
     <link rel="stylesheet" href="assets/css/forum.css">
     <link rel="stylesheet" href="assets\css\responsividade\forum-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
+    <script src="assets/js/dropdownuser.js"></script>
     <script src="assets/js/logout.js"></script>
 
         <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
@@ -94,9 +95,12 @@ while ($pergunta = $resultado->fetch_assoc()) {
                 <li>
                     <a href="games.php" id="btn-nav">Wiki Jogos</a>
                 </li>
-                <a href="#" onclick="confirmLogout()">
-                    <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
-                </a>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"><img class="dropbtn" src="assets/img/imagemuserdrop.png" alt=""></a>
+                    <div class="dropdown-content">
+                        <a class="btn-dropdown" href="#" onclick="confirmLogout()">Sair</a>
+                    </div>
+                </div>
 
             </ul>
         </nav>

@@ -13,9 +13,10 @@ include 'validacao.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações recomendadas para jogos - RigRover</title>
     <link rel="stylesheet" href="assets/css/ferramenta.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/f    ont-awesome.min.css">
     <link rel="stylesheet" href="assets\css\responsividade\ferramenta-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
+    <script src="assets/js/dropdownuser.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <script src="assets/js/logout.js"></script>
 
@@ -193,9 +194,33 @@ include 'validacao.php';
             <li>
                 <a href="home">Home</a>
             </li>
-            <a href="#" onclick="confirmLogout()">
-                <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
-            </a>
+            <div class="custom-dropdown">
+                    <a href="#" onclick="toggleDropdown(event)">
+                        <img class="custom-dropbtn" src="assets/img/imagemuserdrop.png" alt="">
+                    </a>
+                    <div class="custom-dropdown-content">
+                        <a class="custom-btn-dropdown" href="#" onclick="confirmLogout()">Sair</a>
+                    </div>
+                </div>
+                <script>
+                    function toggleDropdown(event) {
+                        event.preventDefault();
+                        const dropdown = event.currentTarget.closest('.custom-dropdown');
+                        dropdown.classList.toggle('show');
+                    }
+
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown");
+                            for (var i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
         </ul>
     </nav>
 

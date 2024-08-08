@@ -1,17 +1,18 @@
-// dropdownuser.js
+function toggleDropdown(event) {
+    event.preventDefault();
+    var dropdown = event.target.closest('.dropdown');
+    dropdown.classList.toggle('show');
+}
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const dropdown = document.querySelector('.dropdown');
-    const dropdownBtn = dropdown.querySelector('.dropbtn');
-    
-    dropdownBtn.addEventListener('click', () => {
-        dropdown.classList.toggle('active');
-    });
-
-    // Fechar o dropdown se clicar fora dele
-    document.addEventListener('click', (event) => {
-        if (!dropdown.contains(event.target)) {
-            dropdown.classList.remove('active');
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
         }
-    });
-});
+    }
+}

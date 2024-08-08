@@ -16,6 +16,7 @@ include 'validacao.php';
   <link rel="stylesheet" href="assets/css/maquinas_recomendadas.css">
   <link rel="stylesheet" href="assets\css\responsividade\maquinas-rec-responsivo.css">
   <script src="assets/js/hamburguinho.js"></script>
+  <script src="assets/js/dropdownuser.js"></script>
   <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
   <script src="assets/js/logout.js"></script>
 
@@ -58,9 +59,33 @@ include 'validacao.php';
         <a href="home">Home</a>
       </li>
     </ul>
-    <a href="#" onclick="confirmLogout()">
-      <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
-    </a>
+    <div class="custom-dropdown">
+                    <a href="#" onclick="toggleDropdown(event)">
+                        <img class="custom-dropbtn" src="assets/img/imagemuserdrop.png" alt="">
+                    </a>
+                    <div class="custom-dropdown-content">
+                        <a class="custom-btn-dropdown" href="#" onclick="confirmLogout()">Sair</a>
+                    </div>
+                </div>
+                <script>
+                    function toggleDropdown(event) {
+                        event.preventDefault();
+                        const dropdown = event.currentTarget.closest('.custom-dropdown');
+                        dropdown.classList.toggle('show');
+                    }
+
+                    window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown");
+                            for (var i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
   </nav>
 
   <!-- --------Hamburguinho Menu----------  -->

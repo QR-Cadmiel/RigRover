@@ -22,6 +22,7 @@ include '../validacao.php';
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../assets/js/hamburguinho.js"></script>
+    <script src="../assets/js/dropdownuser.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="../assets/img/logourl.png">
     <script src="../assets/js/logout.js"></script>
 
@@ -56,9 +57,12 @@ include '../validacao.php';
                 <li>
                     <a href="../games" id="btn-nav">Wiki Jogos</a>
                 </li>
-                <a href="#" onclick="confirmLogout2()">
-                    <img src="../assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
-                </a>
+                <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"><img class="dropbtn" src="../assets/img/imagemuserdrop.png" alt=""></a>
+                    <div class="dropdown-content">
+                        <a class="btn-dropdown" href="#" onclick="confirmLogout()">Sair</a>
+                    </div>
+                </div>
             </ul>
         </nav>
     </div>

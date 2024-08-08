@@ -39,65 +39,47 @@ nav ul {
     padding: 0;
 }
 
-.img-logout {
-
-    width: 46px;
+.dropbtn {
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 40px;
 }
 
-/* Dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
+img.dropbtn:hover {
+    background: #1D5F15;
+    border-radius: 12px;
+    transition: .35s;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #1e1e1e;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 6px;
 }
 
 .dropdown-content a {
-    color: black;
+    color: rgb(253, 253, 253);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-size: 14px;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #353535;
 }
 
-
-.dropdown.active .dropdown-content {
-    display: block; /* Mostrar quando ativo */
-}
-
-.dropbtn {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.img-logout {
-    width: 30px;
-    height: 30px;
-}
-
-.logout-link {
-    display: flex;
-    align-items: center;
-}
-
-.logout-icon {
-    margin-right: 8px;
-}
-
-.logout-link:hover {
-    background-color: #ddd;
+.dropdown.show .dropdown-content {
+    display: block;
 }
 
 .logodois {
@@ -317,7 +299,7 @@ button {
 }
 
 footer {
-    background-color: #111010;
+    background-color: #121212;
     color: white;
     flex-direction: row;
     display: flex;

@@ -1,11 +1,7 @@
 body {
     font-family: "Lora", serif;
-    background-image: url('../img/background-hardware.png');
-    background-repeat: no-repeat, repeat;
-    background-size: 100%;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
 }
 
 /* --------------Dropdown-----------------  */
@@ -125,6 +121,56 @@ nav ul {
     list-style: none;
     display: flex;
     padding: 0;
+}
+
+.rigrover-1 {
+    background-image: url('../img/background-hardware.png');
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    min-height: 40vw;
+}
+
+.custom-dropbtn {
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropbtn:hover {
+    background: #1D5F15;
+    border-radius: 12px;
+    transition: .35s;
+}
+
+.custom-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e1e1e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 6px;
+}
+
+.custom-dropdown-content a {
+    color: rgb(253, 253, 253);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.custom-dropdown-content a:hover {
+    background-color: #353535;
+}
+
+.custom-dropdown.show .custom-dropdown-content {
+    display: block;
 }
 
 .img-logout {
@@ -433,3 +479,4 @@ a {
 #myLinks {
     display: none;
 }
+

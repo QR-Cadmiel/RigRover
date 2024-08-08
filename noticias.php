@@ -7,6 +7,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true || $_SESSI
     $mostrarBotao = true;
 }
 
+include 'validacao.php';
 include 'conexao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
@@ -47,6 +48,7 @@ while ($noticias = $resultado->fetch_assoc()) {
     <link rel="stylesheet" href="assets\css\responsividade\noticias-responsivo.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/img/logourl.png">
     <script src="assets/js/hamburguinho.js"></script>
+    <script src="assets/js/dropdownuser.js"></script>
     <script src="assets/js/logout.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,9 +81,12 @@ while ($noticias = $resultado->fetch_assoc()) {
                     <li>
                         <a href="games" id="btn-nav">Wiki Jogos</a>
                     </li>
-                    <a href="#" onclick="confirmLogout()">
-                        <img src="assets/img/logout.png" alt="Botão de sair da conta" class="img-logout">
-                    </a>
+                    <div class="dropdown">
+                    <a href="#" onclick="toggleDropdown(event)"><img class="dropbtn" src="assets/img/imagemuserdrop.png" alt=""></a>
+                    <div class="dropdown-content">
+                        <a class="btn-dropdown" href="#" onclick="confirmLogout()">Sair</a>
+                    </div>
+                </div>
                 </ul>
             </nav>
 

@@ -5,6 +5,7 @@ session_start();
 
 include 'conexao.php';
 
+
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
