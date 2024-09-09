@@ -117,44 +117,45 @@ include 'validacao.php';
         </div>
     </div>
 
+<div class="tudo">
     <div class="categoria_div1" id="hardware">
-        <div class="categorias" id="servicos">
-            <img class="categoria_foto" src="assets\img\imghome1.png">
-        </div>
-        <div id="coluna-categoria">
-            <h2>Máquinas recomendadas</h2>
-            <p class="categoria_texto">Descubra quais as configurações mínimas e recomendadas para utilizar seu PC com base no que você precisa!</p>
+    <div class="categoria_conteudo">
+        <img class="categoria_foto" src="assets/img/imghome1.png" alt="Imagem de hardware">
+        <div class="categoria_texto_conteudo">
+            <h2>Encontre as máquinas mais recomendadas</h2>
+            <p>Descubra as configurações mínimas e recomendadas ideais para otimizar o desempenho do seu PC, 
+                alinhadas com as suas necessidades específicas!</p>
             <a href="maquinas_recomendadas" id="btn-categorias">
-                <button type="submit">Confira as máquinas recomendadas</button>
+                <button type="submit">Confira</button>
             </a>
         </div>
     </div>
-
-    <div class="categoria_div2">
-        <div class="categorias">
-            <img class="categoria_foto" src="https://www.greatsolution.com.br/wp-content/uploads/2019/01/pc-hardware-detail-1241583-1919x1274-1024x680.jpg">
-        </div>
-        <div id="coluna-categoria">
+</div>
+<div class="categoria_div2">
+    <div class="categoria_conteudo">
+        <div class="categoria_texto_conteudo">
             <h2>Comparar hardwares</h2>
-            <p class="categoria_texto">Escolha dois hardwares da mesma categoria e veja qual dos dois é melhor para você!</p>
+            <p>Escolha dois hardwares da mesma categoria e veja qual dos dois é melhor para você!</p>
             <a href="comparar_hardwares" id="btn-categorias">
                 <button type="submit">Confira a comparação de hardwares</button>
             </a>
         </div>
+        <img class="categoria_foto" src="https://media.discordapp.net/attachments/820976935077281843/1282779700175048917/img-pcs.png?ex=66e09931&is=66df47b1&hm=1ef62974108bdc61129401f06d5109fd4e8d7e087f9ebfb42d996325cbe19f3d&=&format=webp&quality=lossless&width=479&height=455" alt="Comparar hardwares">
     </div>
+</div>
 
-    <div class="categoria_div3" id="hardware">
-        <div class="categorias">
-            <img class="categoria_foto" src="https://www.gamingdebugged.com/wp-content/uploads/2021/09/purple-gaming-set-up-1.jpg">
-        </div>
-        <div id="coluna-categoria">
+<div class="categoria_div3">
+    <div class="categoria_conteudo2">
+        <div class="categoria_texto_conteudo">
             <h2>Requisitos para jogos</h2>
-            <p class="categoria_texto">Descubra quais as configurações mínimas e recomendadas para jogar os jogos dos seus sonhos!</p>
+            <p>Descubra quais as configurações mínimas e recomendadas para jogar os jogos dos seus sonhos!</p>
             <a href="ferramenta" id="btn-categorias">
                 <button type="submit">Confira os requisitos dos jogos</button>
             </a>
         </div>
+        <img class="categoria_foto" src="https://media.discordapp.net/attachments/820976935077281843/1282780366503018517/image_82.png?ex=66e099d0&is=66df4850&hm=3f8103f8f5e653e1c8e6e0446c4127b66b51aaf949c6066dc4f3be927b0589e4&=&format=webp&quality=lossless&width=487&height=393" alt="Requisitos para jogos">
     </div>
+</div>
 
     <footer>
         <div class="cont-1">
