@@ -204,9 +204,10 @@ img.dropbtn:hover {
 
 h2 {
     margin: 44px 0 16px 6vw;
-    font-size: 2.3vw;
+    font-size: 2vw;
     width: 40rem;
 }
+
 .titulo_categoria {
     display: flex;
     flex-direction: column;
@@ -215,8 +216,8 @@ h2 {
 }
 
 .categoria_foto {
-    width: 18em;
-    margin: 4vw;
+    width: 15em;
+    margin: 2vw;
     height: auto;
 }
 
@@ -236,7 +237,7 @@ h2 {
     margin: 0 0 15px 6vw;
     width: 36rem;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "Bree Serif", serif;
     font-weight: 200;
     font-style: normal;
@@ -281,18 +282,15 @@ h2 {
     color: white;
     border-radius: 10px;
     border: none;
-    width: 9vw;
-    height: 4vw;
+    width: 8vw;
+    height: 3vw;
     font-size: 1.3vw;
     background: rgb(14, 71, 17);
     background: linear-gradient(90deg, rgba(14, 71, 17, 1) 16%, rgba(23, 54, 24, 1) 77%);
-    
     font-family: "Rowdies", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
-
-
 
 button {
     cursor: pointer;

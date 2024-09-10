@@ -370,10 +370,9 @@ h2 {
 }
 
 .categoria_foto {
-    width: 28rem;
+    width: 25rem;
     height: auto;
-    padding: 13px;
-    margin-left: 20px;
+    padding: 10px;
     border-radius: 35px;
 }
 
@@ -410,7 +409,8 @@ h2 {
 }
 
 .categoria_texto_conteudo h2 {
-    margin: 0;
+    margin: 2vw 0px;
+    font-size: 1.7vw;
 }
 
 .categoria_texto_conteudo p {
@@ -424,7 +424,7 @@ h2 {
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 11px;
+    padding: 20px;
 }
 
 .categoria_div2 {
@@ -433,7 +433,7 @@ h2 {
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 11px;
+    padding: 20px;
 }
 
 .categoria_div3 {
@@ -442,7 +442,7 @@ h2 {
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 11px;
+    padding: 20px;
 }
 
 #hardware {
@@ -465,6 +465,7 @@ h2 {
     text-align: center;
     display: inline-block;
     text-decoration: none;
+    margin: 15px 0;
 }
 
 #btn-categorias button:hover {
