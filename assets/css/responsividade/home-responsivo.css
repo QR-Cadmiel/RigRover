@@ -169,6 +169,11 @@
         padding: 15px;
         top: 0;
     }
+
+    .rigrover-1 {
+    padding: 1px;
+    background-size: auto;
+    }
   
 
     .topnav a:hover {
@@ -206,19 +211,33 @@
     }
 
     .categoria_texto {
-        margin: 21px;
+        margin: 18px;
+        width: 19rem;
         text-align: justify;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-    #btn-categorias button {
-        margin: 2vw 0px 10px 6vw;
-        height: 14vw;
-        font-size: 5.3vw;
+    .categoria_texto {
+        margin: 23px;
+        width: 18rem;
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    #coluna-categoria {
+        display: table-column;
+        width: 21rem;
     }
 
     .categoria_foto {
         display: none;
+    }
+
+    #btn-categorias button {
+        width: 6rem;
+        margin: 2vw 0px 17px 35%;
+        height: 9vw;
+        font-size: 5vw;
     }
     
 
@@ -242,6 +261,12 @@
 
     .cont-2, .cont-1 {
         padding: 16px;
+    }
+
+    h2 {
+        margin: 44px 0 36px 6vw;
+        font-size: 6vw;
+        width: 18rem;
     }
 }
 

@@ -238,6 +238,28 @@
         margin: 14px;
     }
 
+    .carousel-inner {
+        position: relative;
+        width: 93%;
+        height: 11rem;
+        margin: 9px;
+        overflow: hidden;
+    }
+
+    w-100 {
+        padding: 0px;
+        margin: 0 auto;
+        width: 19rem !important;
+    }
+
+    .rightevento1 {
+        width: 0 !important;
+        text-align: justify;
+        padding-left: 1vw;
+        font-size: 1.2rem;
+        margin: 0 0 27px 0;
+    }
+
     .rightevento1 h2 {
         font-size: 6.5vw;
         text-align: center;
@@ -245,14 +267,20 @@
 
     .rightevento1 h5 {
         text-align: justify;
-        font-size: 5vw;
+        font-size: 4vw;
+        width: 14rem;
+    }
+
+    iframe {
+        width: 270px;
+        height: 274px;
     }
 
     .btn-voltar {
-        margin: 28px;
-        font-size: 18px;
-        width: 70vw;
-        height: 25vw;
+        font-size: 14px !important;
+        width: 41vw !important; 
+        height: 13vw !important;
+        border-radius: 5px;
     }
 
     footer {
