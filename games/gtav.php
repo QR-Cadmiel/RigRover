@@ -13,9 +13,9 @@ include '../validacao.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games - Grand Theft Auto 5</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/responsividade/games-info-responsivo.css">
     <link rel="stylesheet" href="../assets/css/games-info.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/responsividade/games-info-responsivo.css">
     <script src="../assets/js/hamburguinho.js"></script>
     <script src="../assets/js/dropdownuser.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="../assets/img/logourl.png">

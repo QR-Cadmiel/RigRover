@@ -88,6 +88,10 @@
         margin: 14px;
     }
 
+    .w-100 {
+        padding: 1px;
+    }
+
     .rightevento1 h2 {
         font-size: 6.5vw;
         text-align: center;
@@ -249,13 +253,13 @@
     w-100 {
         padding: 0px;
         margin: 0 auto;
-        width: 19rem !important;
+        width: 19rem;
     }
 
     .rightevento1 {
-        width: 0 !important;
+        width: 0;
         text-align: justify;
-        padding-left: 1vw;
+        padding-left: 0;
         font-size: 1.2rem;
         margin: 0 0 27px 0;
     }
@@ -267,19 +271,19 @@
 
     .rightevento1 h5 {
         text-align: justify;
-        font-size: 4vw;
-        width: 14rem;
+        font-size: 90%;
+        width: 16rem;
     }
 
     iframe {
-        width: 270px;
-        height: 274px;
+        width: 231px;
+        height: 236px;
     }
 
     .btn-voltar {
-        font-size: 14px !important;
-        width: 41vw !important; 
-        height: 13vw !important;
+        font-size: 15px;
+        width: 44vw;
+        height: 19vw;
         border-radius: 5px;
     }
 
@@ -407,9 +411,17 @@
     }
 
     .rightevento1 h5 {
-        font-size: 2vw;
+        text-align: justify;
+        font-size: 90%;
+        width: 16rem;
     }
 
+    .w-100 {
+        padding: 0;
+        margin: 0 auto;
+        width: 50rem;
+    }
+    
     .btn-voltar {
         font-size: 20px;
         height: 7vw;

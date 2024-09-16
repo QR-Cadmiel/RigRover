@@ -15,8 +15,8 @@ include 'validacao.php';
     <link rel="icon" type="image/png" href="https://github.com/QR-Cadmiel/RigRover/blob/master/img/logout.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/responsividade/home-responsivo.css">
     <link rel="shortcut icon" type="image/png" href="assets/img/logourl.png">
+    <link rel="stylesheet" href="assets/css/responsividade/home-responsivo.css">
     <script src="assets/js/hamburguinho.js"></script>
     <script src="assets/js/logout.js"></script>
     <script src="assets/js/dropdownuser.js"></script>

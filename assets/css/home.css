@@ -102,7 +102,7 @@ img.dropbtn:hover {
 .rigrover-1 {
     background-image: url('../img/background-home.png');
     background-repeat: no-repeat, repeat;
-    background-size: 100%;
+    background-size: auto;
     padding: 1px;
 }
 
