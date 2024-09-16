@@ -33,6 +33,7 @@ body {
   .dropdown-btn span {
     margin: 0px 10px 0 0;
     padding: 0px;
+    font-size: 27px;
 }
 
   .arrow {
@@ -127,7 +128,7 @@ nav ul {
 .rigrover-1 {
     background-image: url('../img/background-hardware.png');
     background-repeat: no-repeat, repeat;
-    background-size: 100%;
+    background-size: auto;
     min-height: 40vw;
 }
 

@@ -1,131 +1,3 @@
-@media only screen and (max-width: 320px) {
-
-    .icon {
-        display: block;
-    }
-    
-        #myLinks {
-        display: block;
-    }
-    
-
-    body {
-        background-size: 100vw 92vw;
-    }
-
-    .icon {
-        display: block;
-    }
-    
-        #myLinks {
-        display: block;
-    }
-    
-    .topnav {
-        overflow: hidden;
-        background-color: #333;
-        position: relative;
-    }
-  
-
-    .topnav #myLinks {
-        display: none;
-    }
-
-    .topnav a {
-        color: white;
-        padding: 25px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-  
-
-    .topnav a.icon {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        padding: 15px;
-        top: 0;
-    }
-  
-
-    .topnav a:hover {
-        background-color: #121413;
-        color: white;
-    }
-
-    .active {
-        background-color: #121413;
-        color: white;
-    }
-
-    .active {
-        pointer-events: none; 
-        cursor: default; 
-    }
-
-    /* Esconder a navbar tradicional */
-    nav.navbar {
-        display: none;
-    }
-
-    .logodois {
-        width: 15rem;
-        margin: 0;
-    }
-
-    .slogan {
-        font-size: 1.2em;
-    }
-
-    .centro {
-        margin: 2.8em;
-        text-align: center;
-    }
-
-    .categoria_texto {
-        margin: 21px;
-        text-align: justify;
-        font-size: 1.2rem;
-    }
-
-    #btn-categorias button {
-        margin: 2vw 0px 10px 6vw;
-        height: 14vw;
-        font-size: 5.3vw;
-    }
-
-    .categoria_foto {
-        display: none;
-    }
-    
-
-    footer {
-        flex-direction: column;
-    }
-
-    .img-footer-logo {
-        width: 40vw;
-    }
-
-    footer li {
-        font-size: 5.7vw;
-        padding: 0 0 15px 0;
-        
-    }
-    
-    .redes-footer img {
-        width: 13vw;
-    }
-
-    .cont-2, .cont-1 {
-        padding: 16px;
-    }
-
-}
-
 @media only screen and (max-width: 480px) and (min-width: 319px) {
     body {
         background-size: 100vw 20%;
@@ -199,8 +71,9 @@
     }
 
     .centro {
-        margin: 2.5em;
+        margin: 0px !important;
         text-align: center;
+        padding: 2rem;
     }
 
     .categoria_texto {
@@ -211,8 +84,27 @@
 
     #btn-categorias button {
         margin: 2vw 0px 10px 6vw;
-        height: 14vw;
+        height: 12vw;
         font-size: 5.3vw;
+        padding: 12px;
+    }
+
+    
+    .categoria_texto_conteudo {
+        width: 17rem;
+        padding: 10px;
+    }
+
+    .categoria_texto_conteudo p {
+        font-size: 1.1rem;
+        margin: 27px 0;
+        width: 16rem;
+    }
+
+    .categoria_texto_conteudo h2 {
+        margin: 2vw 0px;
+        font-size: 5.7vw;
+        width: 14rem;
     }
 
     .categoria_foto {
@@ -244,36 +136,79 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 718px) {
+    .rigrover-1 {
+        min-height: 54vw;
+    }
+
     #btn-nav {
-        font-size: 21px;
+        font-size: 17px;
         padding: 14px;
     }
 
+    .dropdown-btn span {
+        font-size: 17px;
+    }
+    
     .logodois {
         width: 30rem;
         margin: 0;
     }
 
     .slogan {
-        font-size: 1.7em;
-        margin: 7px;
+        font-size: 1.6em;
+        margin: 14px;
+        width: 38rem;
     }
 
     .centro {
-        margin: 5.2em;
+        margin: 0;
         text-align: center;
     }
-
+    
     .categoria_texto {
         margin: 0 15vw 0 6vw;
         text-align: justify;
         font-size: 1.2rem;
     }
 
+    
+
     #btn-categorias button {
         margin: 2vw 0px 6px 6vw;
         height: 6vw;
         font-size: 2.1vw;
+    }
+
+    .categoria_foto {
+        width: 11rem;
+        display: none;
+    }
+
+    .categoria_texto_conteudo h2 {
+        margin: 2vw 0px;
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    .categoria_texto_conteudo p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        width: 32rem;
+    }
+
+    .categoria_conteudo {
+        margin: 5px;
+        width: 35rem;
+    }
+
+    .categoria_conteudo2 {
+        width: 35rem;
+        margin: 5px;
+    }
+
+    .categoria_div1 {
+        padding: 20px;
+        width: 39rem;
     }
 
     .img-footer-logo {
@@ -290,10 +225,123 @@
 
 @media only screen and (max-width: 768px) and (min-width: 719px) {
 
+    .rigrover-1 {
+        min-height: 54vw;
+    }
+
+    #btn-nav {
+        font-size: 22px;
+        padding: 14px;
+    }
+
+    .dropdown-btn span {
+        font-size: 22px;
+    }
+    
+    .logodois {
+        width: 30rem;
+        margin: 0;
+    }
+
+    .slogan {
+        font-size: 1.6em;
+        margin: 14px;
+        width: 43rem;
+    }
+
+    .centro {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .categoria_texto {
+        margin: 0 15vw 0 6vw;
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+
+    
+
+    #btn-categorias button {
+        margin: 2vw 0px 6px 6vw;
+        height: 6vw;
+        font-size: 2.1vw;
+    }
+
+    .categoria_foto {
+        width: 11rem;
+        display: none;
+    }
+
+    .categoria_texto_conteudo h2 {
+        margin: 2vw 0px;
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    .categoria_texto_conteudo p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        width: 31rem;
+    }
+
+    .categoria_conteudo {
+        margin: 5px;
+        width: 35rem;
+    }
+
+    .categoria_conteudo2 {
+        width: 35rem;
+        margin: 5px;
+    }
+
+    .categoria_div1 {
+        padding: 20px;
+        width: 46rem;
+    }
+
+    .img-footer-logo {
+        width: 19vw;
+    }
+     footer li {
+        font-size: 2.5vw;
+     }
+
+     .redes-footer img {
+        width: 6vw;
+    }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 767px) {
+    .centro {
+        margin: 0;
+        text-align: center;
+    }
 
+    .categoria_texto_conteudo p {
+        width: 24rem;
+    }
+
+    .categoria_conteudo {
+        width: 46rem;
+    }
+
+    .categoria_texto_conteudo h2 {  
+        width: 25rem;
+    }
+
+    .categoria_texto_conteudo {
+        width: 19rem;
+        padding: 10px;
+    }
+
+    .categoria_foto {
+        width: 23rem;
+        height: auto;
+        padding: 10px;
+        border-radius: 35px;
+    }
+    
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 901px) {
