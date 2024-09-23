@@ -1,5 +1,5 @@
 body {
-  font-family: "Lora", serif;
+  font-family: 'Josefin Sans', sans-serif;
     background-image: url(../img/background-index.png);
     background-repeat: no-repeat, repeat;
     background-size: 100%;
@@ -287,7 +287,7 @@ nav ul {
   width: 80%;
   max-width: 53vw;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .faq-item {
   margin-bottom: 10px;

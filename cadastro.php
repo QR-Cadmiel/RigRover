@@ -102,8 +102,10 @@ $mysqli->close();
             <input type="email" name="email" placeholder="Insira o seu e-mail" class="email-icon" required>
             <input type="password" name="password" placeholder="Digite uma senha (Mínimo 8 caracteres)" class="senha-icon" required>
             <input type="password" name="confirm_password" placeholder="Digite sua senha novamente" class="senha-icon" required>
-
+            <div>
+            <p class="p_data">Data de nascimento:</p>
             <div class="data">
+
                 <select name="day" required class="sday">
                     <?php
                     for ($i = 1; $i <= 31; $i++) {
@@ -129,6 +131,7 @@ $mysqli->close();
                     }
                     ?>
                 </select>
+            </div>
             </div>
 
             <div class="nacionalidade">

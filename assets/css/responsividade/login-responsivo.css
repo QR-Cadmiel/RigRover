@@ -152,15 +152,22 @@
     }
 
     .login input[type="email"], .login input[type="password"] {
-        width: 42vw;
+        width: 31vw;
+        height: 47px;
     }
     .btn-cad {
-        width: 42vw;
+        width: 31vw;
     }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1023px) {
-
+    .login input[type="email"], .login input[type="password"] {
+        width: 31vw;
+        height: 47px;
+    }
+    .btn-cad {
+        width: 31vw;
+    }
 }
 
 @media only screen and (min-width: 1024px)  {
@@ -180,8 +187,8 @@
     }
 
     .login input[type="email"], .login input[type="password"] {
-        width: 37vw;
-        height: 53px;
+        width: 31vw;
+        height: 47px;
         font-size: 16px;
     }
 
@@ -198,7 +205,7 @@
     }
 
     .btn-cad {
-        width: 37vw;
+        width: 31vw;
         height: 47px;
         font-size: 16px;
     }

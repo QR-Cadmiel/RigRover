@@ -166,7 +166,7 @@
         text-align: center;
         position: absolute;
         right: 0;
-        top: 60%;
+        top: 52%;
     }
     .img-lado {
         width: 45%;
@@ -177,7 +177,12 @@
     }
 
     .cadastro input[type="text"], .cadastro input[type="email"], .cadastro input[type="password"] {
-        width: 39vw;
+        width: 31vw;
+        height: 47px;
     }
 
+    .btn-cad {
+        width: 31vw;
+        height: 47px;
+    }
 }

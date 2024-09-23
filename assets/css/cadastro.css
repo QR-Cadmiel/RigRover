@@ -89,6 +89,12 @@ body {
     font-size: 16px;
 }
 
+.p_data {
+    font-size: 1rem;
+    display: flex;
+    margin-left: 8.5rem;
+}
+
 .data {
     display: flex;
     align-items: center;
