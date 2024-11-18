@@ -11,16 +11,46 @@ include 'conexao.php';
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
+// Lista de palavras proibidas
+$palavras_proibidas = [ 'estruprador', 'estuprado', 'estuprador', 'estuprar', 'estupro',
+'l.o.l.i', 'l0l1', 'l0l1z1nh4', 'l0li', 'lloli', 'lol1', 'loli', 'lolicon', 'lolismo', 'lolli',
+'n-word', 'n1gg3r', 'n1gg4', 'n1gga', 'nazism', 'nazismo', 'nazista',
+'nigg4', 'nigga', 'nigger',
+'p3d0f1l0', 'ped0f1l14', 'ped0fil0', 'pedofilia', 'pedofilo',
+'porno', 'pornô',
+'r4id',
+'tr4aveco', 'tr4v3c0', 'tr4vec0', 'trav3c0', 'travecão', 'traveco', 'travecozinho',
+'xvideos', 'zoofilia']; // Adicione as palavras que você quer filtrar
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['criar_pergunta'])) {
         $titulo = $_POST['titulo'];
         $descricao = $_POST['descricao'];
 
-        $sql = "INSERT INTO perguntas (titulo, descricao) VALUES ('$titulo', '$descricao')";
-        $resultado = $mysqli->query($sql);
+        // Função para verificar palavras proibidas
+        function verificar_palavras_proibidas($texto, $palavras_proibidas) {
+            foreach ($palavras_proibidas as $palavra) {
+                if (stripos($texto, $palavra) !== false) {
+                    return true; // Retorna verdadeiro se a palavra proibida for encontrada
+                }
+            }
+            return false; // Se não encontrar nenhuma palavra proibida
+        }
 
-        header("Location: forum");
-        exit();
+        // Verificar se o título ou descrição contém palavras proibidas
+        if (verificar_palavras_proibidas($titulo, $palavras_proibidas) || verificar_palavras_proibidas($descricao, $palavras_proibidas)) {
+            // Palavra proibida encontrada, mas sem exibir alert
+            // Aqui você pode decidir se quer redirecionar ou mostrar outra mensagem sem usar alert
+            header("Location: forum?erro=palavra_proibida");
+            exit();
+        } else {
+            // Se não houver palavras proibidas, insere no banco
+            $sql = "INSERT INTO perguntas (titulo, descricao) VALUES ('$titulo', '$descricao')";
+            $resultado = $mysqli->query($sql);
+
+            header("Location: forum");
+            exit();
+        }
     }
 
     if (isset($_POST['editar_pergunta'])) {
@@ -33,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $id = $_POST['excluir_pergunta'];
         if ($_SESSION['email'] === 'admin@gmail.com') {
             echo '<script>';
-            echo 'if (confirm("Tem certeza de que deseja excluir esta pergunta?")) {';
+            echo 'if (confirm("Tem certeza de que deseja excluir esta pergunta?")) {'; 
             echo 'window.location.href = "excluir_noticia?id=' . $id . '";';
             echo '}';
             echo '</script>';
